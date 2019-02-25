@@ -1,0 +1,193 @@
+{
+    "IamActions": [
+        "BuildSuggesters", 
+        "CreateDomain", 
+        "DefineAnalysisScheme", 
+        "DefineExpression", 
+        "DefineIndexField", 
+        "DefineSuggester", 
+        "DeleteAnalysisScheme", 
+        "DeleteDomain", 
+        "DeleteExpression", 
+        "DeleteIndexField", 
+        "DeleteSuggester", 
+        "IndexDocuments", 
+        "UpdateAvailabilityOptions", 
+        "UpdateScalingParameters", 
+        "UpdateServiceAccessPolicies", 
+        "document", 
+        "permission", 
+        "search", 
+        "permission", 
+        "suggest", 
+        "permission"
+    ], 
+    "OperationInputs": {
+        "BuildSuggesters": {
+            "DomainName": "string"
+        }, 
+        "CreateDomain": {
+            "DomainName": "string"
+        }, 
+        "DefineAnalysisScheme": {
+            "AnalysisScheme": {
+                "AnalysisOptions": {
+                    "AlgorithmicStemming": "string", 
+                    "JapaneseTokenizationDictionary": "string", 
+                    "StemmingDictionary": "string", 
+                    "Stopwords": "string", 
+                    "Synonyms": "string"
+                }, 
+                "AnalysisSchemeLanguage": "string", 
+                "AnalysisSchemeName": "string"
+            }, 
+            "DomainName": "string"
+        }, 
+        "DefineExpression": {
+            "DomainName": "string", 
+            "Expression": {
+                "ExpressionName": "string", 
+                "ExpressionValue": "string"
+            }
+        }, 
+        "DefineIndexField": {
+            "DomainName": "string", 
+            "IndexField": {
+                "DateArrayOptions": {
+                    "DefaultValue": "string", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SourceFields": "string"
+                }, 
+                "DateOptions": {
+                    "DefaultValue": "string", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SortEnabled": "boolean", 
+                    "SourceField": "string"
+                }, 
+                "DoubleArrayOptions": {
+                    "DefaultValue": "double", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SourceFields": "string"
+                }, 
+                "DoubleOptions": {
+                    "DefaultValue": "double", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SortEnabled": "boolean", 
+                    "SourceField": "string"
+                }, 
+                "IndexFieldName": "string", 
+                "IndexFieldType": "string", 
+                "IntArrayOptions": {
+                    "DefaultValue": "long", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SourceFields": "string"
+                }, 
+                "IntOptions": {
+                    "DefaultValue": "long", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SortEnabled": "boolean", 
+                    "SourceField": "string"
+                }, 
+                "LatLonOptions": {
+                    "DefaultValue": "string", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SortEnabled": "boolean", 
+                    "SourceField": "string"
+                }, 
+                "LiteralArrayOptions": {
+                    "DefaultValue": "string", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SourceFields": "string"
+                }, 
+                "LiteralOptions": {
+                    "DefaultValue": "string", 
+                    "FacetEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SearchEnabled": "boolean", 
+                    "SortEnabled": "boolean", 
+                    "SourceField": "string"
+                }, 
+                "TextArrayOptions": {
+                    "AnalysisScheme": "string", 
+                    "DefaultValue": "string", 
+                    "HighlightEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SourceFields": "string"
+                }, 
+                "TextOptions": {
+                    "AnalysisScheme": "string", 
+                    "DefaultValue": "string", 
+                    "HighlightEnabled": "boolean", 
+                    "ReturnEnabled": "boolean", 
+                    "SortEnabled": "boolean", 
+                    "SourceField": "string"
+                }
+            }
+        }, 
+        "DefineSuggester": {
+            "DomainName": "string", 
+            "Suggester": {
+                "DocumentSuggesterOptions": {
+                    "FuzzyMatching": "string", 
+                    "SortExpression": "string", 
+                    "SourceField": "string"
+                }, 
+                "SuggesterName": "string"
+            }
+        }, 
+        "DeleteAnalysisScheme": {
+            "AnalysisSchemeName": "string", 
+            "DomainName": "string"
+        }, 
+        "DeleteDomain": {
+            "DomainName": "string"
+        }, 
+        "DeleteExpression": {
+            "DomainName": "string", 
+            "ExpressionName": "string"
+        }, 
+        "DeleteIndexField": {
+            "DomainName": "string", 
+            "IndexFieldName": "string"
+        }, 
+        "DeleteSuggester": {
+            "DomainName": "string", 
+            "SuggesterName": "string"
+        }, 
+        "IndexDocuments": {
+            "DomainName": "string"
+        }, 
+        "UpdateAvailabilityOptions": {
+            "DomainName": "string", 
+            "MultiAZ": "boolean"
+        }, 
+        "UpdateScalingParameters": {
+            "DomainName": "string", 
+            "ScalingParameters": {
+                "DesiredInstanceType": "string", 
+                "DesiredPartitionCount": "integer", 
+                "DesiredReplicationCount": "integer"
+            }
+        }, 
+        "UpdateServiceAccessPolicies": {
+            "AccessPolicies": "string", 
+            "DomainName": "string"
+        }
+    }
+}

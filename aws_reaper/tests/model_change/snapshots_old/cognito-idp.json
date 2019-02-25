@@ -1,0 +1,876 @@
+{
+    "IamActions": [
+        "AddCustomAttributes", 
+        "AdminAddUserToGroup", 
+        "AdminConfirmSignUp", 
+        "AdminCreateUser", 
+        "AdminDeleteUser", 
+        "AdminDeleteUserAttributes", 
+        "AdminDisableUser", 
+        "AdminEnableUser", 
+        "AdminForgetDevice", 
+        "AdminInitiateAuth", 
+        "AdminRemoveUserFromGroup", 
+        "AdminResetUserPassword", 
+        "AdminRespondToAuthChallenge", 
+        "AdminSetUserMFAPreference", 
+        "AdminSetUserSettings", 
+        "AdminUpdateAuthEventFeedback", 
+        "AdminUpdateDeviceStatus", 
+        "AdminUpdateUserAttributes", 
+        "AdminUserGlobalSignOut", 
+        "ChangePassword", 
+        "ConfirmDevice", 
+        "ConfirmForgotPassword", 
+        "ConfirmSignUp", 
+        "CreateGroup", 
+        "CreateUserImportJob", 
+        "CreateUserPool", 
+        "CreateUserPoolClient", 
+        "DeleteGroup", 
+        "DeleteUser", 
+        "DeleteUserAttributes", 
+        "DeleteUserPool", 
+        "DeleteUserPoolClient", 
+        "ForgetDevice", 
+        "ForgotPassword", 
+        "GlobalSignOut", 
+        "InitiateAuth", 
+        "ResendConfirmationCode", 
+        "RespondToAuthChallenge", 
+        "SetRiskConfiguration", 
+        "SetUserMFAPreference", 
+        "SetUserPoolMfaConfig", 
+        "SetUserSettings", 
+        "SignUp", 
+        "StartUserImportJob", 
+        "StopUserImportJob", 
+        "UpdateAuthEventFeedback", 
+        "UpdateDeviceStatus", 
+        "UpdateGroup", 
+        "UpdateUserAttributes", 
+        "UpdateUserPool", 
+        "UpdateUserPoolClient", 
+        "VerifyUserAttribute"
+    ], 
+    "OperationInputs": {
+        "AddCustomAttributes": {
+            "CustomAttributes": {
+                "_list": {
+                    "AttributeDataType": "string", 
+                    "DeveloperOnlyAttribute": "boolean", 
+                    "Mutable": "boolean", 
+                    "Name": "string", 
+                    "NumberAttributeConstraints": {
+                        "MaxValue": "string", 
+                        "MinValue": "string"
+                    }, 
+                    "Required": "boolean", 
+                    "StringAttributeConstraints": {
+                        "MaxLength": "string", 
+                        "MinLength": "string"
+                    }
+                }
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "AdminAddUserToGroup": {
+            "GroupName": "string", 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminConfirmSignUp": {
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminCreateUser": {
+            "DesiredDeliveryMediums": {
+                "_list": "string"
+            }, 
+            "ForceAliasCreation": "boolean", 
+            "MessageAction": "string", 
+            "TemporaryPassword": "string", 
+            "UserAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UserPoolId": "string", 
+            "Username": "string", 
+            "ValidationData": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "AdminDeleteUser": {
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminDeleteUserAttributes": {
+            "UserAttributeNames": {
+                "_list": "string"
+            }, 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminDisableProviderForUser": {
+            "User": {
+                "ProviderAttributeName": "string", 
+                "ProviderAttributeValue": "string", 
+                "ProviderName": "string"
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "AdminDisableUser": {
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminEnableUser": {
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminForgetDevice": {
+            "DeviceKey": "string", 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminInitiateAuth": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "AuthFlow": "string", 
+            "AuthParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ClientId": "string", 
+            "ClientMetadata": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ContextData": {
+                "EncodedData": "string", 
+                "HttpHeaders": {
+                    "_list": {
+                        "headerName": "string", 
+                        "headerValue": "string"
+                    }
+                }, 
+                "IpAddress": "string", 
+                "ServerName": "string", 
+                "ServerPath": "string"
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "AdminLinkProviderForUser": {
+            "DestinationUser": {
+                "ProviderAttributeName": "string", 
+                "ProviderAttributeValue": "string", 
+                "ProviderName": "string"
+            }, 
+            "SourceUser": {
+                "ProviderAttributeName": "string", 
+                "ProviderAttributeValue": "string", 
+                "ProviderName": "string"
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "AdminRemoveUserFromGroup": {
+            "GroupName": "string", 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminResetUserPassword": {
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminRespondToAuthChallenge": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ChallengeName": "string", 
+            "ChallengeResponses": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ClientId": "string", 
+            "ContextData": {
+                "EncodedData": "string", 
+                "HttpHeaders": {
+                    "_list": {
+                        "headerName": "string", 
+                        "headerValue": "string"
+                    }
+                }, 
+                "IpAddress": "string", 
+                "ServerName": "string", 
+                "ServerPath": "string"
+            }, 
+            "Session": "string", 
+            "UserPoolId": "string"
+        }, 
+        "AdminSetUserMFAPreference": {
+            "SMSMfaSettings": {
+                "Enabled": "boolean", 
+                "PreferredMfa": "boolean"
+            }, 
+            "SoftwareTokenMfaSettings": {
+                "Enabled": "boolean", 
+                "PreferredMfa": "boolean"
+            }, 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminSetUserSettings": {
+            "MFAOptions": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "DeliveryMedium": "string"
+                }
+            }, 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminUpdateAuthEventFeedback": {
+            "EventId": "string", 
+            "FeedbackValue": "string", 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminUpdateDeviceStatus": {
+            "DeviceKey": "string", 
+            "DeviceRememberedStatus": "string", 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminUpdateUserAttributes": {
+            "UserAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AdminUserGlobalSignOut": {
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "AssociateSoftwareToken": {
+            "AccessToken": "string", 
+            "Session": "string"
+        }, 
+        "ChangePassword": {
+            "AccessToken": "string", 
+            "PreviousPassword": "string", 
+            "ProposedPassword": "string"
+        }, 
+        "ConfirmDevice": {
+            "AccessToken": "string", 
+            "DeviceKey": "string", 
+            "DeviceName": "string", 
+            "DeviceSecretVerifierConfig": {
+                "PasswordVerifier": "string", 
+                "Salt": "string"
+            }
+        }, 
+        "ConfirmForgotPassword": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ClientId": "string", 
+            "ConfirmationCode": "string", 
+            "Password": "string", 
+            "SecretHash": "string", 
+            "UserContextData": {
+                "EncodedData": "string"
+            }, 
+            "Username": "string"
+        }, 
+        "ConfirmSignUp": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ClientId": "string", 
+            "ConfirmationCode": "string", 
+            "ForceAliasCreation": "boolean", 
+            "SecretHash": "string", 
+            "UserContextData": {
+                "EncodedData": "string"
+            }, 
+            "Username": "string"
+        }, 
+        "CreateGroup": {
+            "Description": "string", 
+            "GroupName": "string", 
+            "Precedence": "integer", 
+            "RoleArn": "string", 
+            "UserPoolId": "string"
+        }, 
+        "CreateIdentityProvider": {
+            "AttributeMapping": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "IdpIdentifiers": {
+                "_list": "string"
+            }, 
+            "ProviderDetails": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ProviderName": "string", 
+            "ProviderType": "string", 
+            "UserPoolId": "string"
+        }, 
+        "CreateResourceServer": {
+            "Identifier": "string", 
+            "Name": "string", 
+            "Scopes": {
+                "_list": {
+                    "ScopeDescription": "string", 
+                    "ScopeName": "string"
+                }
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "CreateUserImportJob": {
+            "CloudWatchLogsRoleArn": "string", 
+            "JobName": "string", 
+            "UserPoolId": "string"
+        }, 
+        "CreateUserPool": {
+            "AdminCreateUserConfig": {
+                "AllowAdminCreateUserOnly": "boolean", 
+                "InviteMessageTemplate": {
+                    "EmailMessage": "string", 
+                    "EmailSubject": "string", 
+                    "SMSMessage": "string"
+                }, 
+                "UnusedAccountValidityDays": "integer"
+            }, 
+            "AliasAttributes": {
+                "_list": "string"
+            }, 
+            "AutoVerifiedAttributes": {
+                "_list": "string"
+            }, 
+            "DeviceConfiguration": {
+                "ChallengeRequiredOnNewDevice": "boolean", 
+                "DeviceOnlyRememberedOnUserPrompt": "boolean"
+            }, 
+            "EmailConfiguration": {
+                "ReplyToEmailAddress": "string", 
+                "SourceArn": "string"
+            }, 
+            "EmailVerificationMessage": "string", 
+            "EmailVerificationSubject": "string", 
+            "LambdaConfig": {
+                "CreateAuthChallenge": "string", 
+                "CustomMessage": "string", 
+                "DefineAuthChallenge": "string", 
+                "PostAuthentication": "string", 
+                "PostConfirmation": "string", 
+                "PreAuthentication": "string", 
+                "PreSignUp": "string", 
+                "PreTokenGeneration": "string", 
+                "UserMigration": "string", 
+                "VerifyAuthChallengeResponse": "string"
+            }, 
+            "MfaConfiguration": "string", 
+            "Policies": {
+                "PasswordPolicy": {
+                    "MinimumLength": "integer", 
+                    "RequireLowercase": "boolean", 
+                    "RequireNumbers": "boolean", 
+                    "RequireSymbols": "boolean", 
+                    "RequireUppercase": "boolean"
+                }
+            }, 
+            "PoolName": "string", 
+            "Schema": {
+                "_list": {
+                    "AttributeDataType": "string", 
+                    "DeveloperOnlyAttribute": "boolean", 
+                    "Mutable": "boolean", 
+                    "Name": "string", 
+                    "NumberAttributeConstraints": {
+                        "MaxValue": "string", 
+                        "MinValue": "string"
+                    }, 
+                    "Required": "boolean", 
+                    "StringAttributeConstraints": {
+                        "MaxLength": "string", 
+                        "MinLength": "string"
+                    }
+                }
+            }, 
+            "SmsAuthenticationMessage": "string", 
+            "SmsConfiguration": {
+                "ExternalId": "string", 
+                "SnsCallerArn": "string"
+            }, 
+            "SmsVerificationMessage": "string", 
+            "UserPoolAddOns": {
+                "AdvancedSecurityMode": "string"
+            }, 
+            "UserPoolTags": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "UsernameAttributes": {
+                "_list": "string"
+            }, 
+            "VerificationMessageTemplate": {
+                "DefaultEmailOption": "string", 
+                "EmailMessage": "string", 
+                "EmailMessageByLink": "string", 
+                "EmailSubject": "string", 
+                "EmailSubjectByLink": "string", 
+                "SmsMessage": "string"
+            }
+        }, 
+        "CreateUserPoolClient": {
+            "AllowedOAuthFlows": {
+                "_list": "string"
+            }, 
+            "AllowedOAuthFlowsUserPoolClient": "boolean", 
+            "AllowedOAuthScopes": {
+                "_list": "string"
+            }, 
+            "AnalyticsConfiguration": {
+                "ApplicationId": "string", 
+                "ExternalId": "string", 
+                "RoleArn": "string", 
+                "UserDataShared": "boolean"
+            }, 
+            "CallbackURLs": {
+                "_list": "string"
+            }, 
+            "ClientName": "string", 
+            "DefaultRedirectURI": "string", 
+            "ExplicitAuthFlows": {
+                "_list": "string"
+            }, 
+            "GenerateSecret": "boolean", 
+            "LogoutURLs": {
+                "_list": "string"
+            }, 
+            "ReadAttributes": {
+                "_list": "string"
+            }, 
+            "RefreshTokenValidity": "integer", 
+            "SupportedIdentityProviders": {
+                "_list": "string"
+            }, 
+            "UserPoolId": "string", 
+            "WriteAttributes": {
+                "_list": "string"
+            }
+        }, 
+        "CreateUserPoolDomain": {
+            "CustomDomainConfig": {
+                "CertificateArn": "string"
+            }, 
+            "Domain": "string", 
+            "UserPoolId": "string"
+        }, 
+        "DeleteGroup": {
+            "GroupName": "string", 
+            "UserPoolId": "string"
+        }, 
+        "DeleteIdentityProvider": {
+            "ProviderName": "string", 
+            "UserPoolId": "string"
+        }, 
+        "DeleteResourceServer": {
+            "Identifier": "string", 
+            "UserPoolId": "string"
+        }, 
+        "DeleteUser": {
+            "AccessToken": "string"
+        }, 
+        "DeleteUserAttributes": {
+            "AccessToken": "string", 
+            "UserAttributeNames": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteUserPool": {
+            "UserPoolId": "string"
+        }, 
+        "DeleteUserPoolClient": {
+            "ClientId": "string", 
+            "UserPoolId": "string"
+        }, 
+        "DeleteUserPoolDomain": {
+            "Domain": "string", 
+            "UserPoolId": "string"
+        }, 
+        "ForgetDevice": {
+            "AccessToken": "string", 
+            "DeviceKey": "string"
+        }, 
+        "ForgotPassword": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ClientId": "string", 
+            "SecretHash": "string", 
+            "UserContextData": {
+                "EncodedData": "string"
+            }, 
+            "Username": "string"
+        }, 
+        "GlobalSignOut": {
+            "AccessToken": "string"
+        }, 
+        "InitiateAuth": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "AuthFlow": "string", 
+            "AuthParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ClientId": "string", 
+            "ClientMetadata": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "UserContextData": {
+                "EncodedData": "string"
+            }
+        }, 
+        "ResendConfirmationCode": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ClientId": "string", 
+            "SecretHash": "string", 
+            "UserContextData": {
+                "EncodedData": "string"
+            }, 
+            "Username": "string"
+        }, 
+        "RespondToAuthChallenge": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ChallengeName": "string", 
+            "ChallengeResponses": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ClientId": "string", 
+            "Session": "string", 
+            "UserContextData": {
+                "EncodedData": "string"
+            }
+        }, 
+        "SetRiskConfiguration": {
+            "AccountTakeoverRiskConfiguration": {
+                "Actions": {
+                    "HighAction": {
+                        "EventAction": "string", 
+                        "Notify": "boolean"
+                    }, 
+                    "LowAction": {
+                        "EventAction": "string", 
+                        "Notify": "boolean"
+                    }, 
+                    "MediumAction": {
+                        "EventAction": "string", 
+                        "Notify": "boolean"
+                    }
+                }, 
+                "NotifyConfiguration": {
+                    "BlockEmail": {
+                        "HtmlBody": "string", 
+                        "Subject": "string", 
+                        "TextBody": "string"
+                    }, 
+                    "From": "string", 
+                    "MfaEmail": {
+                        "HtmlBody": "string", 
+                        "Subject": "string", 
+                        "TextBody": "string"
+                    }, 
+                    "NoActionEmail": {
+                        "HtmlBody": "string", 
+                        "Subject": "string", 
+                        "TextBody": "string"
+                    }, 
+                    "ReplyTo": "string", 
+                    "SourceArn": "string"
+                }
+            }, 
+            "ClientId": "string", 
+            "CompromisedCredentialsRiskConfiguration": {
+                "Actions": {
+                    "EventAction": "string"
+                }, 
+                "EventFilter": {
+                    "_list": "string"
+                }
+            }, 
+            "RiskExceptionConfiguration": {
+                "BlockedIPRangeList": {
+                    "_list": "string"
+                }, 
+                "SkippedIPRangeList": {
+                    "_list": "string"
+                }
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "SetUICustomization": {
+            "CSS": "string", 
+            "ClientId": "string", 
+            "ImageFile": "blob", 
+            "UserPoolId": "string"
+        }, 
+        "SetUserMFAPreference": {
+            "AccessToken": "string", 
+            "SMSMfaSettings": {
+                "Enabled": "boolean", 
+                "PreferredMfa": "boolean"
+            }, 
+            "SoftwareTokenMfaSettings": {
+                "Enabled": "boolean", 
+                "PreferredMfa": "boolean"
+            }
+        }, 
+        "SetUserPoolMfaConfig": {
+            "MfaConfiguration": "string", 
+            "SmsMfaConfiguration": {
+                "SmsAuthenticationMessage": "string", 
+                "SmsConfiguration": {
+                    "ExternalId": "string", 
+                    "SnsCallerArn": "string"
+                }
+            }, 
+            "SoftwareTokenMfaConfiguration": {
+                "Enabled": "boolean"
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "SetUserSettings": {
+            "AccessToken": "string", 
+            "MFAOptions": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "DeliveryMedium": "string"
+                }
+            }
+        }, 
+        "SignUp": {
+            "AnalyticsMetadata": {
+                "AnalyticsEndpointId": "string"
+            }, 
+            "ClientId": "string", 
+            "Password": "string", 
+            "SecretHash": "string", 
+            "UserAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UserContextData": {
+                "EncodedData": "string"
+            }, 
+            "Username": "string", 
+            "ValidationData": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "StartUserImportJob": {
+            "JobId": "string", 
+            "UserPoolId": "string"
+        }, 
+        "StopUserImportJob": {
+            "JobId": "string", 
+            "UserPoolId": "string"
+        }, 
+        "UpdateAuthEventFeedback": {
+            "EventId": "string", 
+            "FeedbackToken": "string", 
+            "FeedbackValue": "string", 
+            "UserPoolId": "string", 
+            "Username": "string"
+        }, 
+        "UpdateDeviceStatus": {
+            "AccessToken": "string", 
+            "DeviceKey": "string", 
+            "DeviceRememberedStatus": "string"
+        }, 
+        "UpdateGroup": {
+            "Description": "string", 
+            "GroupName": "string", 
+            "Precedence": "integer", 
+            "RoleArn": "string", 
+            "UserPoolId": "string"
+        }, 
+        "UpdateIdentityProvider": {
+            "AttributeMapping": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "IdpIdentifiers": {
+                "_list": "string"
+            }, 
+            "ProviderDetails": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ProviderName": "string", 
+            "UserPoolId": "string"
+        }, 
+        "UpdateResourceServer": {
+            "Identifier": "string", 
+            "Name": "string", 
+            "Scopes": {
+                "_list": {
+                    "ScopeDescription": "string", 
+                    "ScopeName": "string"
+                }
+            }, 
+            "UserPoolId": "string"
+        }, 
+        "UpdateUserAttributes": {
+            "AccessToken": "string", 
+            "UserAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "UpdateUserPool": {
+            "AdminCreateUserConfig": {
+                "AllowAdminCreateUserOnly": "boolean", 
+                "InviteMessageTemplate": {
+                    "EmailMessage": "string", 
+                    "EmailSubject": "string", 
+                    "SMSMessage": "string"
+                }, 
+                "UnusedAccountValidityDays": "integer"
+            }, 
+            "AutoVerifiedAttributes": {
+                "_list": "string"
+            }, 
+            "DeviceConfiguration": {
+                "ChallengeRequiredOnNewDevice": "boolean", 
+                "DeviceOnlyRememberedOnUserPrompt": "boolean"
+            }, 
+            "EmailConfiguration": {
+                "ReplyToEmailAddress": "string", 
+                "SourceArn": "string"
+            }, 
+            "EmailVerificationMessage": "string", 
+            "EmailVerificationSubject": "string", 
+            "LambdaConfig": {
+                "CreateAuthChallenge": "string", 
+                "CustomMessage": "string", 
+                "DefineAuthChallenge": "string", 
+                "PostAuthentication": "string", 
+                "PostConfirmation": "string", 
+                "PreAuthentication": "string", 
+                "PreSignUp": "string", 
+                "PreTokenGeneration": "string", 
+                "UserMigration": "string", 
+                "VerifyAuthChallengeResponse": "string"
+            }, 
+            "MfaConfiguration": "string", 
+            "Policies": {
+                "PasswordPolicy": {
+                    "MinimumLength": "integer", 
+                    "RequireLowercase": "boolean", 
+                    "RequireNumbers": "boolean", 
+                    "RequireSymbols": "boolean", 
+                    "RequireUppercase": "boolean"
+                }
+            }, 
+            "SmsAuthenticationMessage": "string", 
+            "SmsConfiguration": {
+                "ExternalId": "string", 
+                "SnsCallerArn": "string"
+            }, 
+            "SmsVerificationMessage": "string", 
+            "UserPoolAddOns": {
+                "AdvancedSecurityMode": "string"
+            }, 
+            "UserPoolId": "string", 
+            "UserPoolTags": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "VerificationMessageTemplate": {
+                "DefaultEmailOption": "string", 
+                "EmailMessage": "string", 
+                "EmailMessageByLink": "string", 
+                "EmailSubject": "string", 
+                "EmailSubjectByLink": "string", 
+                "SmsMessage": "string"
+            }
+        }, 
+        "UpdateUserPoolClient": {
+            "AllowedOAuthFlows": {
+                "_list": "string"
+            }, 
+            "AllowedOAuthFlowsUserPoolClient": "boolean", 
+            "AllowedOAuthScopes": {
+                "_list": "string"
+            }, 
+            "AnalyticsConfiguration": {
+                "ApplicationId": "string", 
+                "ExternalId": "string", 
+                "RoleArn": "string", 
+                "UserDataShared": "boolean"
+            }, 
+            "CallbackURLs": {
+                "_list": "string"
+            }, 
+            "ClientId": "string", 
+            "ClientName": "string", 
+            "DefaultRedirectURI": "string", 
+            "ExplicitAuthFlows": {
+                "_list": "string"
+            }, 
+            "LogoutURLs": {
+                "_list": "string"
+            }, 
+            "ReadAttributes": {
+                "_list": "string"
+            }, 
+            "RefreshTokenValidity": "integer", 
+            "SupportedIdentityProviders": {
+                "_list": "string"
+            }, 
+            "UserPoolId": "string", 
+            "WriteAttributes": {
+                "_list": "string"
+            }
+        }, 
+        "VerifySoftwareToken": {
+            "AccessToken": "string", 
+            "FriendlyDeviceName": "string", 
+            "Session": "string", 
+            "UserCode": "string"
+        }, 
+        "VerifyUserAttribute": {
+            "AccessToken": "string", 
+            "AttributeName": "string", 
+            "Code": "string"
+        }
+    }
+}

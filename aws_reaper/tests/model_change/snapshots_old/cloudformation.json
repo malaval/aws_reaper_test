@@ -1,0 +1,355 @@
+{
+    "IamActions": [
+        "CancelUpdateStack", 
+        "ContinueUpdateRollback", 
+        "CreateChangeSet", 
+        "CreateStack", 
+        "CreateStackInstances", 
+        "CreateStackSet", 
+        "CreateUploadBucket", 
+        "DeleteChangeSet", 
+        "DeleteStack", 
+        "DeleteStackInstances", 
+        "DeleteStackSet", 
+        "ExecuteChangeSet", 
+        "SetStackPolicy", 
+        "SignalResource", 
+        "StopStackSetOperation", 
+        "UpdateStack", 
+        "UpdateStackInstances", 
+        "UpdateStackSet", 
+        "UpdateTerminationProtection", 
+        "ValidateTemplate"
+    ], 
+    "OperationInputs": {
+        "CancelUpdateStack": {
+            "ClientRequestToken": "string", 
+            "StackName": "string"
+        }, 
+        "ContinueUpdateRollback": {
+            "ClientRequestToken": "string", 
+            "ResourcesToSkip": {
+                "_list": "string"
+            }, 
+            "RoleARN": "string", 
+            "StackName": "string"
+        }, 
+        "CreateChangeSet": {
+            "Capabilities": {
+                "_list": "string"
+            }, 
+            "ChangeSetName": "string", 
+            "ChangeSetType": "string", 
+            "ClientToken": "string", 
+            "Description": "string", 
+            "NotificationARNs": {
+                "_list": "string"
+            }, 
+            "Parameters": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "ResourceTypes": {
+                "_list": "string"
+            }, 
+            "RoleARN": "string", 
+            "RollbackConfiguration": {
+                "MonitoringTimeInMinutes": "integer", 
+                "RollbackTriggers": {
+                    "_list": {
+                        "Arn": "string", 
+                        "Type": "string"
+                    }
+                }
+            }, 
+            "StackName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TemplateBody": "string", 
+            "TemplateURL": "string", 
+            "UsePreviousTemplate": "boolean"
+        }, 
+        "CreateStack": {
+            "Capabilities": {
+                "_list": "string"
+            }, 
+            "ClientRequestToken": "string", 
+            "DisableRollback": "boolean", 
+            "EnableTerminationProtection": "boolean", 
+            "NotificationARNs": {
+                "_list": "string"
+            }, 
+            "OnFailure": "string", 
+            "Parameters": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "ResourceTypes": {
+                "_list": "string"
+            }, 
+            "RoleARN": "string", 
+            "RollbackConfiguration": {
+                "MonitoringTimeInMinutes": "integer", 
+                "RollbackTriggers": {
+                    "_list": {
+                        "Arn": "string", 
+                        "Type": "string"
+                    }
+                }
+            }, 
+            "StackName": "string", 
+            "StackPolicyBody": "string", 
+            "StackPolicyURL": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TemplateBody": "string", 
+            "TemplateURL": "string", 
+            "TimeoutInMinutes": "integer"
+        }, 
+        "CreateStackInstances": {
+            "Accounts": {
+                "_list": "string"
+            }, 
+            "OperationId": "string", 
+            "OperationPreferences": {
+                "FailureToleranceCount": "integer", 
+                "FailureTolerancePercentage": "integer", 
+                "MaxConcurrentCount": "integer", 
+                "MaxConcurrentPercentage": "integer", 
+                "RegionOrder": {
+                    "_list": "string"
+                }
+            }, 
+            "ParameterOverrides": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "Regions": {
+                "_list": "string"
+            }, 
+            "StackSetName": "string"
+        }, 
+        "CreateStackSet": {
+            "AdministrationRoleARN": "string", 
+            "Capabilities": {
+                "_list": "string"
+            }, 
+            "ClientRequestToken": "string", 
+            "Description": "string", 
+            "ExecutionRoleName": "string", 
+            "Parameters": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "StackSetName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TemplateBody": "string", 
+            "TemplateURL": "string"
+        }, 
+        "DeleteChangeSet": {
+            "ChangeSetName": "string", 
+            "StackName": "string"
+        }, 
+        "DeleteStack": {
+            "ClientRequestToken": "string", 
+            "RetainResources": {
+                "_list": "string"
+            }, 
+            "RoleARN": "string", 
+            "StackName": "string"
+        }, 
+        "DeleteStackInstances": {
+            "Accounts": {
+                "_list": "string"
+            }, 
+            "OperationId": "string", 
+            "OperationPreferences": {
+                "FailureToleranceCount": "integer", 
+                "FailureTolerancePercentage": "integer", 
+                "MaxConcurrentCount": "integer", 
+                "MaxConcurrentPercentage": "integer", 
+                "RegionOrder": {
+                    "_list": "string"
+                }
+            }, 
+            "Regions": {
+                "_list": "string"
+            }, 
+            "RetainStacks": "boolean", 
+            "StackSetName": "string"
+        }, 
+        "DeleteStackSet": {
+            "StackSetName": "string"
+        }, 
+        "ExecuteChangeSet": {
+            "ChangeSetName": "string", 
+            "ClientRequestToken": "string", 
+            "StackName": "string"
+        }, 
+        "SetStackPolicy": {
+            "StackName": "string", 
+            "StackPolicyBody": "string", 
+            "StackPolicyURL": "string"
+        }, 
+        "SignalResource": {
+            "LogicalResourceId": "string", 
+            "StackName": "string", 
+            "Status": "string", 
+            "UniqueId": "string"
+        }, 
+        "StopStackSetOperation": {
+            "OperationId": "string", 
+            "StackSetName": "string"
+        }, 
+        "UpdateStack": {
+            "Capabilities": {
+                "_list": "string"
+            }, 
+            "ClientRequestToken": "string", 
+            "NotificationARNs": {
+                "_list": "string"
+            }, 
+            "Parameters": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "ResourceTypes": {
+                "_list": "string"
+            }, 
+            "RoleARN": "string", 
+            "RollbackConfiguration": {
+                "MonitoringTimeInMinutes": "integer", 
+                "RollbackTriggers": {
+                    "_list": {
+                        "Arn": "string", 
+                        "Type": "string"
+                    }
+                }
+            }, 
+            "StackName": "string", 
+            "StackPolicyBody": "string", 
+            "StackPolicyDuringUpdateBody": "string", 
+            "StackPolicyDuringUpdateURL": "string", 
+            "StackPolicyURL": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TemplateBody": "string", 
+            "TemplateURL": "string", 
+            "UsePreviousTemplate": "boolean"
+        }, 
+        "UpdateStackInstances": {
+            "Accounts": {
+                "_list": "string"
+            }, 
+            "OperationId": "string", 
+            "OperationPreferences": {
+                "FailureToleranceCount": "integer", 
+                "FailureTolerancePercentage": "integer", 
+                "MaxConcurrentCount": "integer", 
+                "MaxConcurrentPercentage": "integer", 
+                "RegionOrder": {
+                    "_list": "string"
+                }
+            }, 
+            "ParameterOverrides": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "Regions": {
+                "_list": "string"
+            }, 
+            "StackSetName": "string"
+        }, 
+        "UpdateStackSet": {
+            "Accounts": {
+                "_list": "string"
+            }, 
+            "AdministrationRoleARN": "string", 
+            "Capabilities": {
+                "_list": "string"
+            }, 
+            "Description": "string", 
+            "ExecutionRoleName": "string", 
+            "OperationId": "string", 
+            "OperationPreferences": {
+                "FailureToleranceCount": "integer", 
+                "FailureTolerancePercentage": "integer", 
+                "MaxConcurrentCount": "integer", 
+                "MaxConcurrentPercentage": "integer", 
+                "RegionOrder": {
+                    "_list": "string"
+                }
+            }, 
+            "Parameters": {
+                "_list": {
+                    "ParameterKey": "string", 
+                    "ParameterValue": "string", 
+                    "ResolvedValue": "string", 
+                    "UsePreviousValue": "boolean"
+                }
+            }, 
+            "Regions": {
+                "_list": "string"
+            }, 
+            "StackSetName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TemplateBody": "string", 
+            "TemplateURL": "string", 
+            "UsePreviousTemplate": "boolean"
+        }, 
+        "UpdateTerminationProtection": {
+            "EnableTerminationProtection": "boolean", 
+            "StackName": "string"
+        }, 
+        "ValidateTemplate": {
+            "TemplateBody": "string", 
+            "TemplateURL": "string"
+        }
+    }
+}

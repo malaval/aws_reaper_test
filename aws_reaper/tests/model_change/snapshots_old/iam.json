@@ -1,0 +1,416 @@
+{
+    "IamActions": [
+        "AddClientIDToOpenIDConnectProvider", 
+        "AddRoleToInstanceProfile", 
+        "AddUserToGroup", 
+        "AttachGroupPolicy", 
+        "AttachRolePolicy", 
+        "AttachUserPolicy", 
+        "ChangePassword", 
+        "CreateAccessKey", 
+        "CreateAccountAlias", 
+        "CreateGroup", 
+        "CreateInstanceProfile", 
+        "CreateLoginProfile", 
+        "CreateOpenIDConnectProvider", 
+        "CreatePolicy", 
+        "CreatePolicyVersion", 
+        "CreateRole", 
+        "CreateSAMLProvider", 
+        "CreateServiceLinkedRole", 
+        "CreateServiceSpecificCredential", 
+        "CreateUser", 
+        "CreateVirtualMFADevice", 
+        "DeactivateMFADevice", 
+        "DeleteAccessKey", 
+        "DeleteAccountAlias", 
+        "DeleteAccountPasswordPolicy", 
+        "DeleteGroup", 
+        "DeleteGroupPolicy", 
+        "DeleteInstanceProfile", 
+        "DeleteLoginProfile", 
+        "DeleteOpenIDConnectProvider", 
+        "DeletePolicy", 
+        "DeletePolicyVersion", 
+        "DeleteRole", 
+        "DeleteRolePermissionsBoundary", 
+        "DeleteRolePolicy", 
+        "DeleteSAMLProvider", 
+        "DeleteSSHPublicKey", 
+        "DeleteServerCertificate", 
+        "DeleteServiceLinkedRole", 
+        "DeleteServiceSpecificCredential", 
+        "DeleteSigningCertificate", 
+        "DeleteUser", 
+        "DeleteUserPermissionsBoundary", 
+        "DeleteUserPolicy", 
+        "DeleteVirtualMFADevice", 
+        "DetachGroupPolicy", 
+        "DetachRolePolicy", 
+        "DetachUserPolicy", 
+        "EnableMFADevice", 
+        "PassRole", 
+        "PutGroupPolicy", 
+        "PutRolePermissionsBoundary", 
+        "PutRolePolicy", 
+        "PutUserPermissionsBoundary", 
+        "PutUserPolicy", 
+        "RemoveClientIDFromOpenIDConnectProvider", 
+        "RemoveRoleFromInstanceProfile", 
+        "RemoveUserFromGroup", 
+        "ResetServiceSpecificCredential", 
+        "ResyncMFADevice", 
+        "SetDefaultPolicyVersion", 
+        "UpdateAccessKey", 
+        "UpdateAccountPasswordPolicy", 
+        "UpdateAssumeRolePolicy", 
+        "UpdateGroup", 
+        "UpdateLoginProfile", 
+        "UpdateOpenIDConnectProviderThumbprint", 
+        "UpdateRole", 
+        "UpdateRoleDescription", 
+        "UpdateSAMLProvider", 
+        "UpdateSSHPublicKey", 
+        "UpdateServerCertificate", 
+        "UpdateServiceSpecificCredential", 
+        "UpdateSigningCertificate", 
+        "UpdateUser", 
+        "UploadSSHPublicKey", 
+        "UploadServerCertificate", 
+        "UploadSigningCertificate"
+    ], 
+    "OperationInputs": {
+        "AddClientIDToOpenIDConnectProvider": {
+            "ClientID": "string", 
+            "OpenIDConnectProviderArn": "string"
+        }, 
+        "AddRoleToInstanceProfile": {
+            "InstanceProfileName": "string", 
+            "RoleName": "string"
+        }, 
+        "AddUserToGroup": {
+            "GroupName": "string", 
+            "UserName": "string"
+        }, 
+        "AttachGroupPolicy": {
+            "GroupName": "string", 
+            "PolicyArn": "string"
+        }, 
+        "AttachRolePolicy": {
+            "PolicyArn": "string", 
+            "RoleName": "string"
+        }, 
+        "AttachUserPolicy": {
+            "PolicyArn": "string", 
+            "UserName": "string"
+        }, 
+        "ChangePassword": {
+            "NewPassword": "string", 
+            "OldPassword": "string"
+        }, 
+        "CreateAccessKey": {
+            "UserName": "string"
+        }, 
+        "CreateAccountAlias": {
+            "AccountAlias": "string"
+        }, 
+        "CreateGroup": {
+            "GroupName": "string", 
+            "Path": "string"
+        }, 
+        "CreateInstanceProfile": {
+            "InstanceProfileName": "string", 
+            "Path": "string"
+        }, 
+        "CreateLoginProfile": {
+            "Password": "string", 
+            "PasswordResetRequired": "boolean", 
+            "UserName": "string"
+        }, 
+        "CreateOpenIDConnectProvider": {
+            "ClientIDList": {
+                "_list": "string"
+            }, 
+            "ThumbprintList": {
+                "_list": "string"
+            }, 
+            "Url": "string"
+        }, 
+        "CreatePolicy": {
+            "Description": "string", 
+            "Path": "string", 
+            "PolicyDocument": "string", 
+            "PolicyName": "string"
+        }, 
+        "CreatePolicyVersion": {
+            "PolicyArn": "string", 
+            "PolicyDocument": "string", 
+            "SetAsDefault": "boolean"
+        }, 
+        "CreateRole": {
+            "AssumeRolePolicyDocument": "string", 
+            "Description": "string", 
+            "MaxSessionDuration": "integer", 
+            "Path": "string", 
+            "PermissionsBoundary": "string", 
+            "RoleName": "string"
+        }, 
+        "CreateSAMLProvider": {
+            "Name": "string", 
+            "SAMLMetadataDocument": "string"
+        }, 
+        "CreateServiceLinkedRole": {
+            "AWSServiceName": "string", 
+            "CustomSuffix": "string", 
+            "Description": "string"
+        }, 
+        "CreateServiceSpecificCredential": {
+            "ServiceName": "string", 
+            "UserName": "string"
+        }, 
+        "CreateUser": {
+            "Path": "string", 
+            "PermissionsBoundary": "string", 
+            "UserName": "string"
+        }, 
+        "CreateVirtualMFADevice": {
+            "Path": "string", 
+            "VirtualMFADeviceName": "string"
+        }, 
+        "DeactivateMFADevice": {
+            "SerialNumber": "string", 
+            "UserName": "string"
+        }, 
+        "DeleteAccessKey": {
+            "AccessKeyId": "string", 
+            "UserName": "string"
+        }, 
+        "DeleteAccountAlias": {
+            "AccountAlias": "string"
+        }, 
+        "DeleteAccountPasswordPolicy": {}, 
+        "DeleteGroup": {
+            "GroupName": "string"
+        }, 
+        "DeleteGroupPolicy": {
+            "GroupName": "string", 
+            "PolicyName": "string"
+        }, 
+        "DeleteInstanceProfile": {
+            "InstanceProfileName": "string"
+        }, 
+        "DeleteLoginProfile": {
+            "UserName": "string"
+        }, 
+        "DeleteOpenIDConnectProvider": {
+            "OpenIDConnectProviderArn": "string"
+        }, 
+        "DeletePolicy": {
+            "PolicyArn": "string"
+        }, 
+        "DeletePolicyVersion": {
+            "PolicyArn": "string", 
+            "VersionId": "string"
+        }, 
+        "DeleteRole": {
+            "RoleName": "string"
+        }, 
+        "DeleteRolePermissionsBoundary": {
+            "RoleName": "string"
+        }, 
+        "DeleteRolePolicy": {
+            "PolicyName": "string", 
+            "RoleName": "string"
+        }, 
+        "DeleteSAMLProvider": {
+            "SAMLProviderArn": "string"
+        }, 
+        "DeleteSSHPublicKey": {
+            "SSHPublicKeyId": "string", 
+            "UserName": "string"
+        }, 
+        "DeleteServerCertificate": {
+            "ServerCertificateName": "string"
+        }, 
+        "DeleteServiceLinkedRole": {
+            "RoleName": "string"
+        }, 
+        "DeleteServiceSpecificCredential": {
+            "ServiceSpecificCredentialId": "string", 
+            "UserName": "string"
+        }, 
+        "DeleteSigningCertificate": {
+            "CertificateId": "string", 
+            "UserName": "string"
+        }, 
+        "DeleteUser": {
+            "UserName": "string"
+        }, 
+        "DeleteUserPermissionsBoundary": {
+            "UserName": "string"
+        }, 
+        "DeleteUserPolicy": {
+            "PolicyName": "string", 
+            "UserName": "string"
+        }, 
+        "DeleteVirtualMFADevice": {
+            "SerialNumber": "string"
+        }, 
+        "DetachGroupPolicy": {
+            "GroupName": "string", 
+            "PolicyArn": "string"
+        }, 
+        "DetachRolePolicy": {
+            "PolicyArn": "string", 
+            "RoleName": "string"
+        }, 
+        "DetachUserPolicy": {
+            "PolicyArn": "string", 
+            "UserName": "string"
+        }, 
+        "EnableMFADevice": {
+            "AuthenticationCode1": "string", 
+            "AuthenticationCode2": "string", 
+            "SerialNumber": "string", 
+            "UserName": "string"
+        }, 
+        "PutGroupPolicy": {
+            "GroupName": "string", 
+            "PolicyDocument": "string", 
+            "PolicyName": "string"
+        }, 
+        "PutRolePermissionsBoundary": {
+            "PermissionsBoundary": "string", 
+            "RoleName": "string"
+        }, 
+        "PutRolePolicy": {
+            "PolicyDocument": "string", 
+            "PolicyName": "string", 
+            "RoleName": "string"
+        }, 
+        "PutUserPermissionsBoundary": {
+            "PermissionsBoundary": "string", 
+            "UserName": "string"
+        }, 
+        "PutUserPolicy": {
+            "PolicyDocument": "string", 
+            "PolicyName": "string", 
+            "UserName": "string"
+        }, 
+        "RemoveClientIDFromOpenIDConnectProvider": {
+            "ClientID": "string", 
+            "OpenIDConnectProviderArn": "string"
+        }, 
+        "RemoveRoleFromInstanceProfile": {
+            "InstanceProfileName": "string", 
+            "RoleName": "string"
+        }, 
+        "RemoveUserFromGroup": {
+            "GroupName": "string", 
+            "UserName": "string"
+        }, 
+        "ResetServiceSpecificCredential": {
+            "ServiceSpecificCredentialId": "string", 
+            "UserName": "string"
+        }, 
+        "ResyncMFADevice": {
+            "AuthenticationCode1": "string", 
+            "AuthenticationCode2": "string", 
+            "SerialNumber": "string", 
+            "UserName": "string"
+        }, 
+        "SetDefaultPolicyVersion": {
+            "PolicyArn": "string", 
+            "VersionId": "string"
+        }, 
+        "UpdateAccessKey": {
+            "AccessKeyId": "string", 
+            "Status": "string", 
+            "UserName": "string"
+        }, 
+        "UpdateAccountPasswordPolicy": {
+            "AllowUsersToChangePassword": "boolean", 
+            "HardExpiry": "boolean", 
+            "MaxPasswordAge": "integer", 
+            "MinimumPasswordLength": "integer", 
+            "PasswordReusePrevention": "integer", 
+            "RequireLowercaseCharacters": "boolean", 
+            "RequireNumbers": "boolean", 
+            "RequireSymbols": "boolean", 
+            "RequireUppercaseCharacters": "boolean"
+        }, 
+        "UpdateAssumeRolePolicy": {
+            "PolicyDocument": "string", 
+            "RoleName": "string"
+        }, 
+        "UpdateGroup": {
+            "GroupName": "string", 
+            "NewGroupName": "string", 
+            "NewPath": "string"
+        }, 
+        "UpdateLoginProfile": {
+            "Password": "string", 
+            "PasswordResetRequired": "boolean", 
+            "UserName": "string"
+        }, 
+        "UpdateOpenIDConnectProviderThumbprint": {
+            "OpenIDConnectProviderArn": "string", 
+            "ThumbprintList": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateRole": {
+            "Description": "string", 
+            "MaxSessionDuration": "integer", 
+            "RoleName": "string"
+        }, 
+        "UpdateRoleDescription": {
+            "Description": "string", 
+            "RoleName": "string"
+        }, 
+        "UpdateSAMLProvider": {
+            "SAMLMetadataDocument": "string", 
+            "SAMLProviderArn": "string"
+        }, 
+        "UpdateSSHPublicKey": {
+            "SSHPublicKeyId": "string", 
+            "Status": "string", 
+            "UserName": "string"
+        }, 
+        "UpdateServerCertificate": {
+            "NewPath": "string", 
+            "NewServerCertificateName": "string", 
+            "ServerCertificateName": "string"
+        }, 
+        "UpdateServiceSpecificCredential": {
+            "ServiceSpecificCredentialId": "string", 
+            "Status": "string", 
+            "UserName": "string"
+        }, 
+        "UpdateSigningCertificate": {
+            "CertificateId": "string", 
+            "Status": "string", 
+            "UserName": "string"
+        }, 
+        "UpdateUser": {
+            "NewPath": "string", 
+            "NewUserName": "string", 
+            "UserName": "string"
+        }, 
+        "UploadSSHPublicKey": {
+            "SSHPublicKeyBody": "string", 
+            "UserName": "string"
+        }, 
+        "UploadServerCertificate": {
+            "CertificateBody": "string", 
+            "CertificateChain": "string", 
+            "Path": "string", 
+            "PrivateKey": "string", 
+            "ServerCertificateName": "string"
+        }, 
+        "UploadSigningCertificate": {
+            "CertificateBody": "string", 
+            "UserName": "string"
+        }
+    }
+}

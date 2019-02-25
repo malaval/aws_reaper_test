@@ -1,0 +1,29 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "PostContent": {
+            "accept": "string", 
+            "botAlias": "string", 
+            "botName": "string", 
+            "contentType": "string", 
+            "inputStream": "blob", 
+            "requestAttributes": "string", 
+            "sessionAttributes": "string", 
+            "userId": "string"
+        }, 
+        "PostText": {
+            "botAlias": "string", 
+            "botName": "string", 
+            "inputText": "string", 
+            "requestAttributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "sessionAttributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "userId": "string"
+        }
+    }
+}

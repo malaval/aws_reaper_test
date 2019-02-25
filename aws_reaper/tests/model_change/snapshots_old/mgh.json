@@ -1,0 +1,87 @@
+{
+    "IamActions": [
+        "AssociateCreatedArtifact", 
+        "AssociateDiscoveredResource", 
+        "CreateProgressUpdateStream", 
+        "DeleteProgressUpdateStream", 
+        "DisassociateCreatedArtifact", 
+        "DisassociateDiscoveredResource", 
+        "ImportMigrationTask", 
+        "NotifyApplicationState", 
+        "NotifyMigrationTaskState", 
+        "PutResourceAttributes"
+    ], 
+    "OperationInputs": {
+        "AssociateCreatedArtifact": {
+            "CreatedArtifact": {
+                "Description": "string", 
+                "Name": "string"
+            }, 
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "ProgressUpdateStream": "string"
+        }, 
+        "AssociateDiscoveredResource": {
+            "DiscoveredResource": {
+                "ConfigurationId": "string", 
+                "Description": "string"
+            }, 
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "ProgressUpdateStream": "string"
+        }, 
+        "CreateProgressUpdateStream": {
+            "DryRun": "boolean", 
+            "ProgressUpdateStreamName": "string"
+        }, 
+        "DeleteProgressUpdateStream": {
+            "DryRun": "boolean", 
+            "ProgressUpdateStreamName": "string"
+        }, 
+        "DisassociateCreatedArtifact": {
+            "CreatedArtifactName": "string", 
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "ProgressUpdateStream": "string"
+        }, 
+        "DisassociateDiscoveredResource": {
+            "ConfigurationId": "string", 
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "ProgressUpdateStream": "string"
+        }, 
+        "ImportMigrationTask": {
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "ProgressUpdateStream": "string"
+        }, 
+        "NotifyApplicationState": {
+            "ApplicationId": "string", 
+            "DryRun": "boolean", 
+            "Status": "string"
+        }, 
+        "NotifyMigrationTaskState": {
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "NextUpdateSeconds": "integer", 
+            "ProgressUpdateStream": "string", 
+            "Task": {
+                "ProgressPercent": "integer", 
+                "Status": "string", 
+                "StatusDetail": "string"
+            }, 
+            "UpdateDateTime": "timestamp"
+        }, 
+        "PutResourceAttributes": {
+            "DryRun": "boolean", 
+            "MigrationTaskName": "string", 
+            "ProgressUpdateStream": "string", 
+            "ResourceAttributeList": {
+                "_list": {
+                    "Type": "string", 
+                    "Value": "string"
+                }
+            }
+        }
+    }
+}

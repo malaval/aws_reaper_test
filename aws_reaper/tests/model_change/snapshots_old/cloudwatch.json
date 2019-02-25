@@ -1,0 +1,100 @@
+{
+    "IamActions": [
+        "DeleteAlarms", 
+        "DeleteDashboards", 
+        "DisableAlarmActions", 
+        "EnableAlarmActions", 
+        "PutDashboard", 
+        "PutMetricAlarm", 
+        "PutMetricData", 
+        "SetAlarmState"
+    ], 
+    "OperationInputs": {
+        "DeleteAlarms": {
+            "AlarmNames": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteDashboards": {
+            "DashboardNames": {
+                "_list": "string"
+            }
+        }, 
+        "DisableAlarmActions": {
+            "AlarmNames": {
+                "_list": "string"
+            }
+        }, 
+        "EnableAlarmActions": {
+            "AlarmNames": {
+                "_list": "string"
+            }
+        }, 
+        "PutDashboard": {
+            "DashboardBody": "string", 
+            "DashboardName": "string"
+        }, 
+        "PutMetricAlarm": {
+            "ActionsEnabled": "boolean", 
+            "AlarmActions": {
+                "_list": "string"
+            }, 
+            "AlarmDescription": "string", 
+            "AlarmName": "string", 
+            "ComparisonOperator": "string", 
+            "DatapointsToAlarm": "integer", 
+            "Dimensions": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "EvaluateLowSampleCountPercentile": "string", 
+            "EvaluationPeriods": "integer", 
+            "ExtendedStatistic": "string", 
+            "InsufficientDataActions": {
+                "_list": "string"
+            }, 
+            "MetricName": "string", 
+            "Namespace": "string", 
+            "OKActions": {
+                "_list": "string"
+            }, 
+            "Period": "integer", 
+            "Statistic": "string", 
+            "Threshold": "double", 
+            "TreatMissingData": "string", 
+            "Unit": "string"
+        }, 
+        "PutMetricData": {
+            "MetricData": {
+                "_list": {
+                    "Dimensions": {
+                        "_list": {
+                            "Name": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "MetricName": "string", 
+                    "StatisticValues": {
+                        "Maximum": "double", 
+                        "Minimum": "double", 
+                        "SampleCount": "double", 
+                        "Sum": "double"
+                    }, 
+                    "StorageResolution": "integer", 
+                    "Timestamp": "timestamp", 
+                    "Unit": "string", 
+                    "Value": "double"
+                }
+            }, 
+            "Namespace": "string"
+        }, 
+        "SetAlarmState": {
+            "AlarmName": "string", 
+            "StateReason": "string", 
+            "StateReasonData": "string", 
+            "StateValue": "string"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "IamActions": [
+        "DeleteReportDefinition", 
+        "PutReportDefinition"
+    ], 
+    "OperationInputs": {
+        "DeleteReportDefinition": {
+            "ReportName": "string"
+        }, 
+        "PutReportDefinition": {
+            "ReportDefinition": {
+                "AdditionalArtifacts": {
+                    "_list": "string"
+                }, 
+                "AdditionalSchemaElements": {
+                    "_list": "string"
+                }, 
+                "Compression": "string", 
+                "Format": "string", 
+                "ReportName": "string", 
+                "S3Bucket": "string", 
+                "S3Prefix": "string", 
+                "S3Region": "string", 
+                "TimeUnit": "string"
+            }
+        }
+    }
+}

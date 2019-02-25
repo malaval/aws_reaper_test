@@ -1,0 +1,232 @@
+{
+    "IamActions": [
+        "ModifyBudget"
+    ], 
+    "OperationInputs": {
+        "CreateBudget": {
+            "AccountId": "string", 
+            "Budget": {
+                "BudgetLimit": {
+                    "Amount": "string", 
+                    "Unit": "string"
+                }, 
+                "BudgetName": "string", 
+                "BudgetType": "string", 
+                "CalculatedSpend": {
+                    "ActualSpend": {
+                        "Amount": "string", 
+                        "Unit": "string"
+                    }, 
+                    "ForecastedSpend": {
+                        "Amount": "string", 
+                        "Unit": "string"
+                    }
+                }, 
+                "CostFilters": {
+                    "_key": "string", 
+                    "_value": {
+                        "_list": "string"
+                    }
+                }, 
+                "CostTypes": {
+                    "IncludeCredit": "boolean", 
+                    "IncludeDiscount": "boolean", 
+                    "IncludeOtherSubscription": "boolean", 
+                    "IncludeRecurring": "boolean", 
+                    "IncludeRefund": "boolean", 
+                    "IncludeSubscription": "boolean", 
+                    "IncludeSupport": "boolean", 
+                    "IncludeTax": "boolean", 
+                    "IncludeUpfront": "boolean", 
+                    "UseAmortized": "boolean", 
+                    "UseBlended": "boolean"
+                }, 
+                "TimePeriod": {
+                    "End": "timestamp", 
+                    "Start": "timestamp"
+                }, 
+                "TimeUnit": "string"
+            }, 
+            "NotificationsWithSubscribers": {
+                "_list": {
+                    "Notification": {
+                        "ComparisonOperator": "string", 
+                        "NotificationType": "string", 
+                        "Threshold": "double", 
+                        "ThresholdType": "string"
+                    }, 
+                    "Subscribers": {
+                        "_list": {
+                            "Address": "string", 
+                            "SubscriptionType": "string"
+                        }
+                    }
+                }
+            }
+        }, 
+        "CreateNotification": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "Notification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }, 
+            "Subscribers": {
+                "_list": {
+                    "Address": "string", 
+                    "SubscriptionType": "string"
+                }
+            }
+        }, 
+        "CreateSubscriber": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "Notification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }, 
+            "Subscriber": {
+                "Address": "string", 
+                "SubscriptionType": "string"
+            }
+        }, 
+        "DeleteBudget": {
+            "AccountId": "string", 
+            "BudgetName": "string"
+        }, 
+        "DeleteNotification": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "Notification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }
+        }, 
+        "DeleteSubscriber": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "Notification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }, 
+            "Subscriber": {
+                "Address": "string", 
+                "SubscriptionType": "string"
+            }
+        }, 
+        "DescribeBudget": {
+            "AccountId": "string", 
+            "BudgetName": "string"
+        }, 
+        "DescribeBudgets": {
+            "AccountId": "string", 
+            "MaxResults": "integer", 
+            "NextToken": "string"
+        }, 
+        "DescribeNotificationsForBudget": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "MaxResults": "integer", 
+            "NextToken": "string"
+        }, 
+        "DescribeSubscribersForNotification": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "MaxResults": "integer", 
+            "NextToken": "string", 
+            "Notification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }
+        }, 
+        "UpdateBudget": {
+            "AccountId": "string", 
+            "NewBudget": {
+                "BudgetLimit": {
+                    "Amount": "string", 
+                    "Unit": "string"
+                }, 
+                "BudgetName": "string", 
+                "BudgetType": "string", 
+                "CalculatedSpend": {
+                    "ActualSpend": {
+                        "Amount": "string", 
+                        "Unit": "string"
+                    }, 
+                    "ForecastedSpend": {
+                        "Amount": "string", 
+                        "Unit": "string"
+                    }
+                }, 
+                "CostFilters": {
+                    "_key": "string", 
+                    "_value": {
+                        "_list": "string"
+                    }
+                }, 
+                "CostTypes": {
+                    "IncludeCredit": "boolean", 
+                    "IncludeDiscount": "boolean", 
+                    "IncludeOtherSubscription": "boolean", 
+                    "IncludeRecurring": "boolean", 
+                    "IncludeRefund": "boolean", 
+                    "IncludeSubscription": "boolean", 
+                    "IncludeSupport": "boolean", 
+                    "IncludeTax": "boolean", 
+                    "IncludeUpfront": "boolean", 
+                    "UseAmortized": "boolean", 
+                    "UseBlended": "boolean"
+                }, 
+                "TimePeriod": {
+                    "End": "timestamp", 
+                    "Start": "timestamp"
+                }, 
+                "TimeUnit": "string"
+            }
+        }, 
+        "UpdateNotification": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "NewNotification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }, 
+            "OldNotification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }
+        }, 
+        "UpdateSubscriber": {
+            "AccountId": "string", 
+            "BudgetName": "string", 
+            "NewSubscriber": {
+                "Address": "string", 
+                "SubscriptionType": "string"
+            }, 
+            "Notification": {
+                "ComparisonOperator": "string", 
+                "NotificationType": "string", 
+                "Threshold": "double", 
+                "ThresholdType": "string"
+            }, 
+            "OldSubscriber": {
+                "Address": "string", 
+                "SubscriptionType": "string"
+            }
+        }
+    }
+}

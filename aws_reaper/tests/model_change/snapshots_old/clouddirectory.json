@@ -1,0 +1,615 @@
+{
+    "IamActions": [
+        "AddFacetToObject", 
+        "ApplySchema", 
+        "AttachObject", 
+        "AttachPolicy", 
+        "AttachToIndex", 
+        "AttachTypedLink", 
+        "BatchWrite", 
+        "CreateDirectory", 
+        "CreateFacet", 
+        "CreateIndex", 
+        "CreateObject", 
+        "CreateSchema", 
+        "CreateTypedLinkFacet", 
+        "DeleteDirectory", 
+        "DeleteFacet", 
+        "DeleteObject", 
+        "DeleteSchema", 
+        "DeleteTypedLinkFacet", 
+        "DetachFromIndex", 
+        "DetachObject", 
+        "DetachPolicy", 
+        "DetachTypedLink", 
+        "DisableDirectory", 
+        "EnableDirectory", 
+        "PublishSchema", 
+        "PutSchemaFromJson", 
+        "RemoveFacetFromObject", 
+        "UpdateFacet", 
+        "UpdateLinkAttributes", 
+        "UpdateObjectAttributes", 
+        "UpdateSchema", 
+        "UpdateTypedLinkFacet"
+    ], 
+    "OperationInputs": {
+        "AddFacetToObject": {
+            "DirectoryArn": "string", 
+            "ObjectAttributeList": {
+                "_list": {
+                    "Key": {
+                        "FacetName": "string", 
+                        "Name": "string", 
+                        "SchemaArn": "string"
+                    }, 
+                    "Value": {
+                        "BinaryValue": "blob", 
+                        "BooleanValue": "boolean", 
+                        "DatetimeValue": "timestamp", 
+                        "NumberValue": "string", 
+                        "StringValue": "string"
+                    }
+                }
+            }, 
+            "ObjectReference": {
+                "Selector": "string"
+            }, 
+            "SchemaFacet": {
+                "FacetName": "string", 
+                "SchemaArn": "string"
+            }
+        }, 
+        "ApplySchema": {
+            "DirectoryArn": "string", 
+            "PublishedSchemaArn": "string"
+        }, 
+        "AttachObject": {
+            "ChildReference": {
+                "Selector": "string"
+            }, 
+            "DirectoryArn": "string", 
+            "LinkName": "string", 
+            "ParentReference": {
+                "Selector": "string"
+            }
+        }, 
+        "AttachPolicy": {
+            "DirectoryArn": "string", 
+            "ObjectReference": {
+                "Selector": "string"
+            }, 
+            "PolicyReference": {
+                "Selector": "string"
+            }
+        }, 
+        "AttachToIndex": {
+            "DirectoryArn": "string", 
+            "IndexReference": {
+                "Selector": "string"
+            }, 
+            "TargetReference": {
+                "Selector": "string"
+            }
+        }, 
+        "AttachTypedLink": {
+            "Attributes": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "Value": {
+                        "BinaryValue": "blob", 
+                        "BooleanValue": "boolean", 
+                        "DatetimeValue": "timestamp", 
+                        "NumberValue": "string", 
+                        "StringValue": "string"
+                    }
+                }
+            }, 
+            "DirectoryArn": "string", 
+            "SourceObjectReference": {
+                "Selector": "string"
+            }, 
+            "TargetObjectReference": {
+                "Selector": "string"
+            }, 
+            "TypedLinkFacet": {
+                "SchemaArn": "string", 
+                "TypedLinkName": "string"
+            }
+        }, 
+        "BatchWrite": {
+            "DirectoryArn": "string", 
+            "Operations": {
+                "_list": {
+                    "AddFacetToObject": {
+                        "ObjectAttributeList": {
+                            "_list": "structure"
+                        }, 
+                        "ObjectReference": {
+                            "Selector": "string"
+                        }, 
+                        "SchemaFacet": {
+                            "FacetName": "string", 
+                            "SchemaArn": "string"
+                        }
+                    }, 
+                    "AttachObject": {
+                        "ChildReference": {
+                            "Selector": "string"
+                        }, 
+                        "LinkName": "string", 
+                        "ParentReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "AttachPolicy": {
+                        "ObjectReference": {
+                            "Selector": "string"
+                        }, 
+                        "PolicyReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "AttachToIndex": {
+                        "IndexReference": {
+                            "Selector": "string"
+                        }, 
+                        "TargetReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "AttachTypedLink": {
+                        "Attributes": {
+                            "_list": "structure"
+                        }, 
+                        "SourceObjectReference": {
+                            "Selector": "string"
+                        }, 
+                        "TargetObjectReference": {
+                            "Selector": "string"
+                        }, 
+                        "TypedLinkFacet": {
+                            "SchemaArn": "string", 
+                            "TypedLinkName": "string"
+                        }
+                    }, 
+                    "CreateIndex": {
+                        "BatchReferenceName": "string", 
+                        "IsUnique": "boolean", 
+                        "LinkName": "string", 
+                        "OrderedIndexedAttributeList": {
+                            "_list": "structure"
+                        }, 
+                        "ParentReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "CreateObject": {
+                        "BatchReferenceName": "string", 
+                        "LinkName": "string", 
+                        "ObjectAttributeList": {
+                            "_list": "structure"
+                        }, 
+                        "ParentReference": {
+                            "Selector": "string"
+                        }, 
+                        "SchemaFacet": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "DeleteObject": {
+                        "ObjectReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "DetachFromIndex": {
+                        "IndexReference": {
+                            "Selector": "string"
+                        }, 
+                        "TargetReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "DetachObject": {
+                        "BatchReferenceName": "string", 
+                        "LinkName": "string", 
+                        "ParentReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "DetachPolicy": {
+                        "ObjectReference": {
+                            "Selector": "string"
+                        }, 
+                        "PolicyReference": {
+                            "Selector": "string"
+                        }
+                    }, 
+                    "DetachTypedLink": {
+                        "TypedLinkSpecifier": {
+                            "IdentityAttributeValues": "list", 
+                            "SourceObjectReference": "structure", 
+                            "TargetObjectReference": "structure", 
+                            "TypedLinkFacet": "structure"
+                        }
+                    }, 
+                    "RemoveFacetFromObject": {
+                        "ObjectReference": {
+                            "Selector": "string"
+                        }, 
+                        "SchemaFacet": {
+                            "FacetName": "string", 
+                            "SchemaArn": "string"
+                        }
+                    }, 
+                    "UpdateLinkAttributes": {
+                        "AttributeUpdates": {
+                            "_list": "structure"
+                        }, 
+                        "TypedLinkSpecifier": {
+                            "IdentityAttributeValues": "list", 
+                            "SourceObjectReference": "structure", 
+                            "TargetObjectReference": "structure", 
+                            "TypedLinkFacet": "structure"
+                        }
+                    }, 
+                    "UpdateObjectAttributes": {
+                        "AttributeUpdates": {
+                            "_list": "structure"
+                        }, 
+                        "ObjectReference": {
+                            "Selector": "string"
+                        }
+                    }
+                }
+            }
+        }, 
+        "CreateDirectory": {
+            "Name": "string", 
+            "SchemaArn": "string"
+        }, 
+        "CreateFacet": {
+            "Attributes": {
+                "_list": {
+                    "AttributeDefinition": {
+                        "DefaultValue": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }, 
+                        "IsImmutable": "boolean", 
+                        "Rules": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "Type": "string"
+                    }, 
+                    "AttributeReference": {
+                        "TargetAttributeName": "string", 
+                        "TargetFacetName": "string"
+                    }, 
+                    "Name": "string", 
+                    "RequiredBehavior": "string"
+                }
+            }, 
+            "FacetStyle": "string", 
+            "Name": "string", 
+            "ObjectType": "string", 
+            "SchemaArn": "string"
+        }, 
+        "CreateIndex": {
+            "DirectoryArn": "string", 
+            "IsUnique": "boolean", 
+            "LinkName": "string", 
+            "OrderedIndexedAttributeList": {
+                "_list": {
+                    "FacetName": "string", 
+                    "Name": "string", 
+                    "SchemaArn": "string"
+                }
+            }, 
+            "ParentReference": {
+                "Selector": "string"
+            }
+        }, 
+        "CreateObject": {
+            "DirectoryArn": "string", 
+            "LinkName": "string", 
+            "ObjectAttributeList": {
+                "_list": {
+                    "Key": {
+                        "FacetName": "string", 
+                        "Name": "string", 
+                        "SchemaArn": "string"
+                    }, 
+                    "Value": {
+                        "BinaryValue": "blob", 
+                        "BooleanValue": "boolean", 
+                        "DatetimeValue": "timestamp", 
+                        "NumberValue": "string", 
+                        "StringValue": "string"
+                    }
+                }
+            }, 
+            "ParentReference": {
+                "Selector": "string"
+            }, 
+            "SchemaFacets": {
+                "_list": {
+                    "FacetName": "string", 
+                    "SchemaArn": "string"
+                }
+            }
+        }, 
+        "CreateSchema": {
+            "Name": "string"
+        }, 
+        "CreateTypedLinkFacet": {
+            "Facet": {
+                "Attributes": {
+                    "_list": {
+                        "DefaultValue": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }, 
+                        "IsImmutable": "boolean", 
+                        "Name": "string", 
+                        "RequiredBehavior": "string", 
+                        "Rules": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "Type": "string"
+                    }
+                }, 
+                "IdentityAttributeOrder": {
+                    "_list": "string"
+                }, 
+                "Name": "string"
+            }, 
+            "SchemaArn": "string"
+        }, 
+        "DeleteDirectory": {
+            "DirectoryArn": "string"
+        }, 
+        "DeleteFacet": {
+            "Name": "string", 
+            "SchemaArn": "string"
+        }, 
+        "DeleteObject": {
+            "DirectoryArn": "string", 
+            "ObjectReference": {
+                "Selector": "string"
+            }
+        }, 
+        "DeleteSchema": {
+            "SchemaArn": "string"
+        }, 
+        "DeleteTypedLinkFacet": {
+            "Name": "string", 
+            "SchemaArn": "string"
+        }, 
+        "DetachFromIndex": {
+            "DirectoryArn": "string", 
+            "IndexReference": {
+                "Selector": "string"
+            }, 
+            "TargetReference": {
+                "Selector": "string"
+            }
+        }, 
+        "DetachObject": {
+            "DirectoryArn": "string", 
+            "LinkName": "string", 
+            "ParentReference": {
+                "Selector": "string"
+            }
+        }, 
+        "DetachPolicy": {
+            "DirectoryArn": "string", 
+            "ObjectReference": {
+                "Selector": "string"
+            }, 
+            "PolicyReference": {
+                "Selector": "string"
+            }
+        }, 
+        "DetachTypedLink": {
+            "DirectoryArn": "string", 
+            "TypedLinkSpecifier": {
+                "IdentityAttributeValues": {
+                    "_list": {
+                        "AttributeName": "string", 
+                        "Value": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }
+                    }
+                }, 
+                "SourceObjectReference": {
+                    "Selector": "string"
+                }, 
+                "TargetObjectReference": {
+                    "Selector": "string"
+                }, 
+                "TypedLinkFacet": {
+                    "SchemaArn": "string", 
+                    "TypedLinkName": "string"
+                }
+            }
+        }, 
+        "DisableDirectory": {
+            "DirectoryArn": "string"
+        }, 
+        "EnableDirectory": {
+            "DirectoryArn": "string"
+        }, 
+        "PublishSchema": {
+            "DevelopmentSchemaArn": "string", 
+            "MinorVersion": "string", 
+            "Name": "string", 
+            "Version": "string"
+        }, 
+        "PutSchemaFromJson": {
+            "Document": "string", 
+            "SchemaArn": "string"
+        }, 
+        "RemoveFacetFromObject": {
+            "DirectoryArn": "string", 
+            "ObjectReference": {
+                "Selector": "string"
+            }, 
+            "SchemaFacet": {
+                "FacetName": "string", 
+                "SchemaArn": "string"
+            }
+        }, 
+        "UpdateFacet": {
+            "AttributeUpdates": {
+                "_list": {
+                    "Action": "string", 
+                    "Attribute": {
+                        "AttributeDefinition": {
+                            "DefaultValue": "structure", 
+                            "IsImmutable": "boolean", 
+                            "Rules": "map", 
+                            "Type": "string"
+                        }, 
+                        "AttributeReference": {
+                            "TargetAttributeName": "string", 
+                            "TargetFacetName": "string"
+                        }, 
+                        "Name": "string", 
+                        "RequiredBehavior": "string"
+                    }
+                }
+            }, 
+            "Name": "string", 
+            "ObjectType": "string", 
+            "SchemaArn": "string"
+        }, 
+        "UpdateLinkAttributes": {
+            "AttributeUpdates": {
+                "_list": {
+                    "AttributeAction": {
+                        "AttributeActionType": "string", 
+                        "AttributeUpdateValue": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }
+                    }, 
+                    "AttributeKey": {
+                        "FacetName": "string", 
+                        "Name": "string", 
+                        "SchemaArn": "string"
+                    }
+                }
+            }, 
+            "DirectoryArn": "string", 
+            "TypedLinkSpecifier": {
+                "IdentityAttributeValues": {
+                    "_list": {
+                        "AttributeName": "string", 
+                        "Value": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }
+                    }
+                }, 
+                "SourceObjectReference": {
+                    "Selector": "string"
+                }, 
+                "TargetObjectReference": {
+                    "Selector": "string"
+                }, 
+                "TypedLinkFacet": {
+                    "SchemaArn": "string", 
+                    "TypedLinkName": "string"
+                }
+            }
+        }, 
+        "UpdateObjectAttributes": {
+            "AttributeUpdates": {
+                "_list": {
+                    "ObjectAttributeAction": {
+                        "ObjectAttributeActionType": "string", 
+                        "ObjectAttributeUpdateValue": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }
+                    }, 
+                    "ObjectAttributeKey": {
+                        "FacetName": "string", 
+                        "Name": "string", 
+                        "SchemaArn": "string"
+                    }
+                }
+            }, 
+            "DirectoryArn": "string", 
+            "ObjectReference": {
+                "Selector": "string"
+            }
+        }, 
+        "UpdateSchema": {
+            "Name": "string", 
+            "SchemaArn": "string"
+        }, 
+        "UpdateTypedLinkFacet": {
+            "AttributeUpdates": {
+                "_list": {
+                    "Action": "string", 
+                    "Attribute": {
+                        "DefaultValue": {
+                            "BinaryValue": "blob", 
+                            "BooleanValue": "boolean", 
+                            "DatetimeValue": "timestamp", 
+                            "NumberValue": "string", 
+                            "StringValue": "string"
+                        }, 
+                        "IsImmutable": "boolean", 
+                        "Name": "string", 
+                        "RequiredBehavior": "string", 
+                        "Rules": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "Type": "string"
+                    }
+                }
+            }, 
+            "IdentityAttributeOrder": {
+                "_list": "string"
+            }, 
+            "Name": "string", 
+            "SchemaArn": "string"
+        }, 
+        "UpgradeAppliedSchema": {
+            "DirectoryArn": "string", 
+            "DryRun": "boolean", 
+            "PublishedSchemaArn": "string"
+        }, 
+        "UpgradePublishedSchema": {
+            "DevelopmentSchemaArn": "string", 
+            "DryRun": "boolean", 
+            "MinorVersion": "string", 
+            "PublishedSchemaArn": "string"
+        }
+    }
+}

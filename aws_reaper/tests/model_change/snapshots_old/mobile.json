@@ -1,0 +1,29 @@
+{
+    "IamActions": [
+        "CreateProject", 
+        "CreateServiceRole", 
+        "DeleteProject", 
+        "DeleteProjectSnapshot", 
+        "DeployToStage", 
+        "GenerateProjectParameters", 
+        "ImportProject", 
+        "InstallBundle", 
+        "SynchronizeProject", 
+        "UpdateProject"
+    ], 
+    "OperationInputs": {
+        "CreateProject": {
+            "contents": "blob", 
+            "name": "string", 
+            "region": "string", 
+            "snapshotId": "string"
+        }, 
+        "DeleteProject": {
+            "projectId": "string"
+        }, 
+        "UpdateProject": {
+            "contents": "blob", 
+            "projectId": "string"
+        }
+    }
+}

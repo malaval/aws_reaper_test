@@ -1,0 +1,347 @@
+{
+    "IamActions": [
+        "AddInstanceGroups", 
+        "AddJobFlowSteps", 
+        "CancelSteps", 
+        "CreateSecurityConfiguration", 
+        "DeleteSecurityConfiguration", 
+        "ModifyInstanceGroups", 
+        "PutAutoScalingPolicy", 
+        "RemoveAutoScalingPolicy", 
+        "RunJobFlow", 
+        "SetTerminationProtection", 
+        "SetVisibleToAllUsers", 
+        "TerminateJobFlows"
+    ], 
+    "OperationInputs": {
+        "AddInstanceFleet": {
+            "ClusterId": "string", 
+            "InstanceFleet": {
+                "InstanceFleetType": "string", 
+                "InstanceTypeConfigs": {
+                    "_list": {
+                        "BidPrice": "string", 
+                        "BidPriceAsPercentageOfOnDemandPrice": "double", 
+                        "Configurations": {
+                            "_list": "structure"
+                        }, 
+                        "EbsConfiguration": {
+                            "EbsBlockDeviceConfigs": "list", 
+                            "EbsOptimized": "boolean"
+                        }, 
+                        "InstanceType": "string", 
+                        "WeightedCapacity": "integer"
+                    }
+                }, 
+                "LaunchSpecifications": {
+                    "SpotSpecification": {
+                        "BlockDurationMinutes": "integer", 
+                        "TimeoutAction": "string", 
+                        "TimeoutDurationMinutes": "integer"
+                    }
+                }, 
+                "Name": "string", 
+                "TargetOnDemandCapacity": "integer", 
+                "TargetSpotCapacity": "integer"
+            }
+        }, 
+        "AddInstanceGroups": {
+            "InstanceGroups": {
+                "_list": {
+                    "AutoScalingPolicy": {
+                        "Constraints": {
+                            "MaxCapacity": "integer", 
+                            "MinCapacity": "integer"
+                        }, 
+                        "Rules": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "BidPrice": "string", 
+                    "Configurations": {
+                        "_list": {
+                            "Classification": "string", 
+                            "Configurations": "list", 
+                            "Properties": "map"
+                        }
+                    }, 
+                    "EbsConfiguration": {
+                        "EbsBlockDeviceConfigs": {
+                            "_list": "structure"
+                        }, 
+                        "EbsOptimized": "boolean"
+                    }, 
+                    "InstanceCount": "integer", 
+                    "InstanceRole": "string", 
+                    "InstanceType": "string", 
+                    "Market": "string", 
+                    "Name": "string"
+                }
+            }, 
+            "JobFlowId": "string"
+        }, 
+        "AddJobFlowSteps": {
+            "JobFlowId": "string", 
+            "Steps": {
+                "_list": {
+                    "ActionOnFailure": "string", 
+                    "HadoopJarStep": {
+                        "Args": {
+                            "_list": "string"
+                        }, 
+                        "Jar": "string", 
+                        "MainClass": "string", 
+                        "Properties": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "Name": "string"
+                }
+            }
+        }, 
+        "CancelSteps": {
+            "ClusterId": "string", 
+            "StepIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateSecurityConfiguration": {
+            "Name": "string", 
+            "SecurityConfiguration": "string"
+        }, 
+        "DeleteSecurityConfiguration": {
+            "Name": "string"
+        }, 
+        "ModifyInstanceFleet": {
+            "ClusterId": "string", 
+            "InstanceFleet": {
+                "InstanceFleetId": "string", 
+                "TargetOnDemandCapacity": "integer", 
+                "TargetSpotCapacity": "integer"
+            }
+        }, 
+        "ModifyInstanceGroups": {
+            "ClusterId": "string", 
+            "InstanceGroups": {
+                "_list": {
+                    "EC2InstanceIdsToTerminate": {
+                        "_list": "string"
+                    }, 
+                    "InstanceCount": "integer", 
+                    "InstanceGroupId": "string", 
+                    "ShrinkPolicy": {
+                        "DecommissionTimeout": "integer", 
+                        "InstanceResizePolicy": {
+                            "InstanceTerminationTimeout": "integer", 
+                            "InstancesToProtect": "list", 
+                            "InstancesToTerminate": "list"
+                        }
+                    }
+                }
+            }
+        }, 
+        "PutAutoScalingPolicy": {
+            "AutoScalingPolicy": {
+                "Constraints": {
+                    "MaxCapacity": "integer", 
+                    "MinCapacity": "integer"
+                }, 
+                "Rules": {
+                    "_list": {
+                        "Action": {
+                            "Market": "string", 
+                            "SimpleScalingPolicyConfiguration": "structure"
+                        }, 
+                        "Description": "string", 
+                        "Name": "string", 
+                        "Trigger": {
+                            "CloudWatchAlarmDefinition": "structure"
+                        }
+                    }
+                }
+            }, 
+            "ClusterId": "string", 
+            "InstanceGroupId": "string"
+        }, 
+        "RemoveAutoScalingPolicy": {
+            "ClusterId": "string", 
+            "InstanceGroupId": "string"
+        }, 
+        "RunJobFlow": {
+            "AdditionalInfo": "string", 
+            "AmiVersion": "string", 
+            "Applications": {
+                "_list": {
+                    "AdditionalInfo": {
+                        "_key": "string", 
+                        "_value": "string"
+                    }, 
+                    "Args": {
+                        "_list": "string"
+                    }, 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }, 
+            "AutoScalingRole": "string", 
+            "BootstrapActions": {
+                "_list": {
+                    "Name": "string", 
+                    "ScriptBootstrapAction": {
+                        "Args": {
+                            "_list": "string"
+                        }, 
+                        "Path": "string"
+                    }
+                }
+            }, 
+            "Configurations": {
+                "_list": {
+                    "Classification": "string", 
+                    "Configurations": {
+                        "_list": {
+                            "Classification": "string", 
+                            "Configurations": "list", 
+                            "Properties": "map"
+                        }
+                    }, 
+                    "Properties": {
+                        "_key": "string", 
+                        "_value": "string"
+                    }
+                }
+            }, 
+            "CustomAmiId": "string", 
+            "EbsRootVolumeSize": "integer", 
+            "Instances": {
+                "AdditionalMasterSecurityGroups": {
+                    "_list": "string"
+                }, 
+                "AdditionalSlaveSecurityGroups": {
+                    "_list": "string"
+                }, 
+                "Ec2KeyName": "string", 
+                "Ec2SubnetId": "string", 
+                "Ec2SubnetIds": {
+                    "_list": "string"
+                }, 
+                "EmrManagedMasterSecurityGroup": "string", 
+                "EmrManagedSlaveSecurityGroup": "string", 
+                "HadoopVersion": "string", 
+                "InstanceCount": "integer", 
+                "InstanceFleets": {
+                    "_list": {
+                        "InstanceFleetType": "string", 
+                        "InstanceTypeConfigs": {
+                            "_list": "structure"
+                        }, 
+                        "LaunchSpecifications": {
+                            "SpotSpecification": "structure"
+                        }, 
+                        "Name": "string", 
+                        "TargetOnDemandCapacity": "integer", 
+                        "TargetSpotCapacity": "integer"
+                    }
+                }, 
+                "InstanceGroups": {
+                    "_list": {
+                        "AutoScalingPolicy": {
+                            "Constraints": "structure", 
+                            "Rules": "list"
+                        }, 
+                        "BidPrice": "string", 
+                        "Configurations": {
+                            "_list": "structure"
+                        }, 
+                        "EbsConfiguration": {
+                            "EbsBlockDeviceConfigs": "list", 
+                            "EbsOptimized": "boolean"
+                        }, 
+                        "InstanceCount": "integer", 
+                        "InstanceRole": "string", 
+                        "InstanceType": "string", 
+                        "Market": "string", 
+                        "Name": "string"
+                    }
+                }, 
+                "KeepJobFlowAliveWhenNoSteps": "boolean", 
+                "MasterInstanceType": "string", 
+                "Placement": {
+                    "AvailabilityZone": "string", 
+                    "AvailabilityZones": {
+                        "_list": "string"
+                    }
+                }, 
+                "ServiceAccessSecurityGroup": "string", 
+                "SlaveInstanceType": "string", 
+                "TerminationProtected": "boolean"
+            }, 
+            "JobFlowRole": "string", 
+            "KerberosAttributes": {
+                "ADDomainJoinPassword": "string", 
+                "ADDomainJoinUser": "string", 
+                "CrossRealmTrustPrincipalPassword": "string", 
+                "KdcAdminPassword": "string", 
+                "Realm": "string"
+            }, 
+            "LogUri": "string", 
+            "Name": "string", 
+            "NewSupportedProducts": {
+                "_list": {
+                    "Args": {
+                        "_list": "string"
+                    }, 
+                    "Name": "string"
+                }
+            }, 
+            "ReleaseLabel": "string", 
+            "RepoUpgradeOnBoot": "string", 
+            "ScaleDownBehavior": "string", 
+            "SecurityConfiguration": "string", 
+            "ServiceRole": "string", 
+            "Steps": {
+                "_list": {
+                    "ActionOnFailure": "string", 
+                    "HadoopJarStep": {
+                        "Args": {
+                            "_list": "string"
+                        }, 
+                        "Jar": "string", 
+                        "MainClass": "string", 
+                        "Properties": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "Name": "string"
+                }
+            }, 
+            "SupportedProducts": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "VisibleToAllUsers": "boolean"
+        }, 
+        "SetTerminationProtection": {
+            "JobFlowIds": {
+                "_list": "string"
+            }, 
+            "TerminationProtected": "boolean"
+        }, 
+        "SetVisibleToAllUsers": {
+            "JobFlowIds": {
+                "_list": "string"
+            }, 
+            "VisibleToAllUsers": "boolean"
+        }, 
+        "TerminateJobFlows": {
+            "JobFlowIds": {
+                "_list": "string"
+            }
+        }
+    }
+}

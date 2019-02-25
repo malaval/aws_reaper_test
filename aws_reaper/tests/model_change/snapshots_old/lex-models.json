@@ -1,0 +1,231 @@
+{
+    "IamActions": [
+        "CreateBotVersion", 
+        "CreateIntentVersion", 
+        "CreateSlotTypeVersion", 
+        "DeleteBot", 
+        "DeleteBotAlias", 
+        "DeleteBotChannelAssociation", 
+        "DeleteBotVersion", 
+        "DeleteIntent", 
+        "DeleteIntentVersion", 
+        "DeleteSlotType", 
+        "DeleteSlotTypeVersion", 
+        "DeleteUtterances", 
+        "PostContent", 
+        "PostText", 
+        "PutBot", 
+        "PutBotAlias", 
+        "PutIntent", 
+        "PutSlotType"
+    ], 
+    "OperationInputs": {
+        "CreateBotVersion": {
+            "checksum": "string", 
+            "name": "string"
+        }, 
+        "CreateIntentVersion": {
+            "checksum": "string", 
+            "name": "string"
+        }, 
+        "CreateSlotTypeVersion": {
+            "checksum": "string", 
+            "name": "string"
+        }, 
+        "DeleteBot": {
+            "name": "string"
+        }, 
+        "DeleteBotAlias": {
+            "botName": "string", 
+            "name": "string"
+        }, 
+        "DeleteBotChannelAssociation": {
+            "botAlias": "string", 
+            "botName": "string", 
+            "name": "string"
+        }, 
+        "DeleteBotVersion": {
+            "name": "string", 
+            "version": "string"
+        }, 
+        "DeleteIntent": {
+            "name": "string"
+        }, 
+        "DeleteIntentVersion": {
+            "name": "string", 
+            "version": "string"
+        }, 
+        "DeleteSlotType": {
+            "name": "string"
+        }, 
+        "DeleteSlotTypeVersion": {
+            "name": "string", 
+            "version": "string"
+        }, 
+        "DeleteUtterances": {
+            "botName": "string", 
+            "userId": "string"
+        }, 
+        "PutBot": {
+            "abortStatement": {
+                "messages": {
+                    "_list": {
+                        "content": "string", 
+                        "contentType": "string", 
+                        "groupNumber": "integer"
+                    }
+                }, 
+                "responseCard": "string"
+            }, 
+            "checksum": "string", 
+            "childDirected": "boolean", 
+            "clarificationPrompt": {
+                "maxAttempts": "integer", 
+                "messages": {
+                    "_list": {
+                        "content": "string", 
+                        "contentType": "string", 
+                        "groupNumber": "integer"
+                    }
+                }, 
+                "responseCard": "string"
+            }, 
+            "createVersion": "boolean", 
+            "description": "string", 
+            "idleSessionTTLInSeconds": "integer", 
+            "intents": {
+                "_list": {
+                    "intentName": "string", 
+                    "intentVersion": "string"
+                }
+            }, 
+            "locale": "string", 
+            "name": "string", 
+            "processBehavior": "string", 
+            "voiceId": "string"
+        }, 
+        "PutBotAlias": {
+            "botName": "string", 
+            "botVersion": "string", 
+            "checksum": "string", 
+            "description": "string", 
+            "name": "string"
+        }, 
+        "PutIntent": {
+            "checksum": "string", 
+            "conclusionStatement": {
+                "messages": {
+                    "_list": {
+                        "content": "string", 
+                        "contentType": "string", 
+                        "groupNumber": "integer"
+                    }
+                }, 
+                "responseCard": "string"
+            }, 
+            "confirmationPrompt": {
+                "maxAttempts": "integer", 
+                "messages": {
+                    "_list": {
+                        "content": "string", 
+                        "contentType": "string", 
+                        "groupNumber": "integer"
+                    }
+                }, 
+                "responseCard": "string"
+            }, 
+            "createVersion": "boolean", 
+            "description": "string", 
+            "dialogCodeHook": {
+                "messageVersion": "string", 
+                "uri": "string"
+            }, 
+            "followUpPrompt": {
+                "prompt": {
+                    "maxAttempts": "integer", 
+                    "messages": {
+                        "_list": {
+                            "content": "string", 
+                            "contentType": "string", 
+                            "groupNumber": "integer"
+                        }
+                    }, 
+                    "responseCard": "string"
+                }, 
+                "rejectionStatement": {
+                    "messages": {
+                        "_list": {
+                            "content": "string", 
+                            "contentType": "string", 
+                            "groupNumber": "integer"
+                        }
+                    }, 
+                    "responseCard": "string"
+                }
+            }, 
+            "fulfillmentActivity": {
+                "codeHook": {
+                    "messageVersion": "string", 
+                    "uri": "string"
+                }, 
+                "type": "string"
+            }, 
+            "name": "string", 
+            "parentIntentSignature": "string", 
+            "rejectionStatement": {
+                "messages": {
+                    "_list": {
+                        "content": "string", 
+                        "contentType": "string", 
+                        "groupNumber": "integer"
+                    }
+                }, 
+                "responseCard": "string"
+            }, 
+            "sampleUtterances": {
+                "_list": "string"
+            }, 
+            "slots": {
+                "_list": {
+                    "description": "string", 
+                    "name": "string", 
+                    "priority": "integer", 
+                    "responseCard": "string", 
+                    "sampleUtterances": {
+                        "_list": "string"
+                    }, 
+                    "slotConstraint": "string", 
+                    "slotType": "string", 
+                    "slotTypeVersion": "string", 
+                    "valueElicitationPrompt": {
+                        "maxAttempts": "integer", 
+                        "messages": {
+                            "_list": "structure"
+                        }, 
+                        "responseCard": "string"
+                    }
+                }
+            }
+        }, 
+        "PutSlotType": {
+            "checksum": "string", 
+            "createVersion": "boolean", 
+            "description": "string", 
+            "enumerationValues": {
+                "_list": {
+                    "synonyms": {
+                        "_list": "string"
+                    }, 
+                    "value": "string"
+                }
+            }, 
+            "name": "string", 
+            "valueSelectionStrategy": "string"
+        }, 
+        "StartImport": {
+            "mergeStrategy": "string", 
+            "payload": "blob", 
+            "resourceType": "string"
+        }
+    }
+}

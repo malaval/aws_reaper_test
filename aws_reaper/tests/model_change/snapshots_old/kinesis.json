@@ -1,0 +1,108 @@
+{
+    "IamActions": [
+        "CreateStream", 
+        "DecreaseStreamRetentionPeriod", 
+        "DeleteStream", 
+        "DeregisterStreamConsumer", 
+        "DisableEnhancedMonitoring", 
+        "EnableEnhancedMonitoring", 
+        "IncreaseStreamRetentionPeriod", 
+        "MergeShards", 
+        "PutRecord", 
+        "PutRecords", 
+        "RegisterStreamConsumer", 
+        "SplitShard", 
+        "SubscribeToShard", 
+        "UpdateShardCount"
+    ], 
+    "OperationInputs": {
+        "CreateStream": {
+            "ShardCount": "integer", 
+            "StreamName": "string"
+        }, 
+        "DecreaseStreamRetentionPeriod": {
+            "RetentionPeriodHours": "integer", 
+            "StreamName": "string"
+        }, 
+        "DeleteStream": {
+            "EnforceConsumerDeletion": "boolean", 
+            "StreamName": "string"
+        }, 
+        "DeregisterStreamConsumer": {
+            "ConsumerARN": "string", 
+            "ConsumerName": "string", 
+            "StreamARN": "string"
+        }, 
+        "DisableEnhancedMonitoring": {
+            "ShardLevelMetrics": {
+                "_list": "string"
+            }, 
+            "StreamName": "string"
+        }, 
+        "EnableEnhancedMonitoring": {
+            "ShardLevelMetrics": {
+                "_list": "string"
+            }, 
+            "StreamName": "string"
+        }, 
+        "IncreaseStreamRetentionPeriod": {
+            "RetentionPeriodHours": "integer", 
+            "StreamName": "string"
+        }, 
+        "MergeShards": {
+            "AdjacentShardToMerge": "string", 
+            "ShardToMerge": "string", 
+            "StreamName": "string"
+        }, 
+        "PutRecord": {
+            "Data": "blob", 
+            "ExplicitHashKey": "string", 
+            "PartitionKey": "string", 
+            "SequenceNumberForOrdering": "string", 
+            "StreamName": "string"
+        }, 
+        "PutRecords": {
+            "Records": {
+                "_list": {
+                    "Data": "blob", 
+                    "ExplicitHashKey": "string", 
+                    "PartitionKey": "string"
+                }
+            }, 
+            "StreamName": "string"
+        }, 
+        "RegisterStreamConsumer": {
+            "ConsumerName": "string", 
+            "StreamARN": "string"
+        }, 
+        "SplitShard": {
+            "NewStartingHashKey": "string", 
+            "ShardToSplit": "string", 
+            "StreamName": "string"
+        }, 
+        "StartStreamEncryption": {
+            "EncryptionType": "string", 
+            "KeyId": "string", 
+            "StreamName": "string"
+        }, 
+        "StopStreamEncryption": {
+            "EncryptionType": "string", 
+            "KeyId": "string", 
+            "StreamName": "string"
+        }, 
+        "SubscribeToShard": {
+            "ConsumerARN": "string", 
+            "ShardId": "string", 
+            "StartingPosition": {
+                "SequenceNumber": "string", 
+                "Timestamp": "timestamp", 
+                "Type": "string"
+            }
+        }, 
+        "UpdateShardCount": {
+            "ScalingType": "string", 
+            "StreamName": "string", 
+            "TargetShardCount": "integer"
+        }
+    }
+}

@@ -1,0 +1,1237 @@
+{
+    "acm": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/fr_fr/IAM/latest/UserGuide/list_awscertificatemanager.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "acm-pca": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscertificatemanagerprivatecertificateauthority.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "alexaforbusiness": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_alexaforbusiness.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*",
+            "Resolve*",
+            "Search*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "apigateway": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonapigateway.html",
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_manageamazonapigateway.html"
+        ],
+        "IgnoredVerbs": [
+            "Flush*",
+            "Get*",
+            "InvalidateCache",
+            "Invoke",
+            "Tag*",
+            "Test*",
+            "Untag*"
+        ]
+    },
+    "appsync": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsappsync.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "application-autoscaling": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_applicationautoscaling.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "athena": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonathena.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchGet*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "autoscaling-plans": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_autoscalingplans.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "autoscaling": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_autoscaling.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags",
+            "Describe*"
+        ]
+    },
+    "budgets": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsbudgetservice.html"
+        ],
+        "IgnoredVerbs": [
+            "View*"
+        ]
+    },
+    "ce": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscostexplorerservice.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "cloud9": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloud9.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "clouddirectory": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonclouddirectory.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchRead",
+            "Get*",
+            "List*",
+            "Lookup*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "cloudformation": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloudformation.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Estimate*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "cloudfront": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudfront.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "cloudhsm": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "cloudhsmv2": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloudhsm.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "cloudsearch": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudsearch.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags",
+            "Describe*",
+            "List*"
+        ]
+    },
+    "cloudsearchdomain": {
+        "IamUrls": [],
+        "IgnoredVerbs": []
+    },
+    "cloudtrail": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscloudtrail.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Lookup*"
+        ]
+    },
+    "cloudwatch": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudwatch.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "codebuild": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscodebuild.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchGet*",
+            "List*"
+        ]
+    },
+    "codecommit": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscodecommit.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "codepipeline": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscodepipeline.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "codestar": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscodestar.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Verify*"
+        ]
+    },
+    "cognito-identity": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncognitoidentity.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Lookup*"
+        ]
+    },
+    "cognito-idp": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncognitouserpools.html"
+        ],
+        "IgnoredVerbs": [
+            "AdminGet*",
+            "AdminList*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "cognito-sync": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncognitosync.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Query*"
+        ]
+    },
+    "comprehend": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncomprehend.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchGet*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "config": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsconfig.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchGet*",
+            "Deliver*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "connect": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonconnect.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "cur": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscostandusagereport.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "datapipeline": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_datapipeline.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags",
+            "Describe*",
+            "Evaluate*",
+            "Get*",
+            "List*",
+            "Query*",
+            "Validate*"
+        ]
+    },
+    "dax": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazondynamodbacceleratordax.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchGet*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Query*",
+            "Scan*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "devicefarm": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsdevicefarm.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "dlm": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazondatalifecyclemanager.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "ds": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsdirectoryservice.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Verify*"
+        ]
+    },
+    "dynamodb": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazondynamodb.html"
+        ],
+        "IgnoredVerbs": [
+            "Batch*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Query",
+            "Scan",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "dynamodbstreams": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "ec2": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonec2.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*"
+        ]
+    },
+    "ecr": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonec2containerregistry.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchCheck*",
+            "BatchGet*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "efs": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticfilesystem.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*"
+        ]
+    },
+    "eks": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticcontainerserviceforkubernetes.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*"
+        ]
+    },
+    "elasticache": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticache.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "List*"
+        ]
+    },
+    "elasticbeanstalk": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselasticbeanstalk.html"
+        ],
+        "IgnoredVerbs": [
+            "Check*",
+            "Describe*",
+            "List*",
+            "Request*",
+            "Retrieve*",
+            "Validate*"
+        ]
+    },
+    "elastictranscoder": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelastictranscoder.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "List*"
+        ]
+    },
+    "elb": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_elasticloadbalancing.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*"
+        ]
+    },
+    "elbv2": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_elasticloadbalancingv2.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*"
+        ]
+    },
+    "emr": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticmapreduce.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "List*",
+            "Read*",
+            "Test*",
+            "View*"
+        ]
+    },
+    "es": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticsearchservice.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "ESHttp*",
+            "List*"
+        ]
+    },
+    "events": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudwatchevents.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*",
+            "Test*"
+        ]
+    },
+    "firehose": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonkinesisfirehose.html"
+        ],
+        "IgnoredVerbs": [
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "glacier": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonglacier.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "guardduty": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonguardduty.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "health": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awshealthapisandnotifications.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "iam": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_identityandaccessmanagement.html"
+        ],
+        "IgnoredVerbs": [
+            "Generate*",
+            "Get*",
+            "List*",
+            "Simulate*"
+        ]
+    },
+    "importexport": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsimportexportdiskservice.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "inspector": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoninspector.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "Preview*"
+        ]
+    },
+    "iot-data": {
+        "IamUrls": [],
+        "IgnoredVerbs": []
+    },
+    "kinesis": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonkinesis.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "kinesis-video-archived-media": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "kinesis-video-media": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "kinesisanalytics": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonkinesisanalytics.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Discover*",
+            "List*"
+        ]
+    },
+    "kinesisvideo": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonkinesisanalytics.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "kms": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awskeymanagementservice.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "lambda": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awslambda.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "lex-models": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonlex.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "lex-runtime": {
+        "IamUrls": [],
+        "IgnoredVerbs": []
+    },
+    "logs": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudwatchlogs.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Filter*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Test*",
+            "Untag*"
+        ]
+    },
+    "machinelearning": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmachinelearning.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*"
+        ]
+    },
+    "macie": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "List*"
+        ]
+    },
+    "marketplace-entitlement": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "marketplacecommerceanalytics": {
+        "IamUrls": [],
+        "IgnoredVerbs": []
+    },
+    "medialive": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmedialive.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*"
+        ]
+    },
+    "mediapackage": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmediapackage.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*"
+        ]
+    },
+    "mediastore-data": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "mediatailor": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "meteringmarketplace": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsmarketplacemeteringservice.html"
+        ],
+        "IgnoredVerbs": []
+    },
+    "mgh": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsmigrationhub.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*"
+        ]
+    },
+    "mobile": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsmobilehub.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Export*",
+            "Get*",
+            "List*",
+            "Verify*"
+        ]
+    },
+    "mq": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmq.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*"
+        ]
+    },
+    "mturk": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmechanicalturk.html"
+        ],
+        "IgnoredVerbs": [
+            "*"
+        ]
+    },
+    "neptune": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonrds.html",
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonneptune.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "List*"
+        ]
+    },
+    "opsworks": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsopsworks.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "opsworkscm": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsopsworksconfigurationmanagement.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "organizations": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsorganizations.html"
+        ],
+        "IgnoredVerbs": [
+            "*"
+        ]
+    },
+    "pi": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsperformanceinsights.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*"
+        ]
+    },
+    "pinpoint": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonpinpoint.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "polly": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonpolly.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Synthetize*"
+        ]
+    },
+    "pricing": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awspricelist.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*"
+        ]
+    },
+    "rds": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonrds.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "List*"
+        ]
+    },
+    "redshift": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonredshift.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "View*"
+        ]
+    },
+    "rekognition": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonrekognition.html"
+        ],
+        "IgnoredVerbs": [
+            "Compare*",
+            "Describe*",
+            "Detect*",
+            "Get*",
+            "List*",
+            "Recognize*",
+            "Search*"
+        ]
+    },
+    "resource-groups": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsresourcegroups.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*",
+            "Search*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "resourcegroupstaggingapi": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonresourcegrouptaggingapi.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "route53": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonroute53.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Get*",
+            "List*",
+            "Test*"
+        ]
+    },
+    "route53domains": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonroute53domains.html"
+        ],
+        "IgnoredVerbs": [
+            "Check*",
+            "DeleteTags*",
+            "Get*",
+            "List*",
+            "UpdateTags*"
+        ]
+    },
+    "s3": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazons3.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "sagemaker-runtime": {
+        "IamUrls": [],
+        "IgnoredVerbs": []
+    },
+    "sagemaker": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Invoke*",
+            "List*"
+        ]
+    },
+    "sdb": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsimpledb.html"
+        ],
+        "IgnoredVerbs": [
+            "DomainMetadata",
+            "Get*",
+            "List*",
+            "Select"
+        ]
+    },
+    "secretsmanager": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awssecretsmanager.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "serverlessrepo": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsserverlessapplicationrepository.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*",
+            "Search*"
+        ]
+    },
+    "servicecatalog": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsservicecatalog.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*",
+            "Scan*",
+            "Search*"
+        ]
+    },
+    "servicediscovery": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonroute53autonaming.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "ses": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*",
+            "Verify*"
+        ]
+    },
+    "shield": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsshield.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*"
+        ]
+    },
+    "signer": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscodesigningforamazonfreertos.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "snowball": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awssnowball.html"
+        ],
+        "IgnoredVerbs": [
+            "*"
+        ]
+    },
+    "sms": {
+        "IamUrls": [],
+        "IgnoredVerbs": [
+            "Get*"
+        ]
+    },
+    "sns": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsns.html"
+        ],
+        "IgnoredVerbs": [
+            "Check*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "sqs": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsqs.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*",
+            "Receive*",
+            "Tag*",
+            "Untag*"
+        ]
+    },
+    "ssm": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsimplesystemsmanager.html"
+        ],
+        "IgnoredVerbs": [
+            "AddTags*",
+            "Describe*",
+            "Get*",
+            "List*",
+            "PutConfigurePackageResult",
+            "RemoveTags*"
+        ]
+    },
+    "stepfunctions": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsstepfunctions.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "sts": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awssecuritytokenservice.html"
+        ],
+        "IgnoredVerbs": [
+            "AssumeRole*",
+            "Decode*",
+            "Get*"
+        ]
+    },
+    "storagegateway": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonstoragegateway.html"
+        ],
+        "IgnoredVerbs": [
+            "AddTags*",
+            "Describe*",
+            "List*",
+            "RemoveTags*"
+        ]
+    },
+    "support": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awssupport.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "swf": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsimpleworkflowservice.html"
+        ],
+        "IgnoredVerbs": [
+            "Count*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    },
+    "transcribe": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazontranscribe.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "translate": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazontranslate.html"
+        ],
+        "IgnoredVerbs": []
+    },
+    "waf-regional": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awswafregional.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "waf": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awswaf.html"
+        ],
+        "IgnoredVerbs": [
+            "Get*",
+            "List*"
+        ]
+    },
+    "workdocs": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonworkdocs.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "Get*"
+        ]
+    },
+    "workmail": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonworkmail.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*",
+            "List*",
+            "Get*"
+        ]
+    },
+    "workspaces": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonworkspaces.html"
+        ],
+        "IgnoredVerbs": [
+            "Describe*"
+        ]
+    },
+    "xray": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsxray.html"
+        ],
+        "IgnoredVerbs": [
+            "BatchGet*",
+            "Get*"
+        ]
+    }
+}

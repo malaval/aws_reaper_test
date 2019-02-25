@@ -1,0 +1,48 @@
+{
+    "IamActions": [
+        "CreateCluster", 
+        "CreateHapg", 
+        "CreateHsm", 
+        "CreateLunaClient", 
+        "DeleteCluster", 
+        "DeleteHapg", 
+        "DeleteHsm", 
+        "DeleteLunaClient", 
+        "InitializeCluster", 
+        "ModifyHapg", 
+        "ModifyHsm", 
+        "ModifyLunaClient"
+    ], 
+    "OperationInputs": {
+        "CopyBackupToRegion": {
+            "BackupId": "string", 
+            "DestinationRegion": "string"
+        }, 
+        "CreateCluster": {
+            "HsmType": "string", 
+            "SourceBackupId": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateHsm": {
+            "AvailabilityZone": "string", 
+            "ClusterId": "string", 
+            "IpAddress": "string"
+        }, 
+        "DeleteCluster": {
+            "ClusterId": "string"
+        }, 
+        "DeleteHsm": {
+            "ClusterId": "string", 
+            "EniId": "string", 
+            "EniIp": "string", 
+            "HsmId": "string"
+        }, 
+        "InitializeCluster": {
+            "ClusterId": "string", 
+            "SignedCert": "string", 
+            "TrustAnchor": "string"
+        }
+    }
+}

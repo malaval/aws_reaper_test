@@ -1,0 +1,20 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "DeleteThingShadow": {
+            "thingName": "string"
+        }, 
+        "GetThingShadow": {
+            "thingName": "string"
+        }, 
+        "Publish": {
+            "payload": "blob", 
+            "qos": "integer", 
+            "topic": "string"
+        }, 
+        "UpdateThingShadow": {
+            "payload": "blob", 
+            "thingName": "string"
+        }
+    }
+}

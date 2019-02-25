@@ -1,0 +1,132 @@
+{
+    "IamActions": [
+        "CreateElasticsearchDomain", 
+        "DeleteElasticsearchDomain", 
+        "DeleteElasticsearchServiceRole", 
+        "UpdateElasticsearchDomainConfig"
+    ], 
+    "OperationInputs": {
+        "CreateElasticsearchDomain": {
+            "AccessPolicies": "string", 
+            "AdvancedOptions": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "CognitoOptions": {
+                "Enabled": "boolean", 
+                "IdentityPoolId": "string", 
+                "RoleArn": "string", 
+                "UserPoolId": "string"
+            }, 
+            "DomainName": "string", 
+            "EBSOptions": {
+                "EBSEnabled": "boolean", 
+                "Iops": "integer", 
+                "VolumeSize": "integer", 
+                "VolumeType": "string"
+            }, 
+            "ElasticsearchClusterConfig": {
+                "DedicatedMasterCount": "integer", 
+                "DedicatedMasterEnabled": "boolean", 
+                "DedicatedMasterType": "string", 
+                "InstanceCount": "integer", 
+                "InstanceType": "string", 
+                "ZoneAwarenessEnabled": "boolean"
+            }, 
+            "ElasticsearchVersion": "string", 
+            "EncryptionAtRestOptions": {
+                "Enabled": "boolean", 
+                "KmsKeyId": "string"
+            }, 
+            "LogPublishingOptions": {
+                "_key": "string", 
+                "_value": {
+                    "CloudWatchLogsLogGroupArn": "string", 
+                    "Enabled": "boolean"
+                }
+            }, 
+            "SnapshotOptions": {
+                "AutomatedSnapshotStartHour": "integer"
+            }, 
+            "VPCOptions": {
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SubnetIds": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "DeleteElasticsearchDomain": {
+            "DomainName": "string"
+        }, 
+        "DeleteElasticsearchServiceRole": {}, 
+        "GetCompatibleElasticsearchVersions": {
+            "DomainName": "string"
+        }, 
+        "GetUpgradeHistory": {
+            "DomainName": "string", 
+            "MaxResults": "integer", 
+            "NextToken": "string"
+        }, 
+        "GetUpgradeStatus": {
+            "DomainName": "string"
+        }, 
+        "PurchaseReservedElasticsearchInstanceOffering": {
+            "InstanceCount": "integer", 
+            "ReservationName": "string", 
+            "ReservedElasticsearchInstanceOfferingId": "string"
+        }, 
+        "UpdateElasticsearchDomainConfig": {
+            "AccessPolicies": "string", 
+            "AdvancedOptions": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "CognitoOptions": {
+                "Enabled": "boolean", 
+                "IdentityPoolId": "string", 
+                "RoleArn": "string", 
+                "UserPoolId": "string"
+            }, 
+            "DomainName": "string", 
+            "EBSOptions": {
+                "EBSEnabled": "boolean", 
+                "Iops": "integer", 
+                "VolumeSize": "integer", 
+                "VolumeType": "string"
+            }, 
+            "ElasticsearchClusterConfig": {
+                "DedicatedMasterCount": "integer", 
+                "DedicatedMasterEnabled": "boolean", 
+                "DedicatedMasterType": "string", 
+                "InstanceCount": "integer", 
+                "InstanceType": "string", 
+                "ZoneAwarenessEnabled": "boolean"
+            }, 
+            "LogPublishingOptions": {
+                "_key": "string", 
+                "_value": {
+                    "CloudWatchLogsLogGroupArn": "string", 
+                    "Enabled": "boolean"
+                }
+            }, 
+            "SnapshotOptions": {
+                "AutomatedSnapshotStartHour": "integer"
+            }, 
+            "VPCOptions": {
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SubnetIds": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "UpgradeElasticsearchDomain": {
+            "DomainName": "string", 
+            "PerformCheckOnly": "boolean", 
+            "TargetVersion": "string"
+        }
+    }
+}

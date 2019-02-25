@@ -1,0 +1,18 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "DeletePlaybackConfiguration": {
+            "Name": "string"
+        }, 
+        "PutPlaybackConfiguration": {
+            "AdDecisionServerUrl": "string", 
+            "CdnConfiguration": {
+                "AdSegmentUrlPrefix": "string", 
+                "ContentSegmentUrlPrefix": "string"
+            }, 
+            "Name": "string", 
+            "SlateAdUrl": "string", 
+            "VideoContentSourceUrl": "string"
+        }
+    }
+}

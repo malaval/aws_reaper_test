@@ -1,0 +1,92 @@
+{
+    "IamActions": [
+        "CreatePrivateDnsNamespace", 
+        "CreatePublicDnsNamespace", 
+        "CreateService", 
+        "DeleteNamespace", 
+        "DeleteService", 
+        "DeregisterInstance", 
+        "RegisterInstance", 
+        "UpdateInstanceHeartbeatStatus", 
+        "UpdateService"
+    ], 
+    "OperationInputs": {
+        "CreatePrivateDnsNamespace": {
+            "CreatorRequestId": "string", 
+            "Description": "string", 
+            "Name": "string", 
+            "Vpc": "string"
+        }, 
+        "CreatePublicDnsNamespace": {
+            "CreatorRequestId": "string", 
+            "Description": "string", 
+            "Name": "string"
+        }, 
+        "CreateService": {
+            "CreatorRequestId": "string", 
+            "Description": "string", 
+            "DnsConfig": {
+                "DnsRecords": {
+                    "_list": {
+                        "TTL": "long", 
+                        "Type": "string"
+                    }
+                }, 
+                "NamespaceId": "string", 
+                "RoutingPolicy": "string"
+            }, 
+            "HealthCheckConfig": {
+                "FailureThreshold": "integer", 
+                "ResourcePath": "string", 
+                "Type": "string"
+            }, 
+            "HealthCheckCustomConfig": {
+                "FailureThreshold": "integer"
+            }, 
+            "Name": "string"
+        }, 
+        "DeleteNamespace": {
+            "Id": "string"
+        }, 
+        "DeleteService": {
+            "Id": "string"
+        }, 
+        "DeregisterInstance": {
+            "InstanceId": "string", 
+            "ServiceId": "string"
+        }, 
+        "RegisterInstance": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "CreatorRequestId": "string", 
+            "InstanceId": "string", 
+            "ServiceId": "string"
+        }, 
+        "UpdateInstanceCustomHealthStatus": {
+            "InstanceId": "string", 
+            "ServiceId": "string", 
+            "Status": "string"
+        }, 
+        "UpdateService": {
+            "Id": "string", 
+            "Service": {
+                "Description": "string", 
+                "DnsConfig": {
+                    "DnsRecords": {
+                        "_list": {
+                            "TTL": "long", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "HealthCheckConfig": {
+                    "FailureThreshold": "integer", 
+                    "ResourcePath": "string", 
+                    "Type": "string"
+                }
+            }
+        }
+    }
+}

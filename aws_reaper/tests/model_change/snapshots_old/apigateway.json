@@ -1,0 +1,668 @@
+{
+    "IamActions": [
+        "DELETE", 
+        "GET", 
+        "HEAD", 
+        "OPTIONS", 
+        "PATCH", 
+        "POST", 
+        "PUT"
+    ], 
+    "OperationInputs": {
+        "CreateApiKey": {
+            "customerId": "string", 
+            "description": "string", 
+            "enabled": "boolean", 
+            "generateDistinctId": "boolean", 
+            "name": "string", 
+            "stageKeys": {
+                "_list": {
+                    "restApiId": "string", 
+                    "stageName": "string"
+                }
+            }, 
+            "value": "string"
+        }, 
+        "CreateAuthorizer": {
+            "authType": "string", 
+            "authorizerCredentials": "string", 
+            "authorizerResultTtlInSeconds": "integer", 
+            "authorizerUri": "string", 
+            "identitySource": "string", 
+            "identityValidationExpression": "string", 
+            "name": "string", 
+            "providerARNs": {
+                "_list": "string"
+            }, 
+            "restApiId": "string", 
+            "type": "string"
+        }, 
+        "CreateBasePathMapping": {
+            "basePath": "string", 
+            "domainName": "string", 
+            "restApiId": "string", 
+            "stage": "string"
+        }, 
+        "CreateDeployment": {
+            "cacheClusterEnabled": "boolean", 
+            "cacheClusterSize": "string", 
+            "canarySettings": {
+                "percentTraffic": "double", 
+                "stageVariableOverrides": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "useStageCache": "boolean"
+            }, 
+            "description": "string", 
+            "restApiId": "string", 
+            "stageDescription": "string", 
+            "stageName": "string", 
+            "tracingEnabled": "boolean", 
+            "variables": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "CreateDocumentationPart": {
+            "location": {
+                "method": "string", 
+                "name": "string", 
+                "path": "string", 
+                "statusCode": "string", 
+                "type": "string"
+            }, 
+            "properties": "string", 
+            "restApiId": "string"
+        }, 
+        "CreateDocumentationVersion": {
+            "description": "string", 
+            "documentationVersion": "string", 
+            "restApiId": "string", 
+            "stageName": "string"
+        }, 
+        "CreateDomainName": {
+            "certificateArn": "string", 
+            "certificateBody": "string", 
+            "certificateChain": "string", 
+            "certificateName": "string", 
+            "certificatePrivateKey": "string", 
+            "domainName": "string", 
+            "endpointConfiguration": {
+                "types": {
+                    "_list": "string"
+                }
+            }, 
+            "regionalCertificateArn": "string", 
+            "regionalCertificateName": "string"
+        }, 
+        "CreateModel": {
+            "contentType": "string", 
+            "description": "string", 
+            "name": "string", 
+            "restApiId": "string", 
+            "schema": "string"
+        }, 
+        "CreateRequestValidator": {
+            "name": "string", 
+            "restApiId": "string", 
+            "validateRequestBody": "boolean", 
+            "validateRequestParameters": "boolean"
+        }, 
+        "CreateResource": {
+            "parentId": "string", 
+            "pathPart": "string", 
+            "restApiId": "string"
+        }, 
+        "CreateRestApi": {
+            "apiKeySource": "string", 
+            "binaryMediaTypes": {
+                "_list": "string"
+            }, 
+            "cloneFrom": "string", 
+            "description": "string", 
+            "endpointConfiguration": {
+                "types": {
+                    "_list": "string"
+                }
+            }, 
+            "minimumCompressionSize": "integer", 
+            "name": "string", 
+            "policy": "string", 
+            "version": "string"
+        }, 
+        "CreateStage": {
+            "cacheClusterEnabled": "boolean", 
+            "cacheClusterSize": "string", 
+            "canarySettings": {
+                "deploymentId": "string", 
+                "percentTraffic": "double", 
+                "stageVariableOverrides": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "useStageCache": "boolean"
+            }, 
+            "deploymentId": "string", 
+            "description": "string", 
+            "documentationVersion": "string", 
+            "restApiId": "string", 
+            "stageName": "string", 
+            "tags": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "tracingEnabled": "boolean", 
+            "variables": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "CreateUsagePlan": {
+            "apiStages": {
+                "_list": {
+                    "apiId": "string", 
+                    "stage": "string", 
+                    "throttle": {
+                        "_key": "string", 
+                        "_value": {
+                            "burstLimit": "integer", 
+                            "rateLimit": "double"
+                        }
+                    }
+                }
+            }, 
+            "description": "string", 
+            "name": "string", 
+            "quota": {
+                "limit": "integer", 
+                "offset": "integer", 
+                "period": "string"
+            }, 
+            "throttle": {
+                "burstLimit": "integer", 
+                "rateLimit": "double"
+            }
+        }, 
+        "CreateUsagePlanKey": {
+            "keyId": "string", 
+            "keyType": "string", 
+            "usagePlanId": "string"
+        }, 
+        "CreateVpcLink": {
+            "description": "string", 
+            "name": "string", 
+            "targetArns": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteApiKey": {
+            "apiKey": "string"
+        }, 
+        "DeleteAuthorizer": {
+            "authorizerId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteBasePathMapping": {
+            "basePath": "string", 
+            "domainName": "string"
+        }, 
+        "DeleteClientCertificate": {
+            "clientCertificateId": "string"
+        }, 
+        "DeleteDeployment": {
+            "deploymentId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteDocumentationPart": {
+            "documentationPartId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteDocumentationVersion": {
+            "documentationVersion": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteDomainName": {
+            "domainName": "string"
+        }, 
+        "DeleteGatewayResponse": {
+            "responseType": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteIntegration": {
+            "httpMethod": "string", 
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteIntegrationResponse": {
+            "httpMethod": "string", 
+            "resourceId": "string", 
+            "restApiId": "string", 
+            "statusCode": "string"
+        }, 
+        "DeleteMethod": {
+            "httpMethod": "string", 
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteMethodResponse": {
+            "httpMethod": "string", 
+            "resourceId": "string", 
+            "restApiId": "string", 
+            "statusCode": "string"
+        }, 
+        "DeleteModel": {
+            "modelName": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteRequestValidator": {
+            "requestValidatorId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteResource": {
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "DeleteRestApi": {
+            "restApiId": "string"
+        }, 
+        "DeleteStage": {
+            "restApiId": "string", 
+            "stageName": "string"
+        }, 
+        "DeleteUsagePlan": {
+            "usagePlanId": "string"
+        }, 
+        "DeleteUsagePlanKey": {
+            "keyId": "string", 
+            "usagePlanId": "string"
+        }, 
+        "DeleteVpcLink": {
+            "vpcLinkId": "string"
+        }, 
+        "GenerateClientCertificate": {
+            "description": "string"
+        }, 
+        "ImportApiKeys": {
+            "body": "blob", 
+            "failOnWarnings": "boolean", 
+            "format": "string"
+        }, 
+        "ImportDocumentationParts": {
+            "body": "blob", 
+            "failOnWarnings": "boolean", 
+            "mode": "string", 
+            "restApiId": "string"
+        }, 
+        "ImportRestApi": {
+            "body": "blob", 
+            "failOnWarnings": "boolean", 
+            "parameters": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "PutGatewayResponse": {
+            "responseParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "responseTemplates": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "responseType": "string", 
+            "restApiId": "string", 
+            "statusCode": "string"
+        }, 
+        "PutIntegration": {
+            "cacheKeyParameters": {
+                "_list": "string"
+            }, 
+            "cacheNamespace": "string", 
+            "connectionId": "string", 
+            "connectionType": "string", 
+            "contentHandling": "string", 
+            "credentials": "string", 
+            "httpMethod": "string", 
+            "integrationHttpMethod": "string", 
+            "passthroughBehavior": "string", 
+            "requestParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "requestTemplates": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "resourceId": "string", 
+            "restApiId": "string", 
+            "timeoutInMillis": "integer", 
+            "type": "string", 
+            "uri": "string"
+        }, 
+        "PutIntegrationResponse": {
+            "contentHandling": "string", 
+            "httpMethod": "string", 
+            "resourceId": "string", 
+            "responseParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "responseTemplates": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "restApiId": "string", 
+            "selectionPattern": "string", 
+            "statusCode": "string"
+        }, 
+        "PutMethod": {
+            "apiKeyRequired": "boolean", 
+            "authorizationScopes": {
+                "_list": "string"
+            }, 
+            "authorizationType": "string", 
+            "authorizerId": "string", 
+            "httpMethod": "string", 
+            "operationName": "string", 
+            "requestModels": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "requestParameters": {
+                "_key": "string", 
+                "_value": "boolean"
+            }, 
+            "requestValidatorId": "string", 
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "PutMethodResponse": {
+            "httpMethod": "string", 
+            "resourceId": "string", 
+            "responseModels": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "responseParameters": {
+                "_key": "string", 
+                "_value": "boolean"
+            }, 
+            "restApiId": "string", 
+            "statusCode": "string"
+        }, 
+        "PutRestApi": {
+            "body": "blob", 
+            "failOnWarnings": "boolean", 
+            "mode": "string", 
+            "parameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateAccount": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "UpdateApiKey": {
+            "apiKey": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "UpdateAuthorizer": {
+            "authorizerId": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateBasePathMapping": {
+            "basePath": "string", 
+            "domainName": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "UpdateClientCertificate": {
+            "clientCertificateId": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "UpdateDeployment": {
+            "deploymentId": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateDocumentationPart": {
+            "documentationPartId": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateDocumentationVersion": {
+            "documentationVersion": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateDomainName": {
+            "domainName": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "UpdateGatewayResponse": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "responseType": "string", 
+            "restApiId": "string"
+        }, 
+        "UpdateIntegration": {
+            "httpMethod": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "UpdateIntegrationResponse": {
+            "httpMethod": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "resourceId": "string", 
+            "restApiId": "string", 
+            "statusCode": "string"
+        }, 
+        "UpdateMethod": {
+            "httpMethod": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "UpdateMethodResponse": {
+            "httpMethod": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "resourceId": "string", 
+            "restApiId": "string", 
+            "statusCode": "string"
+        }, 
+        "UpdateModel": {
+            "modelName": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateRequestValidator": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "requestValidatorId": "string", 
+            "restApiId": "string"
+        }, 
+        "UpdateResource": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "resourceId": "string", 
+            "restApiId": "string"
+        }, 
+        "UpdateRestApi": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string"
+        }, 
+        "UpdateStage": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "restApiId": "string", 
+            "stageName": "string"
+        }, 
+        "UpdateUsage": {
+            "keyId": "string", 
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "usagePlanId": "string"
+        }, 
+        "UpdateUsagePlan": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "usagePlanId": "string"
+        }, 
+        "UpdateVpcLink": {
+            "patchOperations": {
+                "_list": {
+                    "from": "string", 
+                    "op": "string", 
+                    "path": "string", 
+                    "value": "string"
+                }
+            }, 
+            "vpcLinkId": "string"
+        }
+    }
+}

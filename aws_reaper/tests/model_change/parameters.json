@@ -1,0 +1,13 @@
+{
+    "acm": {
+        "IamUrls": [
+            "https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awscertificatemanager.html"
+        ],
+        "IgnoredVerbs": [
+            "*Tags*",
+            "Describe*",
+            "Get*",
+            "List*"
+        ]
+    }
+}

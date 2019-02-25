@@ -1,0 +1,128 @@
+{
+    "IamActions": [
+        "AddMembersToGroup", 
+        "CreateGroup", 
+        "CreateMailDomain", 
+        "CreateMailUser", 
+        "CreateOrganization", 
+        "CreateResource", 
+        "DeleteMailDomain", 
+        "DeleteMobileDevice", 
+        "DeleteOrganization", 
+        "DisableMailGroups", 
+        "DisableMailUsers", 
+        "EnableMailDomain", 
+        "EnableMailGroups", 
+        "EnableMailUsers", 
+        "RemoveMembersFromGroup", 
+        "ResetUserPassword", 
+        "SearchMembers", 
+        "SetAdmin", 
+        "SetDefaultMailDomain", 
+        "SetMailGroupDetails", 
+        "SetMailUserDetails", 
+        "SetMobilePolicyDetails", 
+        "WipeMobileDevice"
+    ], 
+    "OperationInputs": {
+        "AssociateDelegateToResource": {
+            "EntityId": "string", 
+            "OrganizationId": "string", 
+            "ResourceId": "string"
+        }, 
+        "AssociateMemberToGroup": {
+            "GroupId": "string", 
+            "MemberId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "CreateAlias": {
+            "Alias": "string", 
+            "EntityId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "CreateGroup": {
+            "Name": "string", 
+            "OrganizationId": "string"
+        }, 
+        "CreateResource": {
+            "Name": "string", 
+            "OrganizationId": "string", 
+            "Type": "string"
+        }, 
+        "CreateUser": {
+            "DisplayName": "string", 
+            "Name": "string", 
+            "OrganizationId": "string", 
+            "Password": "string"
+        }, 
+        "DeleteAlias": {
+            "Alias": "string", 
+            "EntityId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "DeleteGroup": {
+            "GroupId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "DeleteMailboxPermissions": {
+            "EntityId": "string", 
+            "GranteeId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "DeleteResource": {
+            "OrganizationId": "string", 
+            "ResourceId": "string"
+        }, 
+        "DeleteUser": {
+            "OrganizationId": "string", 
+            "UserId": "string"
+        }, 
+        "DeregisterFromWorkMail": {
+            "EntityId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "DisassociateDelegateFromResource": {
+            "EntityId": "string", 
+            "OrganizationId": "string", 
+            "ResourceId": "string"
+        }, 
+        "DisassociateMemberFromGroup": {
+            "GroupId": "string", 
+            "MemberId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "PutMailboxPermissions": {
+            "EntityId": "string", 
+            "GranteeId": "string", 
+            "OrganizationId": "string", 
+            "PermissionValues": {
+                "_list": "string"
+            }
+        }, 
+        "RegisterToWorkMail": {
+            "Email": "string", 
+            "EntityId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "ResetPassword": {
+            "OrganizationId": "string", 
+            "Password": "string", 
+            "UserId": "string"
+        }, 
+        "UpdatePrimaryEmailAddress": {
+            "Email": "string", 
+            "EntityId": "string", 
+            "OrganizationId": "string"
+        }, 
+        "UpdateResource": {
+            "BookingOptions": {
+                "AutoAcceptRequests": "boolean", 
+                "AutoDeclineConflictingRequests": "boolean", 
+                "AutoDeclineRecurringRequests": "boolean"
+            }, 
+            "Name": "string", 
+            "OrganizationId": "string", 
+            "ResourceId": "string"
+        }
+    }
+}

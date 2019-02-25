@@ -1,0 +1,209 @@
+{
+    "IamActions": [
+        "AbortDocumentVersionUpload", 
+        "ActivateUser", 
+        "AddResourcePermissions", 
+        "AddUserToGroup", 
+        "CheckAlias", 
+        "CreateFolder", 
+        "CreateInstance", 
+        "CreateNotificationSubscription", 
+        "CreateUser", 
+        "DeactivateUser", 
+        "DeleteDocument", 
+        "DeleteFolder", 
+        "DeleteFolderContents", 
+        "DeleteInstance", 
+        "DeleteNotificationSubscription", 
+        "DeleteUser", 
+        "DeregisterDirectory", 
+        "InitiateDocumentVersionUpload", 
+        "RegisterDirectory", 
+        "RemoveAllResourcePermissions", 
+        "RemoveResourcePermission", 
+        "RemoveUserFromGroup", 
+        "UpdateDocument", 
+        "UpdateDocumentVersion", 
+        "UpdateFolder", 
+        "UpdateInstanceAlias", 
+        "UpdateUser"
+    ], 
+    "OperationInputs": {
+        "AbortDocumentVersionUpload": {
+            "AuthenticationToken": "string", 
+            "DocumentId": "string", 
+            "VersionId": "string"
+        }, 
+        "ActivateUser": {
+            "AuthenticationToken": "string", 
+            "UserId": "string"
+        }, 
+        "AddResourcePermissions": {
+            "AuthenticationToken": "string", 
+            "NotificationOptions": {
+                "EmailMessage": "string", 
+                "SendEmail": "boolean"
+            }, 
+            "Principals": {
+                "_list": {
+                    "Id": "string", 
+                    "Role": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "ResourceId": "string"
+        }, 
+        "CreateComment": {
+            "AuthenticationToken": "string", 
+            "DocumentId": "string", 
+            "NotifyCollaborators": "boolean", 
+            "ParentId": "string", 
+            "Text": "string", 
+            "ThreadId": "string", 
+            "VersionId": "string", 
+            "Visibility": "string"
+        }, 
+        "CreateCustomMetadata": {
+            "AuthenticationToken": "string", 
+            "CustomMetadata": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ResourceId": "string", 
+            "VersionId": "string"
+        }, 
+        "CreateFolder": {
+            "AuthenticationToken": "string", 
+            "Name": "string", 
+            "ParentFolderId": "string"
+        }, 
+        "CreateLabels": {
+            "AuthenticationToken": "string", 
+            "Labels": {
+                "_list": "string"
+            }, 
+            "ResourceId": "string"
+        }, 
+        "CreateNotificationSubscription": {
+            "Endpoint": "string", 
+            "OrganizationId": "string", 
+            "Protocol": "string", 
+            "SubscriptionType": "string"
+        }, 
+        "CreateUser": {
+            "AuthenticationToken": "string", 
+            "EmailAddress": "string", 
+            "GivenName": "string", 
+            "OrganizationId": "string", 
+            "Password": "string", 
+            "StorageRule": {
+                "StorageAllocatedInBytes": "long", 
+                "StorageType": "string"
+            }, 
+            "Surname": "string", 
+            "TimeZoneId": "string", 
+            "Username": "string"
+        }, 
+        "DeactivateUser": {
+            "AuthenticationToken": "string", 
+            "UserId": "string"
+        }, 
+        "DeleteComment": {
+            "AuthenticationToken": "string", 
+            "CommentId": "string", 
+            "DocumentId": "string", 
+            "VersionId": "string"
+        }, 
+        "DeleteCustomMetadata": {
+            "AuthenticationToken": "string", 
+            "DeleteAll": "boolean", 
+            "Keys": {
+                "_list": "string"
+            }, 
+            "ResourceId": "string", 
+            "VersionId": "string"
+        }, 
+        "DeleteDocument": {
+            "AuthenticationToken": "string", 
+            "DocumentId": "string"
+        }, 
+        "DeleteFolder": {
+            "AuthenticationToken": "string", 
+            "FolderId": "string"
+        }, 
+        "DeleteFolderContents": {
+            "AuthenticationToken": "string", 
+            "FolderId": "string"
+        }, 
+        "DeleteLabels": {
+            "AuthenticationToken": "string", 
+            "DeleteAll": "boolean", 
+            "Labels": {
+                "_list": "string"
+            }, 
+            "ResourceId": "string"
+        }, 
+        "DeleteNotificationSubscription": {
+            "OrganizationId": "string", 
+            "SubscriptionId": "string"
+        }, 
+        "DeleteUser": {
+            "AuthenticationToken": "string", 
+            "UserId": "string"
+        }, 
+        "InitiateDocumentVersionUpload": {
+            "AuthenticationToken": "string", 
+            "ContentCreatedTimestamp": "timestamp", 
+            "ContentModifiedTimestamp": "timestamp", 
+            "ContentType": "string", 
+            "DocumentSizeInBytes": "long", 
+            "Id": "string", 
+            "Name": "string", 
+            "ParentFolderId": "string"
+        }, 
+        "RemoveAllResourcePermissions": {
+            "AuthenticationToken": "string", 
+            "ResourceId": "string"
+        }, 
+        "RemoveResourcePermission": {
+            "AuthenticationToken": "string", 
+            "PrincipalId": "string", 
+            "PrincipalType": "string", 
+            "ResourceId": "string"
+        }, 
+        "UpdateDocument": {
+            "AuthenticationToken": "string", 
+            "DocumentId": "string", 
+            "Name": "string", 
+            "ParentFolderId": "string", 
+            "ResourceState": "string"
+        }, 
+        "UpdateDocumentVersion": {
+            "AuthenticationToken": "string", 
+            "DocumentId": "string", 
+            "VersionId": "string", 
+            "VersionStatus": "string"
+        }, 
+        "UpdateFolder": {
+            "AuthenticationToken": "string", 
+            "FolderId": "string", 
+            "Name": "string", 
+            "ParentFolderId": "string", 
+            "ResourceState": "string"
+        }, 
+        "UpdateUser": {
+            "AuthenticationToken": "string", 
+            "GivenName": "string", 
+            "GrantPoweruserPrivileges": "string", 
+            "Locale": "string", 
+            "StorageRule": {
+                "StorageAllocatedInBytes": "long", 
+                "StorageType": "string"
+            }, 
+            "Surname": "string", 
+            "TimeZoneId": "string", 
+            "Type": "string", 
+            "UserId": "string"
+        }
+    }
+}

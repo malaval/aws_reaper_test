@@ -1,0 +1,170 @@
+{
+    "IamActions": [
+        "CreateApiKey", 
+        "CreateDataSource", 
+        "CreateGraphqlApi", 
+        "CreateResolver", 
+        "CreateType", 
+        "DeleteApiKey", 
+        "DeleteDataSource", 
+        "DeleteGraphqlApi", 
+        "DeleteResolver", 
+        "DeleteType", 
+        "GraphQL", 
+        "StartSchemaCreation", 
+        "UpdateApiKey", 
+        "UpdateDataSource", 
+        "UpdateGraphqlApi", 
+        "UpdateResolver", 
+        "UpdateType"
+    ], 
+    "OperationInputs": {
+        "CreateApiKey": {
+            "apiId": "string", 
+            "description": "string", 
+            "expires": "long"
+        }, 
+        "CreateDataSource": {
+            "apiId": "string", 
+            "description": "string", 
+            "dynamodbConfig": {
+                "awsRegion": "string", 
+                "tableName": "string", 
+                "useCallerCredentials": "boolean"
+            }, 
+            "elasticsearchConfig": {
+                "awsRegion": "string", 
+                "endpoint": "string"
+            }, 
+            "httpConfig": {
+                "endpoint": "string"
+            }, 
+            "lambdaConfig": {
+                "lambdaFunctionArn": "string"
+            }, 
+            "name": "string", 
+            "serviceRoleArn": "string", 
+            "type": "string"
+        }, 
+        "CreateGraphqlApi": {
+            "authenticationType": "string", 
+            "logConfig": {
+                "cloudWatchLogsRoleArn": "string", 
+                "fieldLogLevel": "string"
+            }, 
+            "name": "string", 
+            "openIDConnectConfig": {
+                "authTTL": "long", 
+                "clientId": "string", 
+                "iatTTL": "long", 
+                "issuer": "string"
+            }, 
+            "userPoolConfig": {
+                "appIdClientRegex": "string", 
+                "awsRegion": "string", 
+                "defaultAction": "string", 
+                "userPoolId": "string"
+            }
+        }, 
+        "CreateResolver": {
+            "apiId": "string", 
+            "dataSourceName": "string", 
+            "fieldName": "string", 
+            "requestMappingTemplate": "string", 
+            "responseMappingTemplate": "string", 
+            "typeName": "string"
+        }, 
+        "CreateType": {
+            "apiId": "string", 
+            "definition": "string", 
+            "format": "string"
+        }, 
+        "DeleteApiKey": {
+            "apiId": "string", 
+            "id": "string"
+        }, 
+        "DeleteDataSource": {
+            "apiId": "string", 
+            "name": "string"
+        }, 
+        "DeleteGraphqlApi": {
+            "apiId": "string"
+        }, 
+        "DeleteResolver": {
+            "apiId": "string", 
+            "fieldName": "string", 
+            "typeName": "string"
+        }, 
+        "DeleteType": {
+            "apiId": "string", 
+            "typeName": "string"
+        }, 
+        "StartSchemaCreation": {
+            "apiId": "string", 
+            "definition": "blob"
+        }, 
+        "UpdateApiKey": {
+            "apiId": "string", 
+            "description": "string", 
+            "expires": "long", 
+            "id": "string"
+        }, 
+        "UpdateDataSource": {
+            "apiId": "string", 
+            "description": "string", 
+            "dynamodbConfig": {
+                "awsRegion": "string", 
+                "tableName": "string", 
+                "useCallerCredentials": "boolean"
+            }, 
+            "elasticsearchConfig": {
+                "awsRegion": "string", 
+                "endpoint": "string"
+            }, 
+            "httpConfig": {
+                "endpoint": "string"
+            }, 
+            "lambdaConfig": {
+                "lambdaFunctionArn": "string"
+            }, 
+            "name": "string", 
+            "serviceRoleArn": "string", 
+            "type": "string"
+        }, 
+        "UpdateGraphqlApi": {
+            "apiId": "string", 
+            "authenticationType": "string", 
+            "logConfig": {
+                "cloudWatchLogsRoleArn": "string", 
+                "fieldLogLevel": "string"
+            }, 
+            "name": "string", 
+            "openIDConnectConfig": {
+                "authTTL": "long", 
+                "clientId": "string", 
+                "iatTTL": "long", 
+                "issuer": "string"
+            }, 
+            "userPoolConfig": {
+                "appIdClientRegex": "string", 
+                "awsRegion": "string", 
+                "defaultAction": "string", 
+                "userPoolId": "string"
+            }
+        }, 
+        "UpdateResolver": {
+            "apiId": "string", 
+            "dataSourceName": "string", 
+            "fieldName": "string", 
+            "requestMappingTemplate": "string", 
+            "responseMappingTemplate": "string", 
+            "typeName": "string"
+        }, 
+        "UpdateType": {
+            "apiId": "string", 
+            "definition": "string", 
+            "format": "string", 
+            "typeName": "string"
+        }
+    }
+}

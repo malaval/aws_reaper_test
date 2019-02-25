@@ -1,0 +1,77 @@
+{
+    "IamActions": [
+        "CreateLifecyclePolicy", 
+        "DeleteLifecyclePolicy", 
+        "UpdateLifecyclePolicy"
+    ], 
+    "OperationInputs": {
+        "CreateLifecyclePolicy": {
+            "Description": "string", 
+            "ExecutionRoleArn": "string", 
+            "PolicyDetails": {
+                "ResourceTypes": {
+                    "_list": "string"
+                }, 
+                "Schedules": {
+                    "_list": {
+                        "CreateRule": {
+                            "Interval": "integer", 
+                            "IntervalUnit": "string", 
+                            "Times": "list"
+                        }, 
+                        "Name": "string", 
+                        "RetainRule": {
+                            "Count": "integer"
+                        }, 
+                        "TagsToAdd": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "TargetTags": {
+                    "_list": {
+                        "Key": "string", 
+                        "Value": "string"
+                    }
+                }
+            }, 
+            "State": "string"
+        }, 
+        "DeleteLifecyclePolicy": {
+            "PolicyId": "string"
+        }, 
+        "UpdateLifecyclePolicy": {
+            "Description": "string", 
+            "ExecutionRoleArn": "string", 
+            "PolicyDetails": {
+                "ResourceTypes": {
+                    "_list": "string"
+                }, 
+                "Schedules": {
+                    "_list": {
+                        "CreateRule": {
+                            "Interval": "integer", 
+                            "IntervalUnit": "string", 
+                            "Times": "list"
+                        }, 
+                        "Name": "string", 
+                        "RetainRule": {
+                            "Count": "integer"
+                        }, 
+                        "TagsToAdd": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "TargetTags": {
+                    "_list": {
+                        "Key": "string", 
+                        "Value": "string"
+                    }
+                }
+            }, 
+            "PolicyId": "string", 
+            "State": "string"
+        }
+    }
+}

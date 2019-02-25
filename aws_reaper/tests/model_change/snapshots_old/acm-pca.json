@@ -1,0 +1,90 @@
+{
+    "IamActions": [
+        "CreateCertificateAuthority", 
+        "CreateCertificateAuthorityAuditReport", 
+        "DeleteCertificateAuthority", 
+        "ImportCertificateAuthorityCertificate", 
+        "IssueCertificate", 
+        "RestoreCertificateAuthority", 
+        "RevokeCertificate", 
+        "UpdateCertificateAuthority"
+    ], 
+    "OperationInputs": {
+        "CreateCertificateAuthority": {
+            "CertificateAuthorityConfiguration": {
+                "KeyAlgorithm": "string", 
+                "SigningAlgorithm": "string", 
+                "Subject": {
+                    "CommonName": "string", 
+                    "Country": "string", 
+                    "DistinguishedNameQualifier": "string", 
+                    "GenerationQualifier": "string", 
+                    "GivenName": "string", 
+                    "Initials": "string", 
+                    "Locality": "string", 
+                    "Organization": "string", 
+                    "OrganizationalUnit": "string", 
+                    "Pseudonym": "string", 
+                    "SerialNumber": "string", 
+                    "State": "string", 
+                    "Surname": "string", 
+                    "Title": "string"
+                }
+            }, 
+            "CertificateAuthorityType": "string", 
+            "IdempotencyToken": "string", 
+            "RevocationConfiguration": {
+                "CrlConfiguration": {
+                    "CustomCname": "string", 
+                    "Enabled": "boolean", 
+                    "ExpirationInDays": "integer", 
+                    "S3BucketName": "string"
+                }
+            }
+        }, 
+        "CreateCertificateAuthorityAuditReport": {
+            "AuditReportResponseFormat": "string", 
+            "CertificateAuthorityArn": "string", 
+            "S3BucketName": "string"
+        }, 
+        "DeleteCertificateAuthority": {
+            "CertificateAuthorityArn": "string", 
+            "PermanentDeletionTimeInDays": "integer"
+        }, 
+        "ImportCertificateAuthorityCertificate": {
+            "Certificate": "blob", 
+            "CertificateAuthorityArn": "string", 
+            "CertificateChain": "blob"
+        }, 
+        "IssueCertificate": {
+            "CertificateAuthorityArn": "string", 
+            "Csr": "blob", 
+            "IdempotencyToken": "string", 
+            "SigningAlgorithm": "string", 
+            "Validity": {
+                "Type": "string", 
+                "Value": "long"
+            }
+        }, 
+        "RestoreCertificateAuthority": {
+            "CertificateAuthorityArn": "string"
+        }, 
+        "RevokeCertificate": {
+            "CertificateAuthorityArn": "string", 
+            "CertificateSerial": "string", 
+            "RevocationReason": "string"
+        }, 
+        "UpdateCertificateAuthority": {
+            "CertificateAuthorityArn": "string", 
+            "RevocationConfiguration": {
+                "CrlConfiguration": {
+                    "CustomCname": "string", 
+                    "Enabled": "boolean", 
+                    "ExpirationInDays": "integer", 
+                    "S3BucketName": "string"
+                }
+            }, 
+            "Status": "string"
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "IamActions": [
+        "CreateBroker", 
+        "CreateConfiguration", 
+        "CreateUser", 
+        "DeleteBroker", 
+        "DeleteUser", 
+        "RebootBroker", 
+        "UpdateBroker", 
+        "UpdateConfiguration", 
+        "UpdateUser"
+    ], 
+    "OperationInputs": {
+        "CreateBroker": {
+            "AutoMinorVersionUpgrade": "boolean", 
+            "BrokerName": "string", 
+            "Configuration": {
+                "Id": "string", 
+                "Revision": "integer"
+            }, 
+            "CreatorRequestId": "string", 
+            "DeploymentMode": "string", 
+            "EngineType": "string", 
+            "EngineVersion": "string", 
+            "HostInstanceType": "string", 
+            "Logs": {
+                "Audit": "boolean", 
+                "General": "boolean"
+            }, 
+            "MaintenanceWindowStartTime": {
+                "DayOfWeek": "string", 
+                "TimeOfDay": "string", 
+                "TimeZone": "string"
+            }, 
+            "PubliclyAccessible": "boolean", 
+            "SecurityGroups": {
+                "_list": "string"
+            }, 
+            "SubnetIds": {
+                "_list": "string"
+            }, 
+            "Users": {
+                "_list": {
+                    "ConsoleAccess": "boolean", 
+                    "Groups": {
+                        "_list": "string"
+                    }, 
+                    "Password": "string", 
+                    "Username": "string"
+                }
+            }
+        }, 
+        "CreateConfiguration": {
+            "EngineType": "string", 
+            "EngineVersion": "string", 
+            "Name": "string"
+        }, 
+        "CreateUser": {
+            "BrokerId": "string", 
+            "ConsoleAccess": "boolean", 
+            "Groups": {
+                "_list": "string"
+            }, 
+            "Password": "string", 
+            "Username": "string"
+        }, 
+        "DeleteBroker": {
+            "BrokerId": "string"
+        }, 
+        "DeleteUser": {
+            "BrokerId": "string", 
+            "Username": "string"
+        }, 
+        "RebootBroker": {
+            "BrokerId": "string"
+        }, 
+        "UpdateBroker": {
+            "BrokerId": "string", 
+            "Configuration": {
+                "Id": "string", 
+                "Revision": "integer"
+            }, 
+            "Logs": {
+                "Audit": "boolean", 
+                "General": "boolean"
+            }
+        }, 
+        "UpdateConfiguration": {
+            "ConfigurationId": "string", 
+            "Data": "string", 
+            "Description": "string"
+        }, 
+        "UpdateUser": {
+            "BrokerId": "string", 
+            "ConsoleAccess": "boolean", 
+            "Groups": {
+                "_list": "string"
+            }, 
+            "Password": "string", 
+            "Username": "string"
+        }
+    }
+}

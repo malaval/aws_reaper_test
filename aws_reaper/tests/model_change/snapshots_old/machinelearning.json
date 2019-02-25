@@ -1,0 +1,150 @@
+{
+    "IamActions": [
+        "CreateBatchPrediction", 
+        "CreateDataSourceFromRDS", 
+        "CreateDataSourceFromRedshift", 
+        "CreateDataSourceFromS3", 
+        "CreateEvaluation", 
+        "CreateMLModel", 
+        "CreateRealtimeEndpoint", 
+        "DeleteBatchPrediction", 
+        "DeleteDataSource", 
+        "DeleteEvaluation", 
+        "DeleteMLModel", 
+        "DeleteRealtimeEndpoint", 
+        "Predict", 
+        "UpdateBatchPrediction", 
+        "UpdateDataSource", 
+        "UpdateEvaluation", 
+        "UpdateMLModel"
+    ], 
+    "OperationInputs": {
+        "CreateBatchPrediction": {
+            "BatchPredictionDataSourceId": "string", 
+            "BatchPredictionId": "string", 
+            "BatchPredictionName": "string", 
+            "MLModelId": "string", 
+            "OutputUri": "string"
+        }, 
+        "CreateDataSourceFromRDS": {
+            "ComputeStatistics": "boolean", 
+            "DataSourceId": "string", 
+            "DataSourceName": "string", 
+            "RDSData": {
+                "DataRearrangement": "string", 
+                "DataSchema": "string", 
+                "DataSchemaUri": "string", 
+                "DatabaseCredentials": {
+                    "Password": "string", 
+                    "Username": "string"
+                }, 
+                "DatabaseInformation": {
+                    "DatabaseName": "string", 
+                    "InstanceIdentifier": "string"
+                }, 
+                "ResourceRole": "string", 
+                "S3StagingLocation": "string", 
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SelectSqlQuery": "string", 
+                "ServiceRole": "string", 
+                "SubnetId": "string"
+            }, 
+            "RoleARN": "string"
+        }, 
+        "CreateDataSourceFromRedshift": {
+            "ComputeStatistics": "boolean", 
+            "DataSourceId": "string", 
+            "DataSourceName": "string", 
+            "DataSpec": {
+                "DataRearrangement": "string", 
+                "DataSchema": "string", 
+                "DataSchemaUri": "string", 
+                "DatabaseCredentials": {
+                    "Password": "string", 
+                    "Username": "string"
+                }, 
+                "DatabaseInformation": {
+                    "ClusterIdentifier": "string", 
+                    "DatabaseName": "string"
+                }, 
+                "S3StagingLocation": "string", 
+                "SelectSqlQuery": "string"
+            }, 
+            "RoleARN": "string"
+        }, 
+        "CreateDataSourceFromS3": {
+            "ComputeStatistics": "boolean", 
+            "DataSourceId": "string", 
+            "DataSourceName": "string", 
+            "DataSpec": {
+                "DataLocationS3": "string", 
+                "DataRearrangement": "string", 
+                "DataSchema": "string", 
+                "DataSchemaLocationS3": "string"
+            }
+        }, 
+        "CreateEvaluation": {
+            "EvaluationDataSourceId": "string", 
+            "EvaluationId": "string", 
+            "EvaluationName": "string", 
+            "MLModelId": "string"
+        }, 
+        "CreateMLModel": {
+            "MLModelId": "string", 
+            "MLModelName": "string", 
+            "MLModelType": "string", 
+            "Parameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "Recipe": "string", 
+            "RecipeUri": "string", 
+            "TrainingDataSourceId": "string"
+        }, 
+        "CreateRealtimeEndpoint": {
+            "MLModelId": "string"
+        }, 
+        "DeleteBatchPrediction": {
+            "BatchPredictionId": "string"
+        }, 
+        "DeleteDataSource": {
+            "DataSourceId": "string"
+        }, 
+        "DeleteEvaluation": {
+            "EvaluationId": "string"
+        }, 
+        "DeleteMLModel": {
+            "MLModelId": "string"
+        }, 
+        "DeleteRealtimeEndpoint": {
+            "MLModelId": "string"
+        }, 
+        "Predict": {
+            "MLModelId": "string", 
+            "PredictEndpoint": "string", 
+            "Record": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "UpdateBatchPrediction": {
+            "BatchPredictionId": "string", 
+            "BatchPredictionName": "string"
+        }, 
+        "UpdateDataSource": {
+            "DataSourceId": "string", 
+            "DataSourceName": "string"
+        }, 
+        "UpdateEvaluation": {
+            "EvaluationId": "string", 
+            "EvaluationName": "string"
+        }, 
+        "UpdateMLModel": {
+            "MLModelId": "string", 
+            "MLModelName": "string", 
+            "ScoreThreshold": "float"
+        }
+    }
+}

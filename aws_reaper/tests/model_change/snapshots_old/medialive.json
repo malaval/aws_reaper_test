@@ -1,0 +1,501 @@
+{
+    "IamActions": [
+        "CreateChannel", 
+        "CreateInput", 
+        "CreateInputSecurityGroup", 
+        "DeleteChannel", 
+        "DeleteInput", 
+        "DeleteInputSecurityGroup", 
+        "DeleteReservation", 
+        "PurchaseOffering", 
+        "StartChannel", 
+        "StopChannel", 
+        "UpdateChannel", 
+        "UpdateInput", 
+        "UpdateInputSecurityGroup"
+    ], 
+    "OperationInputs": {
+        "BatchUpdateSchedule": {
+            "ChannelId": "string", 
+            "Creates": {
+                "ScheduleActions": {
+                    "_list": {
+                        "ActionName": "string", 
+                        "ScheduleActionSettings": {
+                            "Scte35ReturnToNetworkSettings": "structure", 
+                            "Scte35SpliceInsertSettings": "structure", 
+                            "Scte35TimeSignalSettings": "structure", 
+                            "StaticImageActivateSettings": "structure", 
+                            "StaticImageDeactivateSettings": "structure"
+                        }, 
+                        "ScheduleActionStartSettings": {
+                            "FixedModeScheduleActionStartSettings": "structure"
+                        }
+                    }
+                }
+            }, 
+            "Deletes": {
+                "ActionNames": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "CreateChannel": {
+            "Destinations": {
+                "_list": {
+                    "Id": "string", 
+                    "Settings": {
+                        "_list": {
+                            "PasswordParam": "string", 
+                            "StreamName": "string", 
+                            "Url": "string", 
+                            "Username": "string"
+                        }
+                    }
+                }
+            }, 
+            "EncoderSettings": {
+                "AudioDescriptions": {
+                    "_list": {
+                        "AudioNormalizationSettings": {
+                            "Algorithm": "string", 
+                            "AlgorithmControl": "string", 
+                            "TargetLkfs": "double"
+                        }, 
+                        "AudioSelectorName": "string", 
+                        "AudioType": "string", 
+                        "AudioTypeControl": "string", 
+                        "CodecSettings": {
+                            "AacSettings": "structure", 
+                            "Ac3Settings": "structure", 
+                            "Eac3Settings": "structure", 
+                            "Mp2Settings": "structure", 
+                            "PassThroughSettings": "structure"
+                        }, 
+                        "LanguageCode": "string", 
+                        "LanguageCodeControl": "string", 
+                        "Name": "string", 
+                        "RemixSettings": {
+                            "ChannelMappings": "list", 
+                            "ChannelsIn": "integer", 
+                            "ChannelsOut": "integer"
+                        }, 
+                        "StreamName": "string"
+                    }
+                }, 
+                "AvailBlanking": {
+                    "AvailBlankingImage": {
+                        "PasswordParam": "string", 
+                        "Uri": "string", 
+                        "Username": "string"
+                    }, 
+                    "State": "string"
+                }, 
+                "AvailConfiguration": {
+                    "AvailSettings": {
+                        "Scte35SpliceInsert": {
+                            "AdAvailOffset": "integer", 
+                            "NoRegionalBlackoutFlag": "string", 
+                            "WebDeliveryAllowedFlag": "string"
+                        }, 
+                        "Scte35TimeSignalApos": {
+                            "AdAvailOffset": "integer", 
+                            "NoRegionalBlackoutFlag": "string", 
+                            "WebDeliveryAllowedFlag": "string"
+                        }
+                    }
+                }, 
+                "BlackoutSlate": {
+                    "BlackoutSlateImage": {
+                        "PasswordParam": "string", 
+                        "Uri": "string", 
+                        "Username": "string"
+                    }, 
+                    "NetworkEndBlackout": "string", 
+                    "NetworkEndBlackoutImage": {
+                        "PasswordParam": "string", 
+                        "Uri": "string", 
+                        "Username": "string"
+                    }, 
+                    "NetworkId": "string", 
+                    "State": "string"
+                }, 
+                "CaptionDescriptions": {
+                    "_list": {
+                        "CaptionSelectorName": "string", 
+                        "DestinationSettings": {
+                            "AribDestinationSettings": "structure", 
+                            "BurnInDestinationSettings": "structure", 
+                            "DvbSubDestinationSettings": "structure", 
+                            "EmbeddedDestinationSettings": "structure", 
+                            "EmbeddedPlusScte20DestinationSettings": "structure", 
+                            "RtmpCaptionInfoDestinationSettings": "structure", 
+                            "Scte20PlusEmbeddedDestinationSettings": "structure", 
+                            "Scte27DestinationSettings": "structure", 
+                            "SmpteTtDestinationSettings": "structure", 
+                            "TeletextDestinationSettings": "structure", 
+                            "TtmlDestinationSettings": "structure", 
+                            "WebvttDestinationSettings": "structure"
+                        }, 
+                        "LanguageCode": "string", 
+                        "LanguageDescription": "string", 
+                        "Name": "string"
+                    }
+                }, 
+                "GlobalConfiguration": {
+                    "InitialAudioGain": "integer", 
+                    "InputEndAction": "string", 
+                    "InputLossBehavior": {
+                        "BlackFrameMsec": "integer", 
+                        "InputLossImageColor": "string", 
+                        "InputLossImageSlate": {
+                            "PasswordParam": "string", 
+                            "Uri": "string", 
+                            "Username": "string"
+                        }, 
+                        "InputLossImageType": "string", 
+                        "RepeatFrameMsec": "integer"
+                    }, 
+                    "OutputTimingSource": "string", 
+                    "SupportLowFramerateInputs": "string"
+                }, 
+                "OutputGroups": {
+                    "_list": {
+                        "Name": "string", 
+                        "OutputGroupSettings": {
+                            "ArchiveGroupSettings": "structure", 
+                            "HlsGroupSettings": "structure", 
+                            "MsSmoothGroupSettings": "structure", 
+                            "RtmpGroupSettings": "structure", 
+                            "UdpGroupSettings": "structure"
+                        }, 
+                        "Outputs": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "TimecodeConfig": {
+                    "Source": "string", 
+                    "SyncThreshold": "integer"
+                }, 
+                "VideoDescriptions": {
+                    "_list": {
+                        "CodecSettings": {
+                            "H264Settings": "structure"
+                        }, 
+                        "Height": "integer", 
+                        "Name": "string", 
+                        "RespondToAfd": "string", 
+                        "ScalingBehavior": "string", 
+                        "Sharpness": "integer", 
+                        "Width": "integer"
+                    }
+                }
+            }, 
+            "InputAttachments": {
+                "_list": {
+                    "InputId": "string", 
+                    "InputSettings": {
+                        "AudioSelectors": {
+                            "_list": "structure"
+                        }, 
+                        "CaptionSelectors": {
+                            "_list": "structure"
+                        }, 
+                        "DeblockFilter": "string", 
+                        "DenoiseFilter": "string", 
+                        "FilterStrength": "integer", 
+                        "InputFilter": "string", 
+                        "NetworkInputSettings": {
+                            "HlsInputSettings": "structure", 
+                            "ServerValidation": "string"
+                        }, 
+                        "SourceEndBehavior": "string", 
+                        "VideoSelector": {
+                            "ColorSpace": "string", 
+                            "ColorSpaceUsage": "string", 
+                            "SelectorSettings": "structure"
+                        }
+                    }
+                }
+            }, 
+            "InputSpecification": {
+                "Codec": "string", 
+                "MaximumBitrate": "string", 
+                "Resolution": "string"
+            }, 
+            "LogLevel": "string", 
+            "Name": "string", 
+            "RequestId": "string", 
+            "Reserved": "string", 
+            "RoleArn": "string"
+        }, 
+        "CreateInput": {
+            "Destinations": {
+                "_list": {
+                    "StreamName": "string"
+                }
+            }, 
+            "InputSecurityGroups": {
+                "_list": "string"
+            }, 
+            "Name": "string", 
+            "RequestId": "string", 
+            "Sources": {
+                "_list": {
+                    "PasswordParam": "string", 
+                    "Url": "string", 
+                    "Username": "string"
+                }
+            }, 
+            "Type": "string"
+        }, 
+        "CreateInputSecurityGroup": {
+            "WhitelistRules": {
+                "_list": {
+                    "Cidr": "string"
+                }
+            }
+        }, 
+        "DeleteChannel": {
+            "ChannelId": "string"
+        }, 
+        "DeleteInput": {
+            "InputId": "string"
+        }, 
+        "DeleteInputSecurityGroup": {
+            "InputSecurityGroupId": "string"
+        }, 
+        "DeleteReservation": {
+            "ReservationId": "string"
+        }, 
+        "PurchaseOffering": {
+            "Count": "integer", 
+            "Name": "string", 
+            "OfferingId": "string", 
+            "RequestId": "string"
+        }, 
+        "StartChannel": {
+            "ChannelId": "string"
+        }, 
+        "StopChannel": {
+            "ChannelId": "string"
+        }, 
+        "UpdateChannel": {
+            "ChannelId": "string", 
+            "Destinations": {
+                "_list": {
+                    "Id": "string", 
+                    "Settings": {
+                        "_list": {
+                            "PasswordParam": "string", 
+                            "StreamName": "string", 
+                            "Url": "string", 
+                            "Username": "string"
+                        }
+                    }
+                }
+            }, 
+            "EncoderSettings": {
+                "AudioDescriptions": {
+                    "_list": {
+                        "AudioNormalizationSettings": {
+                            "Algorithm": "string", 
+                            "AlgorithmControl": "string", 
+                            "TargetLkfs": "double"
+                        }, 
+                        "AudioSelectorName": "string", 
+                        "AudioType": "string", 
+                        "AudioTypeControl": "string", 
+                        "CodecSettings": {
+                            "AacSettings": "structure", 
+                            "Ac3Settings": "structure", 
+                            "Eac3Settings": "structure", 
+                            "Mp2Settings": "structure", 
+                            "PassThroughSettings": "structure"
+                        }, 
+                        "LanguageCode": "string", 
+                        "LanguageCodeControl": "string", 
+                        "Name": "string", 
+                        "RemixSettings": {
+                            "ChannelMappings": "list", 
+                            "ChannelsIn": "integer", 
+                            "ChannelsOut": "integer"
+                        }, 
+                        "StreamName": "string"
+                    }
+                }, 
+                "AvailBlanking": {
+                    "AvailBlankingImage": {
+                        "PasswordParam": "string", 
+                        "Uri": "string", 
+                        "Username": "string"
+                    }, 
+                    "State": "string"
+                }, 
+                "AvailConfiguration": {
+                    "AvailSettings": {
+                        "Scte35SpliceInsert": {
+                            "AdAvailOffset": "integer", 
+                            "NoRegionalBlackoutFlag": "string", 
+                            "WebDeliveryAllowedFlag": "string"
+                        }, 
+                        "Scte35TimeSignalApos": {
+                            "AdAvailOffset": "integer", 
+                            "NoRegionalBlackoutFlag": "string", 
+                            "WebDeliveryAllowedFlag": "string"
+                        }
+                    }
+                }, 
+                "BlackoutSlate": {
+                    "BlackoutSlateImage": {
+                        "PasswordParam": "string", 
+                        "Uri": "string", 
+                        "Username": "string"
+                    }, 
+                    "NetworkEndBlackout": "string", 
+                    "NetworkEndBlackoutImage": {
+                        "PasswordParam": "string", 
+                        "Uri": "string", 
+                        "Username": "string"
+                    }, 
+                    "NetworkId": "string", 
+                    "State": "string"
+                }, 
+                "CaptionDescriptions": {
+                    "_list": {
+                        "CaptionSelectorName": "string", 
+                        "DestinationSettings": {
+                            "AribDestinationSettings": "structure", 
+                            "BurnInDestinationSettings": "structure", 
+                            "DvbSubDestinationSettings": "structure", 
+                            "EmbeddedDestinationSettings": "structure", 
+                            "EmbeddedPlusScte20DestinationSettings": "structure", 
+                            "RtmpCaptionInfoDestinationSettings": "structure", 
+                            "Scte20PlusEmbeddedDestinationSettings": "structure", 
+                            "Scte27DestinationSettings": "structure", 
+                            "SmpteTtDestinationSettings": "structure", 
+                            "TeletextDestinationSettings": "structure", 
+                            "TtmlDestinationSettings": "structure", 
+                            "WebvttDestinationSettings": "structure"
+                        }, 
+                        "LanguageCode": "string", 
+                        "LanguageDescription": "string", 
+                        "Name": "string"
+                    }
+                }, 
+                "GlobalConfiguration": {
+                    "InitialAudioGain": "integer", 
+                    "InputEndAction": "string", 
+                    "InputLossBehavior": {
+                        "BlackFrameMsec": "integer", 
+                        "InputLossImageColor": "string", 
+                        "InputLossImageSlate": {
+                            "PasswordParam": "string", 
+                            "Uri": "string", 
+                            "Username": "string"
+                        }, 
+                        "InputLossImageType": "string", 
+                        "RepeatFrameMsec": "integer"
+                    }, 
+                    "OutputTimingSource": "string", 
+                    "SupportLowFramerateInputs": "string"
+                }, 
+                "OutputGroups": {
+                    "_list": {
+                        "Name": "string", 
+                        "OutputGroupSettings": {
+                            "ArchiveGroupSettings": "structure", 
+                            "HlsGroupSettings": "structure", 
+                            "MsSmoothGroupSettings": "structure", 
+                            "RtmpGroupSettings": "structure", 
+                            "UdpGroupSettings": "structure"
+                        }, 
+                        "Outputs": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "TimecodeConfig": {
+                    "Source": "string", 
+                    "SyncThreshold": "integer"
+                }, 
+                "VideoDescriptions": {
+                    "_list": {
+                        "CodecSettings": {
+                            "H264Settings": "structure"
+                        }, 
+                        "Height": "integer", 
+                        "Name": "string", 
+                        "RespondToAfd": "string", 
+                        "ScalingBehavior": "string", 
+                        "Sharpness": "integer", 
+                        "Width": "integer"
+                    }
+                }
+            }, 
+            "InputAttachments": {
+                "_list": {
+                    "InputId": "string", 
+                    "InputSettings": {
+                        "AudioSelectors": {
+                            "_list": "structure"
+                        }, 
+                        "CaptionSelectors": {
+                            "_list": "structure"
+                        }, 
+                        "DeblockFilter": "string", 
+                        "DenoiseFilter": "string", 
+                        "FilterStrength": "integer", 
+                        "InputFilter": "string", 
+                        "NetworkInputSettings": {
+                            "HlsInputSettings": "structure", 
+                            "ServerValidation": "string"
+                        }, 
+                        "SourceEndBehavior": "string", 
+                        "VideoSelector": {
+                            "ColorSpace": "string", 
+                            "ColorSpaceUsage": "string", 
+                            "SelectorSettings": "structure"
+                        }
+                    }
+                }
+            }, 
+            "InputSpecification": {
+                "Codec": "string", 
+                "MaximumBitrate": "string", 
+                "Resolution": "string"
+            }, 
+            "LogLevel": "string", 
+            "Name": "string", 
+            "RoleArn": "string"
+        }, 
+        "UpdateInput": {
+            "Destinations": {
+                "_list": {
+                    "StreamName": "string"
+                }
+            }, 
+            "InputId": "string", 
+            "InputSecurityGroups": {
+                "_list": "string"
+            }, 
+            "Name": "string", 
+            "Sources": {
+                "_list": {
+                    "PasswordParam": "string", 
+                    "Url": "string", 
+                    "Username": "string"
+                }
+            }
+        }, 
+        "UpdateInputSecurityGroup": {
+            "InputSecurityGroupId": "string", 
+            "WhitelistRules": {
+                "_list": {
+                    "Cidr": "string"
+                }
+            }
+        }
+    }
+}

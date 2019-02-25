@@ -1,0 +1,46 @@
+{
+    "IamActions": [
+        "AssociateDRTLogBucket", 
+        "AssociateDRTRole", 
+        "CreateProtection", 
+        "CreateSubscription", 
+        "DeleteProtection", 
+        "DeleteSubscription", 
+        "DisassociateDRTLogBucket", 
+        "DisassociateDRTRole", 
+        "GetSubscriptionState", 
+        "UpdateEmergencyContactSettings"
+    ], 
+    "OperationInputs": {
+        "AssociateDRTLogBucket": {
+            "LogBucket": "string"
+        }, 
+        "AssociateDRTRole": {
+            "RoleArn": "string"
+        }, 
+        "CreateProtection": {
+            "Name": "string", 
+            "ResourceArn": "string"
+        }, 
+        "CreateSubscription": {}, 
+        "DeleteProtection": {
+            "ProtectionId": "string"
+        }, 
+        "DeleteSubscription": {}, 
+        "DisassociateDRTLogBucket": {
+            "LogBucket": "string"
+        }, 
+        "DisassociateDRTRole": {}, 
+        "GetSubscriptionState": {}, 
+        "UpdateEmergencyContactSettings": {
+            "EmergencyContactList": {
+                "_list": {
+                    "EmailAddress": "string"
+                }
+            }
+        }, 
+        "UpdateSubscription": {
+            "AutoRenew": "string"
+        }
+    }
+}

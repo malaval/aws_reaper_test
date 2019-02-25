@@ -1,0 +1,59 @@
+{
+    "IamActions": [
+        "CreateTrail", 
+        "DeleteTrail", 
+        "StartLogging", 
+        "StopLogging", 
+        "UpdateTrail"
+    ], 
+    "OperationInputs": {
+        "CreateTrail": {
+            "CloudWatchLogsLogGroupArn": "string", 
+            "CloudWatchLogsRoleArn": "string", 
+            "EnableLogFileValidation": "boolean", 
+            "IncludeGlobalServiceEvents": "boolean", 
+            "IsMultiRegionTrail": "boolean", 
+            "KmsKeyId": "string", 
+            "Name": "string", 
+            "S3BucketName": "string", 
+            "S3KeyPrefix": "string", 
+            "SnsTopicName": "string"
+        }, 
+        "DeleteTrail": {
+            "Name": "string"
+        }, 
+        "PutEventSelectors": {
+            "EventSelectors": {
+                "_list": {
+                    "DataResources": {
+                        "_list": {
+                            "Type": "string", 
+                            "Values": "list"
+                        }
+                    }, 
+                    "IncludeManagementEvents": "boolean", 
+                    "ReadWriteType": "string"
+                }
+            }, 
+            "TrailName": "string"
+        }, 
+        "StartLogging": {
+            "Name": "string"
+        }, 
+        "StopLogging": {
+            "Name": "string"
+        }, 
+        "UpdateTrail": {
+            "CloudWatchLogsLogGroupArn": "string", 
+            "CloudWatchLogsRoleArn": "string", 
+            "EnableLogFileValidation": "boolean", 
+            "IncludeGlobalServiceEvents": "boolean", 
+            "IsMultiRegionTrail": "boolean", 
+            "KmsKeyId": "string", 
+            "Name": "string", 
+            "S3BucketName": "string", 
+            "S3KeyPrefix": "string", 
+            "SnsTopicName": "string"
+        }
+    }
+}

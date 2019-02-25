@@ -1,0 +1,367 @@
+{
+    "IamActions": [
+        "CreateEndpoint", 
+        "CreateEndpointConfig", 
+        "CreateHyperParameterTuningJob", 
+        "CreateModel", 
+        "CreateNotebookInstance", 
+        "CreateNotebookInstanceLifecycleConfig", 
+        "CreatePresignedNotebookInstanceUrl", 
+        "CreateTrainingJob", 
+        "CreateTransformJob", 
+        "DeleteEndpoint", 
+        "DeleteEndpointConfig", 
+        "DeleteModel", 
+        "DeleteNotebookInstance", 
+        "DeleteNotebookInstanceLifecycleConfig", 
+        "StartNotebookInstance", 
+        "StopHyperParameterTuningJob", 
+        "StopNotebookInstance", 
+        "StopTrainingJob", 
+        "StopTransformJob", 
+        "UpdateEndpoint", 
+        "UpdateEndpointWeightsAndCapacities", 
+        "UpdateNotebookInstance"
+    ], 
+    "OperationInputs": {
+        "CreateEndpoint": {
+            "EndpointConfigName": "string", 
+            "EndpointName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateEndpointConfig": {
+            "EndpointConfigName": "string", 
+            "KmsKeyId": "string", 
+            "ProductionVariants": {
+                "_list": {
+                    "InitialInstanceCount": "integer", 
+                    "InitialVariantWeight": "float", 
+                    "InstanceType": "string", 
+                    "ModelName": "string", 
+                    "VariantName": "string"
+                }
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateHyperParameterTuningJob": {
+            "HyperParameterTuningJobConfig": {
+                "HyperParameterTuningJobObjective": {
+                    "MetricName": "string", 
+                    "Type": "string"
+                }, 
+                "ParameterRanges": {
+                    "CategoricalParameterRanges": {
+                        "_list": {
+                            "Name": "string", 
+                            "Values": "list"
+                        }
+                    }, 
+                    "ContinuousParameterRanges": {
+                        "_list": {
+                            "MaxValue": "string", 
+                            "MinValue": "string", 
+                            "Name": "string"
+                        }
+                    }, 
+                    "IntegerParameterRanges": {
+                        "_list": {
+                            "MaxValue": "string", 
+                            "MinValue": "string", 
+                            "Name": "string"
+                        }
+                    }
+                }, 
+                "ResourceLimits": {
+                    "MaxNumberOfTrainingJobs": "integer", 
+                    "MaxParallelTrainingJobs": "integer"
+                }, 
+                "Strategy": "string"
+            }, 
+            "HyperParameterTuningJobName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TrainingJobDefinition": {
+                "AlgorithmSpecification": {
+                    "MetricDefinitions": {
+                        "_list": {
+                            "Name": "string", 
+                            "Regex": "string"
+                        }
+                    }, 
+                    "TrainingImage": "string", 
+                    "TrainingInputMode": "string"
+                }, 
+                "InputDataConfig": {
+                    "_list": {
+                        "ChannelName": "string", 
+                        "CompressionType": "string", 
+                        "ContentType": "string", 
+                        "DataSource": {
+                            "S3DataSource": "structure"
+                        }, 
+                        "RecordWrapperType": "string"
+                    }
+                }, 
+                "OutputDataConfig": {
+                    "KmsKeyId": "string", 
+                    "S3OutputPath": "string"
+                }, 
+                "ResourceConfig": {
+                    "InstanceCount": "integer", 
+                    "InstanceType": "string", 
+                    "VolumeKmsKeyId": "string", 
+                    "VolumeSizeInGB": "integer"
+                }, 
+                "RoleArn": "string", 
+                "StaticHyperParameters": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "StoppingCondition": {
+                    "MaxRuntimeInSeconds": "integer"
+                }, 
+                "VpcConfig": {
+                    "SecurityGroupIds": {
+                        "_list": "string"
+                    }, 
+                    "Subnets": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "CreateModel": {
+            "ExecutionRoleArn": "string", 
+            "ModelName": "string", 
+            "PrimaryContainer": {
+                "ContainerHostname": "string", 
+                "Environment": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Image": "string", 
+                "ModelDataUrl": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "VpcConfig": {
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "Subnets": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "CreateNotebookInstance": {
+            "DirectInternetAccess": "string", 
+            "InstanceType": "string", 
+            "KmsKeyId": "string", 
+            "LifecycleConfigName": "string", 
+            "NotebookInstanceName": "string", 
+            "RoleArn": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SubnetId": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateNotebookInstanceLifecycleConfig": {
+            "NotebookInstanceLifecycleConfigName": "string", 
+            "OnCreate": {
+                "_list": {
+                    "Content": "string"
+                }
+            }, 
+            "OnStart": {
+                "_list": {
+                    "Content": "string"
+                }
+            }
+        }, 
+        "CreatePresignedNotebookInstanceUrl": {
+            "NotebookInstanceName": "string", 
+            "SessionExpirationDurationInSeconds": "integer"
+        }, 
+        "CreateTrainingJob": {
+            "AlgorithmSpecification": {
+                "TrainingImage": "string", 
+                "TrainingInputMode": "string"
+            }, 
+            "HyperParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "InputDataConfig": {
+                "_list": {
+                    "ChannelName": "string", 
+                    "CompressionType": "string", 
+                    "ContentType": "string", 
+                    "DataSource": {
+                        "S3DataSource": {
+                            "S3DataDistributionType": "string", 
+                            "S3DataType": "string", 
+                            "S3Uri": "string"
+                        }
+                    }, 
+                    "RecordWrapperType": "string"
+                }
+            }, 
+            "OutputDataConfig": {
+                "KmsKeyId": "string", 
+                "S3OutputPath": "string"
+            }, 
+            "ResourceConfig": {
+                "InstanceCount": "integer", 
+                "InstanceType": "string", 
+                "VolumeKmsKeyId": "string", 
+                "VolumeSizeInGB": "integer"
+            }, 
+            "RoleArn": "string", 
+            "StoppingCondition": {
+                "MaxRuntimeInSeconds": "integer"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TrainingJobName": "string", 
+            "VpcConfig": {
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "Subnets": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "CreateTransformJob": {
+            "BatchStrategy": "string", 
+            "Environment": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "MaxConcurrentTransforms": "integer", 
+            "MaxPayloadInMB": "integer", 
+            "ModelName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TransformInput": {
+                "CompressionType": "string", 
+                "ContentType": "string", 
+                "DataSource": {
+                    "S3DataSource": {
+                        "S3DataType": "string", 
+                        "S3Uri": "string"
+                    }
+                }, 
+                "SplitType": "string"
+            }, 
+            "TransformJobName": "string", 
+            "TransformOutput": {
+                "Accept": "string", 
+                "AssembleWith": "string", 
+                "KmsKeyId": "string", 
+                "S3OutputPath": "string"
+            }, 
+            "TransformResources": {
+                "InstanceCount": "integer", 
+                "InstanceType": "string", 
+                "VolumeKmsKeyId": "string"
+            }
+        }, 
+        "DeleteEndpoint": {
+            "EndpointName": "string"
+        }, 
+        "DeleteEndpointConfig": {
+            "EndpointConfigName": "string"
+        }, 
+        "DeleteModel": {
+            "ModelName": "string"
+        }, 
+        "DeleteNotebookInstance": {
+            "NotebookInstanceName": "string"
+        }, 
+        "DeleteNotebookInstanceLifecycleConfig": {
+            "NotebookInstanceLifecycleConfigName": "string"
+        }, 
+        "StartNotebookInstance": {
+            "NotebookInstanceName": "string"
+        }, 
+        "StopHyperParameterTuningJob": {
+            "HyperParameterTuningJobName": "string"
+        }, 
+        "StopNotebookInstance": {
+            "NotebookInstanceName": "string"
+        }, 
+        "StopTrainingJob": {
+            "TrainingJobName": "string"
+        }, 
+        "StopTransformJob": {
+            "TransformJobName": "string"
+        }, 
+        "UpdateEndpoint": {
+            "EndpointConfigName": "string", 
+            "EndpointName": "string"
+        }, 
+        "UpdateEndpointWeightsAndCapacities": {
+            "DesiredWeightsAndCapacities": {
+                "_list": {
+                    "DesiredInstanceCount": "integer", 
+                    "DesiredWeight": "float", 
+                    "VariantName": "string"
+                }
+            }, 
+            "EndpointName": "string"
+        }, 
+        "UpdateNotebookInstance": {
+            "DisassociateLifecycleConfig": "boolean", 
+            "InstanceType": "string", 
+            "LifecycleConfigName": "string", 
+            "NotebookInstanceName": "string", 
+            "RoleArn": "string"
+        }, 
+        "UpdateNotebookInstanceLifecycleConfig": {
+            "NotebookInstanceLifecycleConfigName": "string", 
+            "OnCreate": {
+                "_list": {
+                    "Content": "string"
+                }
+            }, 
+            "OnStart": {
+                "_list": {
+                    "Content": "string"
+                }
+            }
+        }
+    }
+}

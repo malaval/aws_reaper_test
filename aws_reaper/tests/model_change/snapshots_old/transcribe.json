@@ -1,0 +1,40 @@
+{
+    "IamActions": [
+        "StartTranscriptionJob"
+    ], 
+    "OperationInputs": {
+        "CreateVocabulary": {
+            "LanguageCode": "string", 
+            "Phrases": {
+                "_list": "string"
+            }, 
+            "VocabularyName": "string"
+        }, 
+        "DeleteVocabulary": {
+            "VocabularyName": "string"
+        }, 
+        "StartTranscriptionJob": {
+            "LanguageCode": "string", 
+            "Media": {
+                "MediaFileUri": "string"
+            }, 
+            "MediaFormat": "string", 
+            "MediaSampleRateHertz": "integer", 
+            "OutputBucketName": "string", 
+            "Settings": {
+                "ChannelIdentification": "boolean", 
+                "MaxSpeakerLabels": "integer", 
+                "ShowSpeakerLabels": "boolean", 
+                "VocabularyName": "string"
+            }, 
+            "TranscriptionJobName": "string"
+        }, 
+        "UpdateVocabulary": {
+            "LanguageCode": "string", 
+            "Phrases": {
+                "_list": "string"
+            }, 
+            "VocabularyName": "string"
+        }
+    }
+}

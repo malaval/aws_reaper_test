@@ -1,0 +1,26 @@
+.DS_Store
+*.pyc
+__pycache__
+dist
+build
+docs/build
+docs/source/reference/services
+tests/cover
+tests/.coverage
+*.egg-info
+
+# Test state
+.coverage
+htmlcov
+coverage.xml
+
+# Common virtualenv names
+venv
+env2
+env3
+
+# IntelliJ / PyCharm IDE
+.idea/
+
+# AWS Reaper
+services_old

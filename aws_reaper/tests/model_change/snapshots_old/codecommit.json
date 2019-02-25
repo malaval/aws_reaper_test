@@ -1,0 +1,212 @@
+{
+    "IamActions": [
+        "BatchGetPullRequests", 
+        "permission", 
+        "BatchGetRepositories", 
+        "CancelUploadArchive", 
+        "permission", 
+        "CreateBranch", 
+        "CreatePullRequest", 
+        "CreateRepository", 
+        "DeleteBranch", 
+        "DeleteCommentContent", 
+        "DeleteRepository", 
+        "DescribePullRequestEvents", 
+        "permission", 
+        "permission", 
+        "permission", 
+        "permission", 
+        "permission", 
+        "permission", 
+        "GitPull", 
+        "permission", 
+        "GitPush", 
+        "permission", 
+        "ListBranches", 
+        "ListPullRequests", 
+        "ListRepositories", 
+        "MergePullRequestByFastForward", 
+        "PostCommentForComparedCommit", 
+        "PostCommentForPullRequest", 
+        "PostCommentReply", 
+        "PutFile", 
+        "PutRepositoryTriggers", 
+        "TestRepositoryTriggers", 
+        "UpdateComment", 
+        "UpdateDefaultBranch", 
+        "UpdatePullRequestDescription", 
+        "UpdatePullRequestStatus", 
+        "UpdatePullRequestTitle", 
+        "UpdateRepositoryDescription", 
+        "UpdateRepositoryName", 
+        "UploadArchive", 
+        "permission"
+    ], 
+    "OperationInputs": {
+        "BatchGetRepositories": {
+            "repositoryNames": {
+                "_list": "string"
+            }
+        }, 
+        "CreateBranch": {
+            "branchName": "string", 
+            "commitId": "string", 
+            "repositoryName": "string"
+        }, 
+        "CreatePullRequest": {
+            "clientRequestToken": "string", 
+            "description": "string", 
+            "targets": {
+                "_list": {
+                    "destinationReference": "string", 
+                    "repositoryName": "string", 
+                    "sourceReference": "string"
+                }
+            }, 
+            "title": "string"
+        }, 
+        "CreateRepository": {
+            "repositoryDescription": "string", 
+            "repositoryName": "string"
+        }, 
+        "DeleteBranch": {
+            "branchName": "string", 
+            "repositoryName": "string"
+        }, 
+        "DeleteCommentContent": {
+            "commentId": "string"
+        }, 
+        "DeleteRepository": {
+            "repositoryName": "string"
+        }, 
+        "DescribePullRequestEvents": {
+            "actorArn": "string", 
+            "maxResults": "integer", 
+            "nextToken": "string", 
+            "pullRequestEventType": "string", 
+            "pullRequestId": "string"
+        }, 
+        "ListBranches": {
+            "nextToken": "string", 
+            "repositoryName": "string"
+        }, 
+        "ListPullRequests": {
+            "authorArn": "string", 
+            "maxResults": "integer", 
+            "nextToken": "string", 
+            "pullRequestStatus": "string", 
+            "repositoryName": "string"
+        }, 
+        "ListRepositories": {
+            "nextToken": "string", 
+            "order": "string", 
+            "sortBy": "string"
+        }, 
+        "MergePullRequestByFastForward": {
+            "pullRequestId": "string", 
+            "repositoryName": "string", 
+            "sourceCommitId": "string"
+        }, 
+        "PostCommentForComparedCommit": {
+            "afterCommitId": "string", 
+            "beforeCommitId": "string", 
+            "clientRequestToken": "string", 
+            "content": "string", 
+            "location": {
+                "filePath": "string", 
+                "filePosition": "long", 
+                "relativeFileVersion": "string"
+            }, 
+            "repositoryName": "string"
+        }, 
+        "PostCommentForPullRequest": {
+            "afterCommitId": "string", 
+            "beforeCommitId": "string", 
+            "clientRequestToken": "string", 
+            "content": "string", 
+            "location": {
+                "filePath": "string", 
+                "filePosition": "long", 
+                "relativeFileVersion": "string"
+            }, 
+            "pullRequestId": "string", 
+            "repositoryName": "string"
+        }, 
+        "PostCommentReply": {
+            "clientRequestToken": "string", 
+            "content": "string", 
+            "inReplyTo": "string"
+        }, 
+        "PutFile": {
+            "branchName": "string", 
+            "commitMessage": "string", 
+            "email": "string", 
+            "fileContent": "blob", 
+            "fileMode": "string", 
+            "filePath": "string", 
+            "name": "string", 
+            "parentCommitId": "string", 
+            "repositoryName": "string"
+        }, 
+        "PutRepositoryTriggers": {
+            "repositoryName": "string", 
+            "triggers": {
+                "_list": {
+                    "branches": {
+                        "_list": "string"
+                    }, 
+                    "customData": "string", 
+                    "destinationArn": "string", 
+                    "events": {
+                        "_list": "string"
+                    }, 
+                    "name": "string"
+                }
+            }
+        }, 
+        "TestRepositoryTriggers": {
+            "repositoryName": "string", 
+            "triggers": {
+                "_list": {
+                    "branches": {
+                        "_list": "string"
+                    }, 
+                    "customData": "string", 
+                    "destinationArn": "string", 
+                    "events": {
+                        "_list": "string"
+                    }, 
+                    "name": "string"
+                }
+            }
+        }, 
+        "UpdateComment": {
+            "commentId": "string", 
+            "content": "string"
+        }, 
+        "UpdateDefaultBranch": {
+            "defaultBranchName": "string", 
+            "repositoryName": "string"
+        }, 
+        "UpdatePullRequestDescription": {
+            "description": "string", 
+            "pullRequestId": "string"
+        }, 
+        "UpdatePullRequestStatus": {
+            "pullRequestId": "string", 
+            "pullRequestStatus": "string"
+        }, 
+        "UpdatePullRequestTitle": {
+            "pullRequestId": "string", 
+            "title": "string"
+        }, 
+        "UpdateRepositoryDescription": {
+            "repositoryDescription": "string", 
+            "repositoryName": "string"
+        }, 
+        "UpdateRepositoryName": {
+            "newName": "string", 
+            "oldName": "string"
+        }
+    }
+}

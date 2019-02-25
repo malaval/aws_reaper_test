@@ -1,0 +1,36 @@
+{
+    "IamActions": [
+        "CreateGroup", 
+        "DeleteGroup", 
+        "UpdateGroup", 
+        "UpdateGroupQuery"
+    ], 
+    "OperationInputs": {
+        "CreateGroup": {
+            "Description": "string", 
+            "Name": "string", 
+            "ResourceQuery": {
+                "Query": "string", 
+                "Type": "string"
+            }, 
+            "Tags": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "DeleteGroup": {
+            "GroupName": "string"
+        }, 
+        "UpdateGroup": {
+            "Description": "string", 
+            "GroupName": "string"
+        }, 
+        "UpdateGroupQuery": {
+            "GroupName": "string", 
+            "ResourceQuery": {
+                "Query": "string", 
+                "Type": "string"
+            }
+        }
+    }
+}

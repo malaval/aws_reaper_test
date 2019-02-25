@@ -1,0 +1,264 @@
+{
+    "IamActions": [
+        "CancelTimer", 
+        "CancelWorkflowExecution", 
+        "CompleteWorkflowExecution", 
+        "ContinueAsNewWorkflowExecution", 
+        "DeprecateActivityType", 
+        "DeprecateDomain", 
+        "DeprecateWorkflowType", 
+        "FailWorkflowExecution", 
+        "PollForActivityTask", 
+        "PollForDecisionTask", 
+        "RecordActivityTaskHeartbeat", 
+        "RecordMarker", 
+        "RegisterActivityType", 
+        "RegisterDomain", 
+        "RegisterWorkflowType", 
+        "RequestCancelActivityTask", 
+        "RequestCancelExternalWorkflowExecution", 
+        "RequestCancelWorkflowExecution", 
+        "RespondActivityTaskCanceled", 
+        "RespondActivityTaskCompleted", 
+        "RespondActivityTaskFailed", 
+        "RespondDecisionTaskCompleted", 
+        "ScheduleActivityTask", 
+        "SignalExternalWorkflowExecution", 
+        "SignalWorkflowExecution", 
+        "StartChildWorkflowExecution", 
+        "StartTimer", 
+        "StartWorkflowExecution", 
+        "TerminateWorkflowExecution"
+    ], 
+    "OperationInputs": {
+        "DeprecateActivityType": {
+            "activityType": {
+                "name": "string", 
+                "version": "string"
+            }, 
+            "domain": "string"
+        }, 
+        "DeprecateDomain": {
+            "name": "string"
+        }, 
+        "DeprecateWorkflowType": {
+            "domain": "string", 
+            "workflowType": {
+                "name": "string", 
+                "version": "string"
+            }
+        }, 
+        "PollForActivityTask": {
+            "domain": "string", 
+            "identity": "string", 
+            "taskList": {
+                "name": "string"
+            }
+        }, 
+        "PollForDecisionTask": {
+            "domain": "string", 
+            "identity": "string", 
+            "maximumPageSize": "integer", 
+            "nextPageToken": "string", 
+            "reverseOrder": "boolean", 
+            "taskList": {
+                "name": "string"
+            }
+        }, 
+        "RecordActivityTaskHeartbeat": {
+            "details": "string", 
+            "taskToken": "string"
+        }, 
+        "RegisterActivityType": {
+            "defaultTaskHeartbeatTimeout": "string", 
+            "defaultTaskList": {
+                "name": "string"
+            }, 
+            "defaultTaskPriority": "string", 
+            "defaultTaskScheduleToCloseTimeout": "string", 
+            "defaultTaskScheduleToStartTimeout": "string", 
+            "defaultTaskStartToCloseTimeout": "string", 
+            "description": "string", 
+            "domain": "string", 
+            "name": "string", 
+            "version": "string"
+        }, 
+        "RegisterDomain": {
+            "description": "string", 
+            "name": "string", 
+            "workflowExecutionRetentionPeriodInDays": "string"
+        }, 
+        "RegisterWorkflowType": {
+            "defaultChildPolicy": "string", 
+            "defaultExecutionStartToCloseTimeout": "string", 
+            "defaultLambdaRole": "string", 
+            "defaultTaskList": {
+                "name": "string"
+            }, 
+            "defaultTaskPriority": "string", 
+            "defaultTaskStartToCloseTimeout": "string", 
+            "description": "string", 
+            "domain": "string", 
+            "name": "string", 
+            "version": "string"
+        }, 
+        "RequestCancelWorkflowExecution": {
+            "domain": "string", 
+            "runId": "string", 
+            "workflowId": "string"
+        }, 
+        "RespondActivityTaskCanceled": {
+            "details": "string", 
+            "taskToken": "string"
+        }, 
+        "RespondActivityTaskCompleted": {
+            "result": "string", 
+            "taskToken": "string"
+        }, 
+        "RespondActivityTaskFailed": {
+            "details": "string", 
+            "reason": "string", 
+            "taskToken": "string"
+        }, 
+        "RespondDecisionTaskCompleted": {
+            "decisions": {
+                "_list": {
+                    "cancelTimerDecisionAttributes": {
+                        "timerId": "string"
+                    }, 
+                    "cancelWorkflowExecutionDecisionAttributes": {
+                        "details": "string"
+                    }, 
+                    "completeWorkflowExecutionDecisionAttributes": {
+                        "result": "string"
+                    }, 
+                    "continueAsNewWorkflowExecutionDecisionAttributes": {
+                        "childPolicy": "string", 
+                        "executionStartToCloseTimeout": "string", 
+                        "input": "string", 
+                        "lambdaRole": "string", 
+                        "tagList": {
+                            "_list": "string"
+                        }, 
+                        "taskList": {
+                            "name": "string"
+                        }, 
+                        "taskPriority": "string", 
+                        "taskStartToCloseTimeout": "string", 
+                        "workflowTypeVersion": "string"
+                    }, 
+                    "decisionType": "string", 
+                    "failWorkflowExecutionDecisionAttributes": {
+                        "details": "string", 
+                        "reason": "string"
+                    }, 
+                    "recordMarkerDecisionAttributes": {
+                        "details": "string", 
+                        "markerName": "string"
+                    }, 
+                    "requestCancelActivityTaskDecisionAttributes": {
+                        "activityId": "string"
+                    }, 
+                    "requestCancelExternalWorkflowExecutionDecisionAttributes": {
+                        "control": "string", 
+                        "runId": "string", 
+                        "workflowId": "string"
+                    }, 
+                    "scheduleActivityTaskDecisionAttributes": {
+                        "activityId": "string", 
+                        "activityType": {
+                            "name": "string", 
+                            "version": "string"
+                        }, 
+                        "control": "string", 
+                        "heartbeatTimeout": "string", 
+                        "input": "string", 
+                        "scheduleToCloseTimeout": "string", 
+                        "scheduleToStartTimeout": "string", 
+                        "startToCloseTimeout": "string", 
+                        "taskList": {
+                            "name": "string"
+                        }, 
+                        "taskPriority": "string"
+                    }, 
+                    "scheduleLambdaFunctionDecisionAttributes": {
+                        "control": "string", 
+                        "id": "string", 
+                        "input": "string", 
+                        "name": "string", 
+                        "startToCloseTimeout": "string"
+                    }, 
+                    "signalExternalWorkflowExecutionDecisionAttributes": {
+                        "control": "string", 
+                        "input": "string", 
+                        "runId": "string", 
+                        "signalName": "string", 
+                        "workflowId": "string"
+                    }, 
+                    "startChildWorkflowExecutionDecisionAttributes": {
+                        "childPolicy": "string", 
+                        "control": "string", 
+                        "executionStartToCloseTimeout": "string", 
+                        "input": "string", 
+                        "lambdaRole": "string", 
+                        "tagList": {
+                            "_list": "string"
+                        }, 
+                        "taskList": {
+                            "name": "string"
+                        }, 
+                        "taskPriority": "string", 
+                        "taskStartToCloseTimeout": "string", 
+                        "workflowId": "string", 
+                        "workflowType": {
+                            "name": "string", 
+                            "version": "string"
+                        }
+                    }, 
+                    "startTimerDecisionAttributes": {
+                        "control": "string", 
+                        "startToFireTimeout": "string", 
+                        "timerId": "string"
+                    }
+                }
+            }, 
+            "executionContext": "string", 
+            "taskToken": "string"
+        }, 
+        "SignalWorkflowExecution": {
+            "domain": "string", 
+            "input": "string", 
+            "runId": "string", 
+            "signalName": "string", 
+            "workflowId": "string"
+        }, 
+        "StartWorkflowExecution": {
+            "childPolicy": "string", 
+            "domain": "string", 
+            "executionStartToCloseTimeout": "string", 
+            "input": "string", 
+            "lambdaRole": "string", 
+            "tagList": {
+                "_list": "string"
+            }, 
+            "taskList": {
+                "name": "string"
+            }, 
+            "taskPriority": "string", 
+            "taskStartToCloseTimeout": "string", 
+            "workflowId": "string", 
+            "workflowType": {
+                "name": "string", 
+                "version": "string"
+            }
+        }, 
+        "TerminateWorkflowExecution": {
+            "childPolicy": "string", 
+            "details": "string", 
+            "domain": "string", 
+            "reason": "string", 
+            "runId": "string", 
+            "workflowId": "string"
+        }
+    }
+}

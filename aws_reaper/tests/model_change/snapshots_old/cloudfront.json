@@ -1,0 +1,642 @@
+{
+    "IamActions": [
+        "CreateCloudFrontOriginAccessIdentity", 
+        "CreateDistribution", 
+        "CreateDistributionWithTags", 
+        "CreateInvalidation", 
+        "CreateStreamingDistribution", 
+        "CreateStreamingDistributionWithTags", 
+        "DeleteCloudFrontOriginAccessIdentity", 
+        "DeleteDistribution", 
+        "DeleteStreamingDistribution", 
+        "UpdateCloudFrontOriginAccessIdentity", 
+        "UpdateDistribution", 
+        "UpdateStreamingDistribution"
+    ], 
+    "OperationInputs": {
+        "CreateCloudFrontOriginAccessIdentity": {
+            "CloudFrontOriginAccessIdentityConfig": {
+                "CallerReference": "string", 
+                "Comment": "string"
+            }
+        }, 
+        "CreateDistribution": {
+            "DistributionConfig": {
+                "Aliases": {
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "CacheBehaviors": {
+                    "Items": {
+                        "_list": {
+                            "AllowedMethods": "structure", 
+                            "Compress": "boolean", 
+                            "DefaultTTL": "long", 
+                            "FieldLevelEncryptionId": "string", 
+                            "ForwardedValues": "structure", 
+                            "LambdaFunctionAssociations": "structure", 
+                            "MaxTTL": "long", 
+                            "MinTTL": "long", 
+                            "PathPattern": "string", 
+                            "SmoothStreaming": "boolean", 
+                            "TargetOriginId": "string", 
+                            "TrustedSigners": "structure", 
+                            "ViewerProtocolPolicy": "string"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "CustomErrorResponses": {
+                    "Items": {
+                        "_list": {
+                            "ErrorCachingMinTTL": "long", 
+                            "ErrorCode": "integer", 
+                            "ResponseCode": "string", 
+                            "ResponsePagePath": "string"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "DefaultCacheBehavior": {
+                    "AllowedMethods": {
+                        "CachedMethods": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "Compress": "boolean", 
+                    "DefaultTTL": "long", 
+                    "FieldLevelEncryptionId": "string", 
+                    "ForwardedValues": {
+                        "Cookies": {
+                            "Forward": "string", 
+                            "WhitelistedNames": "structure"
+                        }, 
+                        "Headers": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "QueryString": "boolean", 
+                        "QueryStringCacheKeys": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }
+                    }, 
+                    "LambdaFunctionAssociations": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "MaxTTL": "long", 
+                    "MinTTL": "long", 
+                    "SmoothStreaming": "boolean", 
+                    "TargetOriginId": "string", 
+                    "TrustedSigners": {
+                        "Enabled": "boolean", 
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "ViewerProtocolPolicy": "string"
+                }, 
+                "DefaultRootObject": "string", 
+                "Enabled": "boolean", 
+                "HttpVersion": "string", 
+                "IsIPV6Enabled": "boolean", 
+                "Logging": {
+                    "Bucket": "string", 
+                    "Enabled": "boolean", 
+                    "IncludeCookies": "boolean", 
+                    "Prefix": "string"
+                }, 
+                "Origins": {
+                    "Items": {
+                        "_list": {
+                            "CustomHeaders": "structure", 
+                            "CustomOriginConfig": "structure", 
+                            "DomainName": "string", 
+                            "Id": "string", 
+                            "OriginPath": "string", 
+                            "S3OriginConfig": "structure"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "PriceClass": "string", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer", 
+                        "RestrictionType": "string"
+                    }
+                }, 
+                "ViewerCertificate": {
+                    "ACMCertificateArn": "string", 
+                    "Certificate": "string", 
+                    "CertificateSource": "string", 
+                    "CloudFrontDefaultCertificate": "boolean", 
+                    "IAMCertificateId": "string", 
+                    "MinimumProtocolVersion": "string", 
+                    "SSLSupportMethod": "string"
+                }, 
+                "WebACLId": "string"
+            }
+        }, 
+        "CreateDistributionWithTags": {
+            "DistributionConfigWithTags": {
+                "DistributionConfig": {
+                    "Aliases": {
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "CacheBehaviors": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "CallerReference": "string", 
+                    "Comment": "string", 
+                    "CustomErrorResponses": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "DefaultCacheBehavior": {
+                        "AllowedMethods": {
+                            "CachedMethods": "structure", 
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "Compress": "boolean", 
+                        "DefaultTTL": "long", 
+                        "FieldLevelEncryptionId": "string", 
+                        "ForwardedValues": {
+                            "Cookies": "structure", 
+                            "Headers": "structure", 
+                            "QueryString": "boolean", 
+                            "QueryStringCacheKeys": "structure"
+                        }, 
+                        "LambdaFunctionAssociations": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "MaxTTL": "long", 
+                        "MinTTL": "long", 
+                        "SmoothStreaming": "boolean", 
+                        "TargetOriginId": "string", 
+                        "TrustedSigners": {
+                            "Enabled": "boolean", 
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "ViewerProtocolPolicy": "string"
+                    }, 
+                    "DefaultRootObject": "string", 
+                    "Enabled": "boolean", 
+                    "HttpVersion": "string", 
+                    "IsIPV6Enabled": "boolean", 
+                    "Logging": {
+                        "Bucket": "string", 
+                        "Enabled": "boolean", 
+                        "IncludeCookies": "boolean", 
+                        "Prefix": "string"
+                    }, 
+                    "Origins": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "PriceClass": "string", 
+                    "Restrictions": {
+                        "GeoRestriction": {
+                            "Items": "list", 
+                            "Quantity": "integer", 
+                            "RestrictionType": "string"
+                        }
+                    }, 
+                    "ViewerCertificate": {
+                        "ACMCertificateArn": "string", 
+                        "Certificate": "string", 
+                        "CertificateSource": "string", 
+                        "CloudFrontDefaultCertificate": "boolean", 
+                        "IAMCertificateId": "string", 
+                        "MinimumProtocolVersion": "string", 
+                        "SSLSupportMethod": "string"
+                    }, 
+                    "WebACLId": "string"
+                }, 
+                "Tags": {
+                    "Items": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }
+                }
+            }
+        }, 
+        "CreateFieldLevelEncryptionConfig": {
+            "FieldLevelEncryptionConfig": {
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "ContentTypeProfileConfig": {
+                    "ContentTypeProfiles": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "ForwardWhenContentTypeIsUnknown": "boolean"
+                }, 
+                "QueryArgProfileConfig": {
+                    "ForwardWhenQueryArgProfileIsUnknown": "boolean", 
+                    "QueryArgProfiles": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }
+                }
+            }
+        }, 
+        "CreateFieldLevelEncryptionProfile": {
+            "FieldLevelEncryptionProfileConfig": {
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "EncryptionEntities": {
+                    "Items": {
+                        "_list": {
+                            "FieldPatterns": "structure", 
+                            "ProviderId": "string", 
+                            "PublicKeyId": "string"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "Name": "string"
+            }
+        }, 
+        "CreateInvalidation": {
+            "DistributionId": "string", 
+            "InvalidationBatch": {
+                "CallerReference": "string", 
+                "Paths": {
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }
+            }
+        }, 
+        "CreatePublicKey": {
+            "PublicKeyConfig": {
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "EncodedKey": "string", 
+                "Name": "string"
+            }
+        }, 
+        "CreateStreamingDistribution": {
+            "StreamingDistributionConfig": {
+                "Aliases": {
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "Enabled": "boolean", 
+                "Logging": {
+                    "Bucket": "string", 
+                    "Enabled": "boolean", 
+                    "Prefix": "string"
+                }, 
+                "PriceClass": "string", 
+                "S3Origin": {
+                    "DomainName": "string", 
+                    "OriginAccessIdentity": "string"
+                }, 
+                "TrustedSigners": {
+                    "Enabled": "boolean", 
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }
+            }
+        }, 
+        "CreateStreamingDistributionWithTags": {
+            "StreamingDistributionConfigWithTags": {
+                "StreamingDistributionConfig": {
+                    "Aliases": {
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "CallerReference": "string", 
+                    "Comment": "string", 
+                    "Enabled": "boolean", 
+                    "Logging": {
+                        "Bucket": "string", 
+                        "Enabled": "boolean", 
+                        "Prefix": "string"
+                    }, 
+                    "PriceClass": "string", 
+                    "S3Origin": {
+                        "DomainName": "string", 
+                        "OriginAccessIdentity": "string"
+                    }, 
+                    "TrustedSigners": {
+                        "Enabled": "boolean", 
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }
+                }, 
+                "Tags": {
+                    "Items": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }
+                }
+            }
+        }, 
+        "DeleteCloudFrontOriginAccessIdentity": {
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "DeleteDistribution": {
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "DeleteFieldLevelEncryptionConfig": {
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "DeleteFieldLevelEncryptionProfile": {
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "DeletePublicKey": {
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "DeleteStreamingDistribution": {
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "UpdateCloudFrontOriginAccessIdentity": {
+            "CloudFrontOriginAccessIdentityConfig": {
+                "CallerReference": "string", 
+                "Comment": "string"
+            }, 
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "UpdateDistribution": {
+            "DistributionConfig": {
+                "Aliases": {
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "CacheBehaviors": {
+                    "Items": {
+                        "_list": {
+                            "AllowedMethods": "structure", 
+                            "Compress": "boolean", 
+                            "DefaultTTL": "long", 
+                            "FieldLevelEncryptionId": "string", 
+                            "ForwardedValues": "structure", 
+                            "LambdaFunctionAssociations": "structure", 
+                            "MaxTTL": "long", 
+                            "MinTTL": "long", 
+                            "PathPattern": "string", 
+                            "SmoothStreaming": "boolean", 
+                            "TargetOriginId": "string", 
+                            "TrustedSigners": "structure", 
+                            "ViewerProtocolPolicy": "string"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "CustomErrorResponses": {
+                    "Items": {
+                        "_list": {
+                            "ErrorCachingMinTTL": "long", 
+                            "ErrorCode": "integer", 
+                            "ResponseCode": "string", 
+                            "ResponsePagePath": "string"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "DefaultCacheBehavior": {
+                    "AllowedMethods": {
+                        "CachedMethods": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "Compress": "boolean", 
+                    "DefaultTTL": "long", 
+                    "FieldLevelEncryptionId": "string", 
+                    "ForwardedValues": {
+                        "Cookies": {
+                            "Forward": "string", 
+                            "WhitelistedNames": "structure"
+                        }, 
+                        "Headers": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }, 
+                        "QueryString": "boolean", 
+                        "QueryStringCacheKeys": {
+                            "Items": "list", 
+                            "Quantity": "integer"
+                        }
+                    }, 
+                    "LambdaFunctionAssociations": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "MaxTTL": "long", 
+                    "MinTTL": "long", 
+                    "SmoothStreaming": "boolean", 
+                    "TargetOriginId": "string", 
+                    "TrustedSigners": {
+                        "Enabled": "boolean", 
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "ViewerProtocolPolicy": "string"
+                }, 
+                "DefaultRootObject": "string", 
+                "Enabled": "boolean", 
+                "HttpVersion": "string", 
+                "IsIPV6Enabled": "boolean", 
+                "Logging": {
+                    "Bucket": "string", 
+                    "Enabled": "boolean", 
+                    "IncludeCookies": "boolean", 
+                    "Prefix": "string"
+                }, 
+                "Origins": {
+                    "Items": {
+                        "_list": {
+                            "CustomHeaders": "structure", 
+                            "CustomOriginConfig": "structure", 
+                            "DomainName": "string", 
+                            "Id": "string", 
+                            "OriginPath": "string", 
+                            "S3OriginConfig": "structure"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "PriceClass": "string", 
+                "Restrictions": {
+                    "GeoRestriction": {
+                        "Items": {
+                            "_list": "string"
+                        }, 
+                        "Quantity": "integer", 
+                        "RestrictionType": "string"
+                    }
+                }, 
+                "ViewerCertificate": {
+                    "ACMCertificateArn": "string", 
+                    "Certificate": "string", 
+                    "CertificateSource": "string", 
+                    "CloudFrontDefaultCertificate": "boolean", 
+                    "IAMCertificateId": "string", 
+                    "MinimumProtocolVersion": "string", 
+                    "SSLSupportMethod": "string"
+                }, 
+                "WebACLId": "string"
+            }, 
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "UpdateFieldLevelEncryptionConfig": {
+            "FieldLevelEncryptionConfig": {
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "ContentTypeProfileConfig": {
+                    "ContentTypeProfiles": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }, 
+                    "ForwardWhenContentTypeIsUnknown": "boolean"
+                }, 
+                "QueryArgProfileConfig": {
+                    "ForwardWhenQueryArgProfileIsUnknown": "boolean", 
+                    "QueryArgProfiles": {
+                        "Items": {
+                            "_list": "structure"
+                        }, 
+                        "Quantity": "integer"
+                    }
+                }
+            }, 
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "UpdateFieldLevelEncryptionProfile": {
+            "FieldLevelEncryptionProfileConfig": {
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "EncryptionEntities": {
+                    "Items": {
+                        "_list": {
+                            "FieldPatterns": "structure", 
+                            "ProviderId": "string", 
+                            "PublicKeyId": "string"
+                        }
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "Name": "string"
+            }, 
+            "Id": "string", 
+            "IfMatch": "string"
+        }, 
+        "UpdatePublicKey": {
+            "Id": "string", 
+            "IfMatch": "string", 
+            "PublicKeyConfig": {
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "EncodedKey": "string", 
+                "Name": "string"
+            }
+        }, 
+        "UpdateStreamingDistribution": {
+            "Id": "string", 
+            "IfMatch": "string", 
+            "StreamingDistributionConfig": {
+                "Aliases": {
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }, 
+                "CallerReference": "string", 
+                "Comment": "string", 
+                "Enabled": "boolean", 
+                "Logging": {
+                    "Bucket": "string", 
+                    "Enabled": "boolean", 
+                    "Prefix": "string"
+                }, 
+                "PriceClass": "string", 
+                "S3Origin": {
+                    "DomainName": "string", 
+                    "OriginAccessIdentity": "string"
+                }, 
+                "TrustedSigners": {
+                    "Enabled": "boolean", 
+                    "Items": {
+                        "_list": "string"
+                    }, 
+                    "Quantity": "integer"
+                }
+            }
+        }
+    }
+}

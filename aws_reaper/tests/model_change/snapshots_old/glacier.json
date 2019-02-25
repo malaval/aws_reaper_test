@@ -1,0 +1,191 @@
+{
+    "IamActions": [
+        "AbortMultipartUpload", 
+        "AbortVaultLock", 
+        "CompleteMultipartUpload", 
+        "CompleteVaultLock", 
+        "CreateVault", 
+        "DeleteArchive", 
+        "DeleteVault", 
+        "DeleteVaultAccessPolicy", 
+        "DeleteVaultNotifications", 
+        "InitiateJob", 
+        "InitiateMultipartUpload", 
+        "InitiateVaultLock", 
+        "PurchaseProvisionedCapacity", 
+        "SetDataRetrievalPolicy", 
+        "SetVaultAccessPolicy", 
+        "SetVaultNotifications", 
+        "UploadArchive", 
+        "UploadMultipartPart"
+    ], 
+    "OperationInputs": {
+        "AbortMultipartUpload": {
+            "accountId": "string", 
+            "uploadId": "string", 
+            "vaultName": "string"
+        }, 
+        "AbortVaultLock": {
+            "accountId": "string", 
+            "vaultName": "string"
+        }, 
+        "CompleteMultipartUpload": {
+            "accountId": "string", 
+            "archiveSize": "string", 
+            "checksum": "string", 
+            "uploadId": "string", 
+            "vaultName": "string"
+        }, 
+        "CompleteVaultLock": {
+            "accountId": "string", 
+            "lockId": "string", 
+            "vaultName": "string"
+        }, 
+        "CreateVault": {
+            "accountId": "string", 
+            "vaultName": "string"
+        }, 
+        "DeleteArchive": {
+            "accountId": "string", 
+            "archiveId": "string", 
+            "vaultName": "string"
+        }, 
+        "DeleteVault": {
+            "accountId": "string", 
+            "vaultName": "string"
+        }, 
+        "DeleteVaultAccessPolicy": {
+            "accountId": "string", 
+            "vaultName": "string"
+        }, 
+        "DeleteVaultNotifications": {
+            "accountId": "string", 
+            "vaultName": "string"
+        }, 
+        "InitiateJob": {
+            "accountId": "string", 
+            "jobParameters": {
+                "ArchiveId": "string", 
+                "Description": "string", 
+                "Format": "string", 
+                "InventoryRetrievalParameters": {
+                    "EndDate": "string", 
+                    "Limit": "string", 
+                    "Marker": "string", 
+                    "StartDate": "string"
+                }, 
+                "OutputLocation": {
+                    "S3": {
+                        "AccessControlList": {
+                            "_list": "structure"
+                        }, 
+                        "BucketName": "string", 
+                        "CannedACL": "string", 
+                        "Encryption": {
+                            "EncryptionType": "string", 
+                            "KMSContext": "string", 
+                            "KMSKeyId": "string"
+                        }, 
+                        "Prefix": "string", 
+                        "StorageClass": "string", 
+                        "Tagging": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "UserMetadata": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }
+                    }
+                }, 
+                "RetrievalByteRange": "string", 
+                "SNSTopic": "string", 
+                "SelectParameters": {
+                    "Expression": "string", 
+                    "ExpressionType": "string", 
+                    "InputSerialization": {
+                        "csv": {
+                            "Comments": "string", 
+                            "FieldDelimiter": "string", 
+                            "FileHeaderInfo": "string", 
+                            "QuoteCharacter": "string", 
+                            "QuoteEscapeCharacter": "string", 
+                            "RecordDelimiter": "string"
+                        }
+                    }, 
+                    "OutputSerialization": {
+                        "csv": {
+                            "FieldDelimiter": "string", 
+                            "QuoteCharacter": "string", 
+                            "QuoteEscapeCharacter": "string", 
+                            "QuoteFields": "string", 
+                            "RecordDelimiter": "string"
+                        }
+                    }
+                }, 
+                "Tier": "string", 
+                "Type": "string"
+            }, 
+            "vaultName": "string"
+        }, 
+        "InitiateMultipartUpload": {
+            "accountId": "string", 
+            "archiveDescription": "string", 
+            "partSize": "string", 
+            "vaultName": "string"
+        }, 
+        "InitiateVaultLock": {
+            "accountId": "string", 
+            "policy": {
+                "Policy": "string"
+            }, 
+            "vaultName": "string"
+        }, 
+        "PurchaseProvisionedCapacity": {
+            "accountId": "string"
+        }, 
+        "SetDataRetrievalPolicy": {
+            "Policy": {
+                "Rules": {
+                    "_list": {
+                        "BytesPerHour": "long", 
+                        "Strategy": "string"
+                    }
+                }
+            }, 
+            "accountId": "string"
+        }, 
+        "SetVaultAccessPolicy": {
+            "accountId": "string", 
+            "policy": {
+                "Policy": "string"
+            }, 
+            "vaultName": "string"
+        }, 
+        "SetVaultNotifications": {
+            "accountId": "string", 
+            "vaultName": "string", 
+            "vaultNotificationConfig": {
+                "Events": {
+                    "_list": "string"
+                }, 
+                "SNSTopic": "string"
+            }
+        }, 
+        "UploadArchive": {
+            "accountId": "string", 
+            "archiveDescription": "string", 
+            "body": "blob", 
+            "checksum": "string", 
+            "vaultName": "string"
+        }, 
+        "UploadMultipartPart": {
+            "accountId": "string", 
+            "body": "blob", 
+            "checksum": "string", 
+            "range": "string", 
+            "uploadId": "string", 
+            "vaultName": "string"
+        }
+    }
+}

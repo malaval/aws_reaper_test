@@ -1,0 +1,256 @@
+{
+    "IamActions": [
+        "CreateDevicePool", 
+        "CreateProject", 
+        "CreateRemoteAccessSession", 
+        "CreateUpload", 
+        "DeleteDevicePool", 
+        "DeleteProject", 
+        "DeleteRemoteAccessSession", 
+        "DeleteRun", 
+        "DeleteUpload", 
+        "InstallToRemoteAccessSession", 
+        "PurchaseOffering", 
+        "RenewOffering", 
+        "ScheduleRun", 
+        "StopRemoteAccessSession", 
+        "StopRun", 
+        "UpdateDevicePool", 
+        "UpdateProject"
+    ], 
+    "OperationInputs": {
+        "CreateDevicePool": {
+            "description": "string", 
+            "name": "string", 
+            "projectArn": "string", 
+            "rules": {
+                "_list": {
+                    "attribute": "string", 
+                    "operator": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "CreateInstanceProfile": {
+            "description": "string", 
+            "excludeAppPackagesFromCleanup": {
+                "_list": "string"
+            }, 
+            "name": "string", 
+            "packageCleanup": "boolean", 
+            "rebootAfterUse": "boolean"
+        }, 
+        "CreateNetworkProfile": {
+            "description": "string", 
+            "downlinkBandwidthBits": "long", 
+            "downlinkDelayMs": "long", 
+            "downlinkJitterMs": "long", 
+            "downlinkLossPercent": "integer", 
+            "name": "string", 
+            "projectArn": "string", 
+            "type": "string", 
+            "uplinkBandwidthBits": "long", 
+            "uplinkDelayMs": "long", 
+            "uplinkJitterMs": "long", 
+            "uplinkLossPercent": "integer"
+        }, 
+        "CreateProject": {
+            "defaultJobTimeoutMinutes": "integer", 
+            "name": "string"
+        }, 
+        "CreateRemoteAccessSession": {
+            "clientId": "string", 
+            "configuration": {
+                "billingMethod": "string", 
+                "vpceConfigurationArns": {
+                    "_list": "string"
+                }
+            }, 
+            "deviceArn": "string", 
+            "instanceArn": "string", 
+            "interactionMode": "string", 
+            "name": "string", 
+            "projectArn": "string", 
+            "remoteDebugEnabled": "boolean", 
+            "remoteRecordAppArn": "string", 
+            "remoteRecordEnabled": "boolean", 
+            "skipAppResign": "boolean", 
+            "sshPublicKey": "string"
+        }, 
+        "CreateUpload": {
+            "contentType": "string", 
+            "name": "string", 
+            "projectArn": "string", 
+            "type": "string"
+        }, 
+        "CreateVPCEConfiguration": {
+            "serviceDnsName": "string", 
+            "vpceConfigurationDescription": "string", 
+            "vpceConfigurationName": "string", 
+            "vpceServiceName": "string"
+        }, 
+        "DeleteDevicePool": {
+            "arn": "string"
+        }, 
+        "DeleteInstanceProfile": {
+            "arn": "string"
+        }, 
+        "DeleteNetworkProfile": {
+            "arn": "string"
+        }, 
+        "DeleteProject": {
+            "arn": "string"
+        }, 
+        "DeleteRemoteAccessSession": {
+            "arn": "string"
+        }, 
+        "DeleteRun": {
+            "arn": "string"
+        }, 
+        "DeleteUpload": {
+            "arn": "string"
+        }, 
+        "DeleteVPCEConfiguration": {
+            "arn": "string"
+        }, 
+        "InstallToRemoteAccessSession": {
+            "appArn": "string", 
+            "remoteAccessSessionArn": "string"
+        }, 
+        "PurchaseOffering": {
+            "offeringId": "string", 
+            "offeringPromotionId": "string", 
+            "quantity": "integer"
+        }, 
+        "RenewOffering": {
+            "offeringId": "string", 
+            "quantity": "integer"
+        }, 
+        "ScheduleRun": {
+            "appArn": "string", 
+            "configuration": {
+                "auxiliaryApps": {
+                    "_list": "string"
+                }, 
+                "billingMethod": "string", 
+                "customerArtifactPaths": {
+                    "androidPaths": {
+                        "_list": "string"
+                    }, 
+                    "deviceHostPaths": {
+                        "_list": "string"
+                    }, 
+                    "iosPaths": {
+                        "_list": "string"
+                    }
+                }, 
+                "extraDataPackageArn": "string", 
+                "locale": "string", 
+                "location": {
+                    "latitude": "double", 
+                    "longitude": "double"
+                }, 
+                "networkProfileArn": "string", 
+                "radios": {
+                    "bluetooth": "boolean", 
+                    "gps": "boolean", 
+                    "nfc": "boolean", 
+                    "wifi": "boolean"
+                }, 
+                "vpceConfigurationArns": {
+                    "_list": "string"
+                }
+            }, 
+            "devicePoolArn": "string", 
+            "executionConfiguration": {
+                "accountsCleanup": "boolean", 
+                "appPackagesCleanup": "boolean", 
+                "jobTimeoutMinutes": "integer", 
+                "skipAppResign": "boolean", 
+                "videoCapture": "boolean"
+            }, 
+            "name": "string", 
+            "projectArn": "string", 
+            "test": {
+                "filter": "string", 
+                "parameters": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "testPackageArn": "string", 
+                "testSpecArn": "string", 
+                "type": "string"
+            }
+        }, 
+        "StopJob": {
+            "arn": "string"
+        }, 
+        "StopRemoteAccessSession": {
+            "arn": "string"
+        }, 
+        "StopRun": {
+            "arn": "string"
+        }, 
+        "UpdateDeviceInstance": {
+            "arn": "string", 
+            "labels": {
+                "_list": "string"
+            }, 
+            "profileArn": "string"
+        }, 
+        "UpdateDevicePool": {
+            "arn": "string", 
+            "description": "string", 
+            "name": "string", 
+            "rules": {
+                "_list": {
+                    "attribute": "string", 
+                    "operator": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "UpdateInstanceProfile": {
+            "arn": "string", 
+            "description": "string", 
+            "excludeAppPackagesFromCleanup": {
+                "_list": "string"
+            }, 
+            "name": "string", 
+            "packageCleanup": "boolean", 
+            "rebootAfterUse": "boolean"
+        }, 
+        "UpdateNetworkProfile": {
+            "arn": "string", 
+            "description": "string", 
+            "downlinkBandwidthBits": "long", 
+            "downlinkDelayMs": "long", 
+            "downlinkJitterMs": "long", 
+            "downlinkLossPercent": "integer", 
+            "name": "string", 
+            "type": "string", 
+            "uplinkBandwidthBits": "long", 
+            "uplinkDelayMs": "long", 
+            "uplinkJitterMs": "long", 
+            "uplinkLossPercent": "integer"
+        }, 
+        "UpdateProject": {
+            "arn": "string", 
+            "defaultJobTimeoutMinutes": "integer", 
+            "name": "string"
+        }, 
+        "UpdateUpload": {
+            "arn": "string", 
+            "contentType": "string", 
+            "editContent": "boolean", 
+            "name": "string"
+        }, 
+        "UpdateVPCEConfiguration": {
+            "arn": "string", 
+            "serviceDnsName": "string", 
+            "vpceConfigurationDescription": "string", 
+            "vpceConfigurationName": "string", 
+            "vpceServiceName": "string"
+        }
+    }
+}

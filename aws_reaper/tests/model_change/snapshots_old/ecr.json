@@ -1,0 +1,83 @@
+{
+    "IamActions": [
+        "BatchDeleteImage", 
+        "CompleteLayerUpload", 
+        "CreateRepository", 
+        "DeleteRepository", 
+        "DeleteRepositoryPolicy", 
+        "InitiateLayerUpload", 
+        "PutImage", 
+        "SetRepositoryPolicy", 
+        "UploadLayerPart"
+    ], 
+    "OperationInputs": {
+        "BatchDeleteImage": {
+            "imageIds": {
+                "_list": {
+                    "imageDigest": "string", 
+                    "imageTag": "string"
+                }
+            }, 
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "CompleteLayerUpload": {
+            "layerDigests": {
+                "_list": "string"
+            }, 
+            "registryId": "string", 
+            "repositoryName": "string", 
+            "uploadId": "string"
+        }, 
+        "CreateRepository": {
+            "repositoryName": "string"
+        }, 
+        "DeleteLifecyclePolicy": {
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "DeleteRepository": {
+            "force": "boolean", 
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "DeleteRepositoryPolicy": {
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "InitiateLayerUpload": {
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "PutImage": {
+            "imageManifest": "string", 
+            "imageTag": "string", 
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "PutLifecyclePolicy": {
+            "lifecyclePolicyText": "string", 
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "SetRepositoryPolicy": {
+            "force": "boolean", 
+            "policyText": "string", 
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "StartLifecyclePolicyPreview": {
+            "lifecyclePolicyText": "string", 
+            "registryId": "string", 
+            "repositoryName": "string"
+        }, 
+        "UploadLayerPart": {
+            "layerPartBlob": "blob", 
+            "partFirstByte": "long", 
+            "partLastByte": "long", 
+            "registryId": "string", 
+            "repositoryName": "string", 
+            "uploadId": "string"
+        }
+    }
+}

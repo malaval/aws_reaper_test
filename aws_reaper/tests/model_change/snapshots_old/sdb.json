@@ -1,0 +1,82 @@
+{
+    "IamActions": [
+        "BatchDeleteAttributes", 
+        "BatchPutAttributes", 
+        "CreateDomain", 
+        "DeleteAttributes", 
+        "DeleteDomain", 
+        "PutAttributes"
+    ], 
+    "OperationInputs": {
+        "BatchDeleteAttributes": {
+            "DomainName": "string", 
+            "Items": {
+                "_list": {
+                    "Attributes": {
+                        "_list": {
+                            "AlternateNameEncoding": "string", 
+                            "AlternateValueEncoding": "string", 
+                            "Name": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "Name": "string"
+                }
+            }
+        }, 
+        "BatchPutAttributes": {
+            "DomainName": "string", 
+            "Items": {
+                "_list": {
+                    "Attributes": {
+                        "_list": {
+                            "Name": "string", 
+                            "Replace": "boolean", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "Name": "string"
+                }
+            }
+        }, 
+        "CreateDomain": {
+            "DomainName": "string"
+        }, 
+        "DeleteAttributes": {
+            "Attributes": {
+                "_list": {
+                    "AlternateNameEncoding": "string", 
+                    "AlternateValueEncoding": "string", 
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "DomainName": "string", 
+            "Expected": {
+                "Exists": "boolean", 
+                "Name": "string", 
+                "Value": "string"
+            }, 
+            "ItemName": "string"
+        }, 
+        "DeleteDomain": {
+            "DomainName": "string"
+        }, 
+        "PutAttributes": {
+            "Attributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Replace": "boolean", 
+                    "Value": "string"
+                }
+            }, 
+            "DomainName": "string", 
+            "Expected": {
+                "Exists": "boolean", 
+                "Name": "string", 
+                "Value": "string"
+            }, 
+            "ItemName": "string"
+        }
+    }
+}

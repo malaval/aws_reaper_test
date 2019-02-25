@@ -1,0 +1,27 @@
+{
+    "IamActions": [
+        "CancelJob", 
+        "CreateJob", 
+        "UpdateJob"
+    ], 
+    "OperationInputs": {
+        "CancelJob": {
+            "APIVersion": "string", 
+            "JobId": "string"
+        }, 
+        "CreateJob": {
+            "APIVersion": "string", 
+            "JobType": "string", 
+            "Manifest": "string", 
+            "ManifestAddendum": "string", 
+            "ValidateOnly": "boolean"
+        }, 
+        "UpdateJob": {
+            "APIVersion": "string", 
+            "JobId": "string", 
+            "JobType": "string", 
+            "Manifest": "string", 
+            "ValidateOnly": "boolean"
+        }
+    }
+}

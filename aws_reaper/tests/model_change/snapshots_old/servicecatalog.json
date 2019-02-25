@@ -1,0 +1,316 @@
+{
+    "IamActions": [
+        "AcceptPortfolioShare", 
+        "AssociatePrincipalWithPortfolio", 
+        "AssociateProductWithPortfolio", 
+        "CreateConstraint", 
+        "CreatePortfolio", 
+        "CreatePortfolioShare", 
+        "CreateProduct", 
+        "CreateProvisioningArtifact", 
+        "DeleteConstraint", 
+        "DeletePortfolio", 
+        "DeletePortfolioShare", 
+        "DeleteProduct", 
+        "DeleteProvisioningArtifact", 
+        "DisassociatePrincipalFromPortfolio", 
+        "DisassociateProductFromPortfolio", 
+        "ProvisionProduct", 
+        "RejectPortfolioShare", 
+        "TerminateProvisionedProduct", 
+        "UpdateConstraint", 
+        "UpdatePortfolio", 
+        "UpdateProduct", 
+        "UpdateProvisionedProduct", 
+        "UpdateProvisioningArtifact"
+    ], 
+    "OperationInputs": {
+        "AcceptPortfolioShare": {
+            "AcceptLanguage": "string", 
+            "PortfolioId": "string"
+        }, 
+        "AssociatePrincipalWithPortfolio": {
+            "AcceptLanguage": "string", 
+            "PortfolioId": "string", 
+            "PrincipalARN": "string", 
+            "PrincipalType": "string"
+        }, 
+        "AssociateProductWithPortfolio": {
+            "AcceptLanguage": "string", 
+            "PortfolioId": "string", 
+            "ProductId": "string", 
+            "SourcePortfolioId": "string"
+        }, 
+        "AssociateTagOptionWithResource": {
+            "ResourceId": "string", 
+            "TagOptionId": "string"
+        }, 
+        "CopyProduct": {
+            "AcceptLanguage": "string", 
+            "CopyOptions": {
+                "_list": "string"
+            }, 
+            "IdempotencyToken": "string", 
+            "SourceProductArn": "string", 
+            "SourceProvisioningArtifactIdentifiers": {
+                "_list": {
+                    "_key": "string", 
+                    "_value": "string"
+                }
+            }, 
+            "TargetProductId": "string", 
+            "TargetProductName": "string"
+        }, 
+        "CreateConstraint": {
+            "AcceptLanguage": "string", 
+            "Description": "string", 
+            "IdempotencyToken": "string", 
+            "Parameters": "string", 
+            "PortfolioId": "string", 
+            "ProductId": "string", 
+            "Type": "string"
+        }, 
+        "CreatePortfolio": {
+            "AcceptLanguage": "string", 
+            "Description": "string", 
+            "DisplayName": "string", 
+            "IdempotencyToken": "string", 
+            "ProviderName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreatePortfolioShare": {
+            "AcceptLanguage": "string", 
+            "AccountId": "string", 
+            "PortfolioId": "string"
+        }, 
+        "CreateProduct": {
+            "AcceptLanguage": "string", 
+            "Description": "string", 
+            "Distributor": "string", 
+            "IdempotencyToken": "string", 
+            "Name": "string", 
+            "Owner": "string", 
+            "ProductType": "string", 
+            "ProvisioningArtifactParameters": {
+                "Description": "string", 
+                "Info": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Name": "string", 
+                "Type": "string"
+            }, 
+            "SupportDescription": "string", 
+            "SupportEmail": "string", 
+            "SupportUrl": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateProvisionedProductPlan": {
+            "AcceptLanguage": "string", 
+            "IdempotencyToken": "string", 
+            "NotificationArns": {
+                "_list": "string"
+            }, 
+            "PathId": "string", 
+            "PlanName": "string", 
+            "PlanType": "string", 
+            "ProductId": "string", 
+            "ProvisionedProductName": "string", 
+            "ProvisioningArtifactId": "string", 
+            "ProvisioningParameters": {
+                "_list": {
+                    "Key": "string", 
+                    "UsePreviousValue": "boolean", 
+                    "Value": "string"
+                }
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateProvisioningArtifact": {
+            "AcceptLanguage": "string", 
+            "IdempotencyToken": "string", 
+            "Parameters": {
+                "Description": "string", 
+                "Info": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Name": "string", 
+                "Type": "string"
+            }, 
+            "ProductId": "string"
+        }, 
+        "CreateTagOption": {
+            "Key": "string", 
+            "Value": "string"
+        }, 
+        "DeleteConstraint": {
+            "AcceptLanguage": "string", 
+            "Id": "string"
+        }, 
+        "DeletePortfolio": {
+            "AcceptLanguage": "string", 
+            "Id": "string"
+        }, 
+        "DeletePortfolioShare": {
+            "AcceptLanguage": "string", 
+            "AccountId": "string", 
+            "PortfolioId": "string"
+        }, 
+        "DeleteProduct": {
+            "AcceptLanguage": "string", 
+            "Id": "string"
+        }, 
+        "DeleteProvisionedProductPlan": {
+            "AcceptLanguage": "string", 
+            "IgnoreErrors": "boolean", 
+            "PlanId": "string"
+        }, 
+        "DeleteProvisioningArtifact": {
+            "AcceptLanguage": "string", 
+            "ProductId": "string", 
+            "ProvisioningArtifactId": "string"
+        }, 
+        "DeleteTagOption": {
+            "Id": "string"
+        }, 
+        "DisassociatePrincipalFromPortfolio": {
+            "AcceptLanguage": "string", 
+            "PortfolioId": "string", 
+            "PrincipalARN": "string"
+        }, 
+        "DisassociateProductFromPortfolio": {
+            "AcceptLanguage": "string", 
+            "PortfolioId": "string", 
+            "ProductId": "string"
+        }, 
+        "DisassociateTagOptionFromResource": {
+            "ResourceId": "string", 
+            "TagOptionId": "string"
+        }, 
+        "ExecuteProvisionedProductPlan": {
+            "AcceptLanguage": "string", 
+            "IdempotencyToken": "string", 
+            "PlanId": "string"
+        }, 
+        "ProvisionProduct": {
+            "AcceptLanguage": "string", 
+            "NotificationArns": {
+                "_list": "string"
+            }, 
+            "PathId": "string", 
+            "ProductId": "string", 
+            "ProvisionToken": "string", 
+            "ProvisionedProductName": "string", 
+            "ProvisioningArtifactId": "string", 
+            "ProvisioningParameters": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "RejectPortfolioShare": {
+            "AcceptLanguage": "string", 
+            "PortfolioId": "string"
+        }, 
+        "TerminateProvisionedProduct": {
+            "AcceptLanguage": "string", 
+            "IgnoreErrors": "boolean", 
+            "ProvisionedProductId": "string", 
+            "ProvisionedProductName": "string", 
+            "TerminateToken": "string"
+        }, 
+        "UpdateConstraint": {
+            "AcceptLanguage": "string", 
+            "Description": "string", 
+            "Id": "string"
+        }, 
+        "UpdatePortfolio": {
+            "AcceptLanguage": "string", 
+            "AddTags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "Description": "string", 
+            "DisplayName": "string", 
+            "Id": "string", 
+            "ProviderName": "string", 
+            "RemoveTags": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateProduct": {
+            "AcceptLanguage": "string", 
+            "AddTags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "Description": "string", 
+            "Distributor": "string", 
+            "Id": "string", 
+            "Name": "string", 
+            "Owner": "string", 
+            "RemoveTags": {
+                "_list": "string"
+            }, 
+            "SupportDescription": "string", 
+            "SupportEmail": "string", 
+            "SupportUrl": "string"
+        }, 
+        "UpdateProvisionedProduct": {
+            "AcceptLanguage": "string", 
+            "PathId": "string", 
+            "ProductId": "string", 
+            "ProvisionedProductId": "string", 
+            "ProvisionedProductName": "string", 
+            "ProvisioningArtifactId": "string", 
+            "ProvisioningParameters": {
+                "_list": {
+                    "Key": "string", 
+                    "UsePreviousValue": "boolean", 
+                    "Value": "string"
+                }
+            }, 
+            "UpdateToken": "string"
+        }, 
+        "UpdateProvisioningArtifact": {
+            "AcceptLanguage": "string", 
+            "Active": "boolean", 
+            "Description": "string", 
+            "Name": "string", 
+            "ProductId": "string", 
+            "ProvisioningArtifactId": "string"
+        }, 
+        "UpdateTagOption": {
+            "Active": "boolean", 
+            "Id": "string", 
+            "Value": "string"
+        }
+    }
+}

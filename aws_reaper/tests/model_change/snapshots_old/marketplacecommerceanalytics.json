@@ -1,0 +1,29 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "GenerateDataSet": {
+            "customerDefinedValues": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "dataSetPublicationDate": "timestamp", 
+            "dataSetType": "string", 
+            "destinationS3BucketName": "string", 
+            "destinationS3Prefix": "string", 
+            "roleNameArn": "string", 
+            "snsTopicArn": "string"
+        }, 
+        "StartSupportDataExport": {
+            "customerDefinedValues": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "dataSetType": "string", 
+            "destinationS3BucketName": "string", 
+            "destinationS3Prefix": "string", 
+            "fromDate": "timestamp", 
+            "roleNameArn": "string", 
+            "snsTopicArn": "string"
+        }
+    }
+}

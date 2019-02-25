@@ -1,0 +1,30 @@
+{
+    "IamActions": [
+        "BatchMeterUsage", 
+        "MeterUsage", 
+        "ResolveCustomer"
+    ], 
+    "OperationInputs": {
+        "BatchMeterUsage": {
+            "ProductCode": "string", 
+            "UsageRecords": {
+                "_list": {
+                    "CustomerIdentifier": "string", 
+                    "Dimension": "string", 
+                    "Quantity": "integer", 
+                    "Timestamp": "timestamp"
+                }
+            }
+        }, 
+        "MeterUsage": {
+            "DryRun": "boolean", 
+            "ProductCode": "string", 
+            "Timestamp": "timestamp", 
+            "UsageDimension": "string", 
+            "UsageQuantity": "integer"
+        }, 
+        "ResolveCustomer": {
+            "RegistrationToken": "string"
+        }
+    }
+}

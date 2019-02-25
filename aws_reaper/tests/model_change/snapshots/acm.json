@@ -1,0 +1,69 @@
+{
+    "IamActions": [
+        "DeleteCertificate", 
+        "ExportCertificate", 
+        "ImportCertificate", 
+        "RequestCertificate", 
+        "ResendValidationEmail", 
+        "UpdateCertificateOptions"
+    ], 
+    "OperationInputs": {
+        "DeleteCertificate": {
+            "CertificateArn": "string"
+        }, 
+        "ExportCertificate": {
+            "CertificateArn": "string", 
+            "Passphrase": "blob"
+        }, 
+        "ImportCertificate": {
+            "Certificate": "blob", 
+            "CertificateArn": "string", 
+            "CertificateChain": "blob", 
+            "PrivateKey": "blob"
+        }, 
+        "RequestCertificate": {
+            "CertificateAuthorityArn": "string", 
+            "DomainName": "string", 
+            "DomainValidationOptions": {
+                "_list": {
+                    "DomainName": "string", 
+                    "ValidationDomain": "string"
+                }
+            }, 
+            "IdempotencyToken": "string", 
+            "Options": {
+                "CertificateTransparencyLoggingPreference": {
+                    "_enum": {
+                        "DISABLED": "string", 
+                        "ENABLED": "string"
+                    }
+                }
+            }, 
+            "SubjectAlternativeNames": {
+                "_list": "string"
+            }, 
+            "ValidationMethod": {
+                "_enum": {
+                    "DNS": "string", 
+                    "EMAIL": "string"
+                }
+            }
+        }, 
+        "ResendValidationEmail": {
+            "CertificateArn": "string", 
+            "Domain": "string", 
+            "ValidationDomain": "string"
+        }, 
+        "UpdateCertificateOptions": {
+            "CertificateArn": "string", 
+            "Options": {
+                "CertificateTransparencyLoggingPreference": {
+                    "_enum": {
+                        "DISABLED": "string", 
+                        "ENABLED": "string"
+                    }
+                }
+            }
+        }
+    }
+}

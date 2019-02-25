@@ -1,0 +1,305 @@
+{
+    "IamActions": [
+        "ActivateGateway", 
+        "AddCache", 
+        "AddUploadBuffer", 
+        "AddWorkingStorage", 
+        "CancelArchival", 
+        "CancelRetrieval", 
+        "CreateCachediSCSIVolume", 
+        "CreateNFSFileShare", 
+        "CreateSnapshot", 
+        "CreateSnapshotFromVolumeRecoveryPoint", 
+        "CreateStorediSCSIVolume", 
+        "CreateTapeWithBarcode", 
+        "CreateTapes", 
+        "DeleteBandwidthRateLimit", 
+        "DeleteChapCredentials", 
+        "DeleteFileShare", 
+        "DeleteGateway", 
+        "DeleteSnapshotSchedule", 
+        "DeleteTape", 
+        "DeleteTapeArchive", 
+        "DeleteVolume", 
+        "DisableGateway", 
+        "RefreshCache", 
+        "ResetCache", 
+        "RetrieveTapeArchive", 
+        "RetrieveTapeRecoveryPoint", 
+        "SetLocalConsolePassword", 
+        "ShutdownGateway", 
+        "StartGateway", 
+        "UpdateBandwidthRateLimit", 
+        "UpdateChapCredentials", 
+        "UpdateGatewayInformation", 
+        "UpdateGatewaySoftwareNow", 
+        "UpdateMaintenanceStartTime", 
+        "UpdateNFSFileShare", 
+        "UpdateSnapshotSchedule", 
+        "UpdateVTLDeviceType"
+    ], 
+    "OperationInputs": {
+        "ActivateGateway": {
+            "ActivationKey": "string", 
+            "GatewayName": "string", 
+            "GatewayRegion": "string", 
+            "GatewayTimezone": "string", 
+            "GatewayType": "string", 
+            "MediumChangerType": "string", 
+            "TapeDriveType": "string"
+        }, 
+        "AddCache": {
+            "DiskIds": {
+                "_list": "string"
+            }, 
+            "GatewayARN": "string"
+        }, 
+        "AddUploadBuffer": {
+            "DiskIds": {
+                "_list": "string"
+            }, 
+            "GatewayARN": "string"
+        }, 
+        "AddWorkingStorage": {
+            "DiskIds": {
+                "_list": "string"
+            }, 
+            "GatewayARN": "string"
+        }, 
+        "CancelArchival": {
+            "GatewayARN": "string", 
+            "TapeARN": "string"
+        }, 
+        "CancelRetrieval": {
+            "GatewayARN": "string", 
+            "TapeARN": "string"
+        }, 
+        "CreateCachediSCSIVolume": {
+            "ClientToken": "string", 
+            "GatewayARN": "string", 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "NetworkInterfaceId": "string", 
+            "SnapshotId": "string", 
+            "SourceVolumeARN": "string", 
+            "TargetName": "string", 
+            "VolumeSizeInBytes": "long"
+        }, 
+        "CreateNFSFileShare": {
+            "ClientList": {
+                "_list": "string"
+            }, 
+            "ClientToken": "string", 
+            "DefaultStorageClass": "string", 
+            "GatewayARN": "string", 
+            "GuessMIMETypeEnabled": "boolean", 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "LocationARN": "string", 
+            "NFSFileShareDefaults": {
+                "DirectoryMode": "string", 
+                "FileMode": "string", 
+                "GroupId": "long", 
+                "OwnerId": "long"
+            }, 
+            "ObjectACL": "string", 
+            "ReadOnly": "boolean", 
+            "RequesterPays": "boolean", 
+            "Role": "string", 
+            "Squash": "string"
+        }, 
+        "CreateSMBFileShare": {
+            "Authentication": "string", 
+            "ClientToken": "string", 
+            "DefaultStorageClass": "string", 
+            "GatewayARN": "string", 
+            "GuessMIMETypeEnabled": "boolean", 
+            "InvalidUserList": {
+                "_list": "string"
+            }, 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "LocationARN": "string", 
+            "ObjectACL": "string", 
+            "ReadOnly": "boolean", 
+            "RequesterPays": "boolean", 
+            "Role": "string", 
+            "ValidUserList": {
+                "_list": "string"
+            }
+        }, 
+        "CreateSnapshot": {
+            "SnapshotDescription": "string", 
+            "VolumeARN": "string"
+        }, 
+        "CreateSnapshotFromVolumeRecoveryPoint": {
+            "SnapshotDescription": "string", 
+            "VolumeARN": "string"
+        }, 
+        "CreateStorediSCSIVolume": {
+            "DiskId": "string", 
+            "GatewayARN": "string", 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "NetworkInterfaceId": "string", 
+            "PreserveExistingData": "boolean", 
+            "SnapshotId": "string", 
+            "TargetName": "string"
+        }, 
+        "CreateTapeWithBarcode": {
+            "GatewayARN": "string", 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "TapeBarcode": "string", 
+            "TapeSizeInBytes": "long"
+        }, 
+        "CreateTapes": {
+            "ClientToken": "string", 
+            "GatewayARN": "string", 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "NumTapesToCreate": "integer", 
+            "TapeBarcodePrefix": "string", 
+            "TapeSizeInBytes": "long"
+        }, 
+        "DeleteBandwidthRateLimit": {
+            "BandwidthType": "string", 
+            "GatewayARN": "string"
+        }, 
+        "DeleteChapCredentials": {
+            "InitiatorName": "string", 
+            "TargetARN": "string"
+        }, 
+        "DeleteFileShare": {
+            "FileShareARN": "string", 
+            "ForceDelete": "boolean"
+        }, 
+        "DeleteGateway": {
+            "GatewayARN": "string"
+        }, 
+        "DeleteSnapshotSchedule": {
+            "VolumeARN": "string"
+        }, 
+        "DeleteTape": {
+            "GatewayARN": "string", 
+            "TapeARN": "string"
+        }, 
+        "DeleteTapeArchive": {
+            "TapeARN": "string"
+        }, 
+        "DeleteVolume": {
+            "VolumeARN": "string"
+        }, 
+        "DisableGateway": {
+            "GatewayARN": "string"
+        }, 
+        "JoinDomain": {
+            "DomainName": "string", 
+            "GatewayARN": "string", 
+            "Password": "string", 
+            "UserName": "string"
+        }, 
+        "NotifyWhenUploaded": {
+            "FileShareARN": "string"
+        }, 
+        "RefreshCache": {
+            "FileShareARN": "string"
+        }, 
+        "ResetCache": {
+            "GatewayARN": "string"
+        }, 
+        "RetrieveTapeArchive": {
+            "GatewayARN": "string", 
+            "TapeARN": "string"
+        }, 
+        "RetrieveTapeRecoveryPoint": {
+            "GatewayARN": "string", 
+            "TapeARN": "string"
+        }, 
+        "SetLocalConsolePassword": {
+            "GatewayARN": "string", 
+            "LocalConsolePassword": "string"
+        }, 
+        "SetSMBGuestPassword": {
+            "GatewayARN": "string", 
+            "Password": "string"
+        }, 
+        "ShutdownGateway": {
+            "GatewayARN": "string"
+        }, 
+        "StartGateway": {
+            "GatewayARN": "string"
+        }, 
+        "UpdateBandwidthRateLimit": {
+            "AverageDownloadRateLimitInBitsPerSec": "long", 
+            "AverageUploadRateLimitInBitsPerSec": "long", 
+            "GatewayARN": "string"
+        }, 
+        "UpdateChapCredentials": {
+            "InitiatorName": "string", 
+            "SecretToAuthenticateInitiator": "string", 
+            "SecretToAuthenticateTarget": "string", 
+            "TargetARN": "string"
+        }, 
+        "UpdateGatewayInformation": {
+            "GatewayARN": "string", 
+            "GatewayName": "string", 
+            "GatewayTimezone": "string"
+        }, 
+        "UpdateGatewaySoftwareNow": {
+            "GatewayARN": "string"
+        }, 
+        "UpdateMaintenanceStartTime": {
+            "DayOfWeek": "integer", 
+            "GatewayARN": "string", 
+            "HourOfDay": "integer", 
+            "MinuteOfHour": "integer"
+        }, 
+        "UpdateNFSFileShare": {
+            "ClientList": {
+                "_list": "string"
+            }, 
+            "DefaultStorageClass": "string", 
+            "FileShareARN": "string", 
+            "GuessMIMETypeEnabled": "boolean", 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "NFSFileShareDefaults": {
+                "DirectoryMode": "string", 
+                "FileMode": "string", 
+                "GroupId": "long", 
+                "OwnerId": "long"
+            }, 
+            "ObjectACL": "string", 
+            "ReadOnly": "boolean", 
+            "RequesterPays": "boolean", 
+            "Squash": "string"
+        }, 
+        "UpdateSMBFileShare": {
+            "DefaultStorageClass": "string", 
+            "FileShareARN": "string", 
+            "GuessMIMETypeEnabled": "boolean", 
+            "InvalidUserList": {
+                "_list": "string"
+            }, 
+            "KMSEncrypted": "boolean", 
+            "KMSKey": "string", 
+            "ObjectACL": "string", 
+            "ReadOnly": "boolean", 
+            "RequesterPays": "boolean", 
+            "ValidUserList": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateSnapshotSchedule": {
+            "Description": "string", 
+            "RecurrenceInHours": "integer", 
+            "StartAt": "integer", 
+            "VolumeARN": "string"
+        }, 
+        "UpdateVTLDeviceType": {
+            "DeviceType": "string", 
+            "VTLDeviceARN": "string"
+        }
+    }
+}

@@ -1,0 +1,2502 @@
+{
+    "IamActions": [
+        "AcceptReservedInstancesExchangeQuote", 
+        "AcceptVpcEndpointConnections", 
+        "AcceptVpcPeeringConnection", 
+        "AllocateAddress", 
+        "AllocateHosts", 
+        "AssignIpv6Addresses", 
+        "AssignPrivateIpAddresses", 
+        "AssociateAddress", 
+        "AssociateDhcpOptions", 
+        "AssociateIamInstanceProfile", 
+        "AssociateRouteTable", 
+        "AssociateSubnetCidrBlock", 
+        "AssociateVpcCidrBlock", 
+        "AttachClassicLinkVpc", 
+        "AttachInternetGateway", 
+        "AttachNetworkInterface", 
+        "AttachVolume", 
+        "AttachVpnGateway", 
+        "AuthorizeSecurityGroupEgress", 
+        "AuthorizeSecurityGroupIngress", 
+        "BundleInstance", 
+        "CancelBundleTask", 
+        "CancelConversionTask", 
+        "CancelExportTask", 
+        "CancelImportTask", 
+        "CancelReservedInstancesListing", 
+        "CancelSpotFleetRequests", 
+        "CancelSpotInstanceRequests", 
+        "ConfirmProductInstance", 
+        "CopyFpgaImage", 
+        "CopyImage", 
+        "CopySnapshot", 
+        "CreateCustomerGateway", 
+        "CreateDefaultSubnet", 
+        "CreateDefaultVpc", 
+        "CreateDhcpOptions", 
+        "CreateEgressOnlyInternetGateway", 
+        "CreateFlowLogs", 
+        "CreateFpgaImage", 
+        "CreateImage", 
+        "CreateInstanceExportTask", 
+        "CreateInternetGateway", 
+        "CreateKeyPair", 
+        "CreateLaunchTemplate", 
+        "CreateLaunchTemplateVersion", 
+        "CreateNatGateway", 
+        "CreateNetworkAcl", 
+        "CreateNetworkAclEntry", 
+        "CreateNetworkInterface", 
+        "CreateNetworkInterfacePermission", 
+        "CreatePlacementGroup", 
+        "CreateReservedInstancesListing", 
+        "CreateRoute", 
+        "CreateRouteTable", 
+        "CreateSecurityGroup", 
+        "CreateSnapshot", 
+        "CreateSpotDatafeedSubscription", 
+        "CreateSubnet", 
+        "CreateTags", 
+        "CreateVolume", 
+        "CreateVpc", 
+        "CreateVpcEndpoint", 
+        "CreateVpcEndpointConnectionNotification", 
+        "CreateVpcEndpointServiceConfiguration", 
+        "CreateVpcPeeringConnection", 
+        "CreateVpnConnection", 
+        "CreateVpnConnectionRoute", 
+        "CreateVpnGateway", 
+        "DeleteCustomerGateway", 
+        "DeleteDhcpOptions", 
+        "DeleteEgressOnlyInternetGateway", 
+        "DeleteFlowLogs", 
+        "DeleteFpgaImage", 
+        "DeleteInternetGateway", 
+        "DeleteKeyPair", 
+        "DeleteLaunchTemplate", 
+        "DeleteLaunchTemplateVersions", 
+        "DeleteNatGateway", 
+        "DeleteNetworkAcl", 
+        "DeleteNetworkAclEntry", 
+        "DeleteNetworkInterface", 
+        "DeleteNetworkInterfacePermission", 
+        "DeletePlacementGroup", 
+        "DeleteRoute", 
+        "DeleteRouteTable", 
+        "DeleteSecurityGroup", 
+        "DeleteSnapshot", 
+        "DeleteSpotDatafeedSubscription", 
+        "DeleteSubnet", 
+        "DeleteTags", 
+        "DeleteVolume", 
+        "DeleteVpc", 
+        "DeleteVpcEndpointConnectionNotifications", 
+        "DeleteVpcEndpointServiceConfigurations", 
+        "DeleteVpcEndpoints", 
+        "DeleteVpcPeeringConnection", 
+        "DeleteVpnConnection", 
+        "DeleteVpnConnectionRoute", 
+        "DeleteVpnGateway", 
+        "DeregisterImage", 
+        "DetachClassicLinkVpc", 
+        "DetachInternetGateway", 
+        "DetachNetworkInterface", 
+        "DetachVolume", 
+        "DetachVpnGateway", 
+        "DisableVgwRoutePropagation", 
+        "DisableVpcClassicLink", 
+        "DisableVpcClassicLinkDnsSupport", 
+        "DisassociateAddress", 
+        "DisassociateIamInstanceProfile", 
+        "DisassociateRouteTable", 
+        "DisassociateSubnetCidrBlock", 
+        "DisassociateVpcCidrBlock", 
+        "EnableVgwRoutePropagation", 
+        "EnableVolumeIO", 
+        "EnableVpcClassicLink", 
+        "EnableVpcClassicLinkDnsSupport", 
+        "ImportImage", 
+        "ImportInstance", 
+        "ImportKeyPair", 
+        "ImportSnapshot", 
+        "ImportVolume", 
+        "ModifyFpgaImageAttribute", 
+        "ModifyHosts", 
+        "ModifyIdFormat", 
+        "ModifyIdentityIdFormat", 
+        "ModifyImageAttribute", 
+        "ModifyInstanceAttribute", 
+        "ModifyInstanceCreditSpecification", 
+        "ModifyInstancePlacement", 
+        "ModifyLaunchTemplate", 
+        "ModifyNetworkInterfaceAttribute", 
+        "ModifyReservedInstances", 
+        "ModifySnapshotAttribute", 
+        "ModifySpotFleetRequest", 
+        "ModifySubnetAttribute", 
+        "ModifyVolume", 
+        "ModifyVolumeAttribute", 
+        "ModifyVpcAttribute", 
+        "ModifyVpcEndpoint", 
+        "ModifyVpcEndpointConnectionNotification", 
+        "ModifyVpcEndpointServiceConfiguration", 
+        "ModifyVpcEndpointServicePermissions", 
+        "ModifyVpcPeeringConnectionOptions", 
+        "ModifyVpcTenancy", 
+        "MonitorInstances", 
+        "MoveAddressToVpc", 
+        "PurchaseHostReservation", 
+        "PurchaseReservedInstancesOffering", 
+        "PurchaseScheduledInstances", 
+        "RebootInstances", 
+        "RegisterImage", 
+        "RejectVpcEndpointConnections", 
+        "RejectVpcPeeringConnection", 
+        "ReleaseAddress", 
+        "ReleaseHosts", 
+        "ReplaceIamInstanceProfileAssociation", 
+        "ReplaceNetworkAclAssociation", 
+        "ReplaceNetworkAclEntry", 
+        "ReplaceRoute", 
+        "ReplaceRouteTableAssociation", 
+        "ReportInstanceStatus", 
+        "RequestSpotFleet", 
+        "RequestSpotInstances", 
+        "ResetFpgaImageAttribute", 
+        "ResetImageAttribute", 
+        "ResetInstanceAttribute", 
+        "ResetNetworkInterfaceAttribute", 
+        "ResetSnapshotAttribute", 
+        "RestoreAddressToClassic", 
+        "RevokeSecurityGroupEgress", 
+        "RevokeSecurityGroupIngress", 
+        "RunInstances", 
+        "RunScheduledInstances", 
+        "StartInstances", 
+        "StopInstances", 
+        "TerminateInstances", 
+        "UnassignIpv6Addresses", 
+        "UnassignPrivateIpAddresses", 
+        "UnmonitorInstances", 
+        "UpdateSecurityGroupRuleDescriptionsEgress", 
+        "UpdateSecurityGroupRuleDescriptionsIngress"
+    ], 
+    "OperationInputs": {
+        "AcceptReservedInstancesExchangeQuote": {
+            "DryRun": "boolean", 
+            "ReservedInstanceIds": {
+                "_list": "string"
+            }, 
+            "TargetConfigurations": {
+                "_list": {
+                    "InstanceCount": "integer", 
+                    "OfferingId": "string"
+                }
+            }
+        }, 
+        "AcceptVpcEndpointConnections": {
+            "DryRun": "boolean", 
+            "ServiceId": "string", 
+            "VpcEndpointIds": {
+                "_list": "string"
+            }
+        }, 
+        "AcceptVpcPeeringConnection": {
+            "DryRun": "boolean", 
+            "VpcPeeringConnectionId": "string"
+        }, 
+        "AllocateAddress": {
+            "Address": "string", 
+            "Domain": "string", 
+            "DryRun": "boolean"
+        }, 
+        "AllocateHosts": {
+            "AutoPlacement": "string", 
+            "AvailabilityZone": "string", 
+            "ClientToken": "string", 
+            "InstanceType": "string", 
+            "Quantity": "integer"
+        }, 
+        "AssignIpv6Addresses": {
+            "Ipv6AddressCount": "integer", 
+            "Ipv6Addresses": {
+                "_list": "string"
+            }, 
+            "NetworkInterfaceId": "string"
+        }, 
+        "AssignPrivateIpAddresses": {
+            "AllowReassignment": "boolean", 
+            "NetworkInterfaceId": "string", 
+            "PrivateIpAddresses": {
+                "_list": "string"
+            }, 
+            "SecondaryPrivateIpAddressCount": "integer"
+        }, 
+        "AssociateAddress": {
+            "AllocationId": "string", 
+            "AllowReassociation": "boolean", 
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "NetworkInterfaceId": "string", 
+            "PrivateIpAddress": "string", 
+            "PublicIp": "string"
+        }, 
+        "AssociateDhcpOptions": {
+            "DhcpOptionsId": "string", 
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "AssociateIamInstanceProfile": {
+            "IamInstanceProfile": {
+                "Arn": "string", 
+                "Name": "string"
+            }, 
+            "InstanceId": "string"
+        }, 
+        "AssociateRouteTable": {
+            "DryRun": "boolean", 
+            "RouteTableId": "string", 
+            "SubnetId": "string"
+        }, 
+        "AssociateSubnetCidrBlock": {
+            "Ipv6CidrBlock": "string", 
+            "SubnetId": "string"
+        }, 
+        "AssociateVpcCidrBlock": {
+            "AmazonProvidedIpv6CidrBlock": "boolean", 
+            "CidrBlock": "string", 
+            "VpcId": "string"
+        }, 
+        "AttachClassicLinkVpc": {
+            "DryRun": "boolean", 
+            "Groups": {
+                "_list": "string"
+            }, 
+            "InstanceId": "string", 
+            "VpcId": "string"
+        }, 
+        "AttachInternetGateway": {
+            "DryRun": "boolean", 
+            "InternetGatewayId": "string", 
+            "VpcId": "string"
+        }, 
+        "AttachNetworkInterface": {
+            "DeviceIndex": "integer", 
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "NetworkInterfaceId": "string"
+        }, 
+        "AttachVolume": {
+            "Device": "string", 
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "VolumeId": "string"
+        }, 
+        "AttachVpnGateway": {
+            "DryRun": "boolean", 
+            "VpcId": "string", 
+            "VpnGatewayId": "string"
+        }, 
+        "AuthorizeSecurityGroupEgress": {
+            "CidrIp": "string", 
+            "DryRun": "boolean", 
+            "FromPort": "integer", 
+            "GroupId": "string", 
+            "IpPermissions": {
+                "_list": {
+                    "FromPort": "integer", 
+                    "IpProtocol": "string", 
+                    "IpRanges": {
+                        "_list": {
+                            "CidrIp": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "Ipv6Ranges": {
+                        "_list": {
+                            "CidrIpv6": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "PrefixListIds": {
+                        "_list": {
+                            "Description": "string", 
+                            "PrefixListId": "string"
+                        }
+                    }, 
+                    "ToPort": "integer", 
+                    "UserIdGroupPairs": {
+                        "_list": {
+                            "Description": "string", 
+                            "GroupId": "string", 
+                            "GroupName": "string", 
+                            "PeeringStatus": "string", 
+                            "UserId": "string", 
+                            "VpcId": "string", 
+                            "VpcPeeringConnectionId": "string"
+                        }
+                    }
+                }
+            }, 
+            "IpProtocol": "string", 
+            "SourceSecurityGroupName": "string", 
+            "SourceSecurityGroupOwnerId": "string", 
+            "ToPort": "integer"
+        }, 
+        "AuthorizeSecurityGroupIngress": {
+            "CidrIp": "string", 
+            "DryRun": "boolean", 
+            "FromPort": "integer", 
+            "GroupId": "string", 
+            "GroupName": "string", 
+            "IpPermissions": {
+                "_list": {
+                    "FromPort": "integer", 
+                    "IpProtocol": "string", 
+                    "IpRanges": {
+                        "_list": {
+                            "CidrIp": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "Ipv6Ranges": {
+                        "_list": {
+                            "CidrIpv6": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "PrefixListIds": {
+                        "_list": {
+                            "Description": "string", 
+                            "PrefixListId": "string"
+                        }
+                    }, 
+                    "ToPort": "integer", 
+                    "UserIdGroupPairs": {
+                        "_list": {
+                            "Description": "string", 
+                            "GroupId": "string", 
+                            "GroupName": "string", 
+                            "PeeringStatus": "string", 
+                            "UserId": "string", 
+                            "VpcId": "string", 
+                            "VpcPeeringConnectionId": "string"
+                        }
+                    }
+                }
+            }, 
+            "IpProtocol": "string", 
+            "SourceSecurityGroupName": "string", 
+            "SourceSecurityGroupOwnerId": "string", 
+            "ToPort": "integer"
+        }, 
+        "BundleInstance": {
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "Storage": {
+                "S3": {
+                    "AWSAccessKeyId": "string", 
+                    "Bucket": "string", 
+                    "Prefix": "string", 
+                    "UploadPolicy": "blob", 
+                    "UploadPolicySignature": "string"
+                }
+            }
+        }, 
+        "CancelBundleTask": {
+            "BundleId": "string", 
+            "DryRun": "boolean"
+        }, 
+        "CancelConversionTask": {
+            "ConversionTaskId": "string", 
+            "DryRun": "boolean", 
+            "ReasonMessage": "string"
+        }, 
+        "CancelExportTask": {
+            "ExportTaskId": "string"
+        }, 
+        "CancelImportTask": {
+            "CancelReason": "string", 
+            "DryRun": "boolean", 
+            "ImportTaskId": "string"
+        }, 
+        "CancelReservedInstancesListing": {
+            "ReservedInstancesListingId": "string"
+        }, 
+        "CancelSpotFleetRequests": {
+            "DryRun": "boolean", 
+            "SpotFleetRequestIds": {
+                "_list": "string"
+            }, 
+            "TerminateInstances": "boolean"
+        }, 
+        "CancelSpotInstanceRequests": {
+            "DryRun": "boolean", 
+            "SpotInstanceRequestIds": {
+                "_list": "string"
+            }
+        }, 
+        "ConfirmProductInstance": {
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "ProductCode": "string"
+        }, 
+        "CopyFpgaImage": {
+            "ClientToken": "string", 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "Name": "string", 
+            "SourceFpgaImageId": "string", 
+            "SourceRegion": "string"
+        }, 
+        "CopyImage": {
+            "ClientToken": "string", 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "Encrypted": "boolean", 
+            "KmsKeyId": "string", 
+            "Name": "string", 
+            "SourceImageId": "string", 
+            "SourceRegion": "string"
+        }, 
+        "CopySnapshot": {
+            "Description": "string", 
+            "DestinationRegion": "string", 
+            "DryRun": "boolean", 
+            "Encrypted": "boolean", 
+            "KmsKeyId": "string", 
+            "PresignedUrl": "string", 
+            "SourceRegion": "string", 
+            "SourceSnapshotId": "string"
+        }, 
+        "CreateCustomerGateway": {
+            "BgpAsn": "integer", 
+            "DryRun": "boolean", 
+            "PublicIp": "string", 
+            "Type": "string"
+        }, 
+        "CreateDefaultSubnet": {
+            "AvailabilityZone": "string", 
+            "DryRun": "boolean"
+        }, 
+        "CreateDefaultVpc": {
+            "DryRun": "boolean"
+        }, 
+        "CreateDhcpOptions": {
+            "DhcpConfigurations": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "DryRun": "boolean"
+        }, 
+        "CreateEgressOnlyInternetGateway": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "CreateFleet": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "ExcessCapacityTerminationPolicy": "string", 
+            "LaunchTemplateConfigs": {
+                "_list": {
+                    "LaunchTemplateSpecification": {
+                        "LaunchTemplateId": "string", 
+                        "LaunchTemplateName": "string", 
+                        "Version": "string"
+                    }, 
+                    "Overrides": {
+                        "_list": {
+                            "AvailabilityZone": "string", 
+                            "InstanceType": "string", 
+                            "MaxPrice": "string", 
+                            "Priority": "double", 
+                            "SubnetId": "string", 
+                            "WeightedCapacity": "double"
+                        }
+                    }
+                }
+            }, 
+            "OnDemandOptions": {
+                "AllocationStrategy": "string"
+            }, 
+            "ReplaceUnhealthyInstances": "boolean", 
+            "SpotOptions": {
+                "AllocationStrategy": "string", 
+                "InstanceInterruptionBehavior": "string", 
+                "InstancePoolsToUseCount": "integer"
+            }, 
+            "TagSpecifications": {
+                "_list": {
+                    "ResourceType": "string", 
+                    "Tags": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }
+                }
+            }, 
+            "TargetCapacitySpecification": {
+                "DefaultTargetCapacityType": "string", 
+                "OnDemandTargetCapacity": "integer", 
+                "SpotTargetCapacity": "integer", 
+                "TotalTargetCapacity": "integer"
+            }, 
+            "TerminateInstancesWithExpiration": "boolean", 
+            "Type": "string", 
+            "ValidFrom": "timestamp", 
+            "ValidUntil": "timestamp"
+        }, 
+        "CreateFlowLogs": {
+            "ClientToken": "string", 
+            "DeliverLogsPermissionArn": "string", 
+            "DryRun": "boolean", 
+            "LogDestination": "string", 
+            "LogDestinationType": "string", 
+            "LogGroupName": "string", 
+            "ResourceIds": {
+                "_list": "string"
+            }, 
+            "ResourceType": "string", 
+            "TrafficType": "string"
+        }, 
+        "CreateFpgaImage": {
+            "ClientToken": "string", 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "InputStorageLocation": {
+                "Bucket": "string", 
+                "Key": "string"
+            }, 
+            "LogsStorageLocation": {
+                "Bucket": "string", 
+                "Key": "string"
+            }, 
+            "Name": "string"
+        }, 
+        "CreateImage": {
+            "BlockDeviceMappings": {
+                "_list": {
+                    "DeviceName": "string", 
+                    "Ebs": {
+                        "DeleteOnTermination": "boolean", 
+                        "Encrypted": "boolean", 
+                        "Iops": "integer", 
+                        "KmsKeyId": "string", 
+                        "SnapshotId": "string", 
+                        "VolumeSize": "integer", 
+                        "VolumeType": "string"
+                    }, 
+                    "NoDevice": "string", 
+                    "VirtualName": "string"
+                }
+            }, 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "Name": "string", 
+            "NoReboot": "boolean"
+        }, 
+        "CreateInstanceExportTask": {
+            "Description": "string", 
+            "ExportToS3Task": {
+                "ContainerFormat": "string", 
+                "DiskImageFormat": "string", 
+                "S3Bucket": "string", 
+                "S3Prefix": "string"
+            }, 
+            "InstanceId": "string", 
+            "TargetEnvironment": "string"
+        }, 
+        "CreateInternetGateway": {
+            "DryRun": "boolean"
+        }, 
+        "CreateKeyPair": {
+            "DryRun": "boolean", 
+            "KeyName": "string"
+        }, 
+        "CreateLaunchTemplate": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "LaunchTemplateData": {
+                "BlockDeviceMappings": {
+                    "_list": {
+                        "DeviceName": "string", 
+                        "Ebs": {
+                            "DeleteOnTermination": "boolean", 
+                            "Encrypted": "boolean", 
+                            "Iops": "integer", 
+                            "KmsKeyId": "string", 
+                            "SnapshotId": "string", 
+                            "VolumeSize": "integer", 
+                            "VolumeType": "string"
+                        }, 
+                        "NoDevice": "string", 
+                        "VirtualName": "string"
+                    }
+                }, 
+                "CpuOptions": {
+                    "CoreCount": "integer", 
+                    "ThreadsPerCore": "integer"
+                }, 
+                "CreditSpecification": {
+                    "CpuCredits": "string"
+                }, 
+                "DisableApiTermination": "boolean", 
+                "EbsOptimized": "boolean", 
+                "ElasticGpuSpecifications": {
+                    "_list": {
+                        "Type": "string"
+                    }
+                }, 
+                "IamInstanceProfile": {
+                    "Arn": "string", 
+                    "Name": "string"
+                }, 
+                "ImageId": "string", 
+                "InstanceInitiatedShutdownBehavior": "string", 
+                "InstanceMarketOptions": {
+                    "MarketType": "string", 
+                    "SpotOptions": {
+                        "BlockDurationMinutes": "integer", 
+                        "InstanceInterruptionBehavior": "string", 
+                        "MaxPrice": "string", 
+                        "SpotInstanceType": "string", 
+                        "ValidUntil": "timestamp"
+                    }
+                }, 
+                "InstanceType": "string", 
+                "KernelId": "string", 
+                "KeyName": "string", 
+                "Monitoring": {
+                    "Enabled": "boolean"
+                }, 
+                "NetworkInterfaces": {
+                    "_list": {
+                        "AssociatePublicIpAddress": "boolean", 
+                        "DeleteOnTermination": "boolean", 
+                        "Description": "string", 
+                        "DeviceIndex": "integer", 
+                        "Groups": {
+                            "_list": "string"
+                        }, 
+                        "Ipv6AddressCount": "integer", 
+                        "Ipv6Addresses": {
+                            "_list": "structure"
+                        }, 
+                        "NetworkInterfaceId": "string", 
+                        "PrivateIpAddress": "string", 
+                        "PrivateIpAddresses": {
+                            "_list": "structure"
+                        }, 
+                        "SecondaryPrivateIpAddressCount": "integer", 
+                        "SubnetId": "string"
+                    }
+                }, 
+                "Placement": {
+                    "Affinity": "string", 
+                    "AvailabilityZone": "string", 
+                    "GroupName": "string", 
+                    "HostId": "string", 
+                    "SpreadDomain": "string", 
+                    "Tenancy": "string"
+                }, 
+                "RamDiskId": "string", 
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SecurityGroups": {
+                    "_list": "string"
+                }, 
+                "TagSpecifications": {
+                    "_list": {
+                        "ResourceType": "string", 
+                        "Tags": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "UserData": "string"
+            }, 
+            "LaunchTemplateName": "string", 
+            "VersionDescription": "string"
+        }, 
+        "CreateLaunchTemplateVersion": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "LaunchTemplateData": {
+                "BlockDeviceMappings": {
+                    "_list": {
+                        "DeviceName": "string", 
+                        "Ebs": {
+                            "DeleteOnTermination": "boolean", 
+                            "Encrypted": "boolean", 
+                            "Iops": "integer", 
+                            "KmsKeyId": "string", 
+                            "SnapshotId": "string", 
+                            "VolumeSize": "integer", 
+                            "VolumeType": "string"
+                        }, 
+                        "NoDevice": "string", 
+                        "VirtualName": "string"
+                    }
+                }, 
+                "CpuOptions": {
+                    "CoreCount": "integer", 
+                    "ThreadsPerCore": "integer"
+                }, 
+                "CreditSpecification": {
+                    "CpuCredits": "string"
+                }, 
+                "DisableApiTermination": "boolean", 
+                "EbsOptimized": "boolean", 
+                "ElasticGpuSpecifications": {
+                    "_list": {
+                        "Type": "string"
+                    }
+                }, 
+                "IamInstanceProfile": {
+                    "Arn": "string", 
+                    "Name": "string"
+                }, 
+                "ImageId": "string", 
+                "InstanceInitiatedShutdownBehavior": "string", 
+                "InstanceMarketOptions": {
+                    "MarketType": "string", 
+                    "SpotOptions": {
+                        "BlockDurationMinutes": "integer", 
+                        "InstanceInterruptionBehavior": "string", 
+                        "MaxPrice": "string", 
+                        "SpotInstanceType": "string", 
+                        "ValidUntil": "timestamp"
+                    }
+                }, 
+                "InstanceType": "string", 
+                "KernelId": "string", 
+                "KeyName": "string", 
+                "Monitoring": {
+                    "Enabled": "boolean"
+                }, 
+                "NetworkInterfaces": {
+                    "_list": {
+                        "AssociatePublicIpAddress": "boolean", 
+                        "DeleteOnTermination": "boolean", 
+                        "Description": "string", 
+                        "DeviceIndex": "integer", 
+                        "Groups": {
+                            "_list": "string"
+                        }, 
+                        "Ipv6AddressCount": "integer", 
+                        "Ipv6Addresses": {
+                            "_list": "structure"
+                        }, 
+                        "NetworkInterfaceId": "string", 
+                        "PrivateIpAddress": "string", 
+                        "PrivateIpAddresses": {
+                            "_list": "structure"
+                        }, 
+                        "SecondaryPrivateIpAddressCount": "integer", 
+                        "SubnetId": "string"
+                    }
+                }, 
+                "Placement": {
+                    "Affinity": "string", 
+                    "AvailabilityZone": "string", 
+                    "GroupName": "string", 
+                    "HostId": "string", 
+                    "SpreadDomain": "string", 
+                    "Tenancy": "string"
+                }, 
+                "RamDiskId": "string", 
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SecurityGroups": {
+                    "_list": "string"
+                }, 
+                "TagSpecifications": {
+                    "_list": {
+                        "ResourceType": "string", 
+                        "Tags": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "UserData": "string"
+            }, 
+            "LaunchTemplateId": "string", 
+            "LaunchTemplateName": "string", 
+            "SourceVersion": "string", 
+            "VersionDescription": "string"
+        }, 
+        "CreateNatGateway": {
+            "AllocationId": "string", 
+            "ClientToken": "string", 
+            "SubnetId": "string"
+        }, 
+        "CreateNetworkAcl": {
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "CreateNetworkAclEntry": {
+            "CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "Egress": "boolean", 
+            "IcmpTypeCode": {
+                "Code": "integer", 
+                "Type": "integer"
+            }, 
+            "Ipv6CidrBlock": "string", 
+            "NetworkAclId": "string", 
+            "PortRange": {
+                "From": "integer", 
+                "To": "integer"
+            }, 
+            "Protocol": "string", 
+            "RuleAction": "string", 
+            "RuleNumber": "integer"
+        }, 
+        "CreateNetworkInterface": {
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "Groups": {
+                "_list": "string"
+            }, 
+            "Ipv6AddressCount": "integer", 
+            "Ipv6Addresses": {
+                "_list": {
+                    "Ipv6Address": "string"
+                }
+            }, 
+            "PrivateIpAddress": "string", 
+            "PrivateIpAddresses": {
+                "_list": {
+                    "Primary": "boolean", 
+                    "PrivateIpAddress": "string"
+                }
+            }, 
+            "SecondaryPrivateIpAddressCount": "integer", 
+            "SubnetId": "string"
+        }, 
+        "CreateNetworkInterfacePermission": {
+            "AwsAccountId": "string", 
+            "AwsService": "string", 
+            "DryRun": "boolean", 
+            "NetworkInterfaceId": "string", 
+            "Permission": "string"
+        }, 
+        "CreatePlacementGroup": {
+            "DryRun": "boolean", 
+            "GroupName": "string", 
+            "Strategy": "string"
+        }, 
+        "CreateReservedInstancesListing": {
+            "ClientToken": "string", 
+            "InstanceCount": "integer", 
+            "PriceSchedules": {
+                "_list": {
+                    "CurrencyCode": "string", 
+                    "Price": "double", 
+                    "Term": "long"
+                }
+            }, 
+            "ReservedInstancesId": "string"
+        }, 
+        "CreateRoute": {
+            "DestinationCidrBlock": "string", 
+            "DestinationIpv6CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "EgressOnlyInternetGatewayId": "string", 
+            "GatewayId": "string", 
+            "InstanceId": "string", 
+            "NatGatewayId": "string", 
+            "NetworkInterfaceId": "string", 
+            "RouteTableId": "string", 
+            "VpcPeeringConnectionId": "string"
+        }, 
+        "CreateRouteTable": {
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "CreateSecurityGroup": {
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "GroupName": "string", 
+            "VpcId": "string"
+        }, 
+        "CreateSnapshot": {
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "TagSpecifications": {
+                "_list": {
+                    "ResourceType": "string", 
+                    "Tags": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }
+                }
+            }, 
+            "VolumeId": "string"
+        }, 
+        "CreateSpotDatafeedSubscription": {
+            "Bucket": "string", 
+            "DryRun": "boolean", 
+            "Prefix": "string"
+        }, 
+        "CreateSubnet": {
+            "AvailabilityZone": "string", 
+            "CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "Ipv6CidrBlock": "string", 
+            "VpcId": "string"
+        }, 
+        "CreateTags": {
+            "DryRun": "boolean", 
+            "Resources": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateVolume": {
+            "AvailabilityZone": "string", 
+            "DryRun": "boolean", 
+            "Encrypted": "boolean", 
+            "Iops": "integer", 
+            "KmsKeyId": "string", 
+            "Size": "integer", 
+            "SnapshotId": "string", 
+            "TagSpecifications": {
+                "_list": {
+                    "ResourceType": "string", 
+                    "Tags": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }
+                }
+            }, 
+            "VolumeType": "string"
+        }, 
+        "CreateVpc": {
+            "AmazonProvidedIpv6CidrBlock": "boolean", 
+            "CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "InstanceTenancy": "string"
+        }, 
+        "CreateVpcEndpoint": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "PolicyDocument": "string", 
+            "PrivateDnsEnabled": "boolean", 
+            "RouteTableIds": {
+                "_list": "string"
+            }, 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "ServiceName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }, 
+            "VpcEndpointType": "string", 
+            "VpcId": "string"
+        }, 
+        "CreateVpcEndpointConnectionNotification": {
+            "ClientToken": "string", 
+            "ConnectionEvents": {
+                "_list": "string"
+            }, 
+            "ConnectionNotificationArn": "string", 
+            "DryRun": "boolean", 
+            "ServiceId": "string", 
+            "VpcEndpointId": "string"
+        }, 
+        "CreateVpcEndpointServiceConfiguration": {
+            "AcceptanceRequired": "boolean", 
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "NetworkLoadBalancerArns": {
+                "_list": "string"
+            }
+        }, 
+        "CreateVpcPeeringConnection": {
+            "DryRun": "boolean", 
+            "PeerOwnerId": "string", 
+            "PeerRegion": "string", 
+            "PeerVpcId": "string", 
+            "VpcId": "string"
+        }, 
+        "CreateVpnConnection": {
+            "CustomerGatewayId": "string", 
+            "DryRun": "boolean", 
+            "Options": {
+                "StaticRoutesOnly": "boolean", 
+                "TunnelOptions": {
+                    "_list": {
+                        "PreSharedKey": "string", 
+                        "TunnelInsideCidr": "string"
+                    }
+                }
+            }, 
+            "Type": "string", 
+            "VpnGatewayId": "string"
+        }, 
+        "CreateVpnConnectionRoute": {
+            "DestinationCidrBlock": "string", 
+            "VpnConnectionId": "string"
+        }, 
+        "CreateVpnGateway": {
+            "AmazonSideAsn": "long", 
+            "AvailabilityZone": "string", 
+            "DryRun": "boolean", 
+            "Type": "string"
+        }, 
+        "DeleteCustomerGateway": {
+            "CustomerGatewayId": "string", 
+            "DryRun": "boolean"
+        }, 
+        "DeleteDhcpOptions": {
+            "DhcpOptionsId": "string", 
+            "DryRun": "boolean"
+        }, 
+        "DeleteEgressOnlyInternetGateway": {
+            "DryRun": "boolean", 
+            "EgressOnlyInternetGatewayId": "string"
+        }, 
+        "DeleteFleets": {
+            "DryRun": "boolean", 
+            "FleetIds": {
+                "_list": "string"
+            }, 
+            "TerminateInstances": "boolean"
+        }, 
+        "DeleteFlowLogs": {
+            "DryRun": "boolean", 
+            "FlowLogIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteFpgaImage": {
+            "DryRun": "boolean", 
+            "FpgaImageId": "string"
+        }, 
+        "DeleteInternetGateway": {
+            "DryRun": "boolean", 
+            "InternetGatewayId": "string"
+        }, 
+        "DeleteKeyPair": {
+            "DryRun": "boolean", 
+            "KeyName": "string"
+        }, 
+        "DeleteLaunchTemplate": {
+            "DryRun": "boolean", 
+            "LaunchTemplateId": "string", 
+            "LaunchTemplateName": "string"
+        }, 
+        "DeleteLaunchTemplateVersions": {
+            "DryRun": "boolean", 
+            "LaunchTemplateId": "string", 
+            "LaunchTemplateName": "string", 
+            "Versions": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteNatGateway": {
+            "NatGatewayId": "string"
+        }, 
+        "DeleteNetworkAcl": {
+            "DryRun": "boolean", 
+            "NetworkAclId": "string"
+        }, 
+        "DeleteNetworkAclEntry": {
+            "DryRun": "boolean", 
+            "Egress": "boolean", 
+            "NetworkAclId": "string", 
+            "RuleNumber": "integer"
+        }, 
+        "DeleteNetworkInterface": {
+            "DryRun": "boolean", 
+            "NetworkInterfaceId": "string"
+        }, 
+        "DeleteNetworkInterfacePermission": {
+            "DryRun": "boolean", 
+            "Force": "boolean", 
+            "NetworkInterfacePermissionId": "string"
+        }, 
+        "DeletePlacementGroup": {
+            "DryRun": "boolean", 
+            "GroupName": "string"
+        }, 
+        "DeleteRoute": {
+            "DestinationCidrBlock": "string", 
+            "DestinationIpv6CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "RouteTableId": "string"
+        }, 
+        "DeleteRouteTable": {
+            "DryRun": "boolean", 
+            "RouteTableId": "string"
+        }, 
+        "DeleteSecurityGroup": {
+            "DryRun": "boolean", 
+            "GroupId": "string", 
+            "GroupName": "string"
+        }, 
+        "DeleteSnapshot": {
+            "DryRun": "boolean", 
+            "SnapshotId": "string"
+        }, 
+        "DeleteSpotDatafeedSubscription": {
+            "DryRun": "boolean"
+        }, 
+        "DeleteSubnet": {
+            "DryRun": "boolean", 
+            "SubnetId": "string"
+        }, 
+        "DeleteTags": {
+            "DryRun": "boolean", 
+            "Resources": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "DeleteVolume": {
+            "DryRun": "boolean", 
+            "VolumeId": "string"
+        }, 
+        "DeleteVpc": {
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "DeleteVpcEndpointConnectionNotifications": {
+            "ConnectionNotificationIds": {
+                "_list": "string"
+            }, 
+            "DryRun": "boolean"
+        }, 
+        "DeleteVpcEndpointServiceConfigurations": {
+            "DryRun": "boolean", 
+            "ServiceIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteVpcEndpoints": {
+            "DryRun": "boolean", 
+            "VpcEndpointIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteVpcPeeringConnection": {
+            "DryRun": "boolean", 
+            "VpcPeeringConnectionId": "string"
+        }, 
+        "DeleteVpnConnection": {
+            "DryRun": "boolean", 
+            "VpnConnectionId": "string"
+        }, 
+        "DeleteVpnConnectionRoute": {
+            "DestinationCidrBlock": "string", 
+            "VpnConnectionId": "string"
+        }, 
+        "DeleteVpnGateway": {
+            "DryRun": "boolean", 
+            "VpnGatewayId": "string"
+        }, 
+        "DeregisterImage": {
+            "DryRun": "boolean", 
+            "ImageId": "string"
+        }, 
+        "DetachClassicLinkVpc": {
+            "DryRun": "boolean", 
+            "InstanceId": "string", 
+            "VpcId": "string"
+        }, 
+        "DetachInternetGateway": {
+            "DryRun": "boolean", 
+            "InternetGatewayId": "string", 
+            "VpcId": "string"
+        }, 
+        "DetachNetworkInterface": {
+            "AttachmentId": "string", 
+            "DryRun": "boolean", 
+            "Force": "boolean"
+        }, 
+        "DetachVolume": {
+            "Device": "string", 
+            "DryRun": "boolean", 
+            "Force": "boolean", 
+            "InstanceId": "string", 
+            "VolumeId": "string"
+        }, 
+        "DetachVpnGateway": {
+            "DryRun": "boolean", 
+            "VpcId": "string", 
+            "VpnGatewayId": "string"
+        }, 
+        "DisableVgwRoutePropagation": {
+            "GatewayId": "string", 
+            "RouteTableId": "string"
+        }, 
+        "DisableVpcClassicLink": {
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "DisableVpcClassicLinkDnsSupport": {
+            "VpcId": "string"
+        }, 
+        "DisassociateAddress": {
+            "AssociationId": "string", 
+            "DryRun": "boolean", 
+            "PublicIp": "string"
+        }, 
+        "DisassociateIamInstanceProfile": {
+            "AssociationId": "string"
+        }, 
+        "DisassociateRouteTable": {
+            "AssociationId": "string", 
+            "DryRun": "boolean"
+        }, 
+        "DisassociateSubnetCidrBlock": {
+            "AssociationId": "string"
+        }, 
+        "DisassociateVpcCidrBlock": {
+            "AssociationId": "string"
+        }, 
+        "EnableVgwRoutePropagation": {
+            "GatewayId": "string", 
+            "RouteTableId": "string"
+        }, 
+        "EnableVolumeIO": {
+            "DryRun": "boolean", 
+            "VolumeId": "string"
+        }, 
+        "EnableVpcClassicLink": {
+            "DryRun": "boolean", 
+            "VpcId": "string"
+        }, 
+        "EnableVpcClassicLinkDnsSupport": {
+            "VpcId": "string"
+        }, 
+        "ImportImage": {
+            "Architecture": "string", 
+            "ClientData": {
+                "Comment": "string", 
+                "UploadEnd": "timestamp", 
+                "UploadSize": "double", 
+                "UploadStart": "timestamp"
+            }, 
+            "ClientToken": "string", 
+            "Description": "string", 
+            "DiskContainers": {
+                "_list": {
+                    "Description": "string", 
+                    "DeviceName": "string", 
+                    "Format": "string", 
+                    "SnapshotId": "string", 
+                    "Url": "string", 
+                    "UserBucket": {
+                        "S3Bucket": "string", 
+                        "S3Key": "string"
+                    }
+                }
+            }, 
+            "DryRun": "boolean", 
+            "Hypervisor": "string", 
+            "LicenseType": "string", 
+            "Platform": "string", 
+            "RoleName": "string"
+        }, 
+        "ImportInstance": {
+            "Description": "string", 
+            "DiskImages": {
+                "_list": {
+                    "Description": "string", 
+                    "Image": {
+                        "Bytes": "long", 
+                        "Format": "string", 
+                        "ImportManifestUrl": "string"
+                    }, 
+                    "Volume": {
+                        "Size": "long"
+                    }
+                }
+            }, 
+            "DryRun": "boolean", 
+            "LaunchSpecification": {
+                "AdditionalInfo": "string", 
+                "Architecture": "string", 
+                "GroupIds": {
+                    "_list": "string"
+                }, 
+                "GroupNames": {
+                    "_list": "string"
+                }, 
+                "InstanceInitiatedShutdownBehavior": "string", 
+                "InstanceType": "string", 
+                "Monitoring": "boolean", 
+                "Placement": {
+                    "Affinity": "string", 
+                    "AvailabilityZone": "string", 
+                    "GroupName": "string", 
+                    "HostId": "string", 
+                    "SpreadDomain": "string", 
+                    "Tenancy": "string"
+                }, 
+                "PrivateIpAddress": "string", 
+                "SubnetId": "string", 
+                "UserData": {
+                    "Data": "string"
+                }
+            }, 
+            "Platform": "string"
+        }, 
+        "ImportKeyPair": {
+            "DryRun": "boolean", 
+            "KeyName": "string", 
+            "PublicKeyMaterial": "blob"
+        }, 
+        "ImportSnapshot": {
+            "ClientData": {
+                "Comment": "string", 
+                "UploadEnd": "timestamp", 
+                "UploadSize": "double", 
+                "UploadStart": "timestamp"
+            }, 
+            "ClientToken": "string", 
+            "Description": "string", 
+            "DiskContainer": {
+                "Description": "string", 
+                "Format": "string", 
+                "Url": "string", 
+                "UserBucket": {
+                    "S3Bucket": "string", 
+                    "S3Key": "string"
+                }
+            }, 
+            "DryRun": "boolean", 
+            "RoleName": "string"
+        }, 
+        "ImportVolume": {
+            "AvailabilityZone": "string", 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "Image": {
+                "Bytes": "long", 
+                "Format": "string", 
+                "ImportManifestUrl": "string"
+            }, 
+            "Volume": {
+                "Size": "long"
+            }
+        }, 
+        "ModifyFleet": {
+            "DryRun": "boolean", 
+            "ExcessCapacityTerminationPolicy": "string", 
+            "FleetId": "string", 
+            "TargetCapacitySpecification": {
+                "DefaultTargetCapacityType": "string", 
+                "OnDemandTargetCapacity": "integer", 
+                "SpotTargetCapacity": "integer", 
+                "TotalTargetCapacity": "integer"
+            }
+        }, 
+        "ModifyFpgaImageAttribute": {
+            "Attribute": "string", 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "FpgaImageId": "string", 
+            "LoadPermission": {
+                "Add": {
+                    "_list": {
+                        "Group": "string", 
+                        "UserId": "string"
+                    }
+                }, 
+                "Remove": {
+                    "_list": {
+                        "Group": "string", 
+                        "UserId": "string"
+                    }
+                }
+            }, 
+            "Name": "string", 
+            "OperationType": "string", 
+            "ProductCodes": {
+                "_list": "string"
+            }, 
+            "UserGroups": {
+                "_list": "string"
+            }, 
+            "UserIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyHosts": {
+            "AutoPlacement": "string", 
+            "HostIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyIdFormat": {
+            "Resource": "string", 
+            "UseLongIds": "boolean"
+        }, 
+        "ModifyIdentityIdFormat": {
+            "PrincipalArn": "string", 
+            "Resource": "string", 
+            "UseLongIds": "boolean"
+        }, 
+        "ModifyImageAttribute": {
+            "Attribute": "string", 
+            "Description": {
+                "Value": "string"
+            }, 
+            "DryRun": "boolean", 
+            "ImageId": "string", 
+            "LaunchPermission": {
+                "Add": {
+                    "_list": {
+                        "Group": "string", 
+                        "UserId": "string"
+                    }
+                }, 
+                "Remove": {
+                    "_list": {
+                        "Group": "string", 
+                        "UserId": "string"
+                    }
+                }
+            }, 
+            "OperationType": "string", 
+            "ProductCodes": {
+                "_list": "string"
+            }, 
+            "UserGroups": {
+                "_list": "string"
+            }, 
+            "UserIds": {
+                "_list": "string"
+            }, 
+            "Value": "string"
+        }, 
+        "ModifyInstanceAttribute": {
+            "Attribute": "string", 
+            "BlockDeviceMappings": {
+                "_list": {
+                    "DeviceName": "string", 
+                    "Ebs": {
+                        "DeleteOnTermination": "boolean", 
+                        "VolumeId": "string"
+                    }, 
+                    "NoDevice": "string", 
+                    "VirtualName": "string"
+                }
+            }, 
+            "DisableApiTermination": {
+                "Value": "boolean"
+            }, 
+            "DryRun": "boolean", 
+            "EbsOptimized": {
+                "Value": "boolean"
+            }, 
+            "EnaSupport": {
+                "Value": "boolean"
+            }, 
+            "Groups": {
+                "_list": "string"
+            }, 
+            "InstanceId": "string", 
+            "InstanceInitiatedShutdownBehavior": {
+                "Value": "string"
+            }, 
+            "InstanceType": {
+                "Value": "string"
+            }, 
+            "Kernel": {
+                "Value": "string"
+            }, 
+            "Ramdisk": {
+                "Value": "string"
+            }, 
+            "SourceDestCheck": {
+                "Value": "boolean"
+            }, 
+            "SriovNetSupport": {
+                "Value": "string"
+            }, 
+            "UserData": {
+                "Value": "blob"
+            }, 
+            "Value": "string"
+        }, 
+        "ModifyInstanceCreditSpecification": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "InstanceCreditSpecifications": {
+                "_list": {
+                    "CpuCredits": "string", 
+                    "InstanceId": "string"
+                }
+            }
+        }, 
+        "ModifyInstancePlacement": {
+            "Affinity": "string", 
+            "GroupName": "string", 
+            "HostId": "string", 
+            "InstanceId": "string", 
+            "Tenancy": "string"
+        }, 
+        "ModifyLaunchTemplate": {
+            "ClientToken": "string", 
+            "DefaultVersion": "string", 
+            "DryRun": "boolean", 
+            "LaunchTemplateId": "string", 
+            "LaunchTemplateName": "string"
+        }, 
+        "ModifyNetworkInterfaceAttribute": {
+            "Attachment": {
+                "AttachmentId": "string", 
+                "DeleteOnTermination": "boolean"
+            }, 
+            "Description": {
+                "Value": "string"
+            }, 
+            "DryRun": "boolean", 
+            "Groups": {
+                "_list": "string"
+            }, 
+            "NetworkInterfaceId": "string", 
+            "SourceDestCheck": {
+                "Value": "boolean"
+            }
+        }, 
+        "ModifyReservedInstances": {
+            "ClientToken": "string", 
+            "ReservedInstancesIds": {
+                "_list": "string"
+            }, 
+            "TargetConfigurations": {
+                "_list": {
+                    "AvailabilityZone": "string", 
+                    "InstanceCount": "integer", 
+                    "InstanceType": "string", 
+                    "Platform": "string", 
+                    "Scope": "string"
+                }
+            }
+        }, 
+        "ModifySnapshotAttribute": {
+            "Attribute": "string", 
+            "CreateVolumePermission": {
+                "Add": {
+                    "_list": {
+                        "Group": "string", 
+                        "UserId": "string"
+                    }
+                }, 
+                "Remove": {
+                    "_list": {
+                        "Group": "string", 
+                        "UserId": "string"
+                    }
+                }
+            }, 
+            "DryRun": "boolean", 
+            "GroupNames": {
+                "_list": "string"
+            }, 
+            "OperationType": "string", 
+            "SnapshotId": "string", 
+            "UserIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifySpotFleetRequest": {
+            "ExcessCapacityTerminationPolicy": "string", 
+            "SpotFleetRequestId": "string", 
+            "TargetCapacity": "integer"
+        }, 
+        "ModifySubnetAttribute": {
+            "AssignIpv6AddressOnCreation": {
+                "Value": "boolean"
+            }, 
+            "MapPublicIpOnLaunch": {
+                "Value": "boolean"
+            }, 
+            "SubnetId": "string"
+        }, 
+        "ModifyVolume": {
+            "DryRun": "boolean", 
+            "Iops": "integer", 
+            "Size": "integer", 
+            "VolumeId": "string", 
+            "VolumeType": "string"
+        }, 
+        "ModifyVolumeAttribute": {
+            "AutoEnableIO": {
+                "Value": "boolean"
+            }, 
+            "DryRun": "boolean", 
+            "VolumeId": "string"
+        }, 
+        "ModifyVpcAttribute": {
+            "EnableDnsHostnames": {
+                "Value": "boolean"
+            }, 
+            "EnableDnsSupport": {
+                "Value": "boolean"
+            }, 
+            "VpcId": "string"
+        }, 
+        "ModifyVpcEndpoint": {
+            "AddRouteTableIds": {
+                "_list": "string"
+            }, 
+            "AddSecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "AddSubnetIds": {
+                "_list": "string"
+            }, 
+            "DryRun": "boolean", 
+            "PolicyDocument": "string", 
+            "PrivateDnsEnabled": "boolean", 
+            "RemoveRouteTableIds": {
+                "_list": "string"
+            }, 
+            "RemoveSecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "RemoveSubnetIds": {
+                "_list": "string"
+            }, 
+            "ResetPolicy": "boolean", 
+            "VpcEndpointId": "string"
+        }, 
+        "ModifyVpcEndpointConnectionNotification": {
+            "ConnectionEvents": {
+                "_list": "string"
+            }, 
+            "ConnectionNotificationArn": "string", 
+            "ConnectionNotificationId": "string", 
+            "DryRun": "boolean"
+        }, 
+        "ModifyVpcEndpointServiceConfiguration": {
+            "AcceptanceRequired": "boolean", 
+            "AddNetworkLoadBalancerArns": {
+                "_list": "string"
+            }, 
+            "DryRun": "boolean", 
+            "RemoveNetworkLoadBalancerArns": {
+                "_list": "string"
+            }, 
+            "ServiceId": "string"
+        }, 
+        "ModifyVpcEndpointServicePermissions": {
+            "AddAllowedPrincipals": {
+                "_list": "string"
+            }, 
+            "DryRun": "boolean", 
+            "RemoveAllowedPrincipals": {
+                "_list": "string"
+            }, 
+            "ServiceId": "string"
+        }, 
+        "ModifyVpcPeeringConnectionOptions": {
+            "AccepterPeeringConnectionOptions": {
+                "AllowDnsResolutionFromRemoteVpc": "boolean", 
+                "AllowEgressFromLocalClassicLinkToRemoteVpc": "boolean", 
+                "AllowEgressFromLocalVpcToRemoteClassicLink": "boolean"
+            }, 
+            "DryRun": "boolean", 
+            "RequesterPeeringConnectionOptions": {
+                "AllowDnsResolutionFromRemoteVpc": "boolean", 
+                "AllowEgressFromLocalClassicLinkToRemoteVpc": "boolean", 
+                "AllowEgressFromLocalVpcToRemoteClassicLink": "boolean"
+            }, 
+            "VpcPeeringConnectionId": "string"
+        }, 
+        "ModifyVpcTenancy": {
+            "DryRun": "boolean", 
+            "InstanceTenancy": "string", 
+            "VpcId": "string"
+        }, 
+        "MonitorInstances": {
+            "DryRun": "boolean", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "MoveAddressToVpc": {
+            "DryRun": "boolean", 
+            "PublicIp": "string"
+        }, 
+        "PurchaseHostReservation": {
+            "ClientToken": "string", 
+            "CurrencyCode": "string", 
+            "HostIdSet": {
+                "_list": "string"
+            }, 
+            "LimitPrice": "string", 
+            "OfferingId": "string"
+        }, 
+        "PurchaseReservedInstancesOffering": {
+            "DryRun": "boolean", 
+            "InstanceCount": "integer", 
+            "LimitPrice": {
+                "Amount": "double", 
+                "CurrencyCode": "string"
+            }, 
+            "ReservedInstancesOfferingId": "string"
+        }, 
+        "PurchaseScheduledInstances": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "PurchaseRequests": {
+                "_list": {
+                    "InstanceCount": "integer", 
+                    "PurchaseToken": "string"
+                }
+            }
+        }, 
+        "RebootInstances": {
+            "DryRun": "boolean", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "RegisterImage": {
+            "Architecture": "string", 
+            "BillingProducts": {
+                "_list": "string"
+            }, 
+            "BlockDeviceMappings": {
+                "_list": {
+                    "DeviceName": "string", 
+                    "Ebs": {
+                        "DeleteOnTermination": "boolean", 
+                        "Encrypted": "boolean", 
+                        "Iops": "integer", 
+                        "KmsKeyId": "string", 
+                        "SnapshotId": "string", 
+                        "VolumeSize": "integer", 
+                        "VolumeType": "string"
+                    }, 
+                    "NoDevice": "string", 
+                    "VirtualName": "string"
+                }
+            }, 
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "EnaSupport": "boolean", 
+            "ImageLocation": "string", 
+            "KernelId": "string", 
+            "Name": "string", 
+            "RamdiskId": "string", 
+            "RootDeviceName": "string", 
+            "SriovNetSupport": "string", 
+            "VirtualizationType": "string"
+        }, 
+        "RejectVpcEndpointConnections": {
+            "DryRun": "boolean", 
+            "ServiceId": "string", 
+            "VpcEndpointIds": {
+                "_list": "string"
+            }
+        }, 
+        "RejectVpcPeeringConnection": {
+            "DryRun": "boolean", 
+            "VpcPeeringConnectionId": "string"
+        }, 
+        "ReleaseAddress": {
+            "AllocationId": "string", 
+            "DryRun": "boolean", 
+            "PublicIp": "string"
+        }, 
+        "ReleaseHosts": {
+            "HostIds": {
+                "_list": "string"
+            }
+        }, 
+        "ReplaceIamInstanceProfileAssociation": {
+            "AssociationId": "string", 
+            "IamInstanceProfile": {
+                "Arn": "string", 
+                "Name": "string"
+            }
+        }, 
+        "ReplaceNetworkAclAssociation": {
+            "AssociationId": "string", 
+            "DryRun": "boolean", 
+            "NetworkAclId": "string"
+        }, 
+        "ReplaceNetworkAclEntry": {
+            "CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "Egress": "boolean", 
+            "IcmpTypeCode": {
+                "Code": "integer", 
+                "Type": "integer"
+            }, 
+            "Ipv6CidrBlock": "string", 
+            "NetworkAclId": "string", 
+            "PortRange": {
+                "From": "integer", 
+                "To": "integer"
+            }, 
+            "Protocol": "string", 
+            "RuleAction": "string", 
+            "RuleNumber": "integer"
+        }, 
+        "ReplaceRoute": {
+            "DestinationCidrBlock": "string", 
+            "DestinationIpv6CidrBlock": "string", 
+            "DryRun": "boolean", 
+            "EgressOnlyInternetGatewayId": "string", 
+            "GatewayId": "string", 
+            "InstanceId": "string", 
+            "NatGatewayId": "string", 
+            "NetworkInterfaceId": "string", 
+            "RouteTableId": "string", 
+            "VpcPeeringConnectionId": "string"
+        }, 
+        "ReplaceRouteTableAssociation": {
+            "AssociationId": "string", 
+            "DryRun": "boolean", 
+            "RouteTableId": "string"
+        }, 
+        "ReportInstanceStatus": {
+            "Description": "string", 
+            "DryRun": "boolean", 
+            "EndTime": "timestamp", 
+            "Instances": {
+                "_list": "string"
+            }, 
+            "ReasonCodes": {
+                "_list": "string"
+            }, 
+            "StartTime": "timestamp", 
+            "Status": "string"
+        }, 
+        "RequestSpotFleet": {
+            "DryRun": "boolean", 
+            "SpotFleetRequestConfig": {
+                "AllocationStrategy": "string", 
+                "ClientToken": "string", 
+                "ExcessCapacityTerminationPolicy": "string", 
+                "FulfilledCapacity": "double", 
+                "IamFleetRole": "string", 
+                "InstanceInterruptionBehavior": "string", 
+                "InstancePoolsToUseCount": "integer", 
+                "LaunchSpecifications": {
+                    "_list": {
+                        "AddressingType": "string", 
+                        "BlockDeviceMappings": {
+                            "_list": "structure"
+                        }, 
+                        "EbsOptimized": "boolean", 
+                        "IamInstanceProfile": {
+                            "Arn": "string", 
+                            "Name": "string"
+                        }, 
+                        "ImageId": "string", 
+                        "InstanceType": "string", 
+                        "KernelId": "string", 
+                        "KeyName": "string", 
+                        "Monitoring": {
+                            "Enabled": "boolean"
+                        }, 
+                        "NetworkInterfaces": {
+                            "_list": "structure"
+                        }, 
+                        "Placement": {
+                            "AvailabilityZone": "string", 
+                            "GroupName": "string", 
+                            "Tenancy": "string"
+                        }, 
+                        "RamdiskId": "string", 
+                        "SecurityGroups": {
+                            "_list": "structure"
+                        }, 
+                        "SpotPrice": "string", 
+                        "SubnetId": "string", 
+                        "TagSpecifications": {
+                            "_list": "structure"
+                        }, 
+                        "UserData": "string", 
+                        "WeightedCapacity": "double"
+                    }
+                }, 
+                "LaunchTemplateConfigs": {
+                    "_list": {
+                        "LaunchTemplateSpecification": {
+                            "LaunchTemplateId": "string", 
+                            "LaunchTemplateName": "string", 
+                            "Version": "string"
+                        }, 
+                        "Overrides": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "LoadBalancersConfig": {
+                    "ClassicLoadBalancersConfig": {
+                        "ClassicLoadBalancers": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "TargetGroupsConfig": {
+                        "TargetGroups": {
+                            "_list": "structure"
+                        }
+                    }
+                }, 
+                "OnDemandAllocationStrategy": "string", 
+                "OnDemandFulfilledCapacity": "double", 
+                "OnDemandTargetCapacity": "integer", 
+                "ReplaceUnhealthyInstances": "boolean", 
+                "SpotPrice": "string", 
+                "TargetCapacity": "integer", 
+                "TerminateInstancesWithExpiration": "boolean", 
+                "Type": "string", 
+                "ValidFrom": "timestamp", 
+                "ValidUntil": "timestamp"
+            }
+        }, 
+        "RequestSpotInstances": {
+            "AvailabilityZoneGroup": "string", 
+            "BlockDurationMinutes": "integer", 
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "InstanceCount": "integer", 
+            "InstanceInterruptionBehavior": "string", 
+            "LaunchGroup": "string", 
+            "LaunchSpecification": {
+                "AddressingType": "string", 
+                "BlockDeviceMappings": {
+                    "_list": {
+                        "DeviceName": "string", 
+                        "Ebs": {
+                            "DeleteOnTermination": "boolean", 
+                            "Encrypted": "boolean", 
+                            "Iops": "integer", 
+                            "KmsKeyId": "string", 
+                            "SnapshotId": "string", 
+                            "VolumeSize": "integer", 
+                            "VolumeType": "string"
+                        }, 
+                        "NoDevice": "string", 
+                        "VirtualName": "string"
+                    }
+                }, 
+                "EbsOptimized": "boolean", 
+                "IamInstanceProfile": {
+                    "Arn": "string", 
+                    "Name": "string"
+                }, 
+                "ImageId": "string", 
+                "InstanceType": "string", 
+                "KernelId": "string", 
+                "KeyName": "string", 
+                "Monitoring": {
+                    "Enabled": "boolean"
+                }, 
+                "NetworkInterfaces": {
+                    "_list": {
+                        "AssociatePublicIpAddress": "boolean", 
+                        "DeleteOnTermination": "boolean", 
+                        "Description": "string", 
+                        "DeviceIndex": "integer", 
+                        "Groups": {
+                            "_list": "string"
+                        }, 
+                        "Ipv6AddressCount": "integer", 
+                        "Ipv6Addresses": {
+                            "_list": "structure"
+                        }, 
+                        "NetworkInterfaceId": "string", 
+                        "PrivateIpAddress": "string", 
+                        "PrivateIpAddresses": {
+                            "_list": "structure"
+                        }, 
+                        "SecondaryPrivateIpAddressCount": "integer", 
+                        "SubnetId": "string"
+                    }
+                }, 
+                "Placement": {
+                    "AvailabilityZone": "string", 
+                    "GroupName": "string", 
+                    "Tenancy": "string"
+                }, 
+                "RamdiskId": "string", 
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SecurityGroups": {
+                    "_list": "string"
+                }, 
+                "SubnetId": "string", 
+                "UserData": "string"
+            }, 
+            "SpotPrice": "string", 
+            "Type": "string", 
+            "ValidFrom": "timestamp", 
+            "ValidUntil": "timestamp"
+        }, 
+        "ResetFpgaImageAttribute": {
+            "Attribute": "string", 
+            "DryRun": "boolean", 
+            "FpgaImageId": "string"
+        }, 
+        "ResetImageAttribute": {
+            "Attribute": "string", 
+            "DryRun": "boolean", 
+            "ImageId": "string"
+        }, 
+        "ResetInstanceAttribute": {
+            "Attribute": "string", 
+            "DryRun": "boolean", 
+            "InstanceId": "string"
+        }, 
+        "ResetNetworkInterfaceAttribute": {
+            "DryRun": "boolean", 
+            "NetworkInterfaceId": "string", 
+            "SourceDestCheck": "string"
+        }, 
+        "ResetSnapshotAttribute": {
+            "Attribute": "string", 
+            "DryRun": "boolean", 
+            "SnapshotId": "string"
+        }, 
+        "RestoreAddressToClassic": {
+            "DryRun": "boolean", 
+            "PublicIp": "string"
+        }, 
+        "RevokeSecurityGroupEgress": {
+            "CidrIp": "string", 
+            "DryRun": "boolean", 
+            "FromPort": "integer", 
+            "GroupId": "string", 
+            "IpPermissions": {
+                "_list": {
+                    "FromPort": "integer", 
+                    "IpProtocol": "string", 
+                    "IpRanges": {
+                        "_list": {
+                            "CidrIp": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "Ipv6Ranges": {
+                        "_list": {
+                            "CidrIpv6": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "PrefixListIds": {
+                        "_list": {
+                            "Description": "string", 
+                            "PrefixListId": "string"
+                        }
+                    }, 
+                    "ToPort": "integer", 
+                    "UserIdGroupPairs": {
+                        "_list": {
+                            "Description": "string", 
+                            "GroupId": "string", 
+                            "GroupName": "string", 
+                            "PeeringStatus": "string", 
+                            "UserId": "string", 
+                            "VpcId": "string", 
+                            "VpcPeeringConnectionId": "string"
+                        }
+                    }
+                }
+            }, 
+            "IpProtocol": "string", 
+            "SourceSecurityGroupName": "string", 
+            "SourceSecurityGroupOwnerId": "string", 
+            "ToPort": "integer"
+        }, 
+        "RevokeSecurityGroupIngress": {
+            "CidrIp": "string", 
+            "DryRun": "boolean", 
+            "FromPort": "integer", 
+            "GroupId": "string", 
+            "GroupName": "string", 
+            "IpPermissions": {
+                "_list": {
+                    "FromPort": "integer", 
+                    "IpProtocol": "string", 
+                    "IpRanges": {
+                        "_list": {
+                            "CidrIp": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "Ipv6Ranges": {
+                        "_list": {
+                            "CidrIpv6": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "PrefixListIds": {
+                        "_list": {
+                            "Description": "string", 
+                            "PrefixListId": "string"
+                        }
+                    }, 
+                    "ToPort": "integer", 
+                    "UserIdGroupPairs": {
+                        "_list": {
+                            "Description": "string", 
+                            "GroupId": "string", 
+                            "GroupName": "string", 
+                            "PeeringStatus": "string", 
+                            "UserId": "string", 
+                            "VpcId": "string", 
+                            "VpcPeeringConnectionId": "string"
+                        }
+                    }
+                }
+            }, 
+            "IpProtocol": "string", 
+            "SourceSecurityGroupName": "string", 
+            "SourceSecurityGroupOwnerId": "string", 
+            "ToPort": "integer"
+        }, 
+        "RunInstances": {
+            "AdditionalInfo": "string", 
+            "BlockDeviceMappings": {
+                "_list": {
+                    "DeviceName": "string", 
+                    "Ebs": {
+                        "DeleteOnTermination": "boolean", 
+                        "Encrypted": "boolean", 
+                        "Iops": "integer", 
+                        "KmsKeyId": "string", 
+                        "SnapshotId": "string", 
+                        "VolumeSize": "integer", 
+                        "VolumeType": "string"
+                    }, 
+                    "NoDevice": "string", 
+                    "VirtualName": "string"
+                }
+            }, 
+            "ClientToken": "string", 
+            "CpuOptions": {
+                "CoreCount": "integer", 
+                "ThreadsPerCore": "integer"
+            }, 
+            "CreditSpecification": {
+                "CpuCredits": "string"
+            }, 
+            "DisableApiTermination": "boolean", 
+            "DryRun": "boolean", 
+            "EbsOptimized": "boolean", 
+            "ElasticGpuSpecification": {
+                "_list": {
+                    "Type": "string"
+                }
+            }, 
+            "IamInstanceProfile": {
+                "Arn": "string", 
+                "Name": "string"
+            }, 
+            "ImageId": "string", 
+            "InstanceInitiatedShutdownBehavior": "string", 
+            "InstanceMarketOptions": {
+                "MarketType": "string", 
+                "SpotOptions": {
+                    "BlockDurationMinutes": "integer", 
+                    "InstanceInterruptionBehavior": "string", 
+                    "MaxPrice": "string", 
+                    "SpotInstanceType": "string", 
+                    "ValidUntil": "timestamp"
+                }
+            }, 
+            "InstanceType": "string", 
+            "Ipv6AddressCount": "integer", 
+            "Ipv6Addresses": {
+                "_list": {
+                    "Ipv6Address": "string"
+                }
+            }, 
+            "KernelId": "string", 
+            "KeyName": "string", 
+            "LaunchTemplate": {
+                "LaunchTemplateId": "string", 
+                "LaunchTemplateName": "string", 
+                "Version": "string"
+            }, 
+            "MaxCount": "integer", 
+            "MinCount": "integer", 
+            "Monitoring": {
+                "Enabled": "boolean"
+            }, 
+            "NetworkInterfaces": {
+                "_list": {
+                    "AssociatePublicIpAddress": "boolean", 
+                    "DeleteOnTermination": "boolean", 
+                    "Description": "string", 
+                    "DeviceIndex": "integer", 
+                    "Groups": {
+                        "_list": "string"
+                    }, 
+                    "Ipv6AddressCount": "integer", 
+                    "Ipv6Addresses": {
+                        "_list": {
+                            "Ipv6Address": "string"
+                        }
+                    }, 
+                    "NetworkInterfaceId": "string", 
+                    "PrivateIpAddress": "string", 
+                    "PrivateIpAddresses": {
+                        "_list": {
+                            "Primary": "boolean", 
+                            "PrivateIpAddress": "string"
+                        }
+                    }, 
+                    "SecondaryPrivateIpAddressCount": "integer", 
+                    "SubnetId": "string"
+                }
+            }, 
+            "Placement": {
+                "Affinity": "string", 
+                "AvailabilityZone": "string", 
+                "GroupName": "string", 
+                "HostId": "string", 
+                "SpreadDomain": "string", 
+                "Tenancy": "string"
+            }, 
+            "PrivateIpAddress": "string", 
+            "RamdiskId": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SecurityGroups": {
+                "_list": "string"
+            }, 
+            "SubnetId": "string", 
+            "TagSpecifications": {
+                "_list": {
+                    "ResourceType": "string", 
+                    "Tags": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }
+                }
+            }, 
+            "UserData": "string"
+        }, 
+        "RunScheduledInstances": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "InstanceCount": "integer", 
+            "LaunchSpecification": {
+                "BlockDeviceMappings": {
+                    "_list": {
+                        "DeviceName": "string", 
+                        "Ebs": {
+                            "DeleteOnTermination": "boolean", 
+                            "Encrypted": "boolean", 
+                            "Iops": "integer", 
+                            "SnapshotId": "string", 
+                            "VolumeSize": "integer", 
+                            "VolumeType": "string"
+                        }, 
+                        "NoDevice": "string", 
+                        "VirtualName": "string"
+                    }
+                }, 
+                "EbsOptimized": "boolean", 
+                "IamInstanceProfile": {
+                    "Arn": "string", 
+                    "Name": "string"
+                }, 
+                "ImageId": "string", 
+                "InstanceType": "string", 
+                "KernelId": "string", 
+                "KeyName": "string", 
+                "Monitoring": {
+                    "Enabled": "boolean"
+                }, 
+                "NetworkInterfaces": {
+                    "_list": {
+                        "AssociatePublicIpAddress": "boolean", 
+                        "DeleteOnTermination": "boolean", 
+                        "Description": "string", 
+                        "DeviceIndex": "integer", 
+                        "Groups": {
+                            "_list": "string"
+                        }, 
+                        "Ipv6AddressCount": "integer", 
+                        "Ipv6Addresses": {
+                            "_list": "structure"
+                        }, 
+                        "NetworkInterfaceId": "string", 
+                        "PrivateIpAddress": "string", 
+                        "PrivateIpAddressConfigs": {
+                            "_list": "structure"
+                        }, 
+                        "SecondaryPrivateIpAddressCount": "integer", 
+                        "SubnetId": "string"
+                    }
+                }, 
+                "Placement": {
+                    "AvailabilityZone": "string", 
+                    "GroupName": "string"
+                }, 
+                "RamdiskId": "string", 
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SubnetId": "string", 
+                "UserData": "string"
+            }, 
+            "ScheduledInstanceId": "string"
+        }, 
+        "StartInstances": {
+            "AdditionalInfo": "string", 
+            "DryRun": "boolean", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "StopInstances": {
+            "DryRun": "boolean", 
+            "Force": "boolean", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "TerminateInstances": {
+            "DryRun": "boolean", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "UnassignIpv6Addresses": {
+            "Ipv6Addresses": {
+                "_list": "string"
+            }, 
+            "NetworkInterfaceId": "string"
+        }, 
+        "UnassignPrivateIpAddresses": {
+            "NetworkInterfaceId": "string", 
+            "PrivateIpAddresses": {
+                "_list": "string"
+            }
+        }, 
+        "UnmonitorInstances": {
+            "DryRun": "boolean", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateSecurityGroupRuleDescriptionsEgress": {
+            "DryRun": "boolean", 
+            "GroupId": "string", 
+            "GroupName": "string", 
+            "IpPermissions": {
+                "_list": {
+                    "FromPort": "integer", 
+                    "IpProtocol": "string", 
+                    "IpRanges": {
+                        "_list": {
+                            "CidrIp": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "Ipv6Ranges": {
+                        "_list": {
+                            "CidrIpv6": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "PrefixListIds": {
+                        "_list": {
+                            "Description": "string", 
+                            "PrefixListId": "string"
+                        }
+                    }, 
+                    "ToPort": "integer", 
+                    "UserIdGroupPairs": {
+                        "_list": {
+                            "Description": "string", 
+                            "GroupId": "string", 
+                            "GroupName": "string", 
+                            "PeeringStatus": "string", 
+                            "UserId": "string", 
+                            "VpcId": "string", 
+                            "VpcPeeringConnectionId": "string"
+                        }
+                    }
+                }
+            }
+        }, 
+        "UpdateSecurityGroupRuleDescriptionsIngress": {
+            "DryRun": "boolean", 
+            "GroupId": "string", 
+            "GroupName": "string", 
+            "IpPermissions": {
+                "_list": {
+                    "FromPort": "integer", 
+                    "IpProtocol": "string", 
+                    "IpRanges": {
+                        "_list": {
+                            "CidrIp": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "Ipv6Ranges": {
+                        "_list": {
+                            "CidrIpv6": "string", 
+                            "Description": "string"
+                        }
+                    }, 
+                    "PrefixListIds": {
+                        "_list": {
+                            "Description": "string", 
+                            "PrefixListId": "string"
+                        }
+                    }, 
+                    "ToPort": "integer", 
+                    "UserIdGroupPairs": {
+                        "_list": {
+                            "Description": "string", 
+                            "GroupId": "string", 
+                            "GroupName": "string", 
+                            "PeeringStatus": "string", 
+                            "UserId": "string", 
+                            "VpcId": "string", 
+                            "VpcPeeringConnectionId": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

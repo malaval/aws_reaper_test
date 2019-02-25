@@ -1,0 +1,115 @@
+{
+    "IamActions": [
+        "ActivatePipeline", 
+        "CreatePipeline", 
+        "DeactivatePipeline", 
+        "DeletePipeline", 
+        "PollForTask", 
+        "PutAccountLimits", 
+        "PutPipelineDefinition", 
+        "ReportTaskProgress", 
+        "ReportTaskRunnerHeartbeat", 
+        "SetStatus", 
+        "SetTaskStatus"
+    ], 
+    "OperationInputs": {
+        "ActivatePipeline": {
+            "parameterValues": {
+                "_list": {
+                    "id": "string", 
+                    "stringValue": "string"
+                }
+            }, 
+            "pipelineId": "string", 
+            "startTimestamp": "timestamp"
+        }, 
+        "CreatePipeline": {
+            "description": "string", 
+            "name": "string", 
+            "tags": {
+                "_list": {
+                    "key": "string", 
+                    "value": "string"
+                }
+            }, 
+            "uniqueId": "string"
+        }, 
+        "DeactivatePipeline": {
+            "cancelActive": "boolean", 
+            "pipelineId": "string"
+        }, 
+        "DeletePipeline": {
+            "pipelineId": "string"
+        }, 
+        "PollForTask": {
+            "hostname": "string", 
+            "instanceIdentity": {
+                "document": "string", 
+                "signature": "string"
+            }, 
+            "workerGroup": "string"
+        }, 
+        "PutPipelineDefinition": {
+            "parameterObjects": {
+                "_list": {
+                    "attributes": {
+                        "_list": {
+                            "key": "string", 
+                            "stringValue": "string"
+                        }
+                    }, 
+                    "id": "string"
+                }
+            }, 
+            "parameterValues": {
+                "_list": {
+                    "id": "string", 
+                    "stringValue": "string"
+                }
+            }, 
+            "pipelineId": "string", 
+            "pipelineObjects": {
+                "_list": {
+                    "fields": {
+                        "_list": {
+                            "key": "string", 
+                            "refValue": "string", 
+                            "stringValue": "string"
+                        }
+                    }, 
+                    "id": "string", 
+                    "name": "string"
+                }
+            }
+        }, 
+        "ReportTaskProgress": {
+            "fields": {
+                "_list": {
+                    "key": "string", 
+                    "refValue": "string", 
+                    "stringValue": "string"
+                }
+            }, 
+            "taskId": "string"
+        }, 
+        "ReportTaskRunnerHeartbeat": {
+            "hostname": "string", 
+            "taskrunnerId": "string", 
+            "workerGroup": "string"
+        }, 
+        "SetStatus": {
+            "objectIds": {
+                "_list": "string"
+            }, 
+            "pipelineId": "string", 
+            "status": "string"
+        }, 
+        "SetTaskStatus": {
+            "errorId": "string", 
+            "errorMessage": "string", 
+            "errorStackTrace": "string", 
+            "taskId": "string", 
+            "taskStatus": "string"
+        }
+    }
+}

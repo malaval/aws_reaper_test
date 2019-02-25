@@ -1,0 +1,25 @@
+{
+    "IamActions": [
+        "CreateCluster", 
+        "DeleteCluster"
+    ], 
+    "OperationInputs": {
+        "CreateCluster": {
+            "clientRequestToken": "string", 
+            "name": "string", 
+            "resourcesVpcConfig": {
+                "securityGroupIds": {
+                    "_list": "string"
+                }, 
+                "subnetIds": {
+                    "_list": "string"
+                }
+            }, 
+            "roleArn": "string", 
+            "version": "string"
+        }, 
+        "DeleteCluster": {
+            "name": "string"
+        }
+    }
+}

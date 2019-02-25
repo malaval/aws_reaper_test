@@ -1,0 +1,420 @@
+{
+    "IamActions": [
+        "CancelJob", 
+        "CreateJob", 
+        "CreatePipeline", 
+        "CreatePreset", 
+        "DeletePipeline", 
+        "DeletePreset", 
+        "ReadJob", 
+        "ReadPipeline", 
+        "ReadPreset", 
+        "TestRole", 
+        "UpdatePipeline", 
+        "UpdatePipelineNotifications", 
+        "UpdatePipelineStatus"
+    ], 
+    "OperationInputs": {
+        "CancelJob": {
+            "Id": "string"
+        }, 
+        "CreateJob": {
+            "Input": {
+                "AspectRatio": "string", 
+                "Container": "string", 
+                "DetectedProperties": {
+                    "DurationMillis": "long", 
+                    "FileSize": "long", 
+                    "FrameRate": "string", 
+                    "Height": "integer", 
+                    "Width": "integer"
+                }, 
+                "Encryption": {
+                    "InitializationVector": "string", 
+                    "Key": "string", 
+                    "KeyMd5": "string", 
+                    "Mode": "string"
+                }, 
+                "FrameRate": "string", 
+                "InputCaptions": {
+                    "CaptionSources": {
+                        "_list": {
+                            "Encryption": "structure", 
+                            "Key": "string", 
+                            "Label": "string", 
+                            "Language": "string", 
+                            "TimeOffset": "string"
+                        }
+                    }, 
+                    "MergePolicy": "string"
+                }, 
+                "Interlaced": "string", 
+                "Key": "string", 
+                "Resolution": "string", 
+                "TimeSpan": {
+                    "Duration": "string", 
+                    "StartTime": "string"
+                }
+            }, 
+            "Inputs": {
+                "_list": {
+                    "AspectRatio": "string", 
+                    "Container": "string", 
+                    "DetectedProperties": {
+                        "DurationMillis": "long", 
+                        "FileSize": "long", 
+                        "FrameRate": "string", 
+                        "Height": "integer", 
+                        "Width": "integer"
+                    }, 
+                    "Encryption": {
+                        "InitializationVector": "string", 
+                        "Key": "string", 
+                        "KeyMd5": "string", 
+                        "Mode": "string"
+                    }, 
+                    "FrameRate": "string", 
+                    "InputCaptions": {
+                        "CaptionSources": {
+                            "_list": "structure"
+                        }, 
+                        "MergePolicy": "string"
+                    }, 
+                    "Interlaced": "string", 
+                    "Key": "string", 
+                    "Resolution": "string", 
+                    "TimeSpan": {
+                        "Duration": "string", 
+                        "StartTime": "string"
+                    }
+                }
+            }, 
+            "Output": {
+                "AlbumArt": {
+                    "Artwork": {
+                        "_list": {
+                            "AlbumArtFormat": "string", 
+                            "Encryption": "structure", 
+                            "InputKey": "string", 
+                            "MaxHeight": "string", 
+                            "MaxWidth": "string", 
+                            "PaddingPolicy": "string", 
+                            "SizingPolicy": "string"
+                        }
+                    }, 
+                    "MergePolicy": "string"
+                }, 
+                "Captions": {
+                    "CaptionFormats": {
+                        "_list": {
+                            "Encryption": "structure", 
+                            "Format": "string", 
+                            "Pattern": "string"
+                        }
+                    }, 
+                    "CaptionSources": {
+                        "_list": {
+                            "Encryption": "structure", 
+                            "Key": "string", 
+                            "Label": "string", 
+                            "Language": "string", 
+                            "TimeOffset": "string"
+                        }
+                    }, 
+                    "MergePolicy": "string"
+                }, 
+                "Composition": {
+                    "_list": {
+                        "TimeSpan": {
+                            "Duration": "string", 
+                            "StartTime": "string"
+                        }
+                    }
+                }, 
+                "Encryption": {
+                    "InitializationVector": "string", 
+                    "Key": "string", 
+                    "KeyMd5": "string", 
+                    "Mode": "string"
+                }, 
+                "Key": "string", 
+                "PresetId": "string", 
+                "Rotate": "string", 
+                "SegmentDuration": "string", 
+                "ThumbnailEncryption": {
+                    "InitializationVector": "string", 
+                    "Key": "string", 
+                    "KeyMd5": "string", 
+                    "Mode": "string"
+                }, 
+                "ThumbnailPattern": "string", 
+                "Watermarks": {
+                    "_list": {
+                        "Encryption": {
+                            "InitializationVector": "string", 
+                            "Key": "string", 
+                            "KeyMd5": "string", 
+                            "Mode": "string"
+                        }, 
+                        "InputKey": "string", 
+                        "PresetWatermarkId": "string"
+                    }
+                }
+            }, 
+            "OutputKeyPrefix": "string", 
+            "Outputs": {
+                "_list": {
+                    "AlbumArt": {
+                        "Artwork": {
+                            "_list": "structure"
+                        }, 
+                        "MergePolicy": "string"
+                    }, 
+                    "Captions": {
+                        "CaptionFormats": {
+                            "_list": "structure"
+                        }, 
+                        "CaptionSources": {
+                            "_list": "structure"
+                        }, 
+                        "MergePolicy": "string"
+                    }, 
+                    "Composition": {
+                        "_list": {
+                            "TimeSpan": "structure"
+                        }
+                    }, 
+                    "Encryption": {
+                        "InitializationVector": "string", 
+                        "Key": "string", 
+                        "KeyMd5": "string", 
+                        "Mode": "string"
+                    }, 
+                    "Key": "string", 
+                    "PresetId": "string", 
+                    "Rotate": "string", 
+                    "SegmentDuration": "string", 
+                    "ThumbnailEncryption": {
+                        "InitializationVector": "string", 
+                        "Key": "string", 
+                        "KeyMd5": "string", 
+                        "Mode": "string"
+                    }, 
+                    "ThumbnailPattern": "string", 
+                    "Watermarks": {
+                        "_list": {
+                            "Encryption": "structure", 
+                            "InputKey": "string", 
+                            "PresetWatermarkId": "string"
+                        }
+                    }
+                }
+            }, 
+            "PipelineId": "string", 
+            "Playlists": {
+                "_list": {
+                    "Format": "string", 
+                    "HlsContentProtection": {
+                        "InitializationVector": "string", 
+                        "Key": "string", 
+                        "KeyMd5": "string", 
+                        "KeyStoragePolicy": "string", 
+                        "LicenseAcquisitionUrl": "string", 
+                        "Method": "string"
+                    }, 
+                    "Name": "string", 
+                    "OutputKeys": {
+                        "_list": "string"
+                    }, 
+                    "PlayReadyDrm": {
+                        "Format": "string", 
+                        "InitializationVector": "string", 
+                        "Key": "string", 
+                        "KeyId": "string", 
+                        "KeyMd5": "string", 
+                        "LicenseAcquisitionUrl": "string"
+                    }
+                }
+            }, 
+            "UserMetadata": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "CreatePipeline": {
+            "AwsKmsKeyArn": "string", 
+            "ContentConfig": {
+                "Bucket": "string", 
+                "Permissions": {
+                    "_list": {
+                        "Access": {
+                            "_list": "string"
+                        }, 
+                        "Grantee": "string", 
+                        "GranteeType": "string"
+                    }
+                }, 
+                "StorageClass": "string"
+            }, 
+            "InputBucket": "string", 
+            "Name": "string", 
+            "Notifications": {
+                "Completed": "string", 
+                "Error": "string", 
+                "Progressing": "string", 
+                "Warning": "string"
+            }, 
+            "OutputBucket": "string", 
+            "Role": "string", 
+            "ThumbnailConfig": {
+                "Bucket": "string", 
+                "Permissions": {
+                    "_list": {
+                        "Access": {
+                            "_list": "string"
+                        }, 
+                        "Grantee": "string", 
+                        "GranteeType": "string"
+                    }
+                }, 
+                "StorageClass": "string"
+            }
+        }, 
+        "CreatePreset": {
+            "Audio": {
+                "AudioPackingMode": "string", 
+                "BitRate": "string", 
+                "Channels": "string", 
+                "Codec": "string", 
+                "CodecOptions": {
+                    "BitDepth": "string", 
+                    "BitOrder": "string", 
+                    "Profile": "string", 
+                    "Signed": "string"
+                }, 
+                "SampleRate": "string"
+            }, 
+            "Container": "string", 
+            "Description": "string", 
+            "Name": "string", 
+            "Thumbnails": {
+                "AspectRatio": "string", 
+                "Format": "string", 
+                "Interval": "string", 
+                "MaxHeight": "string", 
+                "MaxWidth": "string", 
+                "PaddingPolicy": "string", 
+                "Resolution": "string", 
+                "SizingPolicy": "string"
+            }, 
+            "Video": {
+                "AspectRatio": "string", 
+                "BitRate": "string", 
+                "Codec": "string", 
+                "CodecOptions": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "DisplayAspectRatio": "string", 
+                "FixedGOP": "string", 
+                "FrameRate": "string", 
+                "KeyframesMaxDist": "string", 
+                "MaxFrameRate": "string", 
+                "MaxHeight": "string", 
+                "MaxWidth": "string", 
+                "PaddingPolicy": "string", 
+                "Resolution": "string", 
+                "SizingPolicy": "string", 
+                "Watermarks": {
+                    "_list": {
+                        "HorizontalAlign": "string", 
+                        "HorizontalOffset": "string", 
+                        "Id": "string", 
+                        "MaxHeight": "string", 
+                        "MaxWidth": "string", 
+                        "Opacity": "string", 
+                        "SizingPolicy": "string", 
+                        "Target": "string", 
+                        "VerticalAlign": "string", 
+                        "VerticalOffset": "string"
+                    }
+                }
+            }
+        }, 
+        "DeletePipeline": {
+            "Id": "string"
+        }, 
+        "DeletePreset": {
+            "Id": "string"
+        }, 
+        "ReadJob": {
+            "Id": "string"
+        }, 
+        "ReadPipeline": {
+            "Id": "string"
+        }, 
+        "ReadPreset": {
+            "Id": "string"
+        }, 
+        "TestRole": {
+            "InputBucket": "string", 
+            "OutputBucket": "string", 
+            "Role": "string", 
+            "Topics": {
+                "_list": "string"
+            }
+        }, 
+        "UpdatePipeline": {
+            "AwsKmsKeyArn": "string", 
+            "ContentConfig": {
+                "Bucket": "string", 
+                "Permissions": {
+                    "_list": {
+                        "Access": {
+                            "_list": "string"
+                        }, 
+                        "Grantee": "string", 
+                        "GranteeType": "string"
+                    }
+                }, 
+                "StorageClass": "string"
+            }, 
+            "Id": "string", 
+            "InputBucket": "string", 
+            "Name": "string", 
+            "Notifications": {
+                "Completed": "string", 
+                "Error": "string", 
+                "Progressing": "string", 
+                "Warning": "string"
+            }, 
+            "Role": "string", 
+            "ThumbnailConfig": {
+                "Bucket": "string", 
+                "Permissions": {
+                    "_list": {
+                        "Access": {
+                            "_list": "string"
+                        }, 
+                        "Grantee": "string", 
+                        "GranteeType": "string"
+                    }
+                }, 
+                "StorageClass": "string"
+            }
+        }, 
+        "UpdatePipelineNotifications": {
+            "Id": "string", 
+            "Notifications": {
+                "Completed": "string", 
+                "Error": "string", 
+                "Progressing": "string", 
+                "Warning": "string"
+            }
+        }, 
+        "UpdatePipelineStatus": {
+            "Id": "string", 
+            "Status": "string"
+        }
+    }
+}

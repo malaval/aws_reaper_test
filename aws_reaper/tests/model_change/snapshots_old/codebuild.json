@@ -1,0 +1,303 @@
+{
+    "IamActions": [
+        "BatchDeleteBuilds", 
+        "CreateProject", 
+        "DeleteProject", 
+        "PersistOAuthToken", 
+        "StartBuild", 
+        "StopBuild", 
+        "UpdateProject"
+    ], 
+    "OperationInputs": {
+        "BatchDeleteBuilds": {
+            "ids": {
+                "_list": "string"
+            }
+        }, 
+        "CreateProject": {
+            "artifacts": {
+                "artifactIdentifier": "string", 
+                "encryptionDisabled": "boolean", 
+                "location": "string", 
+                "name": "string", 
+                "namespaceType": "string", 
+                "overrideArtifactName": "boolean", 
+                "packaging": "string", 
+                "path": "string", 
+                "type": "string"
+            }, 
+            "badgeEnabled": "boolean", 
+            "cache": {
+                "location": "string", 
+                "type": "string"
+            }, 
+            "description": "string", 
+            "encryptionKey": "string", 
+            "environment": {
+                "certificate": "string", 
+                "computeType": "string", 
+                "environmentVariables": {
+                    "_list": {
+                        "name": "string", 
+                        "type": "string", 
+                        "value": "string"
+                    }
+                }, 
+                "image": "string", 
+                "privilegedMode": "boolean", 
+                "type": "string"
+            }, 
+            "name": "string", 
+            "secondaryArtifacts": {
+                "_list": {
+                    "artifactIdentifier": "string", 
+                    "encryptionDisabled": "boolean", 
+                    "location": "string", 
+                    "name": "string", 
+                    "namespaceType": "string", 
+                    "overrideArtifactName": "boolean", 
+                    "packaging": "string", 
+                    "path": "string", 
+                    "type": "string"
+                }
+            }, 
+            "secondarySources": {
+                "_list": {
+                    "auth": {
+                        "resource": "string", 
+                        "type": "string"
+                    }, 
+                    "buildspec": "string", 
+                    "gitCloneDepth": "integer", 
+                    "insecureSsl": "boolean", 
+                    "location": "string", 
+                    "reportBuildStatus": "boolean", 
+                    "sourceIdentifier": "string", 
+                    "type": "string"
+                }
+            }, 
+            "serviceRole": "string", 
+            "source": {
+                "auth": {
+                    "resource": "string", 
+                    "type": "string"
+                }, 
+                "buildspec": "string", 
+                "gitCloneDepth": "integer", 
+                "insecureSsl": "boolean", 
+                "location": "string", 
+                "reportBuildStatus": "boolean", 
+                "sourceIdentifier": "string", 
+                "type": "string"
+            }, 
+            "tags": {
+                "_list": {
+                    "key": "string", 
+                    "value": "string"
+                }
+            }, 
+            "timeoutInMinutes": "integer", 
+            "vpcConfig": {
+                "securityGroupIds": {
+                    "_list": "string"
+                }, 
+                "subnets": {
+                    "_list": "string"
+                }, 
+                "vpcId": "string"
+            }
+        }, 
+        "CreateWebhook": {
+            "branchFilter": "string", 
+            "projectName": "string"
+        }, 
+        "DeleteProject": {
+            "name": "string"
+        }, 
+        "DeleteWebhook": {
+            "projectName": "string"
+        }, 
+        "InvalidateProjectCache": {
+            "projectName": "string"
+        }, 
+        "StartBuild": {
+            "artifactsOverride": {
+                "artifactIdentifier": "string", 
+                "encryptionDisabled": "boolean", 
+                "location": "string", 
+                "name": "string", 
+                "namespaceType": "string", 
+                "overrideArtifactName": "boolean", 
+                "packaging": "string", 
+                "path": "string", 
+                "type": "string"
+            }, 
+            "buildspecOverride": "string", 
+            "cacheOverride": {
+                "location": "string", 
+                "type": "string"
+            }, 
+            "certificateOverride": "string", 
+            "computeTypeOverride": "string", 
+            "environmentTypeOverride": "string", 
+            "environmentVariablesOverride": {
+                "_list": {
+                    "name": "string", 
+                    "type": "string", 
+                    "value": "string"
+                }
+            }, 
+            "gitCloneDepthOverride": "integer", 
+            "idempotencyToken": "string", 
+            "imageOverride": "string", 
+            "insecureSslOverride": "boolean", 
+            "privilegedModeOverride": "boolean", 
+            "projectName": "string", 
+            "reportBuildStatusOverride": "boolean", 
+            "secondaryArtifactsOverride": {
+                "_list": {
+                    "artifactIdentifier": "string", 
+                    "encryptionDisabled": "boolean", 
+                    "location": "string", 
+                    "name": "string", 
+                    "namespaceType": "string", 
+                    "overrideArtifactName": "boolean", 
+                    "packaging": "string", 
+                    "path": "string", 
+                    "type": "string"
+                }
+            }, 
+            "secondarySourcesOverride": {
+                "_list": {
+                    "auth": {
+                        "resource": "string", 
+                        "type": "string"
+                    }, 
+                    "buildspec": "string", 
+                    "gitCloneDepth": "integer", 
+                    "insecureSsl": "boolean", 
+                    "location": "string", 
+                    "reportBuildStatus": "boolean", 
+                    "sourceIdentifier": "string", 
+                    "type": "string"
+                }
+            }, 
+            "secondarySourcesVersionOverride": {
+                "_list": {
+                    "sourceIdentifier": "string", 
+                    "sourceVersion": "string"
+                }
+            }, 
+            "serviceRoleOverride": "string", 
+            "sourceAuthOverride": {
+                "resource": "string", 
+                "type": "string"
+            }, 
+            "sourceLocationOverride": "string", 
+            "sourceTypeOverride": "string", 
+            "sourceVersion": "string", 
+            "timeoutInMinutesOverride": "integer"
+        }, 
+        "StopBuild": {
+            "id": "string"
+        }, 
+        "UpdateProject": {
+            "artifacts": {
+                "artifactIdentifier": "string", 
+                "encryptionDisabled": "boolean", 
+                "location": "string", 
+                "name": "string", 
+                "namespaceType": "string", 
+                "overrideArtifactName": "boolean", 
+                "packaging": "string", 
+                "path": "string", 
+                "type": "string"
+            }, 
+            "badgeEnabled": "boolean", 
+            "cache": {
+                "location": "string", 
+                "type": "string"
+            }, 
+            "description": "string", 
+            "encryptionKey": "string", 
+            "environment": {
+                "certificate": "string", 
+                "computeType": "string", 
+                "environmentVariables": {
+                    "_list": {
+                        "name": "string", 
+                        "type": "string", 
+                        "value": "string"
+                    }
+                }, 
+                "image": "string", 
+                "privilegedMode": "boolean", 
+                "type": "string"
+            }, 
+            "name": "string", 
+            "secondaryArtifacts": {
+                "_list": {
+                    "artifactIdentifier": "string", 
+                    "encryptionDisabled": "boolean", 
+                    "location": "string", 
+                    "name": "string", 
+                    "namespaceType": "string", 
+                    "overrideArtifactName": "boolean", 
+                    "packaging": "string", 
+                    "path": "string", 
+                    "type": "string"
+                }
+            }, 
+            "secondarySources": {
+                "_list": {
+                    "auth": {
+                        "resource": "string", 
+                        "type": "string"
+                    }, 
+                    "buildspec": "string", 
+                    "gitCloneDepth": "integer", 
+                    "insecureSsl": "boolean", 
+                    "location": "string", 
+                    "reportBuildStatus": "boolean", 
+                    "sourceIdentifier": "string", 
+                    "type": "string"
+                }
+            }, 
+            "serviceRole": "string", 
+            "source": {
+                "auth": {
+                    "resource": "string", 
+                    "type": "string"
+                }, 
+                "buildspec": "string", 
+                "gitCloneDepth": "integer", 
+                "insecureSsl": "boolean", 
+                "location": "string", 
+                "reportBuildStatus": "boolean", 
+                "sourceIdentifier": "string", 
+                "type": "string"
+            }, 
+            "tags": {
+                "_list": {
+                    "key": "string", 
+                    "value": "string"
+                }
+            }, 
+            "timeoutInMinutes": "integer", 
+            "vpcConfig": {
+                "securityGroupIds": {
+                    "_list": "string"
+                }, 
+                "subnets": {
+                    "_list": "string"
+                }, 
+                "vpcId": "string"
+            }
+        }, 
+        "UpdateWebhook": {
+            "branchFilter": "string", 
+            "projectName": "string", 
+            "rotateSecret": "boolean"
+        }
+    }
+}

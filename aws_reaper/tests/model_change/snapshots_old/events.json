@@ -1,0 +1,109 @@
+{
+    "IamActions": [
+        "DeleteRule", 
+        "DisableRule", 
+        "EnableRule", 
+        "PutEvents", 
+        "PutPermission", 
+        "PutRule", 
+        "PutTargets", 
+        "RemovePermission", 
+        "RemoveTargets"
+    ], 
+    "OperationInputs": {
+        "DeleteRule": {
+            "Name": "string"
+        }, 
+        "DisableRule": {
+            "Name": "string"
+        }, 
+        "EnableRule": {
+            "Name": "string"
+        }, 
+        "PutEvents": {
+            "Entries": {
+                "_list": {
+                    "Detail": "string", 
+                    "DetailType": "string", 
+                    "Resources": {
+                        "_list": "string"
+                    }, 
+                    "Source": "string", 
+                    "Time": "timestamp"
+                }
+            }
+        }, 
+        "PutPermission": {
+            "Action": "string", 
+            "Principal": "string", 
+            "StatementId": "string"
+        }, 
+        "PutRule": {
+            "Description": "string", 
+            "EventPattern": "string", 
+            "Name": "string", 
+            "RoleArn": "string", 
+            "ScheduleExpression": "string", 
+            "State": "string"
+        }, 
+        "PutTargets": {
+            "Rule": "string", 
+            "Targets": {
+                "_list": {
+                    "Arn": "string", 
+                    "BatchParameters": {
+                        "ArrayProperties": {
+                            "Size": "integer"
+                        }, 
+                        "JobDefinition": "string", 
+                        "JobName": "string", 
+                        "RetryStrategy": {
+                            "Attempts": "integer"
+                        }
+                    }, 
+                    "EcsParameters": {
+                        "Group": "string", 
+                        "LaunchType": "string", 
+                        "NetworkConfiguration": {
+                            "awsvpcConfiguration": "structure"
+                        }, 
+                        "PlatformVersion": "string", 
+                        "TaskCount": "integer", 
+                        "TaskDefinitionArn": "string"
+                    }, 
+                    "Id": "string", 
+                    "Input": "string", 
+                    "InputPath": "string", 
+                    "InputTransformer": {
+                        "InputPathsMap": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "InputTemplate": "string"
+                    }, 
+                    "KinesisParameters": {
+                        "PartitionKeyPath": "string"
+                    }, 
+                    "RoleArn": "string", 
+                    "RunCommandParameters": {
+                        "RunCommandTargets": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "SqsParameters": {
+                        "MessageGroupId": "string"
+                    }
+                }
+            }
+        }, 
+        "RemovePermission": {
+            "StatementId": "string"
+        }, 
+        "RemoveTargets": {
+            "Ids": {
+                "_list": "string"
+            }, 
+            "Rule": "string"
+        }
+    }
+}

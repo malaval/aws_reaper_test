@@ -1,0 +1,44 @@
+{
+    "IamActions": [
+        "CreateFileSystem", 
+        "CreateMountTarget", 
+        "DeleteFileSystem", 
+        "DeleteMountTarget", 
+        "ModifyMountTargetSecurityGroups"
+    ], 
+    "OperationInputs": {
+        "CreateFileSystem": {
+            "CreationToken": "string", 
+            "Encrypted": "boolean", 
+            "KmsKeyId": "string", 
+            "PerformanceMode": "string", 
+            "ProvisionedThroughputInMibps": "double", 
+            "ThroughputMode": "string"
+        }, 
+        "CreateMountTarget": {
+            "FileSystemId": "string", 
+            "IpAddress": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }, 
+            "SubnetId": "string"
+        }, 
+        "DeleteFileSystem": {
+            "FileSystemId": "string"
+        }, 
+        "DeleteMountTarget": {
+            "MountTargetId": "string"
+        }, 
+        "ModifyMountTargetSecurityGroups": {
+            "MountTargetId": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateFileSystem": {
+            "FileSystemId": "string", 
+            "ProvisionedThroughputInMibps": "double", 
+            "ThroughputMode": "string"
+        }
+    }
+}

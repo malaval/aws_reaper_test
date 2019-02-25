@@ -1,0 +1,213 @@
+{
+    "IamActions": [
+        "AcceptInvitation", 
+        "ArchiveFindings", 
+        "CreateDetector", 
+        "CreateIPSet", 
+        "CreateMembers", 
+        "CreateSampleFindings", 
+        "CreateThreatIntelSet", 
+        "DeclineInvitations", 
+        "DeleteDetector", 
+        "DeleteIPSet", 
+        "DeleteInvitations", 
+        "DeleteMembers", 
+        "DeleteThreatIntelSet", 
+        "DisassociateFromMasterAccount", 
+        "DisassociateMembers", 
+        "InviteMembers", 
+        "StartMonitoringMembers", 
+        "StopMonitoringMembers", 
+        "UnarchiveFindings", 
+        "UpdateDetector", 
+        "UpdateFindingsFeedback", 
+        "UpdateIPSet", 
+        "UpdateThreatIntelSet"
+    ], 
+    "OperationInputs": {
+        "AcceptInvitation": {
+            "DetectorId": "string", 
+            "InvitationId": "string", 
+            "MasterId": "string"
+        }, 
+        "ArchiveFindings": {
+            "DetectorId": "string", 
+            "FindingIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateDetector": {
+            "Enable": "boolean"
+        }, 
+        "CreateFilter": {
+            "Action": "string", 
+            "ClientToken": "string", 
+            "Description": "string", 
+            "DetectorId": "string", 
+            "FindingCriteria": {
+                "Criterion": {
+                    "_key": "string", 
+                    "_value": {
+                        "Eq": {
+                            "_list": "string"
+                        }, 
+                        "Gt": "integer", 
+                        "Gte": "integer", 
+                        "Lt": "integer", 
+                        "Lte": "integer", 
+                        "Neq": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "Name": "string", 
+            "Rank": "integer"
+        }, 
+        "CreateIPSet": {
+            "Activate": "boolean", 
+            "DetectorId": "string", 
+            "Format": "string", 
+            "Location": "string", 
+            "Name": "string"
+        }, 
+        "CreateMembers": {
+            "AccountDetails": {
+                "_list": {
+                    "AccountId": "string", 
+                    "Email": "string"
+                }
+            }, 
+            "DetectorId": "string"
+        }, 
+        "CreateSampleFindings": {
+            "DetectorId": "string", 
+            "FindingTypes": {
+                "_list": "string"
+            }
+        }, 
+        "CreateThreatIntelSet": {
+            "Activate": "boolean", 
+            "DetectorId": "string", 
+            "Format": "string", 
+            "Location": "string", 
+            "Name": "string"
+        }, 
+        "DeclineInvitations": {
+            "AccountIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteDetector": {
+            "DetectorId": "string"
+        }, 
+        "DeleteFilter": {
+            "DetectorId": "string", 
+            "FilterName": "string"
+        }, 
+        "DeleteIPSet": {
+            "DetectorId": "string", 
+            "IpSetId": "string"
+        }, 
+        "DeleteInvitations": {
+            "AccountIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteMembers": {
+            "AccountIds": {
+                "_list": "string"
+            }, 
+            "DetectorId": "string"
+        }, 
+        "DeleteThreatIntelSet": {
+            "DetectorId": "string", 
+            "ThreatIntelSetId": "string"
+        }, 
+        "DisassociateFromMasterAccount": {
+            "DetectorId": "string"
+        }, 
+        "DisassociateMembers": {
+            "AccountIds": {
+                "_list": "string"
+            }, 
+            "DetectorId": "string"
+        }, 
+        "InviteMembers": {
+            "AccountIds": {
+                "_list": "string"
+            }, 
+            "DetectorId": "string", 
+            "DisableEmailNotification": "boolean", 
+            "Message": "string"
+        }, 
+        "StartMonitoringMembers": {
+            "AccountIds": {
+                "_list": "string"
+            }, 
+            "DetectorId": "string"
+        }, 
+        "StopMonitoringMembers": {
+            "AccountIds": {
+                "_list": "string"
+            }, 
+            "DetectorId": "string"
+        }, 
+        "UnarchiveFindings": {
+            "DetectorId": "string", 
+            "FindingIds": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateDetector": {
+            "DetectorId": "string", 
+            "Enable": "boolean"
+        }, 
+        "UpdateFilter": {
+            "Action": "string", 
+            "Description": "string", 
+            "DetectorId": "string", 
+            "FilterName": "string", 
+            "FindingCriteria": {
+                "Criterion": {
+                    "_key": "string", 
+                    "_value": {
+                        "Eq": {
+                            "_list": "string"
+                        }, 
+                        "Gt": "integer", 
+                        "Gte": "integer", 
+                        "Lt": "integer", 
+                        "Lte": "integer", 
+                        "Neq": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "Rank": "integer"
+        }, 
+        "UpdateFindingsFeedback": {
+            "Comments": "string", 
+            "DetectorId": "string", 
+            "Feedback": "string", 
+            "FindingIds": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateIPSet": {
+            "Activate": "boolean", 
+            "DetectorId": "string", 
+            "IpSetId": "string", 
+            "Location": "string", 
+            "Name": "string"
+        }, 
+        "UpdateThreatIntelSet": {
+            "Activate": "boolean", 
+            "DetectorId": "string", 
+            "Location": "string", 
+            "Name": "string", 
+            "ThreatIntelSetId": "string"
+        }
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "IamActions": [
+        "CreateInstance", 
+        "DestroyInstance", 
+        "ModifyInstance", 
+        "StartOutboundVoiceContact", 
+        "StopContact"
+    ], 
+    "OperationInputs": {
+        "CreateUser": {
+            "DirectoryUserId": "string", 
+            "HierarchyGroupId": "string", 
+            "IdentityInfo": {
+                "Email": "string", 
+                "FirstName": "string", 
+                "LastName": "string"
+            }, 
+            "InstanceId": "string", 
+            "Password": "string", 
+            "PhoneConfig": {
+                "AfterContactWorkTimeLimit": "integer", 
+                "AutoAccept": "boolean", 
+                "DeskPhoneNumber": "string", 
+                "PhoneType": "string"
+            }, 
+            "RoutingProfileId": "string", 
+            "SecurityProfileIds": {
+                "_list": "string"
+            }, 
+            "Username": "string"
+        }, 
+        "DeleteUser": {
+            "InstanceId": "string", 
+            "UserId": "string"
+        }, 
+        "StartOutboundVoiceContact": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ClientToken": "string", 
+            "ContactFlowId": "string", 
+            "DestinationPhoneNumber": "string", 
+            "InstanceId": "string", 
+            "QueueId": "string", 
+            "SourcePhoneNumber": "string"
+        }, 
+        "StopContact": {
+            "ContactId": "string", 
+            "InstanceId": "string"
+        }, 
+        "UpdateUserHierarchy": {
+            "HierarchyGroupId": "string", 
+            "InstanceId": "string", 
+            "UserId": "string"
+        }, 
+        "UpdateUserIdentityInfo": {
+            "IdentityInfo": {
+                "Email": "string", 
+                "FirstName": "string", 
+                "LastName": "string"
+            }, 
+            "InstanceId": "string", 
+            "UserId": "string"
+        }, 
+        "UpdateUserPhoneConfig": {
+            "InstanceId": "string", 
+            "PhoneConfig": {
+                "AfterContactWorkTimeLimit": "integer", 
+                "AutoAccept": "boolean", 
+                "DeskPhoneNumber": "string", 
+                "PhoneType": "string"
+            }, 
+            "UserId": "string"
+        }, 
+        "UpdateUserRoutingProfile": {
+            "InstanceId": "string", 
+            "RoutingProfileId": "string", 
+            "UserId": "string"
+        }, 
+        "UpdateUserSecurityProfiles": {
+            "InstanceId": "string", 
+            "SecurityProfileIds": {
+                "_list": "string"
+            }, 
+            "UserId": "string"
+        }
+    }
+}

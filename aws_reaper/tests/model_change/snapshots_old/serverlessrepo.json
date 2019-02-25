@@ -1,0 +1,76 @@
+{
+    "IamActions": [
+        "CreateApplication", 
+        "CreateApplicationVersion", 
+        "CreateCloudFormationChangeSet", 
+        "DeleteApplication", 
+        "PutApplicationPolicy", 
+        "UpdateApplication"
+    ], 
+    "OperationInputs": {
+        "CreateApplication": {
+            "Author": "string", 
+            "Description": "string", 
+            "HomePageUrl": "string", 
+            "Labels": {
+                "_list": "string"
+            }, 
+            "LicenseBody": "string", 
+            "LicenseUrl": "string", 
+            "Name": "string", 
+            "ReadmeBody": "string", 
+            "ReadmeUrl": "string", 
+            "SemanticVersion": "string", 
+            "SourceCodeUrl": "string", 
+            "SpdxLicenseId": "string", 
+            "TemplateBody": "string", 
+            "TemplateUrl": "string"
+        }, 
+        "CreateApplicationVersion": {
+            "ApplicationId": "string", 
+            "SemanticVersion": "string", 
+            "SourceCodeUrl": "string", 
+            "TemplateBody": "string", 
+            "TemplateUrl": "string"
+        }, 
+        "CreateCloudFormationChangeSet": {
+            "ApplicationId": "string", 
+            "ParameterOverrides": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "SemanticVersion": "string", 
+            "StackName": "string"
+        }, 
+        "DeleteApplication": {
+            "ApplicationId": "string"
+        }, 
+        "PutApplicationPolicy": {
+            "ApplicationId": "string", 
+            "Statements": {
+                "_list": {
+                    "Actions": {
+                        "_list": "string"
+                    }, 
+                    "Principals": {
+                        "_list": "string"
+                    }, 
+                    "StatementId": "string"
+                }
+            }
+        }, 
+        "UpdateApplication": {
+            "ApplicationId": "string", 
+            "Author": "string", 
+            "Description": "string", 
+            "HomePageUrl": "string", 
+            "Labels": {
+                "_list": "string"
+            }, 
+            "ReadmeBody": "string", 
+            "ReadmeUrl": "string"
+        }
+    }
+}

@@ -1,0 +1,423 @@
+{
+    "IamActions": [
+        "AddListenerCertificates", 
+        "CreateListener", 
+        "CreateLoadBalancer", 
+        "CreateRule", 
+        "CreateTargetGroup", 
+        "DeleteListener", 
+        "DeleteLoadBalancer", 
+        "DeleteRule", 
+        "DeleteTargetGroup", 
+        "DeregisterTargets", 
+        "ModifyListener", 
+        "ModifyLoadBalancerAttributes", 
+        "ModifyRule", 
+        "ModifyTargetGroup", 
+        "ModifyTargetGroupAttributes", 
+        "RegisterTargets", 
+        "RemoveListenerCertificates", 
+        "SetIpAddressType", 
+        "SetRulePriorities", 
+        "SetSecurityGroups", 
+        "SetSubnets", 
+        "SetWebAcl"
+    ], 
+    "OperationInputs": {
+        "AddListenerCertificates": {
+            "Certificates": {
+                "_list": {
+                    "CertificateArn": "string", 
+                    "IsDefault": "boolean"
+                }
+            }, 
+            "ListenerArn": "string"
+        }, 
+        "CreateListener": {
+            "Certificates": {
+                "_list": {
+                    "CertificateArn": "string", 
+                    "IsDefault": "boolean"
+                }
+            }, 
+            "DefaultActions": {
+                "_list": {
+                    "AuthenticateCognitoConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "UserPoolArn": "string", 
+                        "UserPoolClientId": "string", 
+                        "UserPoolDomain": "string"
+                    }, 
+                    "AuthenticateOidcConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "AuthorizationEndpoint": "string", 
+                        "ClientId": "string", 
+                        "ClientSecret": "string", 
+                        "Issuer": "string", 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "TokenEndpoint": "string", 
+                        "UserInfoEndpoint": "string"
+                    }, 
+                    "FixedResponseConfig": {
+                        "ContentType": "string", 
+                        "MessageBody": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "Order": "integer", 
+                    "RedirectConfig": {
+                        "Host": "string", 
+                        "Path": "string", 
+                        "Port": "string", 
+                        "Protocol": "string", 
+                        "Query": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "TargetGroupArn": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "LoadBalancerArn": "string", 
+            "Port": "integer", 
+            "Protocol": "string", 
+            "SslPolicy": "string"
+        }, 
+        "CreateLoadBalancer": {
+            "IpAddressType": "string", 
+            "Name": "string", 
+            "Scheme": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }, 
+            "SubnetMappings": {
+                "_list": {
+                    "AllocationId": "string", 
+                    "SubnetId": "string"
+                }
+            }, 
+            "Subnets": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "Type": "string"
+        }, 
+        "CreateRule": {
+            "Actions": {
+                "_list": {
+                    "AuthenticateCognitoConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "UserPoolArn": "string", 
+                        "UserPoolClientId": "string", 
+                        "UserPoolDomain": "string"
+                    }, 
+                    "AuthenticateOidcConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "AuthorizationEndpoint": "string", 
+                        "ClientId": "string", 
+                        "ClientSecret": "string", 
+                        "Issuer": "string", 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "TokenEndpoint": "string", 
+                        "UserInfoEndpoint": "string"
+                    }, 
+                    "FixedResponseConfig": {
+                        "ContentType": "string", 
+                        "MessageBody": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "Order": "integer", 
+                    "RedirectConfig": {
+                        "Host": "string", 
+                        "Path": "string", 
+                        "Port": "string", 
+                        "Protocol": "string", 
+                        "Query": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "TargetGroupArn": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "Conditions": {
+                "_list": {
+                    "Field": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ListenerArn": "string", 
+            "Priority": "integer"
+        }, 
+        "CreateTargetGroup": {
+            "HealthCheckIntervalSeconds": "integer", 
+            "HealthCheckPath": "string", 
+            "HealthCheckPort": "string", 
+            "HealthCheckProtocol": "string", 
+            "HealthCheckTimeoutSeconds": "integer", 
+            "HealthyThresholdCount": "integer", 
+            "Matcher": {
+                "HttpCode": "string"
+            }, 
+            "Name": "string", 
+            "Port": "integer", 
+            "Protocol": "string", 
+            "TargetType": "string", 
+            "UnhealthyThresholdCount": "integer", 
+            "VpcId": "string"
+        }, 
+        "DeleteListener": {
+            "ListenerArn": "string"
+        }, 
+        "DeleteLoadBalancer": {
+            "LoadBalancerArn": "string"
+        }, 
+        "DeleteRule": {
+            "RuleArn": "string"
+        }, 
+        "DeleteTargetGroup": {
+            "TargetGroupArn": "string"
+        }, 
+        "DeregisterTargets": {
+            "TargetGroupArn": "string", 
+            "Targets": {
+                "_list": {
+                    "AvailabilityZone": "string", 
+                    "Id": "string", 
+                    "Port": "integer"
+                }
+            }
+        }, 
+        "ModifyListener": {
+            "Certificates": {
+                "_list": {
+                    "CertificateArn": "string", 
+                    "IsDefault": "boolean"
+                }
+            }, 
+            "DefaultActions": {
+                "_list": {
+                    "AuthenticateCognitoConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "UserPoolArn": "string", 
+                        "UserPoolClientId": "string", 
+                        "UserPoolDomain": "string"
+                    }, 
+                    "AuthenticateOidcConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "AuthorizationEndpoint": "string", 
+                        "ClientId": "string", 
+                        "ClientSecret": "string", 
+                        "Issuer": "string", 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "TokenEndpoint": "string", 
+                        "UserInfoEndpoint": "string"
+                    }, 
+                    "FixedResponseConfig": {
+                        "ContentType": "string", 
+                        "MessageBody": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "Order": "integer", 
+                    "RedirectConfig": {
+                        "Host": "string", 
+                        "Path": "string", 
+                        "Port": "string", 
+                        "Protocol": "string", 
+                        "Query": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "TargetGroupArn": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "ListenerArn": "string", 
+            "Port": "integer", 
+            "Protocol": "string", 
+            "SslPolicy": "string"
+        }, 
+        "ModifyLoadBalancerAttributes": {
+            "Attributes": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "LoadBalancerArn": "string"
+        }, 
+        "ModifyRule": {
+            "Actions": {
+                "_list": {
+                    "AuthenticateCognitoConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "UserPoolArn": "string", 
+                        "UserPoolClientId": "string", 
+                        "UserPoolDomain": "string"
+                    }, 
+                    "AuthenticateOidcConfig": {
+                        "AuthenticationRequestExtraParams": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "AuthorizationEndpoint": "string", 
+                        "ClientId": "string", 
+                        "ClientSecret": "string", 
+                        "Issuer": "string", 
+                        "OnUnauthenticatedRequest": "string", 
+                        "Scope": "string", 
+                        "SessionCookieName": "string", 
+                        "SessionTimeout": "long", 
+                        "TokenEndpoint": "string", 
+                        "UserInfoEndpoint": "string"
+                    }, 
+                    "FixedResponseConfig": {
+                        "ContentType": "string", 
+                        "MessageBody": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "Order": "integer", 
+                    "RedirectConfig": {
+                        "Host": "string", 
+                        "Path": "string", 
+                        "Port": "string", 
+                        "Protocol": "string", 
+                        "Query": "string", 
+                        "StatusCode": "string"
+                    }, 
+                    "TargetGroupArn": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "Conditions": {
+                "_list": {
+                    "Field": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "RuleArn": "string"
+        }, 
+        "ModifyTargetGroup": {
+            "HealthCheckIntervalSeconds": "integer", 
+            "HealthCheckPath": "string", 
+            "HealthCheckPort": "string", 
+            "HealthCheckProtocol": "string", 
+            "HealthCheckTimeoutSeconds": "integer", 
+            "HealthyThresholdCount": "integer", 
+            "Matcher": {
+                "HttpCode": "string"
+            }, 
+            "TargetGroupArn": "string", 
+            "UnhealthyThresholdCount": "integer"
+        }, 
+        "ModifyTargetGroupAttributes": {
+            "Attributes": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetGroupArn": "string"
+        }, 
+        "RegisterTargets": {
+            "TargetGroupArn": "string", 
+            "Targets": {
+                "_list": {
+                    "AvailabilityZone": "string", 
+                    "Id": "string", 
+                    "Port": "integer"
+                }
+            }
+        }, 
+        "RemoveListenerCertificates": {
+            "Certificates": {
+                "_list": {
+                    "CertificateArn": "string", 
+                    "IsDefault": "boolean"
+                }
+            }, 
+            "ListenerArn": "string"
+        }, 
+        "SetIpAddressType": {
+            "IpAddressType": "string", 
+            "LoadBalancerArn": "string"
+        }, 
+        "SetRulePriorities": {
+            "RulePriorities": {
+                "_list": {
+                    "Priority": "integer", 
+                    "RuleArn": "string"
+                }
+            }
+        }, 
+        "SetSecurityGroups": {
+            "LoadBalancerArn": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }
+        }, 
+        "SetSubnets": {
+            "LoadBalancerArn": "string", 
+            "SubnetMappings": {
+                "_list": {
+                    "AllocationId": "string", 
+                    "SubnetId": "string"
+                }
+            }, 
+            "Subnets": {
+                "_list": "string"
+            }
+        }
+    }
+}

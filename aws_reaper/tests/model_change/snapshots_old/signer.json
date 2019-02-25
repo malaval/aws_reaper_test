@@ -1,0 +1,46 @@
+{
+    "IamActions": [
+        "CancelSigningProfile", 
+        "PutSigningProfile", 
+        "StartSigningJob"
+    ], 
+    "OperationInputs": {
+        "CancelSigningProfile": {
+            "profileName": "string"
+        }, 
+        "PutSigningProfile": {
+            "overrides": {
+                "signingConfiguration": {
+                    "encryptionAlgorithm": "string", 
+                    "hashAlgorithm": "string"
+                }
+            }, 
+            "platformId": "string", 
+            "profileName": "string", 
+            "signingMaterial": {
+                "certificateArn": "string"
+            }, 
+            "signingParameters": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "StartSigningJob": {
+            "clientRequestToken": "string", 
+            "destination": {
+                "s3": {
+                    "bucketName": "string", 
+                    "prefix": "string"
+                }
+            }, 
+            "profileName": "string", 
+            "source": {
+                "s3": {
+                    "bucketName": "string", 
+                    "key": "string", 
+                    "version": "string"
+                }
+            }
+        }
+    }
+}

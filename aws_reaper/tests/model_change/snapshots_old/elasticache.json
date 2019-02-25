@@ -1,0 +1,282 @@
+{
+    "IamActions": [
+        "AuthorizeCacheSecurityGroupIngress", 
+        "CopySnapshot", 
+        "CreateCacheCluster", 
+        "CreateCacheParameterGroup", 
+        "CreateCacheSecurityGroup", 
+        "CreateCacheSubnetGroup", 
+        "CreateReplicationGroup", 
+        "CreateSnapshot", 
+        "DeleteCacheCluster", 
+        "DeleteCacheParameterGroup", 
+        "DeleteCacheSecurityGroup", 
+        "DeleteCacheSubnetGroup", 
+        "DeleteReplicationGroup", 
+        "DeleteSnapshot", 
+        "ModifyCacheCluster", 
+        "ModifyCacheParameterGroup", 
+        "ModifyCacheSubnetGroup", 
+        "ModifyReplicationGroup", 
+        "PurchaseReservedCacheNodesOffering", 
+        "RebootCacheCluster", 
+        "ResetCacheParameterGroup", 
+        "RevokeCacheSecurityGroupIngress"
+    ], 
+    "OperationInputs": {
+        "AuthorizeCacheSecurityGroupIngress": {
+            "CacheSecurityGroupName": "string", 
+            "EC2SecurityGroupName": "string", 
+            "EC2SecurityGroupOwnerId": "string"
+        }, 
+        "CopySnapshot": {
+            "SourceSnapshotName": "string", 
+            "TargetBucket": "string", 
+            "TargetSnapshotName": "string"
+        }, 
+        "CreateCacheCluster": {
+            "AZMode": "string", 
+            "AuthToken": "string", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "CacheClusterId": "string", 
+            "CacheNodeType": "string", 
+            "CacheParameterGroupName": "string", 
+            "CacheSecurityGroupNames": {
+                "_list": "string"
+            }, 
+            "CacheSubnetGroupName": "string", 
+            "Engine": "string", 
+            "EngineVersion": "string", 
+            "NotificationTopicArn": "string", 
+            "NumCacheNodes": "integer", 
+            "Port": "integer", 
+            "PreferredAvailabilityZone": "string", 
+            "PreferredAvailabilityZones": {
+                "_list": "string"
+            }, 
+            "PreferredMaintenanceWindow": "string", 
+            "ReplicationGroupId": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SnapshotArns": {
+                "_list": "string"
+            }, 
+            "SnapshotName": "string", 
+            "SnapshotRetentionLimit": "integer", 
+            "SnapshotWindow": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateCacheParameterGroup": {
+            "CacheParameterGroupFamily": "string", 
+            "CacheParameterGroupName": "string", 
+            "Description": "string"
+        }, 
+        "CreateCacheSecurityGroup": {
+            "CacheSecurityGroupName": "string", 
+            "Description": "string"
+        }, 
+        "CreateCacheSubnetGroup": {
+            "CacheSubnetGroupDescription": "string", 
+            "CacheSubnetGroupName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateReplicationGroup": {
+            "AtRestEncryptionEnabled": "boolean", 
+            "AuthToken": "string", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AutomaticFailoverEnabled": "boolean", 
+            "CacheNodeType": "string", 
+            "CacheParameterGroupName": "string", 
+            "CacheSecurityGroupNames": {
+                "_list": "string"
+            }, 
+            "CacheSubnetGroupName": "string", 
+            "Engine": "string", 
+            "EngineVersion": "string", 
+            "NodeGroupConfiguration": {
+                "_list": {
+                    "PrimaryAvailabilityZone": "string", 
+                    "ReplicaAvailabilityZones": {
+                        "_list": "string"
+                    }, 
+                    "ReplicaCount": "integer", 
+                    "Slots": "string"
+                }
+            }, 
+            "NotificationTopicArn": "string", 
+            "NumCacheClusters": "integer", 
+            "NumNodeGroups": "integer", 
+            "Port": "integer", 
+            "PreferredCacheClusterAZs": {
+                "_list": "string"
+            }, 
+            "PreferredMaintenanceWindow": "string", 
+            "PrimaryClusterId": "string", 
+            "ReplicasPerNodeGroup": "integer", 
+            "ReplicationGroupDescription": "string", 
+            "ReplicationGroupId": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SnapshotArns": {
+                "_list": "string"
+            }, 
+            "SnapshotName": "string", 
+            "SnapshotRetentionLimit": "integer", 
+            "SnapshotWindow": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TransitEncryptionEnabled": "boolean"
+        }, 
+        "CreateSnapshot": {
+            "CacheClusterId": "string", 
+            "ReplicationGroupId": "string", 
+            "SnapshotName": "string"
+        }, 
+        "DeleteCacheCluster": {
+            "CacheClusterId": "string", 
+            "FinalSnapshotIdentifier": "string"
+        }, 
+        "DeleteCacheParameterGroup": {
+            "CacheParameterGroupName": "string"
+        }, 
+        "DeleteCacheSecurityGroup": {
+            "CacheSecurityGroupName": "string"
+        }, 
+        "DeleteCacheSubnetGroup": {
+            "CacheSubnetGroupName": "string"
+        }, 
+        "DeleteReplicationGroup": {
+            "FinalSnapshotIdentifier": "string", 
+            "ReplicationGroupId": "string", 
+            "RetainPrimaryCluster": "boolean"
+        }, 
+        "DeleteSnapshot": {
+            "SnapshotName": "string"
+        }, 
+        "ModifyCacheCluster": {
+            "AZMode": "string", 
+            "ApplyImmediately": "boolean", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "CacheClusterId": "string", 
+            "CacheNodeIdsToRemove": {
+                "_list": "string"
+            }, 
+            "CacheNodeType": "string", 
+            "CacheParameterGroupName": "string", 
+            "CacheSecurityGroupNames": {
+                "_list": "string"
+            }, 
+            "EngineVersion": "string", 
+            "NewAvailabilityZones": {
+                "_list": "string"
+            }, 
+            "NotificationTopicArn": "string", 
+            "NotificationTopicStatus": "string", 
+            "NumCacheNodes": "integer", 
+            "PreferredMaintenanceWindow": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SnapshotRetentionLimit": "integer", 
+            "SnapshotWindow": "string"
+        }, 
+        "ModifyCacheParameterGroup": {
+            "CacheParameterGroupName": "string", 
+            "ParameterNameValues": {
+                "_list": {
+                    "ParameterName": "string", 
+                    "ParameterValue": "string"
+                }
+            }
+        }, 
+        "ModifyCacheSubnetGroup": {
+            "CacheSubnetGroupDescription": "string", 
+            "CacheSubnetGroupName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyReplicationGroup": {
+            "ApplyImmediately": "boolean", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AutomaticFailoverEnabled": "boolean", 
+            "CacheNodeType": "string", 
+            "CacheParameterGroupName": "string", 
+            "CacheSecurityGroupNames": {
+                "_list": "string"
+            }, 
+            "EngineVersion": "string", 
+            "NodeGroupId": "string", 
+            "NotificationTopicArn": "string", 
+            "NotificationTopicStatus": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "PrimaryClusterId": "string", 
+            "ReplicationGroupDescription": "string", 
+            "ReplicationGroupId": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SnapshotRetentionLimit": "integer", 
+            "SnapshotWindow": "string", 
+            "SnapshottingClusterId": "string"
+        }, 
+        "ModifyReplicationGroupShardConfiguration": {
+            "ApplyImmediately": "boolean", 
+            "NodeGroupCount": "integer", 
+            "NodeGroupsToRemove": {
+                "_list": "string"
+            }, 
+            "ReplicationGroupId": "string", 
+            "ReshardingConfiguration": {
+                "_list": {
+                    "PreferredAvailabilityZones": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "PurchaseReservedCacheNodesOffering": {
+            "CacheNodeCount": "integer", 
+            "ReservedCacheNodeId": "string", 
+            "ReservedCacheNodesOfferingId": "string"
+        }, 
+        "RebootCacheCluster": {
+            "CacheClusterId": "string", 
+            "CacheNodeIdsToReboot": {
+                "_list": "string"
+            }
+        }, 
+        "ResetCacheParameterGroup": {
+            "CacheParameterGroupName": "string", 
+            "ParameterNameValues": {
+                "_list": {
+                    "ParameterName": "string", 
+                    "ParameterValue": "string"
+                }
+            }, 
+            "ResetAllParameters": "boolean"
+        }, 
+        "RevokeCacheSecurityGroupIngress": {
+            "CacheSecurityGroupName": "string", 
+            "EC2SecurityGroupName": "string", 
+            "EC2SecurityGroupOwnerId": "string"
+        }, 
+        "TestFailover": {
+            "NodeGroupId": "string", 
+            "ReplicationGroupId": "string"
+        }
+    }
+}

@@ -1,0 +1,570 @@
+{
+    "IamActions": [
+        "CreateDeliveryStream", 
+        "DeleteDeliveryStream", 
+        "DescribeDeliveryStream", 
+        "PutRecord", 
+        "PutRecordBatch", 
+        "UpdateDestination"
+    ], 
+    "OperationInputs": {
+        "CreateDeliveryStream": {
+            "DeliveryStreamName": "string", 
+            "DeliveryStreamType": "string", 
+            "ElasticsearchDestinationConfiguration": {
+                "BufferingHints": {
+                    "IntervalInSeconds": "integer", 
+                    "SizeInMBs": "integer"
+                }, 
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "DomainARN": "string", 
+                "IndexName": "string", 
+                "IndexRotationPeriod": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RetryOptions": {
+                    "DurationInSeconds": "integer"
+                }, 
+                "RoleARN": "string", 
+                "S3BackupMode": "string", 
+                "S3Configuration": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "TypeName": "string"
+            }, 
+            "ExtendedS3DestinationConfiguration": {
+                "BucketARN": "string", 
+                "BufferingHints": {
+                    "IntervalInSeconds": "integer", 
+                    "SizeInMBs": "integer"
+                }, 
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "CompressionFormat": "string", 
+                "DataFormatConversionConfiguration": {
+                    "Enabled": "boolean", 
+                    "InputFormatConfiguration": {
+                        "Deserializer": {
+                            "HiveJsonSerDe": "structure", 
+                            "OpenXJsonSerDe": "structure"
+                        }
+                    }, 
+                    "OutputFormatConfiguration": {
+                        "Serializer": {
+                            "OrcSerDe": "structure", 
+                            "ParquetSerDe": "structure"
+                        }
+                    }, 
+                    "SchemaConfiguration": {
+                        "CatalogId": "string", 
+                        "DatabaseName": "string", 
+                        "Region": "string", 
+                        "RoleARN": "string", 
+                        "TableName": "string", 
+                        "VersionId": "string"
+                    }
+                }, 
+                "EncryptionConfiguration": {
+                    "KMSEncryptionConfig": {
+                        "AWSKMSKeyARN": "string"
+                    }, 
+                    "NoEncryptionConfig": "string"
+                }, 
+                "Prefix": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RoleARN": "string", 
+                "S3BackupConfiguration": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "S3BackupMode": "string"
+            }, 
+            "KinesisStreamSourceConfiguration": {
+                "KinesisStreamARN": "string", 
+                "RoleARN": "string"
+            }, 
+            "RedshiftDestinationConfiguration": {
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "ClusterJDBCURL": "string", 
+                "CopyCommand": {
+                    "CopyOptions": "string", 
+                    "DataTableColumns": "string", 
+                    "DataTableName": "string"
+                }, 
+                "Password": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RetryOptions": {
+                    "DurationInSeconds": "integer"
+                }, 
+                "RoleARN": "string", 
+                "S3BackupConfiguration": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "S3BackupMode": "string", 
+                "S3Configuration": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "Username": "string"
+            }, 
+            "S3DestinationConfiguration": {
+                "BucketARN": "string", 
+                "BufferingHints": {
+                    "IntervalInSeconds": "integer", 
+                    "SizeInMBs": "integer"
+                }, 
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "CompressionFormat": "string", 
+                "EncryptionConfiguration": {
+                    "KMSEncryptionConfig": {
+                        "AWSKMSKeyARN": "string"
+                    }, 
+                    "NoEncryptionConfig": "string"
+                }, 
+                "Prefix": "string", 
+                "RoleARN": "string"
+            }, 
+            "SplunkDestinationConfiguration": {
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "HECAcknowledgmentTimeoutInSeconds": "integer", 
+                "HECEndpoint": "string", 
+                "HECEndpointType": "string", 
+                "HECToken": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RetryOptions": {
+                    "DurationInSeconds": "integer"
+                }, 
+                "S3BackupMode": "string", 
+                "S3Configuration": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }
+            }
+        }, 
+        "DeleteDeliveryStream": {
+            "DeliveryStreamName": "string"
+        }, 
+        "DescribeDeliveryStream": {
+            "DeliveryStreamName": "string", 
+            "ExclusiveStartDestinationId": "string", 
+            "Limit": "integer"
+        }, 
+        "PutRecord": {
+            "DeliveryStreamName": "string", 
+            "Record": {
+                "Data": "blob"
+            }
+        }, 
+        "PutRecordBatch": {
+            "DeliveryStreamName": "string", 
+            "Records": {
+                "_list": {
+                    "Data": "blob"
+                }
+            }
+        }, 
+        "UpdateDestination": {
+            "CurrentDeliveryStreamVersionId": "string", 
+            "DeliveryStreamName": "string", 
+            "DestinationId": "string", 
+            "ElasticsearchDestinationUpdate": {
+                "BufferingHints": {
+                    "IntervalInSeconds": "integer", 
+                    "SizeInMBs": "integer"
+                }, 
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "DomainARN": "string", 
+                "IndexName": "string", 
+                "IndexRotationPeriod": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RetryOptions": {
+                    "DurationInSeconds": "integer"
+                }, 
+                "RoleARN": "string", 
+                "S3Update": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "TypeName": "string"
+            }, 
+            "ExtendedS3DestinationUpdate": {
+                "BucketARN": "string", 
+                "BufferingHints": {
+                    "IntervalInSeconds": "integer", 
+                    "SizeInMBs": "integer"
+                }, 
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "CompressionFormat": "string", 
+                "DataFormatConversionConfiguration": {
+                    "Enabled": "boolean", 
+                    "InputFormatConfiguration": {
+                        "Deserializer": {
+                            "HiveJsonSerDe": "structure", 
+                            "OpenXJsonSerDe": "structure"
+                        }
+                    }, 
+                    "OutputFormatConfiguration": {
+                        "Serializer": {
+                            "OrcSerDe": "structure", 
+                            "ParquetSerDe": "structure"
+                        }
+                    }, 
+                    "SchemaConfiguration": {
+                        "CatalogId": "string", 
+                        "DatabaseName": "string", 
+                        "Region": "string", 
+                        "RoleARN": "string", 
+                        "TableName": "string", 
+                        "VersionId": "string"
+                    }
+                }, 
+                "EncryptionConfiguration": {
+                    "KMSEncryptionConfig": {
+                        "AWSKMSKeyARN": "string"
+                    }, 
+                    "NoEncryptionConfig": "string"
+                }, 
+                "Prefix": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RoleARN": "string", 
+                "S3BackupMode": "string", 
+                "S3BackupUpdate": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }
+            }, 
+            "RedshiftDestinationUpdate": {
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "ClusterJDBCURL": "string", 
+                "CopyCommand": {
+                    "CopyOptions": "string", 
+                    "DataTableColumns": "string", 
+                    "DataTableName": "string"
+                }, 
+                "Password": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RetryOptions": {
+                    "DurationInSeconds": "integer"
+                }, 
+                "RoleARN": "string", 
+                "S3BackupMode": "string", 
+                "S3BackupUpdate": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "S3Update": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }, 
+                "Username": "string"
+            }, 
+            "S3DestinationUpdate": {
+                "BucketARN": "string", 
+                "BufferingHints": {
+                    "IntervalInSeconds": "integer", 
+                    "SizeInMBs": "integer"
+                }, 
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "CompressionFormat": "string", 
+                "EncryptionConfiguration": {
+                    "KMSEncryptionConfig": {
+                        "AWSKMSKeyARN": "string"
+                    }, 
+                    "NoEncryptionConfig": "string"
+                }, 
+                "Prefix": "string", 
+                "RoleARN": "string"
+            }, 
+            "SplunkDestinationUpdate": {
+                "CloudWatchLoggingOptions": {
+                    "Enabled": "boolean", 
+                    "LogGroupName": "string", 
+                    "LogStreamName": "string"
+                }, 
+                "HECAcknowledgmentTimeoutInSeconds": "integer", 
+                "HECEndpoint": "string", 
+                "HECEndpointType": "string", 
+                "HECToken": "string", 
+                "ProcessingConfiguration": {
+                    "Enabled": "boolean", 
+                    "Processors": {
+                        "_list": {
+                            "Parameters": "list", 
+                            "Type": "string"
+                        }
+                    }
+                }, 
+                "RetryOptions": {
+                    "DurationInSeconds": "integer"
+                }, 
+                "S3BackupMode": "string", 
+                "S3Update": {
+                    "BucketARN": "string", 
+                    "BufferingHints": {
+                        "IntervalInSeconds": "integer", 
+                        "SizeInMBs": "integer"
+                    }, 
+                    "CloudWatchLoggingOptions": {
+                        "Enabled": "boolean", 
+                        "LogGroupName": "string", 
+                        "LogStreamName": "string"
+                    }, 
+                    "CompressionFormat": "string", 
+                    "EncryptionConfiguration": {
+                        "KMSEncryptionConfig": {
+                            "AWSKMSKeyARN": "string"
+                        }, 
+                        "NoEncryptionConfig": "string"
+                    }, 
+                    "Prefix": "string", 
+                    "RoleARN": "string"
+                }
+            }
+        }
+    }
+}

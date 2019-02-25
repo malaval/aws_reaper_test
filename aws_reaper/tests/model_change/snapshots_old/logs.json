@@ -1,0 +1,130 @@
+{
+    "IamActions": [
+        "AssociateKmsKey", 
+        "CancelExportTask", 
+        "CreateExportTask", 
+        "CreateLogGroup", 
+        "CreateLogStream", 
+        "DeleteDestination", 
+        "DeleteLogGroup", 
+        "DeleteLogStream", 
+        "DeleteMetricFilter", 
+        "DeleteResourcePolicy", 
+        "DeleteRetentionPolicy", 
+        "DeleteSubscriptionFilter", 
+        "DisassociateKmsKey", 
+        "PutDestination", 
+        "PutDestinationPolicy", 
+        "PutLogEvents", 
+        "PutMetricFilter", 
+        "PutResourcePolicy", 
+        "PutRetentionPolicy", 
+        "PutSubscriptionFilter"
+    ], 
+    "OperationInputs": {
+        "AssociateKmsKey": {
+            "kmsKeyId": "string", 
+            "logGroupName": "string"
+        }, 
+        "CancelExportTask": {
+            "taskId": "string"
+        }, 
+        "CreateExportTask": {
+            "destination": "string", 
+            "destinationPrefix": "string", 
+            "from": "long", 
+            "logGroupName": "string", 
+            "logStreamNamePrefix": "string", 
+            "taskName": "string", 
+            "to": "long"
+        }, 
+        "CreateLogGroup": {
+            "kmsKeyId": "string", 
+            "logGroupName": "string", 
+            "tags": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "CreateLogStream": {
+            "logGroupName": "string", 
+            "logStreamName": "string"
+        }, 
+        "DeleteDestination": {
+            "destinationName": "string"
+        }, 
+        "DeleteLogGroup": {
+            "logGroupName": "string"
+        }, 
+        "DeleteLogStream": {
+            "logGroupName": "string", 
+            "logStreamName": "string"
+        }, 
+        "DeleteMetricFilter": {
+            "filterName": "string", 
+            "logGroupName": "string"
+        }, 
+        "DeleteResourcePolicy": {
+            "policyName": "string"
+        }, 
+        "DeleteRetentionPolicy": {
+            "logGroupName": "string"
+        }, 
+        "DeleteSubscriptionFilter": {
+            "filterName": "string", 
+            "logGroupName": "string"
+        }, 
+        "DisassociateKmsKey": {
+            "logGroupName": "string"
+        }, 
+        "PutDestination": {
+            "destinationName": "string", 
+            "roleArn": "string", 
+            "targetArn": "string"
+        }, 
+        "PutDestinationPolicy": {
+            "accessPolicy": "string", 
+            "destinationName": "string"
+        }, 
+        "PutLogEvents": {
+            "logEvents": {
+                "_list": {
+                    "message": "string", 
+                    "timestamp": "long"
+                }
+            }, 
+            "logGroupName": "string", 
+            "logStreamName": "string", 
+            "sequenceToken": "string"
+        }, 
+        "PutMetricFilter": {
+            "filterName": "string", 
+            "filterPattern": "string", 
+            "logGroupName": "string", 
+            "metricTransformations": {
+                "_list": {
+                    "defaultValue": "double", 
+                    "metricName": "string", 
+                    "metricNamespace": "string", 
+                    "metricValue": "string"
+                }
+            }
+        }, 
+        "PutResourcePolicy": {
+            "policyDocument": "string", 
+            "policyName": "string"
+        }, 
+        "PutRetentionPolicy": {
+            "logGroupName": "string", 
+            "retentionInDays": "integer"
+        }, 
+        "PutSubscriptionFilter": {
+            "destinationArn": "string", 
+            "distribution": "string", 
+            "filterName": "string", 
+            "filterPattern": "string", 
+            "logGroupName": "string", 
+            "roleArn": "string"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "IamActions": [
+        "DeleteCertificate", 
+        "ImportCertificate", 
+        "RequestCertificate", 
+        "ResendValidationEmail"
+    ], 
+    "OperationInputs": {
+        "DeleteCertificate": {
+            "CertificateArn": "string"
+        }, 
+        "ExportCertificate": {
+            "CertificateArn": "string", 
+            "Passphrase": "blob"
+        }, 
+        "ImportCertificate": {
+            "Certificate": "blob", 
+            "CertificateArn": "string", 
+            "CertificateChain": "blob", 
+            "PrivateKey": "blob"
+        }, 
+        "RequestCertificate": {
+            "CertificateAuthorityArn": "string", 
+            "DomainName": "string", 
+            "DomainValidationOptions": {
+                "_list": {
+                    "DomainName": "string", 
+                    "ValidationDomain": "string"
+                }
+            }, 
+            "IdempotencyToken": "string", 
+            "Options": {
+                "CertificateTransparencyLoggingPreference": "string"
+            }, 
+            "SubjectAlternativeNames": {
+                "_list": "string"
+            }, 
+            "ValidationMethod": "string"
+        }, 
+        "ResendValidationEmail": {
+            "CertificateArn": "string", 
+            "Domain": "string", 
+            "ValidationDomain": "string"
+        }, 
+        "UpdateCertificateOptions": {
+            "CertificateArn": "string", 
+            "Options": {
+                "CertificateTransparencyLoggingPreference": "string"
+            }
+        }
+    }
+}

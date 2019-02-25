@@ -1,0 +1,46 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "AssociateMemberAccount": {
+            "memberAccountId": "string"
+        }, 
+        "AssociateS3Resources": {
+            "memberAccountId": "string", 
+            "s3Resources": {
+                "_list": {
+                    "bucketName": "string", 
+                    "classificationType": {
+                        "continuous": "string", 
+                        "oneTime": "string"
+                    }, 
+                    "prefix": "string"
+                }
+            }
+        }, 
+        "DisassociateMemberAccount": {
+            "memberAccountId": "string"
+        }, 
+        "DisassociateS3Resources": {
+            "associatedS3Resources": {
+                "_list": {
+                    "bucketName": "string", 
+                    "prefix": "string"
+                }
+            }, 
+            "memberAccountId": "string"
+        }, 
+        "UpdateS3Resources": {
+            "memberAccountId": "string", 
+            "s3ResourcesUpdate": {
+                "_list": {
+                    "bucketName": "string", 
+                    "classificationTypeUpdate": {
+                        "continuous": "string", 
+                        "oneTime": "string"
+                    }, 
+                    "prefix": "string"
+                }
+            }
+        }
+    }
+}

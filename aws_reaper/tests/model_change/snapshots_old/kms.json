@@ -1,0 +1,187 @@
+{
+    "IamActions": [
+        "CancelKeyDeletion", 
+        "CreateAlias", 
+        "CreateGrant", 
+        "CreateKey", 
+        "Decrypt", 
+        "DeleteAlias", 
+        "DeleteImportedKeyMaterial", 
+        "DisableKey", 
+        "DisableKeyRotation", 
+        "EnableKey", 
+        "EnableKeyRotation", 
+        "Encrypt", 
+        "GenerateDataKey", 
+        "GenerateDataKeyWithoutPlaintext", 
+        "GenerateRandom", 
+        "ImportKeyMaterial", 
+        "PutKeyPolicy", 
+        "ReEncryptFrom", 
+        "ReEncryptTo", 
+        "RetireGrant", 
+        "RevokeGrant", 
+        "ScheduleKeyDeletion", 
+        "UpdateAlias", 
+        "UpdateKeyDescription"
+    ], 
+    "OperationInputs": {
+        "CancelKeyDeletion": {
+            "KeyId": "string"
+        }, 
+        "CreateAlias": {
+            "AliasName": "string", 
+            "TargetKeyId": "string"
+        }, 
+        "CreateGrant": {
+            "Constraints": {
+                "EncryptionContextEquals": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "EncryptionContextSubset": {
+                    "_key": "string", 
+                    "_value": "string"
+                }
+            }, 
+            "GrantTokens": {
+                "_list": "string"
+            }, 
+            "GranteePrincipal": "string", 
+            "KeyId": "string", 
+            "Name": "string", 
+            "Operations": {
+                "_list": "string"
+            }, 
+            "RetiringPrincipal": "string"
+        }, 
+        "CreateKey": {
+            "BypassPolicyLockoutSafetyCheck": "boolean", 
+            "Description": "string", 
+            "KeyUsage": "string", 
+            "Origin": "string", 
+            "Policy": "string", 
+            "Tags": {
+                "_list": {
+                    "TagKey": "string", 
+                    "TagValue": "string"
+                }
+            }
+        }, 
+        "Decrypt": {
+            "CiphertextBlob": "blob", 
+            "EncryptionContext": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "GrantTokens": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteAlias": {
+            "AliasName": "string"
+        }, 
+        "DeleteImportedKeyMaterial": {
+            "KeyId": "string"
+        }, 
+        "DisableKey": {
+            "KeyId": "string"
+        }, 
+        "DisableKeyRotation": {
+            "KeyId": "string"
+        }, 
+        "EnableKey": {
+            "KeyId": "string"
+        }, 
+        "EnableKeyRotation": {
+            "KeyId": "string"
+        }, 
+        "Encrypt": {
+            "EncryptionContext": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "GrantTokens": {
+                "_list": "string"
+            }, 
+            "KeyId": "string", 
+            "Plaintext": "blob"
+        }, 
+        "GenerateDataKey": {
+            "EncryptionContext": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "GrantTokens": {
+                "_list": "string"
+            }, 
+            "KeyId": "string", 
+            "KeySpec": "string", 
+            "NumberOfBytes": "integer"
+        }, 
+        "GenerateDataKeyWithoutPlaintext": {
+            "EncryptionContext": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "GrantTokens": {
+                "_list": "string"
+            }, 
+            "KeyId": "string", 
+            "KeySpec": "string", 
+            "NumberOfBytes": "integer"
+        }, 
+        "GenerateRandom": {
+            "NumberOfBytes": "integer"
+        }, 
+        "ImportKeyMaterial": {
+            "EncryptedKeyMaterial": "blob", 
+            "ExpirationModel": "string", 
+            "ImportToken": "blob", 
+            "KeyId": "string", 
+            "ValidTo": "timestamp"
+        }, 
+        "PutKeyPolicy": {
+            "BypassPolicyLockoutSafetyCheck": "boolean", 
+            "KeyId": "string", 
+            "Policy": "string", 
+            "PolicyName": "string"
+        }, 
+        "ReEncrypt": {
+            "CiphertextBlob": "blob", 
+            "DestinationEncryptionContext": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "DestinationKeyId": "string", 
+            "GrantTokens": {
+                "_list": "string"
+            }, 
+            "SourceEncryptionContext": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "RetireGrant": {
+            "GrantId": "string", 
+            "GrantToken": "string", 
+            "KeyId": "string"
+        }, 
+        "RevokeGrant": {
+            "GrantId": "string", 
+            "KeyId": "string"
+        }, 
+        "ScheduleKeyDeletion": {
+            "KeyId": "string", 
+            "PendingWindowInDays": "integer"
+        }, 
+        "UpdateAlias": {
+            "AliasName": "string", 
+            "TargetKeyId": "string"
+        }, 
+        "UpdateKeyDescription": {
+            "Description": "string", 
+            "KeyId": "string"
+        }
+    }
+}

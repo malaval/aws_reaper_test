@@ -1,0 +1,78 @@
+{
+    "IamActions": [
+        "AssociateTeamMember", 
+        "CreateProject", 
+        "CreateUserProfile", 
+        "DeleteExtendedAccess", 
+        "DeleteProject", 
+        "DeleteUserProfile", 
+        "DisassociateTeamMember", 
+        "PutExtendedAccess", 
+        "UpdateProject", 
+        "UpdateTeamMember", 
+        "UpdateUserProfile"
+    ], 
+    "OperationInputs": {
+        "AssociateTeamMember": {
+            "clientRequestToken": "string", 
+            "projectId": "string", 
+            "projectRole": "string", 
+            "remoteAccessAllowed": "boolean", 
+            "userArn": "string"
+        }, 
+        "CreateProject": {
+            "clientRequestToken": "string", 
+            "description": "string", 
+            "id": "string", 
+            "name": "string"
+        }, 
+        "CreateUserProfile": {
+            "displayName": "string", 
+            "emailAddress": "string", 
+            "sshPublicKey": "string", 
+            "userArn": "string"
+        }, 
+        "DeleteProject": {
+            "clientRequestToken": "string", 
+            "deleteStack": "boolean", 
+            "id": "string"
+        }, 
+        "DeleteUserProfile": {
+            "userArn": "string"
+        }, 
+        "DisassociateTeamMember": {
+            "projectId": "string", 
+            "userArn": "string"
+        }, 
+        "TagProject": {
+            "id": "string", 
+            "tags": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "UntagProject": {
+            "id": "string", 
+            "tags": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateProject": {
+            "description": "string", 
+            "id": "string", 
+            "name": "string"
+        }, 
+        "UpdateTeamMember": {
+            "projectId": "string", 
+            "projectRole": "string", 
+            "remoteAccessAllowed": "boolean", 
+            "userArn": "string"
+        }, 
+        "UpdateUserProfile": {
+            "displayName": "string", 
+            "emailAddress": "string", 
+            "sshPublicKey": "string", 
+            "userArn": "string"
+        }
+    }
+}

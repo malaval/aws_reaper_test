@@ -1,0 +1,133 @@
+{
+    "IamActions": [
+        "AddPermission", 
+        "ConfirmSubscription", 
+        "CreatePlatformApplication", 
+        "CreatePlatformEndpoint", 
+        "CreateTopic", 
+        "DeleteEndpoint", 
+        "DeletePlatformApplication", 
+        "DeleteTopic", 
+        "OptInPhoneNumber", 
+        "Publish", 
+        "RemovePermission", 
+        "SetEndpointAttributes", 
+        "SetPlatformApplicationAttributes", 
+        "SetSubscriptionAttributes", 
+        "SetTopicAttributes", 
+        "Subscribe", 
+        "Unsubscribe"
+    ], 
+    "OperationInputs": {
+        "AddPermission": {
+            "AWSAccountId": {
+                "_list": "string"
+            }, 
+            "ActionName": {
+                "_list": "string"
+            }, 
+            "Label": "string", 
+            "TopicArn": "string"
+        }, 
+        "ConfirmSubscription": {
+            "AuthenticateOnUnsubscribe": "string", 
+            "Token": "string", 
+            "TopicArn": "string"
+        }, 
+        "CreatePlatformApplication": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "Name": "string", 
+            "Platform": "string"
+        }, 
+        "CreatePlatformEndpoint": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "CustomUserData": "string", 
+            "PlatformApplicationArn": "string", 
+            "Token": "string"
+        }, 
+        "CreateTopic": {
+            "Name": "string"
+        }, 
+        "DeleteEndpoint": {
+            "EndpointArn": "string"
+        }, 
+        "DeletePlatformApplication": {
+            "PlatformApplicationArn": "string"
+        }, 
+        "DeleteTopic": {
+            "TopicArn": "string"
+        }, 
+        "OptInPhoneNumber": {
+            "phoneNumber": "string"
+        }, 
+        "Publish": {
+            "Message": "string", 
+            "MessageAttributes": {
+                "_key": "string", 
+                "_value": {
+                    "BinaryValue": "blob", 
+                    "DataType": "string", 
+                    "StringValue": "string"
+                }
+            }, 
+            "MessageStructure": "string", 
+            "PhoneNumber": "string", 
+            "Subject": "string", 
+            "TargetArn": "string", 
+            "TopicArn": "string"
+        }, 
+        "RemovePermission": {
+            "Label": "string", 
+            "TopicArn": "string"
+        }, 
+        "SetEndpointAttributes": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "EndpointArn": "string"
+        }, 
+        "SetPlatformApplicationAttributes": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "PlatformApplicationArn": "string"
+        }, 
+        "SetSMSAttributes": {
+            "attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "SetSubscriptionAttributes": {
+            "AttributeName": "string", 
+            "AttributeValue": "string", 
+            "SubscriptionArn": "string"
+        }, 
+        "SetTopicAttributes": {
+            "AttributeName": "string", 
+            "AttributeValue": "string", 
+            "TopicArn": "string"
+        }, 
+        "Subscribe": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "Endpoint": "string", 
+            "Protocol": "string", 
+            "ReturnSubscriptionArn": "boolean", 
+            "TopicArn": "string"
+        }, 
+        "Unsubscribe": {
+            "SubscriptionArn": "string"
+        }
+    }
+}

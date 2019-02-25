@@ -1,0 +1,191 @@
+{
+    "IamActions": [
+        "AssociateDeviceWithRoom", 
+        "AssociateSkillGroupWithRoom", 
+        "CreateProfile", 
+        "CreateRoom", 
+        "CreateSkillGroup", 
+        "CreateUser", 
+        "DeleteProfile", 
+        "DeleteRoom", 
+        "DeleteRoomSkillParameter", 
+        "DeleteSkillGroup", 
+        "DeleteUser", 
+        "DisassociateDeviceFromRoom", 
+        "DisassociateSkillGroupFromRoom", 
+        "PutRoomSkillParameter", 
+        "RevokeInvitation", 
+        "SendInvitation", 
+        "StartDeviceSync", 
+        "UpdateDevice", 
+        "UpdateProfile", 
+        "UpdateRoom", 
+        "UpdateSkillGroup"
+    ], 
+    "OperationInputs": {
+        "AssociateContactWithAddressBook": {
+            "AddressBookArn": "string", 
+            "ContactArn": "string"
+        }, 
+        "AssociateDeviceWithRoom": {
+            "DeviceArn": "string", 
+            "RoomArn": "string"
+        }, 
+        "AssociateSkillGroupWithRoom": {
+            "RoomArn": "string", 
+            "SkillGroupArn": "string"
+        }, 
+        "CreateAddressBook": {
+            "ClientRequestToken": "string", 
+            "Description": "string", 
+            "Name": "string"
+        }, 
+        "CreateContact": {
+            "ClientRequestToken": "string", 
+            "DisplayName": "string", 
+            "FirstName": "string", 
+            "LastName": "string", 
+            "PhoneNumber": "string"
+        }, 
+        "CreateProfile": {
+            "Address": "string", 
+            "ClientRequestToken": "string", 
+            "DistanceUnit": "string", 
+            "MaxVolumeLimit": "integer", 
+            "PSTNEnabled": "boolean", 
+            "ProfileName": "string", 
+            "SetupModeDisabled": "boolean", 
+            "TemperatureUnit": "string", 
+            "Timezone": "string", 
+            "WakeWord": "string"
+        }, 
+        "CreateRoom": {
+            "ClientRequestToken": "string", 
+            "Description": "string", 
+            "ProfileArn": "string", 
+            "ProviderCalendarId": "string", 
+            "RoomName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateSkillGroup": {
+            "ClientRequestToken": "string", 
+            "Description": "string", 
+            "SkillGroupName": "string"
+        }, 
+        "CreateUser": {
+            "ClientRequestToken": "string", 
+            "Email": "string", 
+            "FirstName": "string", 
+            "LastName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UserId": "string"
+        }, 
+        "DeleteAddressBook": {
+            "AddressBookArn": "string"
+        }, 
+        "DeleteContact": {
+            "ContactArn": "string"
+        }, 
+        "DeleteProfile": {
+            "ProfileArn": "string"
+        }, 
+        "DeleteRoom": {
+            "RoomArn": "string"
+        }, 
+        "DeleteRoomSkillParameter": {
+            "ParameterKey": "string", 
+            "RoomArn": "string", 
+            "SkillId": "string"
+        }, 
+        "DeleteSkillGroup": {
+            "SkillGroupArn": "string"
+        }, 
+        "DeleteUser": {
+            "EnrollmentId": "string", 
+            "UserArn": "string"
+        }, 
+        "DisassociateContactFromAddressBook": {
+            "AddressBookArn": "string", 
+            "ContactArn": "string"
+        }, 
+        "DisassociateDeviceFromRoom": {
+            "DeviceArn": "string"
+        }, 
+        "DisassociateSkillGroupFromRoom": {
+            "RoomArn": "string", 
+            "SkillGroupArn": "string"
+        }, 
+        "PutRoomSkillParameter": {
+            "RoomArn": "string", 
+            "RoomSkillParameter": {
+                "ParameterKey": "string", 
+                "ParameterValue": "string"
+            }, 
+            "SkillId": "string"
+        }, 
+        "RevokeInvitation": {
+            "EnrollmentId": "string", 
+            "UserArn": "string"
+        }, 
+        "SendInvitation": {
+            "UserArn": "string"
+        }, 
+        "StartDeviceSync": {
+            "DeviceArn": "string", 
+            "Features": {
+                "_list": "string"
+            }, 
+            "RoomArn": "string"
+        }, 
+        "UpdateAddressBook": {
+            "AddressBookArn": "string", 
+            "Description": "string", 
+            "Name": "string"
+        }, 
+        "UpdateContact": {
+            "ContactArn": "string", 
+            "DisplayName": "string", 
+            "FirstName": "string", 
+            "LastName": "string", 
+            "PhoneNumber": "string"
+        }, 
+        "UpdateDevice": {
+            "DeviceArn": "string", 
+            "DeviceName": "string"
+        }, 
+        "UpdateProfile": {
+            "Address": "string", 
+            "DistanceUnit": "string", 
+            "MaxVolumeLimit": "integer", 
+            "PSTNEnabled": "boolean", 
+            "ProfileArn": "string", 
+            "ProfileName": "string", 
+            "SetupModeDisabled": "boolean", 
+            "TemperatureUnit": "string", 
+            "Timezone": "string", 
+            "WakeWord": "string"
+        }, 
+        "UpdateRoom": {
+            "Description": "string", 
+            "ProfileArn": "string", 
+            "ProviderCalendarId": "string", 
+            "RoomArn": "string", 
+            "RoomName": "string"
+        }, 
+        "UpdateSkillGroup": {
+            "Description": "string", 
+            "SkillGroupArn": "string", 
+            "SkillGroupName": "string"
+        }
+    }
+}

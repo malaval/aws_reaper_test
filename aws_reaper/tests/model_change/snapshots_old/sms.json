@@ -1,0 +1,33 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "CreateReplicationJob": {
+            "description": "string", 
+            "frequency": "integer", 
+            "licenseType": "string", 
+            "roleName": "string", 
+            "seedReplicationTime": "timestamp", 
+            "serverId": "string"
+        }, 
+        "DeleteReplicationJob": {
+            "replicationJobId": "string"
+        }, 
+        "DeleteServerCatalog": {}, 
+        "DisassociateConnector": {
+            "connectorId": "string"
+        }, 
+        "ImportServerCatalog": {}, 
+        "StartOnDemandReplicationRun": {
+            "description": "string", 
+            "replicationJobId": "string"
+        }, 
+        "UpdateReplicationJob": {
+            "description": "string", 
+            "frequency": "integer", 
+            "licenseType": "string", 
+            "nextReplicationRunStartTime": "timestamp", 
+            "replicationJobId": "string", 
+            "roleName": "string"
+        }
+    }
+}

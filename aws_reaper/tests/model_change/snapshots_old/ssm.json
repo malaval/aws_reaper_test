@@ -1,0 +1,697 @@
+{
+    "IamActions": [
+        "CancelCommand", 
+        "CreateActivation", 
+        "CreateAssociation", 
+        "CreateAssociationBatch", 
+        "CreateDocument", 
+        "CreateMaintenanceWindow", 
+        "CreatePatchBaseline", 
+        "CreateResourceDataSync", 
+        "DeleteActivation", 
+        "DeleteAssociation", 
+        "DeleteDocument", 
+        "DeleteMaintenanceWindow", 
+        "DeleteParameter", 
+        "DeleteParameters", 
+        "DeletePatchBaseline", 
+        "DeleteResourceDataSync", 
+        "DeregisterManagedInstance", 
+        "DeregisterPatchBaselineForPatchGroup", 
+        "DeregisterTargetFromMaintenanceWindow", 
+        "DeregisterTaskFromMaintenanceWindow", 
+        "ModifyDocumentPermission", 
+        "PutComplianceItems", 
+        "PutParameter", 
+        "RegisterDefaultPatchBaseline", 
+        "RegisterPatchBaselineForPatchGroup", 
+        "RegisterTargetWithMaintenanceWindow", 
+        "RegisterTaskWithMaintenanceWindow", 
+        "SendAutomationSignal", 
+        "SendCommand", 
+        "StartAutomationExecution", 
+        "StopAutomationExecution", 
+        "UpdateAssociationStatus", 
+        "UpdateInstanceInformation", 
+        "UpdateMaintenanceWindow", 
+        "UpdateMaintenanceWindowTarget", 
+        "UpdateMaintenanceWindowTask", 
+        "UpdateManagedInstanceRole", 
+        "UpdatePatchBaseline"
+    ], 
+    "OperationInputs": {
+        "CancelCommand": {
+            "CommandId": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateActivation": {
+            "DefaultInstanceName": "string", 
+            "Description": "string", 
+            "ExpirationDate": "timestamp", 
+            "IamRole": "string", 
+            "RegistrationLimit": "integer"
+        }, 
+        "CreateAssociation": {
+            "AssociationName": "string", 
+            "DocumentVersion": "string", 
+            "InstanceId": "string", 
+            "Name": "string", 
+            "OutputLocation": {
+                "S3Location": {
+                    "OutputS3BucketName": "string", 
+                    "OutputS3KeyPrefix": "string", 
+                    "OutputS3Region": "string"
+                }
+            }, 
+            "Parameters": {
+                "_key": "string", 
+                "_value": {
+                    "_list": "string"
+                }
+            }, 
+            "ScheduleExpression": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "CreateAssociationBatch": {
+            "Entries": {
+                "_list": {
+                    "AssociationName": "string", 
+                    "DocumentVersion": "string", 
+                    "InstanceId": "string", 
+                    "Name": "string", 
+                    "OutputLocation": {
+                        "S3Location": {
+                            "OutputS3BucketName": "string", 
+                            "OutputS3KeyPrefix": "string", 
+                            "OutputS3Region": "string"
+                        }
+                    }, 
+                    "Parameters": {
+                        "_key": "string", 
+                        "_value": {
+                            "_list": "string"
+                        }
+                    }, 
+                    "ScheduleExpression": "string", 
+                    "Targets": {
+                        "_list": {
+                            "Key": "string", 
+                            "Values": "list"
+                        }
+                    }
+                }
+            }
+        }, 
+        "CreateDocument": {
+            "Content": "string", 
+            "DocumentFormat": "string", 
+            "DocumentType": "string", 
+            "Name": "string", 
+            "TargetType": "string"
+        }, 
+        "CreateMaintenanceWindow": {
+            "AllowUnassociatedTargets": "boolean", 
+            "ClientToken": "string", 
+            "Cutoff": "integer", 
+            "Description": "string", 
+            "Duration": "integer", 
+            "Name": "string", 
+            "Schedule": "string"
+        }, 
+        "CreatePatchBaseline": {
+            "ApprovalRules": {
+                "PatchRules": {
+                    "_list": {
+                        "ApproveAfterDays": "integer", 
+                        "ComplianceLevel": "string", 
+                        "EnableNonSecurity": "boolean", 
+                        "PatchFilterGroup": {
+                            "PatchFilters": "list"
+                        }
+                    }
+                }
+            }, 
+            "ApprovedPatches": {
+                "_list": "string"
+            }, 
+            "ApprovedPatchesComplianceLevel": "string", 
+            "ApprovedPatchesEnableNonSecurity": "boolean", 
+            "ClientToken": "string", 
+            "Description": "string", 
+            "GlobalFilters": {
+                "PatchFilters": {
+                    "_list": {
+                        "Key": "string", 
+                        "Values": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "Name": "string", 
+            "OperatingSystem": "string", 
+            "RejectedPatches": {
+                "_list": "string"
+            }, 
+            "Sources": {
+                "_list": {
+                    "Configuration": "string", 
+                    "Name": "string", 
+                    "Products": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "CreateResourceDataSync": {
+            "S3Destination": {
+                "AWSKMSKeyARN": "string", 
+                "BucketName": "string", 
+                "Prefix": "string", 
+                "Region": "string", 
+                "SyncFormat": "string"
+            }, 
+            "SyncName": "string"
+        }, 
+        "DeleteActivation": {
+            "ActivationId": "string"
+        }, 
+        "DeleteAssociation": {
+            "AssociationId": "string", 
+            "InstanceId": "string", 
+            "Name": "string"
+        }, 
+        "DeleteDocument": {
+            "Name": "string"
+        }, 
+        "DeleteInventory": {
+            "ClientToken": "string", 
+            "DryRun": "boolean", 
+            "SchemaDeleteOption": "string", 
+            "TypeName": "string"
+        }, 
+        "DeleteMaintenanceWindow": {
+            "WindowId": "string"
+        }, 
+        "DeleteParameter": {
+            "Name": "string"
+        }, 
+        "DeleteParameters": {
+            "Names": {
+                "_list": "string"
+            }
+        }, 
+        "DeletePatchBaseline": {
+            "BaselineId": "string"
+        }, 
+        "DeleteResourceDataSync": {
+            "SyncName": "string"
+        }, 
+        "DeregisterManagedInstance": {
+            "InstanceId": "string"
+        }, 
+        "DeregisterPatchBaselineForPatchGroup": {
+            "BaselineId": "string", 
+            "PatchGroup": "string"
+        }, 
+        "DeregisterTargetFromMaintenanceWindow": {
+            "Safe": "boolean", 
+            "WindowId": "string", 
+            "WindowTargetId": "string"
+        }, 
+        "DeregisterTaskFromMaintenanceWindow": {
+            "WindowId": "string", 
+            "WindowTaskId": "string"
+        }, 
+        "LabelParameterVersion": {
+            "Labels": {
+                "_list": "string"
+            }, 
+            "Name": "string", 
+            "ParameterVersion": "long"
+        }, 
+        "ModifyDocumentPermission": {
+            "AccountIdsToAdd": {
+                "_list": "string"
+            }, 
+            "AccountIdsToRemove": {
+                "_list": "string"
+            }, 
+            "Name": "string", 
+            "PermissionType": "string"
+        }, 
+        "PutComplianceItems": {
+            "ComplianceType": "string", 
+            "ExecutionSummary": {
+                "ExecutionId": "string", 
+                "ExecutionTime": "timestamp", 
+                "ExecutionType": "string"
+            }, 
+            "ItemContentHash": "string", 
+            "Items": {
+                "_list": {
+                    "Details": {
+                        "_key": "string", 
+                        "_value": "string"
+                    }, 
+                    "Id": "string", 
+                    "Severity": "string", 
+                    "Status": "string", 
+                    "Title": "string"
+                }
+            }, 
+            "ResourceId": "string", 
+            "ResourceType": "string"
+        }, 
+        "PutInventory": {
+            "InstanceId": "string", 
+            "Items": {
+                "_list": {
+                    "CaptureTime": "string", 
+                    "Content": {
+                        "_list": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }
+                    }, 
+                    "ContentHash": "string", 
+                    "Context": {
+                        "_key": "string", 
+                        "_value": "string"
+                    }, 
+                    "SchemaVersion": "string", 
+                    "TypeName": "string"
+                }
+            }
+        }, 
+        "PutParameter": {
+            "AllowedPattern": "string", 
+            "Description": "string", 
+            "KeyId": "string", 
+            "Name": "string", 
+            "Overwrite": "boolean", 
+            "Type": "string", 
+            "Value": "string"
+        }, 
+        "RegisterDefaultPatchBaseline": {
+            "BaselineId": "string"
+        }, 
+        "RegisterPatchBaselineForPatchGroup": {
+            "BaselineId": "string", 
+            "PatchGroup": "string"
+        }, 
+        "RegisterTargetWithMaintenanceWindow": {
+            "ClientToken": "string", 
+            "Description": "string", 
+            "Name": "string", 
+            "OwnerInformation": "string", 
+            "ResourceType": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "WindowId": "string"
+        }, 
+        "RegisterTaskWithMaintenanceWindow": {
+            "ClientToken": "string", 
+            "Description": "string", 
+            "LoggingInfo": {
+                "S3BucketName": "string", 
+                "S3KeyPrefix": "string", 
+                "S3Region": "string"
+            }, 
+            "MaxConcurrency": "string", 
+            "MaxErrors": "string", 
+            "Name": "string", 
+            "Priority": "integer", 
+            "ServiceRoleArn": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "TaskArn": "string", 
+            "TaskInvocationParameters": {
+                "Automation": {
+                    "DocumentVersion": "string", 
+                    "Parameters": {
+                        "_key": "string", 
+                        "_value": {
+                            "_list": "string"
+                        }
+                    }
+                }, 
+                "Lambda": {
+                    "ClientContext": "string", 
+                    "Payload": "blob", 
+                    "Qualifier": "string"
+                }, 
+                "RunCommand": {
+                    "Comment": "string", 
+                    "DocumentHash": "string", 
+                    "DocumentHashType": "string", 
+                    "NotificationConfig": {
+                        "NotificationArn": "string", 
+                        "NotificationEvents": {
+                            "_list": "string"
+                        }, 
+                        "NotificationType": "string"
+                    }, 
+                    "OutputS3BucketName": "string", 
+                    "OutputS3KeyPrefix": "string", 
+                    "Parameters": {
+                        "_key": "string", 
+                        "_value": {
+                            "_list": "string"
+                        }
+                    }, 
+                    "ServiceRoleArn": "string", 
+                    "TimeoutSeconds": "integer"
+                }, 
+                "StepFunctions": {
+                    "Input": "string", 
+                    "Name": "string"
+                }
+            }, 
+            "TaskParameters": {
+                "_key": "string", 
+                "_value": {
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "TaskType": "string", 
+            "WindowId": "string"
+        }, 
+        "SendAutomationSignal": {
+            "AutomationExecutionId": "string", 
+            "Payload": {
+                "_key": "string", 
+                "_value": {
+                    "_list": "string"
+                }
+            }, 
+            "SignalType": "string"
+        }, 
+        "SendCommand": {
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "string", 
+                "CloudWatchOutputEnabled": "boolean"
+            }, 
+            "Comment": "string", 
+            "DocumentHash": "string", 
+            "DocumentHashType": "string", 
+            "DocumentName": "string", 
+            "DocumentVersion": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }, 
+            "MaxConcurrency": "string", 
+            "MaxErrors": "string", 
+            "NotificationConfig": {
+                "NotificationArn": "string", 
+                "NotificationEvents": {
+                    "_list": "string"
+                }, 
+                "NotificationType": "string"
+            }, 
+            "OutputS3BucketName": "string", 
+            "OutputS3KeyPrefix": "string", 
+            "OutputS3Region": "string", 
+            "Parameters": {
+                "_key": "string", 
+                "_value": {
+                    "_list": "string"
+                }
+            }, 
+            "ServiceRoleArn": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "TimeoutSeconds": "integer"
+        }, 
+        "StartAssociationsOnce": {
+            "AssociationIds": {
+                "_list": "string"
+            }
+        }, 
+        "StartAutomationExecution": {
+            "ClientToken": "string", 
+            "DocumentName": "string", 
+            "DocumentVersion": "string", 
+            "MaxConcurrency": "string", 
+            "MaxErrors": "string", 
+            "Mode": "string", 
+            "Parameters": {
+                "_key": "string", 
+                "_value": {
+                    "_list": "string"
+                }
+            }, 
+            "TargetMaps": {
+                "_list": {
+                    "_key": "string", 
+                    "_value": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "TargetParameterName": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "StopAutomationExecution": {
+            "AutomationExecutionId": "string", 
+            "Type": "string"
+        }, 
+        "UpdateAssociation": {
+            "AssociationId": "string", 
+            "AssociationName": "string", 
+            "AssociationVersion": "string", 
+            "DocumentVersion": "string", 
+            "Name": "string", 
+            "OutputLocation": {
+                "S3Location": {
+                    "OutputS3BucketName": "string", 
+                    "OutputS3KeyPrefix": "string", 
+                    "OutputS3Region": "string"
+                }
+            }, 
+            "Parameters": {
+                "_key": "string", 
+                "_value": {
+                    "_list": "string"
+                }
+            }, 
+            "ScheduleExpression": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateAssociationStatus": {
+            "AssociationStatus": {
+                "AdditionalInfo": "string", 
+                "Date": "timestamp", 
+                "Message": "string", 
+                "Name": "string"
+            }, 
+            "InstanceId": "string", 
+            "Name": "string"
+        }, 
+        "UpdateDocument": {
+            "Content": "string", 
+            "DocumentFormat": "string", 
+            "DocumentVersion": "string", 
+            "Name": "string", 
+            "TargetType": "string"
+        }, 
+        "UpdateDocumentDefaultVersion": {
+            "DocumentVersion": "string", 
+            "Name": "string"
+        }, 
+        "UpdateMaintenanceWindow": {
+            "AllowUnassociatedTargets": "boolean", 
+            "Cutoff": "integer", 
+            "Description": "string", 
+            "Duration": "integer", 
+            "Enabled": "boolean", 
+            "Name": "string", 
+            "Replace": "boolean", 
+            "Schedule": "string", 
+            "WindowId": "string"
+        }, 
+        "UpdateMaintenanceWindowTarget": {
+            "Description": "string", 
+            "Name": "string", 
+            "OwnerInformation": "string", 
+            "Replace": "boolean", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "WindowId": "string", 
+            "WindowTargetId": "string"
+        }, 
+        "UpdateMaintenanceWindowTask": {
+            "Description": "string", 
+            "LoggingInfo": {
+                "S3BucketName": "string", 
+                "S3KeyPrefix": "string", 
+                "S3Region": "string"
+            }, 
+            "MaxConcurrency": "string", 
+            "MaxErrors": "string", 
+            "Name": "string", 
+            "Priority": "integer", 
+            "Replace": "boolean", 
+            "ServiceRoleArn": "string", 
+            "Targets": {
+                "_list": {
+                    "Key": "string", 
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "TaskArn": "string", 
+            "TaskInvocationParameters": {
+                "Automation": {
+                    "DocumentVersion": "string", 
+                    "Parameters": {
+                        "_key": "string", 
+                        "_value": {
+                            "_list": "string"
+                        }
+                    }
+                }, 
+                "Lambda": {
+                    "ClientContext": "string", 
+                    "Payload": "blob", 
+                    "Qualifier": "string"
+                }, 
+                "RunCommand": {
+                    "Comment": "string", 
+                    "DocumentHash": "string", 
+                    "DocumentHashType": "string", 
+                    "NotificationConfig": {
+                        "NotificationArn": "string", 
+                        "NotificationEvents": {
+                            "_list": "string"
+                        }, 
+                        "NotificationType": "string"
+                    }, 
+                    "OutputS3BucketName": "string", 
+                    "OutputS3KeyPrefix": "string", 
+                    "Parameters": {
+                        "_key": "string", 
+                        "_value": {
+                            "_list": "string"
+                        }
+                    }, 
+                    "ServiceRoleArn": "string", 
+                    "TimeoutSeconds": "integer"
+                }, 
+                "StepFunctions": {
+                    "Input": "string", 
+                    "Name": "string"
+                }
+            }, 
+            "TaskParameters": {
+                "_key": "string", 
+                "_value": {
+                    "Values": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "WindowId": "string", 
+            "WindowTaskId": "string"
+        }, 
+        "UpdateManagedInstanceRole": {
+            "IamRole": "string", 
+            "InstanceId": "string"
+        }, 
+        "UpdatePatchBaseline": {
+            "ApprovalRules": {
+                "PatchRules": {
+                    "_list": {
+                        "ApproveAfterDays": "integer", 
+                        "ComplianceLevel": "string", 
+                        "EnableNonSecurity": "boolean", 
+                        "PatchFilterGroup": {
+                            "PatchFilters": "list"
+                        }
+                    }
+                }
+            }, 
+            "ApprovedPatches": {
+                "_list": "string"
+            }, 
+            "ApprovedPatchesComplianceLevel": "string", 
+            "ApprovedPatchesEnableNonSecurity": "boolean", 
+            "BaselineId": "string", 
+            "Description": "string", 
+            "GlobalFilters": {
+                "PatchFilters": {
+                    "_list": {
+                        "Key": "string", 
+                        "Values": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "Name": "string", 
+            "RejectedPatches": {
+                "_list": "string"
+            }, 
+            "Replace": "boolean", 
+            "Sources": {
+                "_list": {
+                    "Configuration": "string", 
+                    "Name": "string", 
+                    "Products": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }
+    }
+}

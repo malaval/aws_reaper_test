@@ -1,0 +1,265 @@
+{
+    "IamActions": [
+        "AcknowledgeJob", 
+        "AcknowledgeThirdPartyJob", 
+        "CreateCustomActionType", 
+        "CreatePipeline", 
+        "DeleteCustomActionType", 
+        "DeletePipeline", 
+        "DeleteWebhook", 
+        "DeregisterWebhookWithThirdParty", 
+        "DisableStageTransition", 
+        "EnableStageTransition", 
+        "PollForJobs", 
+        "PollForThirdPartyJobs", 
+        "PutActionRevision", 
+        "PutApprovalResult", 
+        "PutJobFailureResult", 
+        "PutJobSuccessResult", 
+        "PutThirdPartyJobFailureResult", 
+        "PutThirdPartyJobSuccessResult", 
+        "PutWebhook", 
+        "RegisterWebhookWithThirdParty", 
+        "RetryStageExecution", 
+        "StartPipelineExecution", 
+        "UpdatePipeline"
+    ], 
+    "OperationInputs": {
+        "AcknowledgeJob": {
+            "jobId": "string", 
+            "nonce": "string"
+        }, 
+        "AcknowledgeThirdPartyJob": {
+            "clientToken": "string", 
+            "jobId": "string", 
+            "nonce": "string"
+        }, 
+        "CreateCustomActionType": {
+            "category": "string", 
+            "configurationProperties": {
+                "_list": {
+                    "description": "string", 
+                    "key": "boolean", 
+                    "name": "string", 
+                    "queryable": "boolean", 
+                    "required": "boolean", 
+                    "secret": "boolean", 
+                    "type": "string"
+                }
+            }, 
+            "inputArtifactDetails": {
+                "maximumCount": "integer", 
+                "minimumCount": "integer"
+            }, 
+            "outputArtifactDetails": {
+                "maximumCount": "integer", 
+                "minimumCount": "integer"
+            }, 
+            "provider": "string", 
+            "settings": {
+                "entityUrlTemplate": "string", 
+                "executionUrlTemplate": "string", 
+                "revisionUrlTemplate": "string", 
+                "thirdPartyConfigurationUrl": "string"
+            }, 
+            "version": "string"
+        }, 
+        "CreatePipeline": {
+            "pipeline": {
+                "artifactStore": {
+                    "encryptionKey": {
+                        "id": "string", 
+                        "type": "string"
+                    }, 
+                    "location": "string", 
+                    "type": "string"
+                }, 
+                "name": "string", 
+                "roleArn": "string", 
+                "stages": {
+                    "_list": {
+                        "actions": {
+                            "_list": "structure"
+                        }, 
+                        "blockers": {
+                            "_list": "structure"
+                        }, 
+                        "name": "string"
+                    }
+                }, 
+                "version": "integer"
+            }
+        }, 
+        "DeleteCustomActionType": {
+            "category": "string", 
+            "provider": "string", 
+            "version": "string"
+        }, 
+        "DeletePipeline": {
+            "name": "string"
+        }, 
+        "DeleteWebhook": {
+            "name": "string"
+        }, 
+        "DeregisterWebhookWithThirdParty": {
+            "webhookName": "string"
+        }, 
+        "DisableStageTransition": {
+            "pipelineName": "string", 
+            "reason": "string", 
+            "stageName": "string", 
+            "transitionType": "string"
+        }, 
+        "EnableStageTransition": {
+            "pipelineName": "string", 
+            "stageName": "string", 
+            "transitionType": "string"
+        }, 
+        "PollForJobs": {
+            "actionTypeId": {
+                "category": "string", 
+                "owner": "string", 
+                "provider": "string", 
+                "version": "string"
+            }, 
+            "maxBatchSize": "integer", 
+            "queryParam": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "PollForThirdPartyJobs": {
+            "actionTypeId": {
+                "category": "string", 
+                "owner": "string", 
+                "provider": "string", 
+                "version": "string"
+            }, 
+            "maxBatchSize": "integer"
+        }, 
+        "PutActionRevision": {
+            "actionName": "string", 
+            "actionRevision": {
+                "created": "timestamp", 
+                "revisionChangeId": "string", 
+                "revisionId": "string"
+            }, 
+            "pipelineName": "string", 
+            "stageName": "string"
+        }, 
+        "PutApprovalResult": {
+            "actionName": "string", 
+            "pipelineName": "string", 
+            "result": {
+                "status": "string", 
+                "summary": "string"
+            }, 
+            "stageName": "string", 
+            "token": "string"
+        }, 
+        "PutJobFailureResult": {
+            "failureDetails": {
+                "externalExecutionId": "string", 
+                "message": "string", 
+                "type": "string"
+            }, 
+            "jobId": "string"
+        }, 
+        "PutJobSuccessResult": {
+            "continuationToken": "string", 
+            "currentRevision": {
+                "changeIdentifier": "string", 
+                "created": "timestamp", 
+                "revision": "string", 
+                "revisionSummary": "string"
+            }, 
+            "executionDetails": {
+                "externalExecutionId": "string", 
+                "percentComplete": "integer", 
+                "summary": "string"
+            }, 
+            "jobId": "string"
+        }, 
+        "PutThirdPartyJobFailureResult": {
+            "clientToken": "string", 
+            "failureDetails": {
+                "externalExecutionId": "string", 
+                "message": "string", 
+                "type": "string"
+            }, 
+            "jobId": "string"
+        }, 
+        "PutThirdPartyJobSuccessResult": {
+            "clientToken": "string", 
+            "continuationToken": "string", 
+            "currentRevision": {
+                "changeIdentifier": "string", 
+                "created": "timestamp", 
+                "revision": "string", 
+                "revisionSummary": "string"
+            }, 
+            "executionDetails": {
+                "externalExecutionId": "string", 
+                "percentComplete": "integer", 
+                "summary": "string"
+            }, 
+            "jobId": "string"
+        }, 
+        "PutWebhook": {
+            "webhook": {
+                "authentication": "string", 
+                "authenticationConfiguration": {
+                    "AllowedIPRange": "string", 
+                    "SecretToken": "string"
+                }, 
+                "filters": {
+                    "_list": {
+                        "jsonPath": "string", 
+                        "matchEquals": "string"
+                    }
+                }, 
+                "name": "string", 
+                "targetAction": "string", 
+                "targetPipeline": "string"
+            }
+        }, 
+        "RegisterWebhookWithThirdParty": {
+            "webhookName": "string"
+        }, 
+        "RetryStageExecution": {
+            "pipelineExecutionId": "string", 
+            "pipelineName": "string", 
+            "retryMode": "string", 
+            "stageName": "string"
+        }, 
+        "StartPipelineExecution": {
+            "name": "string"
+        }, 
+        "UpdatePipeline": {
+            "pipeline": {
+                "artifactStore": {
+                    "encryptionKey": {
+                        "id": "string", 
+                        "type": "string"
+                    }, 
+                    "location": "string", 
+                    "type": "string"
+                }, 
+                "name": "string", 
+                "roleArn": "string", 
+                "stages": {
+                    "_list": {
+                        "actions": {
+                            "_list": "structure"
+                        }, 
+                        "blockers": {
+                            "_list": "structure"
+                        }, 
+                        "name": "string"
+                    }
+                }, 
+                "version": "integer"
+            }
+        }
+    }
+}

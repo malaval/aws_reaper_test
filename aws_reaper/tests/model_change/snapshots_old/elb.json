@@ -1,0 +1,202 @@
+{
+    "IamActions": [
+        "ApplySecurityGroupsToLoadBalancer", 
+        "AttachLoadBalancerToSubnets", 
+        "ConfigureHealthCheck", 
+        "CreateAppCookieStickinessPolicy", 
+        "CreateLBCookieStickinessPolicy", 
+        "CreateLoadBalancer", 
+        "CreateLoadBalancerListeners", 
+        "CreateLoadBalancerPolicy", 
+        "DeleteLoadBalancer", 
+        "DeleteLoadBalancerListeners", 
+        "DeleteLoadBalancerPolicy", 
+        "DeregisterInstancesFromLoadBalancer", 
+        "DetachLoadBalancerFromSubnets", 
+        "DisableAvailabilityZonesForLoadBalancer", 
+        "EnableAvailabilityZonesForLoadBalancer", 
+        "ModifyLoadBalancerAttributes", 
+        "RegisterInstancesWithLoadBalancer", 
+        "SetLoadBalancerListenerSSLCertificate", 
+        "SetLoadBalancerPoliciesForBackendServer", 
+        "SetLoadBalancerPoliciesOfListener"
+    ], 
+    "OperationInputs": {
+        "ApplySecurityGroupsToLoadBalancer": {
+            "LoadBalancerName": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }
+        }, 
+        "AttachLoadBalancerToSubnets": {
+            "LoadBalancerName": "string", 
+            "Subnets": {
+                "_list": "string"
+            }
+        }, 
+        "ConfigureHealthCheck": {
+            "HealthCheck": {
+                "HealthyThreshold": "integer", 
+                "Interval": "integer", 
+                "Target": "string", 
+                "Timeout": "integer", 
+                "UnhealthyThreshold": "integer"
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "CreateAppCookieStickinessPolicy": {
+            "CookieName": "string", 
+            "LoadBalancerName": "string", 
+            "PolicyName": "string"
+        }, 
+        "CreateLBCookieStickinessPolicy": {
+            "CookieExpirationPeriod": "long", 
+            "LoadBalancerName": "string", 
+            "PolicyName": "string"
+        }, 
+        "CreateLoadBalancer": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "Listeners": {
+                "_list": {
+                    "InstancePort": "integer", 
+                    "InstanceProtocol": "string", 
+                    "LoadBalancerPort": "integer", 
+                    "Protocol": "string", 
+                    "SSLCertificateId": "string"
+                }
+            }, 
+            "LoadBalancerName": "string", 
+            "Scheme": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }, 
+            "Subnets": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateLoadBalancerListeners": {
+            "Listeners": {
+                "_list": {
+                    "InstancePort": "integer", 
+                    "InstanceProtocol": "string", 
+                    "LoadBalancerPort": "integer", 
+                    "Protocol": "string", 
+                    "SSLCertificateId": "string"
+                }
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "CreateLoadBalancerPolicy": {
+            "LoadBalancerName": "string", 
+            "PolicyAttributes": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "AttributeValue": "string"
+                }
+            }, 
+            "PolicyName": "string", 
+            "PolicyTypeName": "string"
+        }, 
+        "DeleteLoadBalancer": {
+            "LoadBalancerName": "string"
+        }, 
+        "DeleteLoadBalancerListeners": {
+            "LoadBalancerName": "string", 
+            "LoadBalancerPorts": {
+                "_list": "integer"
+            }
+        }, 
+        "DeleteLoadBalancerPolicy": {
+            "LoadBalancerName": "string", 
+            "PolicyName": "string"
+        }, 
+        "DeregisterInstancesFromLoadBalancer": {
+            "Instances": {
+                "_list": {
+                    "InstanceId": "string"
+                }
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "DetachLoadBalancerFromSubnets": {
+            "LoadBalancerName": "string", 
+            "Subnets": {
+                "_list": "string"
+            }
+        }, 
+        "DisableAvailabilityZonesForLoadBalancer": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "EnableAvailabilityZonesForLoadBalancer": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "ModifyLoadBalancerAttributes": {
+            "LoadBalancerAttributes": {
+                "AccessLog": {
+                    "EmitInterval": "integer", 
+                    "Enabled": "boolean", 
+                    "S3BucketName": "string", 
+                    "S3BucketPrefix": "string"
+                }, 
+                "AdditionalAttributes": {
+                    "_list": {
+                        "Key": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "ConnectionDraining": {
+                    "Enabled": "boolean", 
+                    "Timeout": "integer"
+                }, 
+                "ConnectionSettings": {
+                    "IdleTimeout": "integer"
+                }, 
+                "CrossZoneLoadBalancing": {
+                    "Enabled": "boolean"
+                }
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "RegisterInstancesWithLoadBalancer": {
+            "Instances": {
+                "_list": {
+                    "InstanceId": "string"
+                }
+            }, 
+            "LoadBalancerName": "string"
+        }, 
+        "SetLoadBalancerListenerSSLCertificate": {
+            "LoadBalancerName": "string", 
+            "LoadBalancerPort": "integer", 
+            "SSLCertificateId": "string"
+        }, 
+        "SetLoadBalancerPoliciesForBackendServer": {
+            "InstancePort": "integer", 
+            "LoadBalancerName": "string", 
+            "PolicyNames": {
+                "_list": "string"
+            }
+        }, 
+        "SetLoadBalancerPoliciesOfListener": {
+            "LoadBalancerName": "string", 
+            "LoadBalancerPort": "integer", 
+            "PolicyNames": {
+                "_list": "string"
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "IamActions": [
+        "CreateScalingPlan", 
+        "DeleteScalingPlan"
+    ], 
+    "OperationInputs": {
+        "CreateScalingPlan": {
+            "ApplicationSource": {
+                "CloudFormationStackARN": "string", 
+                "TagFilters": {
+                    "_list": {
+                        "Key": "string", 
+                        "Values": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "ScalingInstructions": {
+                "_list": {
+                    "MaxCapacity": "integer", 
+                    "MinCapacity": "integer", 
+                    "ResourceId": "string", 
+                    "ScalableDimension": "string", 
+                    "ServiceNamespace": "string", 
+                    "TargetTrackingConfigurations": {
+                        "_list": {
+                            "CustomizedScalingMetricSpecification": "structure", 
+                            "DisableScaleIn": "boolean", 
+                            "EstimatedInstanceWarmup": "integer", 
+                            "PredefinedScalingMetricSpecification": "structure", 
+                            "ScaleInCooldown": "integer", 
+                            "ScaleOutCooldown": "integer", 
+                            "TargetValue": "double"
+                        }
+                    }
+                }
+            }, 
+            "ScalingPlanName": "string"
+        }, 
+        "DeleteScalingPlan": {
+            "ScalingPlanName": "string", 
+            "ScalingPlanVersion": "long"
+        }, 
+        "UpdateScalingPlan": {
+            "ApplicationSource": {
+                "CloudFormationStackARN": "string", 
+                "TagFilters": {
+                    "_list": {
+                        "Key": "string", 
+                        "Values": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "ScalingInstructions": {
+                "_list": {
+                    "MaxCapacity": "integer", 
+                    "MinCapacity": "integer", 
+                    "ResourceId": "string", 
+                    "ScalableDimension": "string", 
+                    "ServiceNamespace": "string", 
+                    "TargetTrackingConfigurations": {
+                        "_list": {
+                            "CustomizedScalingMetricSpecification": "structure", 
+                            "DisableScaleIn": "boolean", 
+                            "EstimatedInstanceWarmup": "integer", 
+                            "PredefinedScalingMetricSpecification": "structure", 
+                            "ScaleInCooldown": "integer", 
+                            "ScaleOutCooldown": "integer", 
+                            "TargetValue": "double"
+                        }
+                    }
+                }
+            }, 
+            "ScalingPlanName": "string", 
+            "ScalingPlanVersion": "long"
+        }
+    }
+}

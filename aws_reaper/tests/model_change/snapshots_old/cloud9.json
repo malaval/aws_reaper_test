@@ -1,0 +1,45 @@
+{
+    "IamActions": [
+        "CreateEnvironmentEC2", 
+        "CreateEnvironmentMembership", 
+        "CreateEnvironmentSSH", 
+        "DeleteEnvironment", 
+        "DeleteEnvironmentMembership", 
+        "UpdateEnvironment", 
+        "UpdateEnvironmentMembership", 
+        "ValidateEnvironmentName"
+    ], 
+    "OperationInputs": {
+        "CreateEnvironmentEC2": {
+            "automaticStopTimeMinutes": "integer", 
+            "clientRequestToken": "string", 
+            "description": "string", 
+            "instanceType": "string", 
+            "name": "string", 
+            "ownerArn": "string", 
+            "subnetId": "string"
+        }, 
+        "CreateEnvironmentMembership": {
+            "environmentId": "string", 
+            "permissions": "string", 
+            "userArn": "string"
+        }, 
+        "DeleteEnvironment": {
+            "environmentId": "string"
+        }, 
+        "DeleteEnvironmentMembership": {
+            "environmentId": "string", 
+            "userArn": "string"
+        }, 
+        "UpdateEnvironment": {
+            "description": "string", 
+            "environmentId": "string", 
+            "name": "string"
+        }, 
+        "UpdateEnvironmentMembership": {
+            "environmentId": "string", 
+            "permissions": "string", 
+            "userArn": "string"
+        }
+    }
+}

@@ -1,0 +1,383 @@
+{
+    "IamActions": [
+        "AttachInstances", 
+        "AttachLoadBalancerTargetGroups", 
+        "AttachLoadBalancers", 
+        "BatchDeleteScheduledAction", 
+        "BatchPutScheduledUpdateGroupAction", 
+        "CompleteLifecycleAction", 
+        "CreateAutoScalingGroup", 
+        "CreateLaunchConfiguration", 
+        "DeleteAutoScalingGroup", 
+        "DeleteLaunchConfiguration", 
+        "DeleteLifecycleHook", 
+        "DeleteNotificationConfiguration", 
+        "DeletePolicy", 
+        "DeleteScheduledAction", 
+        "DetachInstances", 
+        "DetachLoadBalancerTargetGroups", 
+        "DetachLoadBalancers", 
+        "DisableMetricsCollection", 
+        "EnableMetricsCollection", 
+        "EnterStandby", 
+        "ExecutePolicy", 
+        "ExitStandby", 
+        "PutLifecycleHook", 
+        "PutNotificationConfiguration", 
+        "PutScalingPolicy", 
+        "PutScheduledUpdateGroupAction", 
+        "RecordLifecycleActionHeartbeat", 
+        "ResumeProcesses", 
+        "SetDesiredCapacity", 
+        "SetInstanceHealth", 
+        "SetInstanceProtection", 
+        "SuspendProcesses", 
+        "TerminateInstanceInAutoScalingGroup", 
+        "UpdateAutoScalingGroup"
+    ], 
+    "OperationInputs": {
+        "AttachInstances": {
+            "AutoScalingGroupName": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "AttachLoadBalancerTargetGroups": {
+            "AutoScalingGroupName": "string", 
+            "TargetGroupARNs": {
+                "_list": "string"
+            }
+        }, 
+        "AttachLoadBalancers": {
+            "AutoScalingGroupName": "string", 
+            "LoadBalancerNames": {
+                "_list": "string"
+            }
+        }, 
+        "BatchDeleteScheduledAction": {
+            "AutoScalingGroupName": "string", 
+            "ScheduledActionNames": {
+                "_list": "string"
+            }
+        }, 
+        "BatchPutScheduledUpdateGroupAction": {
+            "AutoScalingGroupName": "string", 
+            "ScheduledUpdateGroupActions": {
+                "_list": {
+                    "DesiredCapacity": "integer", 
+                    "EndTime": "timestamp", 
+                    "MaxSize": "integer", 
+                    "MinSize": "integer", 
+                    "Recurrence": "string", 
+                    "ScheduledActionName": "string", 
+                    "StartTime": "timestamp"
+                }
+            }
+        }, 
+        "CompleteLifecycleAction": {
+            "AutoScalingGroupName": "string", 
+            "InstanceId": "string", 
+            "LifecycleActionResult": "string", 
+            "LifecycleActionToken": "string", 
+            "LifecycleHookName": "string"
+        }, 
+        "CreateAutoScalingGroup": {
+            "AutoScalingGroupName": "string", 
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "DefaultCooldown": "integer", 
+            "DesiredCapacity": "integer", 
+            "HealthCheckGracePeriod": "integer", 
+            "HealthCheckType": "string", 
+            "InstanceId": "string", 
+            "LaunchConfigurationName": "string", 
+            "LaunchTemplate": {
+                "LaunchTemplateId": "string", 
+                "LaunchTemplateName": "string", 
+                "Version": "string"
+            }, 
+            "LifecycleHookSpecificationList": {
+                "_list": {
+                    "DefaultResult": "string", 
+                    "HeartbeatTimeout": "integer", 
+                    "LifecycleHookName": "string", 
+                    "LifecycleTransition": "string", 
+                    "NotificationMetadata": "string", 
+                    "NotificationTargetARN": "string", 
+                    "RoleARN": "string"
+                }
+            }, 
+            "LoadBalancerNames": {
+                "_list": "string"
+            }, 
+            "MaxSize": "integer", 
+            "MinSize": "integer", 
+            "NewInstancesProtectedFromScaleIn": "boolean", 
+            "PlacementGroup": "string", 
+            "ServiceLinkedRoleARN": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "PropagateAtLaunch": "boolean", 
+                    "ResourceId": "string", 
+                    "ResourceType": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetGroupARNs": {
+                "_list": "string"
+            }, 
+            "TerminationPolicies": {
+                "_list": "string"
+            }, 
+            "VPCZoneIdentifier": "string"
+        }, 
+        "CreateLaunchConfiguration": {
+            "AssociatePublicIpAddress": "boolean", 
+            "BlockDeviceMappings": {
+                "_list": {
+                    "DeviceName": "string", 
+                    "Ebs": {
+                        "DeleteOnTermination": "boolean", 
+                        "Encrypted": "boolean", 
+                        "Iops": "integer", 
+                        "SnapshotId": "string", 
+                        "VolumeSize": "integer", 
+                        "VolumeType": "string"
+                    }, 
+                    "NoDevice": "boolean", 
+                    "VirtualName": "string"
+                }
+            }, 
+            "ClassicLinkVPCId": "string", 
+            "ClassicLinkVPCSecurityGroups": {
+                "_list": "string"
+            }, 
+            "EbsOptimized": "boolean", 
+            "IamInstanceProfile": "string", 
+            "ImageId": "string", 
+            "InstanceId": "string", 
+            "InstanceMonitoring": {
+                "Enabled": "boolean"
+            }, 
+            "InstanceType": "string", 
+            "KernelId": "string", 
+            "KeyName": "string", 
+            "LaunchConfigurationName": "string", 
+            "PlacementTenancy": "string", 
+            "RamdiskId": "string", 
+            "SecurityGroups": {
+                "_list": "string"
+            }, 
+            "SpotPrice": "string", 
+            "UserData": "string"
+        }, 
+        "DeleteAutoScalingGroup": {
+            "AutoScalingGroupName": "string", 
+            "ForceDelete": "boolean"
+        }, 
+        "DeleteLaunchConfiguration": {
+            "LaunchConfigurationName": "string"
+        }, 
+        "DeleteLifecycleHook": {
+            "AutoScalingGroupName": "string", 
+            "LifecycleHookName": "string"
+        }, 
+        "DeleteNotificationConfiguration": {
+            "AutoScalingGroupName": "string", 
+            "TopicARN": "string"
+        }, 
+        "DeletePolicy": {
+            "AutoScalingGroupName": "string", 
+            "PolicyName": "string"
+        }, 
+        "DeleteScheduledAction": {
+            "AutoScalingGroupName": "string", 
+            "ScheduledActionName": "string"
+        }, 
+        "DetachInstances": {
+            "AutoScalingGroupName": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }, 
+            "ShouldDecrementDesiredCapacity": "boolean"
+        }, 
+        "DetachLoadBalancerTargetGroups": {
+            "AutoScalingGroupName": "string", 
+            "TargetGroupARNs": {
+                "_list": "string"
+            }
+        }, 
+        "DetachLoadBalancers": {
+            "AutoScalingGroupName": "string", 
+            "LoadBalancerNames": {
+                "_list": "string"
+            }
+        }, 
+        "DisableMetricsCollection": {
+            "AutoScalingGroupName": "string", 
+            "Metrics": {
+                "_list": "string"
+            }
+        }, 
+        "EnableMetricsCollection": {
+            "AutoScalingGroupName": "string", 
+            "Granularity": "string", 
+            "Metrics": {
+                "_list": "string"
+            }
+        }, 
+        "EnterStandby": {
+            "AutoScalingGroupName": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }, 
+            "ShouldDecrementDesiredCapacity": "boolean"
+        }, 
+        "ExecutePolicy": {
+            "AutoScalingGroupName": "string", 
+            "BreachThreshold": "double", 
+            "HonorCooldown": "boolean", 
+            "MetricValue": "double", 
+            "PolicyName": "string"
+        }, 
+        "ExitStandby": {
+            "AutoScalingGroupName": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }
+        }, 
+        "PutLifecycleHook": {
+            "AutoScalingGroupName": "string", 
+            "DefaultResult": "string", 
+            "HeartbeatTimeout": "integer", 
+            "LifecycleHookName": "string", 
+            "LifecycleTransition": "string", 
+            "NotificationMetadata": "string", 
+            "NotificationTargetARN": "string", 
+            "RoleARN": "string"
+        }, 
+        "PutNotificationConfiguration": {
+            "AutoScalingGroupName": "string", 
+            "NotificationTypes": {
+                "_list": "string"
+            }, 
+            "TopicARN": "string"
+        }, 
+        "PutScalingPolicy": {
+            "AdjustmentType": "string", 
+            "AutoScalingGroupName": "string", 
+            "Cooldown": "integer", 
+            "EstimatedInstanceWarmup": "integer", 
+            "MetricAggregationType": "string", 
+            "MinAdjustmentMagnitude": "integer", 
+            "MinAdjustmentStep": "integer", 
+            "PolicyName": "string", 
+            "PolicyType": "string", 
+            "ScalingAdjustment": "integer", 
+            "StepAdjustments": {
+                "_list": {
+                    "MetricIntervalLowerBound": "double", 
+                    "MetricIntervalUpperBound": "double", 
+                    "ScalingAdjustment": "integer"
+                }
+            }, 
+            "TargetTrackingConfiguration": {
+                "CustomizedMetricSpecification": {
+                    "Dimensions": {
+                        "_list": {
+                            "Name": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "MetricName": "string", 
+                    "Namespace": "string", 
+                    "Statistic": "string", 
+                    "Unit": "string"
+                }, 
+                "DisableScaleIn": "boolean", 
+                "PredefinedMetricSpecification": {
+                    "PredefinedMetricType": "string", 
+                    "ResourceLabel": "string"
+                }, 
+                "TargetValue": "double"
+            }
+        }, 
+        "PutScheduledUpdateGroupAction": {
+            "AutoScalingGroupName": "string", 
+            "DesiredCapacity": "integer", 
+            "EndTime": "timestamp", 
+            "MaxSize": "integer", 
+            "MinSize": "integer", 
+            "Recurrence": "string", 
+            "ScheduledActionName": "string", 
+            "StartTime": "timestamp", 
+            "Time": "timestamp"
+        }, 
+        "RecordLifecycleActionHeartbeat": {
+            "AutoScalingGroupName": "string", 
+            "InstanceId": "string", 
+            "LifecycleActionToken": "string", 
+            "LifecycleHookName": "string"
+        }, 
+        "ResumeProcesses": {
+            "AutoScalingGroupName": "string", 
+            "ScalingProcesses": {
+                "_list": "string"
+            }
+        }, 
+        "SetDesiredCapacity": {
+            "AutoScalingGroupName": "string", 
+            "DesiredCapacity": "integer", 
+            "HonorCooldown": "boolean"
+        }, 
+        "SetInstanceHealth": {
+            "HealthStatus": "string", 
+            "InstanceId": "string", 
+            "ShouldRespectGracePeriod": "boolean"
+        }, 
+        "SetInstanceProtection": {
+            "AutoScalingGroupName": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }, 
+            "ProtectedFromScaleIn": "boolean"
+        }, 
+        "SuspendProcesses": {
+            "AutoScalingGroupName": "string", 
+            "ScalingProcesses": {
+                "_list": "string"
+            }
+        }, 
+        "TerminateInstanceInAutoScalingGroup": {
+            "InstanceId": "string", 
+            "ShouldDecrementDesiredCapacity": "boolean"
+        }, 
+        "UpdateAutoScalingGroup": {
+            "AutoScalingGroupName": "string", 
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "DefaultCooldown": "integer", 
+            "DesiredCapacity": "integer", 
+            "HealthCheckGracePeriod": "integer", 
+            "HealthCheckType": "string", 
+            "LaunchConfigurationName": "string", 
+            "LaunchTemplate": {
+                "LaunchTemplateId": "string", 
+                "LaunchTemplateName": "string", 
+                "Version": "string"
+            }, 
+            "MaxSize": "integer", 
+            "MinSize": "integer", 
+            "NewInstancesProtectedFromScaleIn": "boolean", 
+            "PlacementGroup": "string", 
+            "ServiceLinkedRoleARN": "string", 
+            "TerminationPolicies": {
+                "_list": "string"
+            }, 
+            "VPCZoneIdentifier": "string"
+        }
+    }
+}

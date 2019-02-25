@@ -1,0 +1,153 @@
+{
+    "IamActions": [
+        "CreateTags", 
+        "CreateWorkspaces", 
+        "DeleteTags", 
+        "ModifyWorkspaceProperties", 
+        "RebootWorkspaces", 
+        "RebuildWorkspaces", 
+        "StartWorkspaces", 
+        "StopWorkspaces", 
+        "TerminateWorkspaces"
+    ], 
+    "OperationInputs": {
+        "AssociateIpGroups": {
+            "DirectoryId": "string", 
+            "GroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "AuthorizeIpRules": {
+            "GroupId": "string", 
+            "UserRules": {
+                "_list": {
+                    "ipRule": "string", 
+                    "ruleDesc": "string"
+                }
+            }
+        }, 
+        "CreateIpGroup": {
+            "GroupDesc": "string", 
+            "GroupName": "string", 
+            "UserRules": {
+                "_list": {
+                    "ipRule": "string", 
+                    "ruleDesc": "string"
+                }
+            }
+        }, 
+        "CreateTags": {
+            "ResourceId": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateWorkspaces": {
+            "Workspaces": {
+                "_list": {
+                    "BundleId": "string", 
+                    "DirectoryId": "string", 
+                    "RootVolumeEncryptionEnabled": "boolean", 
+                    "Tags": {
+                        "_list": {
+                            "Key": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "UserName": "string", 
+                    "UserVolumeEncryptionEnabled": "boolean", 
+                    "VolumeEncryptionKey": "string", 
+                    "WorkspaceProperties": {
+                        "ComputeTypeName": "string", 
+                        "RootVolumeSizeGib": "integer", 
+                        "RunningMode": "string", 
+                        "RunningModeAutoStopTimeoutInMinutes": "integer", 
+                        "UserVolumeSizeGib": "integer"
+                    }
+                }
+            }
+        }, 
+        "DeleteIpGroup": {
+            "GroupId": "string"
+        }, 
+        "DeleteTags": {
+            "ResourceId": "string", 
+            "TagKeys": {
+                "_list": "string"
+            }
+        }, 
+        "DisassociateIpGroups": {
+            "DirectoryId": "string", 
+            "GroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyWorkspaceProperties": {
+            "WorkspaceId": "string", 
+            "WorkspaceProperties": {
+                "ComputeTypeName": "string", 
+                "RootVolumeSizeGib": "integer", 
+                "RunningMode": "string", 
+                "RunningModeAutoStopTimeoutInMinutes": "integer", 
+                "UserVolumeSizeGib": "integer"
+            }
+        }, 
+        "ModifyWorkspaceState": {
+            "WorkspaceId": "string", 
+            "WorkspaceState": "string"
+        }, 
+        "RebootWorkspaces": {
+            "RebootWorkspaceRequests": {
+                "_list": {
+                    "WorkspaceId": "string"
+                }
+            }
+        }, 
+        "RebuildWorkspaces": {
+            "RebuildWorkspaceRequests": {
+                "_list": {
+                    "WorkspaceId": "string"
+                }
+            }
+        }, 
+        "RevokeIpRules": {
+            "GroupId": "string", 
+            "UserRules": {
+                "_list": "string"
+            }
+        }, 
+        "StartWorkspaces": {
+            "StartWorkspaceRequests": {
+                "_list": {
+                    "WorkspaceId": "string"
+                }
+            }
+        }, 
+        "StopWorkspaces": {
+            "StopWorkspaceRequests": {
+                "_list": {
+                    "WorkspaceId": "string"
+                }
+            }
+        }, 
+        "TerminateWorkspaces": {
+            "TerminateWorkspaceRequests": {
+                "_list": {
+                    "WorkspaceId": "string"
+                }
+            }
+        }, 
+        "UpdateRulesOfIpGroup": {
+            "GroupId": "string", 
+            "UserRules": {
+                "_list": {
+                    "ipRule": "string", 
+                    "ruleDesc": "string"
+                }
+            }
+        }
+    }
+}

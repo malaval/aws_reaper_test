@@ -1,0 +1,48 @@
+{
+    "IamActions": [
+        "DeleteLexicon", 
+        "PutLexicon", 
+        "StartSpeechSynthesisTask", 
+        "SynthesizeSpeech"
+    ], 
+    "OperationInputs": {
+        "DeleteLexicon": {
+            "Name": "string"
+        }, 
+        "PutLexicon": {
+            "Content": "string", 
+            "Name": "string"
+        }, 
+        "StartSpeechSynthesisTask": {
+            "LanguageCode": "string", 
+            "LexiconNames": {
+                "_list": "string"
+            }, 
+            "OutputFormat": "string", 
+            "OutputS3BucketName": "string", 
+            "OutputS3KeyPrefix": "string", 
+            "SampleRate": "string", 
+            "SnsTopicArn": "string", 
+            "SpeechMarkTypes": {
+                "_list": "string"
+            }, 
+            "Text": "string", 
+            "TextType": "string", 
+            "VoiceId": "string"
+        }, 
+        "SynthesizeSpeech": {
+            "LanguageCode": "string", 
+            "LexiconNames": {
+                "_list": "string"
+            }, 
+            "OutputFormat": "string", 
+            "SampleRate": "string", 
+            "SpeechMarkTypes": {
+                "_list": "string"
+            }, 
+            "Text": "string", 
+            "TextType": "string", 
+            "VoiceId": "string"
+        }
+    }
+}

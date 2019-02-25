@@ -1,0 +1,17 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "ListFragments": {
+            "FragmentSelector": {
+                "FragmentSelectorType": "string", 
+                "TimestampRange": {
+                    "EndTimestamp": "timestamp", 
+                    "StartTimestamp": "timestamp"
+                }
+            }, 
+            "MaxResults": "long", 
+            "NextToken": "string", 
+            "StreamName": "string"
+        }
+    }
+}

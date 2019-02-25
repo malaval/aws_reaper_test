@@ -1,0 +1,304 @@
+{
+    "IamActions": [
+        "AddApplicationInput", 
+        "AddApplicationOutput", 
+        "AddApplicationReferenceDataSource", 
+        "CreateApplication", 
+        "DeleteApplication", 
+        "DeleteApplicationOutput", 
+        "DeleteApplicationReferenceDataSource", 
+        "StartApplication", 
+        "StopApplication", 
+        "UpdateApplication"
+    ], 
+    "OperationInputs": {
+        "AddApplicationCloudWatchLoggingOption": {
+            "ApplicationName": "string", 
+            "CloudWatchLoggingOption": {
+                "LogStreamARN": "string", 
+                "RoleARN": "string"
+            }, 
+            "CurrentApplicationVersionId": "long"
+        }, 
+        "AddApplicationInput": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "Input": {
+                "InputParallelism": {
+                    "Count": "integer"
+                }, 
+                "InputProcessingConfiguration": {
+                    "InputLambdaProcessor": {
+                        "ResourceARN": "string", 
+                        "RoleARN": "string"
+                    }
+                }, 
+                "InputSchema": {
+                    "RecordColumns": {
+                        "_list": {
+                            "Mapping": "string", 
+                            "Name": "string", 
+                            "SqlType": "string"
+                        }
+                    }, 
+                    "RecordEncoding": "string", 
+                    "RecordFormat": {
+                        "MappingParameters": {
+                            "CSVMappingParameters": "structure", 
+                            "JSONMappingParameters": "structure"
+                        }, 
+                        "RecordFormatType": "string"
+                    }
+                }, 
+                "KinesisFirehoseInput": {
+                    "ResourceARN": "string", 
+                    "RoleARN": "string"
+                }, 
+                "KinesisStreamsInput": {
+                    "ResourceARN": "string", 
+                    "RoleARN": "string"
+                }, 
+                "NamePrefix": "string"
+            }
+        }, 
+        "AddApplicationInputProcessingConfiguration": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "InputId": "string", 
+            "InputProcessingConfiguration": {
+                "InputLambdaProcessor": {
+                    "ResourceARN": "string", 
+                    "RoleARN": "string"
+                }
+            }
+        }, 
+        "AddApplicationOutput": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "Output": {
+                "DestinationSchema": {
+                    "RecordFormatType": "string"
+                }, 
+                "KinesisFirehoseOutput": {
+                    "ResourceARN": "string", 
+                    "RoleARN": "string"
+                }, 
+                "KinesisStreamsOutput": {
+                    "ResourceARN": "string", 
+                    "RoleARN": "string"
+                }, 
+                "LambdaOutput": {
+                    "ResourceARN": "string", 
+                    "RoleARN": "string"
+                }, 
+                "Name": "string"
+            }
+        }, 
+        "AddApplicationReferenceDataSource": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "ReferenceDataSource": {
+                "ReferenceSchema": {
+                    "RecordColumns": {
+                        "_list": {
+                            "Mapping": "string", 
+                            "Name": "string", 
+                            "SqlType": "string"
+                        }
+                    }, 
+                    "RecordEncoding": "string", 
+                    "RecordFormat": {
+                        "MappingParameters": {
+                            "CSVMappingParameters": "structure", 
+                            "JSONMappingParameters": "structure"
+                        }, 
+                        "RecordFormatType": "string"
+                    }
+                }, 
+                "S3ReferenceDataSource": {
+                    "BucketARN": "string", 
+                    "FileKey": "string", 
+                    "ReferenceRoleARN": "string"
+                }, 
+                "TableName": "string"
+            }
+        }, 
+        "CreateApplication": {
+            "ApplicationCode": "string", 
+            "ApplicationDescription": "string", 
+            "ApplicationName": "string", 
+            "CloudWatchLoggingOptions": {
+                "_list": {
+                    "LogStreamARN": "string", 
+                    "RoleARN": "string"
+                }
+            }, 
+            "Inputs": {
+                "_list": {
+                    "InputParallelism": {
+                        "Count": "integer"
+                    }, 
+                    "InputProcessingConfiguration": {
+                        "InputLambdaProcessor": {
+                            "ResourceARN": "string", 
+                            "RoleARN": "string"
+                        }
+                    }, 
+                    "InputSchema": {
+                        "RecordColumns": {
+                            "_list": "structure"
+                        }, 
+                        "RecordEncoding": "string", 
+                        "RecordFormat": {
+                            "MappingParameters": "structure", 
+                            "RecordFormatType": "string"
+                        }
+                    }, 
+                    "KinesisFirehoseInput": {
+                        "ResourceARN": "string", 
+                        "RoleARN": "string"
+                    }, 
+                    "KinesisStreamsInput": {
+                        "ResourceARN": "string", 
+                        "RoleARN": "string"
+                    }, 
+                    "NamePrefix": "string"
+                }
+            }, 
+            "Outputs": {
+                "_list": {
+                    "DestinationSchema": {
+                        "RecordFormatType": "string"
+                    }, 
+                    "KinesisFirehoseOutput": {
+                        "ResourceARN": "string", 
+                        "RoleARN": "string"
+                    }, 
+                    "KinesisStreamsOutput": {
+                        "ResourceARN": "string", 
+                        "RoleARN": "string"
+                    }, 
+                    "LambdaOutput": {
+                        "ResourceARN": "string", 
+                        "RoleARN": "string"
+                    }, 
+                    "Name": "string"
+                }
+            }
+        }, 
+        "DeleteApplication": {
+            "ApplicationName": "string", 
+            "CreateTimestamp": "timestamp"
+        }, 
+        "DeleteApplicationCloudWatchLoggingOption": {
+            "ApplicationName": "string", 
+            "CloudWatchLoggingOptionId": "string", 
+            "CurrentApplicationVersionId": "long"
+        }, 
+        "DeleteApplicationInputProcessingConfiguration": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "InputId": "string"
+        }, 
+        "DeleteApplicationOutput": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "OutputId": "string"
+        }, 
+        "DeleteApplicationReferenceDataSource": {
+            "ApplicationName": "string", 
+            "CurrentApplicationVersionId": "long", 
+            "ReferenceId": "string"
+        }, 
+        "StartApplication": {
+            "ApplicationName": "string", 
+            "InputConfigurations": {
+                "_list": {
+                    "Id": "string", 
+                    "InputStartingPositionConfiguration": {
+                        "InputStartingPosition": "string"
+                    }
+                }
+            }
+        }, 
+        "StopApplication": {
+            "ApplicationName": "string"
+        }, 
+        "UpdateApplication": {
+            "ApplicationName": "string", 
+            "ApplicationUpdate": {
+                "ApplicationCodeUpdate": "string", 
+                "CloudWatchLoggingOptionUpdates": {
+                    "_list": {
+                        "CloudWatchLoggingOptionId": "string", 
+                        "LogStreamARNUpdate": "string", 
+                        "RoleARNUpdate": "string"
+                    }
+                }, 
+                "InputUpdates": {
+                    "_list": {
+                        "InputId": "string", 
+                        "InputParallelismUpdate": {
+                            "CountUpdate": "integer"
+                        }, 
+                        "InputProcessingConfigurationUpdate": {
+                            "InputLambdaProcessorUpdate": "structure"
+                        }, 
+                        "InputSchemaUpdate": {
+                            "RecordColumnUpdates": "list", 
+                            "RecordEncodingUpdate": "string", 
+                            "RecordFormatUpdate": "structure"
+                        }, 
+                        "KinesisFirehoseInputUpdate": {
+                            "ResourceARNUpdate": "string", 
+                            "RoleARNUpdate": "string"
+                        }, 
+                        "KinesisStreamsInputUpdate": {
+                            "ResourceARNUpdate": "string", 
+                            "RoleARNUpdate": "string"
+                        }, 
+                        "NamePrefixUpdate": "string"
+                    }
+                }, 
+                "OutputUpdates": {
+                    "_list": {
+                        "DestinationSchemaUpdate": {
+                            "RecordFormatType": "string"
+                        }, 
+                        "KinesisFirehoseOutputUpdate": {
+                            "ResourceARNUpdate": "string", 
+                            "RoleARNUpdate": "string"
+                        }, 
+                        "KinesisStreamsOutputUpdate": {
+                            "ResourceARNUpdate": "string", 
+                            "RoleARNUpdate": "string"
+                        }, 
+                        "LambdaOutputUpdate": {
+                            "ResourceARNUpdate": "string", 
+                            "RoleARNUpdate": "string"
+                        }, 
+                        "NameUpdate": "string", 
+                        "OutputId": "string"
+                    }
+                }, 
+                "ReferenceDataSourceUpdates": {
+                    "_list": {
+                        "ReferenceId": "string", 
+                        "ReferenceSchemaUpdate": {
+                            "RecordColumns": "list", 
+                            "RecordEncoding": "string", 
+                            "RecordFormat": "structure"
+                        }, 
+                        "S3ReferenceDataSourceUpdate": {
+                            "BucketARNUpdate": "string", 
+                            "FileKeyUpdate": "string", 
+                            "ReferenceRoleARNUpdate": "string"
+                        }, 
+                        "TableNameUpdate": "string"
+                    }
+                }
+            }, 
+            "CurrentApplicationVersionId": "long"
+        }
+    }
+}

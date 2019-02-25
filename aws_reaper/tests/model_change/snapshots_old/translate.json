@@ -1,0 +1,12 @@
+{
+    "IamActions": [
+        "TranslateText"
+    ], 
+    "OperationInputs": {
+        "TranslateText": {
+            "SourceLanguageCode": "string", 
+            "TargetLanguageCode": "string", 
+            "Text": "string"
+        }
+    }
+}

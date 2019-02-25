@@ -1,0 +1,971 @@
+{
+    "IamActions": [
+        "AddRoleToDBCluster", 
+        "AddSourceIdentifierToSubscription", 
+        "ApplyPendingMaintenanceAction", 
+        "AuthorizeDBSecurityGroupIngress", 
+        "CopyDBClusterSnapshot", 
+        "CopyDBParameterGroup", 
+        "CopyDBSnapshot", 
+        "CopyOptionGroup", 
+        "CreateDBCluster", 
+        "CreateDBClusterParameterGroup", 
+        "CreateDBClusterSnapshot", 
+        "CreateDBInstance", 
+        "CreateDBInstanceReadReplica", 
+        "CreateDBParameterGroup", 
+        "CreateDBSecurityGroup", 
+        "CreateDBSnapshot", 
+        "CreateDBSubnetGroup", 
+        "CreateEventSubscription", 
+        "CreateOptionGroup", 
+        "DeleteDBCluster", 
+        "DeleteDBClusterParameterGroup", 
+        "DeleteDBClusterSnapshot", 
+        "DeleteDBInstance", 
+        "DeleteDBParameterGroup", 
+        "DeleteDBSecurityGroup", 
+        "DeleteDBSnapshot", 
+        "DeleteDBSubnetGroup", 
+        "DeleteEventSubscription", 
+        "DeleteOptionGroup", 
+        "DownloadCompleteDBLogFile", 
+        "DownloadDBLogFilePortion", 
+        "FailoverDBCluster", 
+        "ModifyCurrentDBClusterCapacity", 
+        "ModifyDBCluster", 
+        "ModifyDBClusterParameterGroup", 
+        "ModifyDBClusterSnapshotAttribute", 
+        "ModifyDBInstance", 
+        "ModifyDBParameterGroup", 
+        "ModifyDBSnapshotAttribute", 
+        "ModifyDBSubnetGroup", 
+        "ModifyEventSubscription", 
+        "ModifyOptionGroup", 
+        "PromoteReadReplica", 
+        "PurchaseReservedDBInstancesOffering", 
+        "RebootDBInstance", 
+        "RemoveSourceIdentifierFromSubscription", 
+        "ResetDBClusterParameterGroup", 
+        "ResetDBParameterGroup", 
+        "RestoreDBClusterFromSnapshot", 
+        "RestoreDBClusterToPointInTime", 
+        "RestoreDBInstanceFromDBSnapshot", 
+        "RestoreDBInstanceToPointInTime", 
+        "RevokeDBSecurityGroupIngress", 
+        "StartDBInstance", 
+        "StopDBInstance"
+    ], 
+    "OperationInputs": {
+        "AddRoleToDBCluster": {
+            "DBClusterIdentifier": "string", 
+            "RoleArn": "string"
+        }, 
+        "AddSourceIdentifierToSubscription": {
+            "SourceIdentifier": "string", 
+            "SubscriptionName": "string"
+        }, 
+        "ApplyPendingMaintenanceAction": {
+            "ApplyAction": "string", 
+            "OptInType": "string", 
+            "ResourceIdentifier": "string"
+        }, 
+        "AuthorizeDBSecurityGroupIngress": {
+            "CIDRIP": "string", 
+            "DBSecurityGroupName": "string", 
+            "EC2SecurityGroupId": "string", 
+            "EC2SecurityGroupName": "string", 
+            "EC2SecurityGroupOwnerId": "string"
+        }, 
+        "BacktrackDBCluster": {
+            "BacktrackTo": "timestamp", 
+            "DBClusterIdentifier": "string", 
+            "Force": "boolean", 
+            "UseEarliestTimeOnPointInTimeUnavailable": "boolean"
+        }, 
+        "CopyDBClusterParameterGroup": {
+            "SourceDBClusterParameterGroupIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetDBClusterParameterGroupDescription": "string", 
+            "TargetDBClusterParameterGroupIdentifier": "string"
+        }, 
+        "CopyDBClusterSnapshot": {
+            "CopyTags": "boolean", 
+            "KmsKeyId": "string", 
+            "PreSignedUrl": "string", 
+            "SourceDBClusterSnapshotIdentifier": "string", 
+            "SourceRegion": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetDBClusterSnapshotIdentifier": "string"
+        }, 
+        "CopyDBParameterGroup": {
+            "SourceDBParameterGroupIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetDBParameterGroupDescription": "string", 
+            "TargetDBParameterGroupIdentifier": "string"
+        }, 
+        "CopyDBSnapshot": {
+            "CopyTags": "boolean", 
+            "KmsKeyId": "string", 
+            "OptionGroupName": "string", 
+            "PreSignedUrl": "string", 
+            "SourceDBSnapshotIdentifier": "string", 
+            "SourceRegion": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetDBSnapshotIdentifier": "string"
+        }, 
+        "CopyOptionGroup": {
+            "SourceOptionGroupIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetOptionGroupDescription": "string", 
+            "TargetOptionGroupIdentifier": "string"
+        }, 
+        "CreateDBCluster": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "BacktrackWindow": "long", 
+            "BackupRetentionPeriod": "integer", 
+            "CharacterSetName": "string", 
+            "DBClusterIdentifier": "string", 
+            "DBClusterParameterGroupName": "string", 
+            "DBSubnetGroupName": "string", 
+            "DatabaseName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "Engine": "string", 
+            "EngineMode": "string", 
+            "EngineVersion": "string", 
+            "KmsKeyId": "string", 
+            "MasterUserPassword": "string", 
+            "MasterUsername": "string", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "PreSignedUrl": "string", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ReplicationSourceIdentifier": "string", 
+            "ScalingConfiguration": {
+                "AutoPause": "boolean", 
+                "MaxCapacity": "integer", 
+                "MinCapacity": "integer", 
+                "SecondsUntilAutoPause": "integer"
+            }, 
+            "SourceRegion": "string", 
+            "StorageEncrypted": "boolean", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateDBClusterParameterGroup": {
+            "DBClusterParameterGroupName": "string", 
+            "DBParameterGroupFamily": "string", 
+            "Description": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateDBClusterSnapshot": {
+            "DBClusterIdentifier": "string", 
+            "DBClusterSnapshotIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateDBInstance": {
+            "AllocatedStorage": "integer", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AvailabilityZone": "string", 
+            "BackupRetentionPeriod": "integer", 
+            "CharacterSetName": "string", 
+            "CopyTagsToSnapshot": "boolean", 
+            "DBClusterIdentifier": "string", 
+            "DBInstanceClass": "string", 
+            "DBInstanceIdentifier": "string", 
+            "DBName": "string", 
+            "DBParameterGroupName": "string", 
+            "DBSecurityGroups": {
+                "_list": "string"
+            }, 
+            "DBSubnetGroupName": "string", 
+            "Domain": "string", 
+            "DomainIAMRoleName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "EnablePerformanceInsights": "boolean", 
+            "Engine": "string", 
+            "EngineVersion": "string", 
+            "Iops": "integer", 
+            "KmsKeyId": "string", 
+            "LicenseModel": "string", 
+            "MasterUserPassword": "string", 
+            "MasterUsername": "string", 
+            "MonitoringInterval": "integer", 
+            "MonitoringRoleArn": "string", 
+            "MultiAZ": "boolean", 
+            "OptionGroupName": "string", 
+            "PerformanceInsightsKMSKeyId": "string", 
+            "PerformanceInsightsRetentionPeriod": "integer", 
+            "Port": "integer", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ProcessorFeatures": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "PromotionTier": "integer", 
+            "PubliclyAccessible": "boolean", 
+            "StorageEncrypted": "boolean", 
+            "StorageType": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TdeCredentialArn": "string", 
+            "TdeCredentialPassword": "string", 
+            "Timezone": "string", 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateDBInstanceReadReplica": {
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AvailabilityZone": "string", 
+            "CopyTagsToSnapshot": "boolean", 
+            "DBInstanceClass": "string", 
+            "DBInstanceIdentifier": "string", 
+            "DBSubnetGroupName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "EnablePerformanceInsights": "boolean", 
+            "Iops": "integer", 
+            "KmsKeyId": "string", 
+            "MonitoringInterval": "integer", 
+            "MonitoringRoleArn": "string", 
+            "MultiAZ": "boolean", 
+            "OptionGroupName": "string", 
+            "PerformanceInsightsKMSKeyId": "string", 
+            "PerformanceInsightsRetentionPeriod": "integer", 
+            "Port": "integer", 
+            "PreSignedUrl": "string", 
+            "ProcessorFeatures": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "PubliclyAccessible": "boolean", 
+            "SourceDBInstanceIdentifier": "string", 
+            "SourceRegion": "string", 
+            "StorageType": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UseDefaultProcessorFeatures": "boolean"
+        }, 
+        "CreateDBParameterGroup": {
+            "DBParameterGroupFamily": "string", 
+            "DBParameterGroupName": "string", 
+            "Description": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateDBSecurityGroup": {
+            "DBSecurityGroupDescription": "string", 
+            "DBSecurityGroupName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateDBSnapshot": {
+            "DBInstanceIdentifier": "string", 
+            "DBSnapshotIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateDBSubnetGroup": {
+            "DBSubnetGroupDescription": "string", 
+            "DBSubnetGroupName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateEventSubscription": {
+            "Enabled": "boolean", 
+            "EventCategories": {
+                "_list": "string"
+            }, 
+            "SnsTopicArn": "string", 
+            "SourceIds": {
+                "_list": "string"
+            }, 
+            "SourceType": "string", 
+            "SubscriptionName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateOptionGroup": {
+            "EngineName": "string", 
+            "MajorEngineVersion": "string", 
+            "OptionGroupDescription": "string", 
+            "OptionGroupName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "DeleteDBCluster": {
+            "DBClusterIdentifier": "string", 
+            "FinalDBSnapshotIdentifier": "string", 
+            "SkipFinalSnapshot": "boolean"
+        }, 
+        "DeleteDBClusterParameterGroup": {
+            "DBClusterParameterGroupName": "string"
+        }, 
+        "DeleteDBClusterSnapshot": {
+            "DBClusterSnapshotIdentifier": "string"
+        }, 
+        "DeleteDBInstance": {
+            "DBInstanceIdentifier": "string", 
+            "FinalDBSnapshotIdentifier": "string", 
+            "SkipFinalSnapshot": "boolean"
+        }, 
+        "DeleteDBParameterGroup": {
+            "DBParameterGroupName": "string"
+        }, 
+        "DeleteDBSecurityGroup": {
+            "DBSecurityGroupName": "string"
+        }, 
+        "DeleteDBSnapshot": {
+            "DBSnapshotIdentifier": "string"
+        }, 
+        "DeleteDBSubnetGroup": {
+            "DBSubnetGroupName": "string"
+        }, 
+        "DeleteEventSubscription": {
+            "SubscriptionName": "string"
+        }, 
+        "DeleteOptionGroup": {
+            "OptionGroupName": "string"
+        }, 
+        "DownloadDBLogFilePortion": {
+            "DBInstanceIdentifier": "string", 
+            "LogFileName": "string", 
+            "Marker": "string", 
+            "NumberOfLines": "integer"
+        }, 
+        "FailoverDBCluster": {
+            "DBClusterIdentifier": "string", 
+            "TargetDBInstanceIdentifier": "string"
+        }, 
+        "ModifyCurrentDBClusterCapacity": {
+            "Capacity": "integer", 
+            "DBClusterIdentifier": "string", 
+            "SecondsBeforeTimeout": "integer", 
+            "TimeoutAction": "string"
+        }, 
+        "ModifyDBCluster": {
+            "ApplyImmediately": "boolean", 
+            "BacktrackWindow": "long", 
+            "BackupRetentionPeriod": "integer", 
+            "CloudwatchLogsExportConfiguration": {
+                "DisableLogTypes": {
+                    "_list": "string"
+                }, 
+                "EnableLogTypes": {
+                    "_list": "string"
+                }
+            }, 
+            "DBClusterIdentifier": "string", 
+            "DBClusterParameterGroupName": "string", 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "EngineVersion": "string", 
+            "MasterUserPassword": "string", 
+            "NewDBClusterIdentifier": "string", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ScalingConfiguration": {
+                "AutoPause": "boolean", 
+                "MaxCapacity": "integer", 
+                "MinCapacity": "integer", 
+                "SecondsUntilAutoPause": "integer"
+            }, 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyDBClusterParameterGroup": {
+            "DBClusterParameterGroupName": "string", 
+            "Parameters": {
+                "_list": {
+                    "AllowedValues": "string", 
+                    "ApplyMethod": "string", 
+                    "ApplyType": "string", 
+                    "DataType": "string", 
+                    "Description": "string", 
+                    "IsModifiable": "boolean", 
+                    "MinimumEngineVersion": "string", 
+                    "ParameterName": "string", 
+                    "ParameterValue": "string", 
+                    "Source": "string", 
+                    "SupportedEngineModes": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "ModifyDBClusterSnapshotAttribute": {
+            "AttributeName": "string", 
+            "DBClusterSnapshotIdentifier": "string", 
+            "ValuesToAdd": {
+                "_list": "string"
+            }, 
+            "ValuesToRemove": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyDBInstance": {
+            "AllocatedStorage": "integer", 
+            "AllowMajorVersionUpgrade": "boolean", 
+            "ApplyImmediately": "boolean", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "BackupRetentionPeriod": "integer", 
+            "CACertificateIdentifier": "string", 
+            "CloudwatchLogsExportConfiguration": {
+                "DisableLogTypes": {
+                    "_list": "string"
+                }, 
+                "EnableLogTypes": {
+                    "_list": "string"
+                }
+            }, 
+            "CopyTagsToSnapshot": "boolean", 
+            "DBInstanceClass": "string", 
+            "DBInstanceIdentifier": "string", 
+            "DBParameterGroupName": "string", 
+            "DBPortNumber": "integer", 
+            "DBSecurityGroups": {
+                "_list": "string"
+            }, 
+            "DBSubnetGroupName": "string", 
+            "Domain": "string", 
+            "DomainIAMRoleName": "string", 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "EnablePerformanceInsights": "boolean", 
+            "EngineVersion": "string", 
+            "Iops": "integer", 
+            "LicenseModel": "string", 
+            "MasterUserPassword": "string", 
+            "MonitoringInterval": "integer", 
+            "MonitoringRoleArn": "string", 
+            "MultiAZ": "boolean", 
+            "NewDBInstanceIdentifier": "string", 
+            "OptionGroupName": "string", 
+            "PerformanceInsightsKMSKeyId": "string", 
+            "PerformanceInsightsRetentionPeriod": "integer", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ProcessorFeatures": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "PromotionTier": "integer", 
+            "PubliclyAccessible": "boolean", 
+            "StorageType": "string", 
+            "TdeCredentialArn": "string", 
+            "TdeCredentialPassword": "string", 
+            "UseDefaultProcessorFeatures": "boolean", 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyDBParameterGroup": {
+            "DBParameterGroupName": "string", 
+            "Parameters": {
+                "_list": {
+                    "AllowedValues": "string", 
+                    "ApplyMethod": "string", 
+                    "ApplyType": "string", 
+                    "DataType": "string", 
+                    "Description": "string", 
+                    "IsModifiable": "boolean", 
+                    "MinimumEngineVersion": "string", 
+                    "ParameterName": "string", 
+                    "ParameterValue": "string", 
+                    "Source": "string", 
+                    "SupportedEngineModes": {
+                        "_list": "string"
+                    }
+                }
+            }
+        }, 
+        "ModifyDBSnapshot": {
+            "DBSnapshotIdentifier": "string", 
+            "EngineVersion": "string", 
+            "OptionGroupName": "string"
+        }, 
+        "ModifyDBSnapshotAttribute": {
+            "AttributeName": "string", 
+            "DBSnapshotIdentifier": "string", 
+            "ValuesToAdd": {
+                "_list": "string"
+            }, 
+            "ValuesToRemove": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyDBSubnetGroup": {
+            "DBSubnetGroupDescription": "string", 
+            "DBSubnetGroupName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyEventSubscription": {
+            "Enabled": "boolean", 
+            "EventCategories": {
+                "_list": "string"
+            }, 
+            "SnsTopicArn": "string", 
+            "SourceType": "string", 
+            "SubscriptionName": "string"
+        }, 
+        "ModifyOptionGroup": {
+            "ApplyImmediately": "boolean", 
+            "OptionGroupName": "string", 
+            "OptionsToInclude": {
+                "_list": {
+                    "DBSecurityGroupMemberships": {
+                        "_list": "string"
+                    }, 
+                    "OptionName": "string", 
+                    "OptionSettings": {
+                        "_list": {
+                            "AllowedValues": "string", 
+                            "ApplyType": "string", 
+                            "DataType": "string", 
+                            "DefaultValue": "string", 
+                            "Description": "string", 
+                            "IsCollection": "boolean", 
+                            "IsModifiable": "boolean", 
+                            "Name": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "OptionVersion": "string", 
+                    "Port": "integer", 
+                    "VpcSecurityGroupMemberships": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "OptionsToRemove": {
+                "_list": "string"
+            }
+        }, 
+        "PromoteReadReplica": {
+            "BackupRetentionPeriod": "integer", 
+            "DBInstanceIdentifier": "string", 
+            "PreferredBackupWindow": "string"
+        }, 
+        "PromoteReadReplicaDBCluster": {
+            "DBClusterIdentifier": "string"
+        }, 
+        "PurchaseReservedDBInstancesOffering": {
+            "DBInstanceCount": "integer", 
+            "ReservedDBInstanceId": "string", 
+            "ReservedDBInstancesOfferingId": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "RebootDBInstance": {
+            "DBInstanceIdentifier": "string", 
+            "ForceFailover": "boolean"
+        }, 
+        "RemoveRoleFromDBCluster": {
+            "DBClusterIdentifier": "string", 
+            "RoleArn": "string"
+        }, 
+        "RemoveSourceIdentifierFromSubscription": {
+            "SourceIdentifier": "string", 
+            "SubscriptionName": "string"
+        }, 
+        "ResetDBClusterParameterGroup": {
+            "DBClusterParameterGroupName": "string", 
+            "Parameters": {
+                "_list": {
+                    "AllowedValues": "string", 
+                    "ApplyMethod": "string", 
+                    "ApplyType": "string", 
+                    "DataType": "string", 
+                    "Description": "string", 
+                    "IsModifiable": "boolean", 
+                    "MinimumEngineVersion": "string", 
+                    "ParameterName": "string", 
+                    "ParameterValue": "string", 
+                    "Source": "string", 
+                    "SupportedEngineModes": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ResetAllParameters": "boolean"
+        }, 
+        "ResetDBParameterGroup": {
+            "DBParameterGroupName": "string", 
+            "Parameters": {
+                "_list": {
+                    "AllowedValues": "string", 
+                    "ApplyMethod": "string", 
+                    "ApplyType": "string", 
+                    "DataType": "string", 
+                    "Description": "string", 
+                    "IsModifiable": "boolean", 
+                    "MinimumEngineVersion": "string", 
+                    "ParameterName": "string", 
+                    "ParameterValue": "string", 
+                    "Source": "string", 
+                    "SupportedEngineModes": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ResetAllParameters": "boolean"
+        }, 
+        "RestoreDBClusterFromS3": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "BacktrackWindow": "long", 
+            "BackupRetentionPeriod": "integer", 
+            "CharacterSetName": "string", 
+            "DBClusterIdentifier": "string", 
+            "DBClusterParameterGroupName": "string", 
+            "DBSubnetGroupName": "string", 
+            "DatabaseName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "Engine": "string", 
+            "EngineVersion": "string", 
+            "KmsKeyId": "string", 
+            "MasterUserPassword": "string", 
+            "MasterUsername": "string", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "S3BucketName": "string", 
+            "S3IngestionRoleArn": "string", 
+            "S3Prefix": "string", 
+            "SourceEngine": "string", 
+            "SourceEngineVersion": "string", 
+            "StorageEncrypted": "boolean", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "RestoreDBClusterFromSnapshot": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "BacktrackWindow": "long", 
+            "DBClusterIdentifier": "string", 
+            "DBSubnetGroupName": "string", 
+            "DatabaseName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "Engine": "string", 
+            "EngineMode": "string", 
+            "EngineVersion": "string", 
+            "KmsKeyId": "string", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "ScalingConfiguration": {
+                "AutoPause": "boolean", 
+                "MaxCapacity": "integer", 
+                "MinCapacity": "integer", 
+                "SecondsUntilAutoPause": "integer"
+            }, 
+            "SnapshotIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "RestoreDBClusterToPointInTime": {
+            "BacktrackWindow": "long", 
+            "DBClusterIdentifier": "string", 
+            "DBSubnetGroupName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "KmsKeyId": "string", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "RestoreToTime": "timestamp", 
+            "RestoreType": "string", 
+            "SourceDBClusterIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UseLatestRestorableTime": "boolean", 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "RestoreDBInstanceFromDBSnapshot": {
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AvailabilityZone": "string", 
+            "CopyTagsToSnapshot": "boolean", 
+            "DBInstanceClass": "string", 
+            "DBInstanceIdentifier": "string", 
+            "DBName": "string", 
+            "DBSnapshotIdentifier": "string", 
+            "DBSubnetGroupName": "string", 
+            "Domain": "string", 
+            "DomainIAMRoleName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "Engine": "string", 
+            "Iops": "integer", 
+            "LicenseModel": "string", 
+            "MultiAZ": "boolean", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "ProcessorFeatures": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "PubliclyAccessible": "boolean", 
+            "StorageType": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TdeCredentialArn": "string", 
+            "TdeCredentialPassword": "string", 
+            "UseDefaultProcessorFeatures": "boolean"
+        }, 
+        "RestoreDBInstanceFromS3": {
+            "AllocatedStorage": "integer", 
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AvailabilityZone": "string", 
+            "BackupRetentionPeriod": "integer", 
+            "CopyTagsToSnapshot": "boolean", 
+            "DBInstanceClass": "string", 
+            "DBInstanceIdentifier": "string", 
+            "DBName": "string", 
+            "DBParameterGroupName": "string", 
+            "DBSecurityGroups": {
+                "_list": "string"
+            }, 
+            "DBSubnetGroupName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "EnablePerformanceInsights": "boolean", 
+            "Engine": "string", 
+            "EngineVersion": "string", 
+            "Iops": "integer", 
+            "KmsKeyId": "string", 
+            "LicenseModel": "string", 
+            "MasterUserPassword": "string", 
+            "MasterUsername": "string", 
+            "MonitoringInterval": "integer", 
+            "MonitoringRoleArn": "string", 
+            "MultiAZ": "boolean", 
+            "OptionGroupName": "string", 
+            "PerformanceInsightsKMSKeyId": "string", 
+            "PerformanceInsightsRetentionPeriod": "integer", 
+            "Port": "integer", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ProcessorFeatures": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "PubliclyAccessible": "boolean", 
+            "S3BucketName": "string", 
+            "S3IngestionRoleArn": "string", 
+            "S3Prefix": "string", 
+            "SourceEngine": "string", 
+            "SourceEngineVersion": "string", 
+            "StorageEncrypted": "boolean", 
+            "StorageType": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "UseDefaultProcessorFeatures": "boolean", 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "RestoreDBInstanceToPointInTime": {
+            "AutoMinorVersionUpgrade": "boolean", 
+            "AvailabilityZone": "string", 
+            "CopyTagsToSnapshot": "boolean", 
+            "DBInstanceClass": "string", 
+            "DBName": "string", 
+            "DBSubnetGroupName": "string", 
+            "Domain": "string", 
+            "DomainIAMRoleName": "string", 
+            "EnableCloudwatchLogsExports": {
+                "_list": "string"
+            }, 
+            "EnableIAMDatabaseAuthentication": "boolean", 
+            "Engine": "string", 
+            "Iops": "integer", 
+            "LicenseModel": "string", 
+            "MultiAZ": "boolean", 
+            "OptionGroupName": "string", 
+            "Port": "integer", 
+            "ProcessorFeatures": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "PubliclyAccessible": "boolean", 
+            "RestoreTime": "timestamp", 
+            "SourceDBInstanceIdentifier": "string", 
+            "StorageType": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "TargetDBInstanceIdentifier": "string", 
+            "TdeCredentialArn": "string", 
+            "TdeCredentialPassword": "string", 
+            "UseDefaultProcessorFeatures": "boolean", 
+            "UseLatestRestorableTime": "boolean"
+        }, 
+        "RevokeDBSecurityGroupIngress": {
+            "CIDRIP": "string", 
+            "DBSecurityGroupName": "string", 
+            "EC2SecurityGroupId": "string", 
+            "EC2SecurityGroupName": "string", 
+            "EC2SecurityGroupOwnerId": "string"
+        }, 
+        "StartDBInstance": {
+            "DBInstanceIdentifier": "string"
+        }, 
+        "StopDBInstance": {
+            "DBInstanceIdentifier": "string", 
+            "DBSnapshotIdentifier": "string"
+        }
+    }
+}

@@ -1,0 +1,736 @@
+{
+    "IamActions": [
+        "CreateBackup", 
+        "CreateGlobalTable", 
+        "CreateTable", 
+        "DeleteBackup", 
+        "DeleteItem", 
+        "DeleteTable", 
+        "PurchaseReservedCapacityOfferings", 
+        "PutItem", 
+        "RestoreTableFromBackup", 
+        "RestoreTableToPointInTime", 
+        "UpdateContinuousBackups", 
+        "UpdateGlobalTable", 
+        "UpdateGlobalTableSettings", 
+        "UpdateItem", 
+        "UpdateTable", 
+        "UpdateTimeToLive"
+    ], 
+    "OperationInputs": {
+        "CreateBackup": {
+            "BackupName": "string", 
+            "TableName": "string"
+        }, 
+        "CreateGlobalTable": {
+            "GlobalTableName": "string", 
+            "ReplicationGroup": {
+                "_list": {
+                    "RegionName": "string"
+                }
+            }
+        }, 
+        "CreateTable": {
+            "AttributeDefinitions": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "AttributeType": "string"
+                }
+            }, 
+            "GlobalSecondaryIndexes": {
+                "_list": {
+                    "IndexName": "string", 
+                    "KeySchema": {
+                        "_list": {
+                            "AttributeName": "string", 
+                            "KeyType": "string"
+                        }
+                    }, 
+                    "Projection": {
+                        "NonKeyAttributes": {
+                            "_list": "string"
+                        }, 
+                        "ProjectionType": "string"
+                    }, 
+                    "ProvisionedThroughput": {
+                        "ReadCapacityUnits": "long", 
+                        "WriteCapacityUnits": "long"
+                    }
+                }
+            }, 
+            "KeySchema": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "KeyType": "string"
+                }
+            }, 
+            "LocalSecondaryIndexes": {
+                "_list": {
+                    "IndexName": "string", 
+                    "KeySchema": {
+                        "_list": {
+                            "AttributeName": "string", 
+                            "KeyType": "string"
+                        }
+                    }, 
+                    "Projection": {
+                        "NonKeyAttributes": {
+                            "_list": "string"
+                        }, 
+                        "ProjectionType": "string"
+                    }
+                }
+            }, 
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": "long", 
+                "WriteCapacityUnits": "long"
+            }, 
+            "SSESpecification": {
+                "Enabled": "boolean", 
+                "KMSMasterKeyId": "string", 
+                "SSEType": "string"
+            }, 
+            "StreamSpecification": {
+                "StreamEnabled": "boolean", 
+                "StreamViewType": "string"
+            }, 
+            "TableName": "string"
+        }, 
+        "DeleteBackup": {
+            "BackupArn": "string"
+        }, 
+        "DeleteItem": {
+            "ConditionExpression": "string", 
+            "ConditionalOperator": "string", 
+            "Expected": {
+                "_key": "string", 
+                "_value": {
+                    "AttributeValueList": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "ComparisonOperator": "string", 
+                    "Exists": "boolean", 
+                    "Value": {
+                        "B": "blob", 
+                        "BOOL": "boolean", 
+                        "BS": {
+                            "_list": "blob"
+                        }, 
+                        "L": {
+                            "_list": "structure"
+                        }, 
+                        "M": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "N": "string", 
+                        "NS": {
+                            "_list": "string"
+                        }, 
+                        "NULL": "boolean", 
+                        "S": "string", 
+                        "SS": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "ExpressionAttributeNames": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ExpressionAttributeValues": {
+                "_key": "string", 
+                "_value": {
+                    "B": "blob", 
+                    "BOOL": "boolean", 
+                    "BS": {
+                        "_list": "blob"
+                    }, 
+                    "L": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "M": {
+                        "_key": "string", 
+                        "_value": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "N": "string", 
+                    "NS": {
+                        "_list": "string"
+                    }, 
+                    "NULL": "boolean", 
+                    "S": "string", 
+                    "SS": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "Key": {
+                "_key": "string", 
+                "_value": {
+                    "B": "blob", 
+                    "BOOL": "boolean", 
+                    "BS": {
+                        "_list": "blob"
+                    }, 
+                    "L": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "M": {
+                        "_key": "string", 
+                        "_value": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "N": "string", 
+                    "NS": {
+                        "_list": "string"
+                    }, 
+                    "NULL": "boolean", 
+                    "S": "string", 
+                    "SS": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ReturnConsumedCapacity": "string", 
+            "ReturnItemCollectionMetrics": "string", 
+            "ReturnValues": "string", 
+            "TableName": "string"
+        }, 
+        "DeleteTable": {
+            "TableName": "string"
+        }, 
+        "PutItem": {
+            "ConditionExpression": "string", 
+            "ConditionalOperator": "string", 
+            "Expected": {
+                "_key": "string", 
+                "_value": {
+                    "AttributeValueList": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "ComparisonOperator": "string", 
+                    "Exists": "boolean", 
+                    "Value": {
+                        "B": "blob", 
+                        "BOOL": "boolean", 
+                        "BS": {
+                            "_list": "blob"
+                        }, 
+                        "L": {
+                            "_list": "structure"
+                        }, 
+                        "M": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "N": "string", 
+                        "NS": {
+                            "_list": "string"
+                        }, 
+                        "NULL": "boolean", 
+                        "S": "string", 
+                        "SS": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "ExpressionAttributeNames": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ExpressionAttributeValues": {
+                "_key": "string", 
+                "_value": {
+                    "B": "blob", 
+                    "BOOL": "boolean", 
+                    "BS": {
+                        "_list": "blob"
+                    }, 
+                    "L": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "M": {
+                        "_key": "string", 
+                        "_value": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "N": "string", 
+                    "NS": {
+                        "_list": "string"
+                    }, 
+                    "NULL": "boolean", 
+                    "S": "string", 
+                    "SS": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "Item": {
+                "_key": "string", 
+                "_value": {
+                    "B": "blob", 
+                    "BOOL": "boolean", 
+                    "BS": {
+                        "_list": "blob"
+                    }, 
+                    "L": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "M": {
+                        "_key": "string", 
+                        "_value": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "N": "string", 
+                    "NS": {
+                        "_list": "string"
+                    }, 
+                    "NULL": "boolean", 
+                    "S": "string", 
+                    "SS": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ReturnConsumedCapacity": "string", 
+            "ReturnItemCollectionMetrics": "string", 
+            "ReturnValues": "string", 
+            "TableName": "string"
+        }, 
+        "RestoreTableFromBackup": {
+            "BackupArn": "string", 
+            "TargetTableName": "string"
+        }, 
+        "RestoreTableToPointInTime": {
+            "RestoreDateTime": "timestamp", 
+            "SourceTableName": "string", 
+            "TargetTableName": "string", 
+            "UseLatestRestorableTime": "boolean"
+        }, 
+        "UpdateContinuousBackups": {
+            "PointInTimeRecoverySpecification": {
+                "PointInTimeRecoveryEnabled": "boolean"
+            }, 
+            "TableName": "string"
+        }, 
+        "UpdateGlobalTable": {
+            "GlobalTableName": "string", 
+            "ReplicaUpdates": {
+                "_list": {
+                    "Create": {
+                        "RegionName": "string"
+                    }, 
+                    "Delete": {
+                        "RegionName": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateGlobalTableSettings": {
+            "GlobalTableGlobalSecondaryIndexSettingsUpdate": {
+                "_list": {
+                    "IndexName": "string", 
+                    "ProvisionedWriteCapacityAutoScalingSettingsUpdate": {
+                        "AutoScalingDisabled": "boolean", 
+                        "AutoScalingRoleArn": "string", 
+                        "MaximumUnits": "long", 
+                        "MinimumUnits": "long", 
+                        "ScalingPolicyUpdate": {
+                            "PolicyName": "string", 
+                            "TargetTrackingScalingPolicyConfiguration": "structure"
+                        }
+                    }, 
+                    "ProvisionedWriteCapacityUnits": "long"
+                }
+            }, 
+            "GlobalTableName": "string", 
+            "GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate": {
+                "AutoScalingDisabled": "boolean", 
+                "AutoScalingRoleArn": "string", 
+                "MaximumUnits": "long", 
+                "MinimumUnits": "long", 
+                "ScalingPolicyUpdate": {
+                    "PolicyName": "string", 
+                    "TargetTrackingScalingPolicyConfiguration": {
+                        "DisableScaleIn": "boolean", 
+                        "ScaleInCooldown": "integer", 
+                        "ScaleOutCooldown": "integer", 
+                        "TargetValue": "double"
+                    }
+                }
+            }, 
+            "GlobalTableProvisionedWriteCapacityUnits": "long", 
+            "ReplicaSettingsUpdate": {
+                "_list": {
+                    "RegionName": "string", 
+                    "ReplicaGlobalSecondaryIndexSettingsUpdate": {
+                        "_list": {
+                            "IndexName": "string", 
+                            "ProvisionedReadCapacityAutoScalingSettingsUpdate": "structure", 
+                            "ProvisionedReadCapacityUnits": "long"
+                        }
+                    }, 
+                    "ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate": {
+                        "AutoScalingDisabled": "boolean", 
+                        "AutoScalingRoleArn": "string", 
+                        "MaximumUnits": "long", 
+                        "MinimumUnits": "long", 
+                        "ScalingPolicyUpdate": {
+                            "PolicyName": "string", 
+                            "TargetTrackingScalingPolicyConfiguration": "structure"
+                        }
+                    }, 
+                    "ReplicaProvisionedReadCapacityUnits": "long"
+                }
+            }
+        }, 
+        "UpdateItem": {
+            "AttributeUpdates": {
+                "_key": "string", 
+                "_value": {
+                    "Action": "string", 
+                    "Value": {
+                        "B": "blob", 
+                        "BOOL": "boolean", 
+                        "BS": {
+                            "_list": "blob"
+                        }, 
+                        "L": {
+                            "_list": "structure"
+                        }, 
+                        "M": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "N": "string", 
+                        "NS": {
+                            "_list": "string"
+                        }, 
+                        "NULL": "boolean", 
+                        "S": "string", 
+                        "SS": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "ConditionExpression": "string", 
+            "ConditionalOperator": "string", 
+            "Expected": {
+                "_key": "string", 
+                "_value": {
+                    "AttributeValueList": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "ComparisonOperator": "string", 
+                    "Exists": "boolean", 
+                    "Value": {
+                        "B": "blob", 
+                        "BOOL": "boolean", 
+                        "BS": {
+                            "_list": "blob"
+                        }, 
+                        "L": {
+                            "_list": "structure"
+                        }, 
+                        "M": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }, 
+                        "N": "string", 
+                        "NS": {
+                            "_list": "string"
+                        }, 
+                        "NULL": "boolean", 
+                        "S": "string", 
+                        "SS": {
+                            "_list": "string"
+                        }
+                    }
+                }
+            }, 
+            "ExpressionAttributeNames": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ExpressionAttributeValues": {
+                "_key": "string", 
+                "_value": {
+                    "B": "blob", 
+                    "BOOL": "boolean", 
+                    "BS": {
+                        "_list": "blob"
+                    }, 
+                    "L": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "M": {
+                        "_key": "string", 
+                        "_value": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "N": "string", 
+                    "NS": {
+                        "_list": "string"
+                    }, 
+                    "NULL": "boolean", 
+                    "S": "string", 
+                    "SS": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "Key": {
+                "_key": "string", 
+                "_value": {
+                    "B": "blob", 
+                    "BOOL": "boolean", 
+                    "BS": {
+                        "_list": "blob"
+                    }, 
+                    "L": {
+                        "_list": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "M": {
+                        "_key": "string", 
+                        "_value": {
+                            "B": "blob", 
+                            "BOOL": "boolean", 
+                            "BS": "list", 
+                            "L": "list", 
+                            "M": "map", 
+                            "N": "string", 
+                            "NS": "list", 
+                            "NULL": "boolean", 
+                            "S": "string", 
+                            "SS": "list"
+                        }
+                    }, 
+                    "N": "string", 
+                    "NS": {
+                        "_list": "string"
+                    }, 
+                    "NULL": "boolean", 
+                    "S": "string", 
+                    "SS": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ReturnConsumedCapacity": "string", 
+            "ReturnItemCollectionMetrics": "string", 
+            "ReturnValues": "string", 
+            "TableName": "string", 
+            "UpdateExpression": "string"
+        }, 
+        "UpdateTable": {
+            "AttributeDefinitions": {
+                "_list": {
+                    "AttributeName": "string", 
+                    "AttributeType": "string"
+                }
+            }, 
+            "GlobalSecondaryIndexUpdates": {
+                "_list": {
+                    "Create": {
+                        "IndexName": "string", 
+                        "KeySchema": {
+                            "_list": "structure"
+                        }, 
+                        "Projection": {
+                            "NonKeyAttributes": "list", 
+                            "ProjectionType": "string"
+                        }, 
+                        "ProvisionedThroughput": {
+                            "ReadCapacityUnits": "long", 
+                            "WriteCapacityUnits": "long"
+                        }
+                    }, 
+                    "Delete": {
+                        "IndexName": "string"
+                    }, 
+                    "Update": {
+                        "IndexName": "string", 
+                        "ProvisionedThroughput": {
+                            "ReadCapacityUnits": "long", 
+                            "WriteCapacityUnits": "long"
+                        }
+                    }
+                }
+            }, 
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": "long", 
+                "WriteCapacityUnits": "long"
+            }, 
+            "SSESpecification": {
+                "Enabled": "boolean", 
+                "KMSMasterKeyId": "string", 
+                "SSEType": "string"
+            }, 
+            "StreamSpecification": {
+                "StreamEnabled": "boolean", 
+                "StreamViewType": "string"
+            }, 
+            "TableName": "string"
+        }, 
+        "UpdateTimeToLive": {
+            "TableName": "string", 
+            "TimeToLiveSpecification": {
+                "AttributeName": "string", 
+                "Enabled": "boolean"
+            }
+        }
+    }
+}

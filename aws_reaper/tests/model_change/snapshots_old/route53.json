@@ -1,0 +1,211 @@
+{
+    "IamActions": [
+        "AssociateVPCWithHostedZone", 
+        "ChangeResourceRecordSets", 
+        "CreateHealthCheck", 
+        "CreateHostedZone", 
+        "CreateQueryLoggingConfig", 
+        "CreateReusableDelegationSet", 
+        "CreateTrafficPolicy", 
+        "CreateTrafficPolicyInstance", 
+        "CreateTrafficPolicyVersion", 
+        "CreateVPCAssociationAuthorization", 
+        "DeleteHealthCheck", 
+        "DeleteHostedZone", 
+        "DeleteQueryLoggingConfig", 
+        "DeleteReusableDelegationSet", 
+        "DeleteTrafficPolicy", 
+        "DeleteTrafficPolicyInstance", 
+        "DeleteVPCAssociationAuthorization", 
+        "DisassociateVPCFromHostedZone", 
+        "UpdateHealthCheck", 
+        "UpdateHostedZoneComment", 
+        "UpdateTrafficPolicyComment", 
+        "UpdateTrafficPolicyInstance"
+    ], 
+    "OperationInputs": {
+        "AssociateVPCWithHostedZone": {
+            "Comment": "string", 
+            "HostedZoneId": "string", 
+            "VPC": {
+                "VPCId": "string", 
+                "VPCRegion": "string"
+            }
+        }, 
+        "ChangeResourceRecordSets": {
+            "ChangeBatch": {
+                "Changes": {
+                    "_list": {
+                        "Action": "string", 
+                        "ResourceRecordSet": {
+                            "AliasTarget": "structure", 
+                            "Failover": "string", 
+                            "GeoLocation": "structure", 
+                            "HealthCheckId": "string", 
+                            "MultiValueAnswer": "boolean", 
+                            "Name": "string", 
+                            "Region": "string", 
+                            "ResourceRecords": "list", 
+                            "SetIdentifier": "string", 
+                            "TTL": "long", 
+                            "TrafficPolicyInstanceId": "string", 
+                            "Type": "string", 
+                            "Weight": "long"
+                        }
+                    }
+                }, 
+                "Comment": "string"
+            }, 
+            "HostedZoneId": "string"
+        }, 
+        "CreateHealthCheck": {
+            "CallerReference": "string", 
+            "HealthCheckConfig": {
+                "AlarmIdentifier": {
+                    "Name": "string", 
+                    "Region": "string"
+                }, 
+                "ChildHealthChecks": {
+                    "_list": "string"
+                }, 
+                "EnableSNI": "boolean", 
+                "FailureThreshold": "integer", 
+                "FullyQualifiedDomainName": "string", 
+                "HealthThreshold": "integer", 
+                "IPAddress": "string", 
+                "InsufficientDataHealthStatus": "string", 
+                "Inverted": "boolean", 
+                "MeasureLatency": "boolean", 
+                "Port": "integer", 
+                "Regions": {
+                    "_list": "string"
+                }, 
+                "RequestInterval": "integer", 
+                "ResourcePath": "string", 
+                "SearchString": "string", 
+                "Type": "string"
+            }
+        }, 
+        "CreateHostedZone": {
+            "CallerReference": "string", 
+            "DelegationSetId": "string", 
+            "HostedZoneConfig": {
+                "Comment": "string", 
+                "PrivateZone": "boolean"
+            }, 
+            "Name": "string", 
+            "VPC": {
+                "VPCId": "string", 
+                "VPCRegion": "string"
+            }
+        }, 
+        "CreateQueryLoggingConfig": {
+            "CloudWatchLogsLogGroupArn": "string", 
+            "HostedZoneId": "string"
+        }, 
+        "CreateReusableDelegationSet": {
+            "CallerReference": "string", 
+            "HostedZoneId": "string"
+        }, 
+        "CreateTrafficPolicy": {
+            "Comment": "string", 
+            "Document": "string", 
+            "Name": "string"
+        }, 
+        "CreateTrafficPolicyInstance": {
+            "HostedZoneId": "string", 
+            "Name": "string", 
+            "TTL": "long", 
+            "TrafficPolicyId": "string", 
+            "TrafficPolicyVersion": "integer"
+        }, 
+        "CreateTrafficPolicyVersion": {
+            "Comment": "string", 
+            "Document": "string", 
+            "Id": "string"
+        }, 
+        "CreateVPCAssociationAuthorization": {
+            "HostedZoneId": "string", 
+            "VPC": {
+                "VPCId": "string", 
+                "VPCRegion": "string"
+            }
+        }, 
+        "DeleteHealthCheck": {
+            "HealthCheckId": "string"
+        }, 
+        "DeleteHostedZone": {
+            "Id": "string"
+        }, 
+        "DeleteQueryLoggingConfig": {
+            "Id": "string"
+        }, 
+        "DeleteReusableDelegationSet": {
+            "Id": "string"
+        }, 
+        "DeleteTrafficPolicy": {
+            "Id": "string", 
+            "Version": "integer"
+        }, 
+        "DeleteTrafficPolicyInstance": {
+            "Id": "string"
+        }, 
+        "DeleteVPCAssociationAuthorization": {
+            "HostedZoneId": "string", 
+            "VPC": {
+                "VPCId": "string", 
+                "VPCRegion": "string"
+            }
+        }, 
+        "DisassociateVPCFromHostedZone": {
+            "Comment": "string", 
+            "HostedZoneId": "string", 
+            "VPC": {
+                "VPCId": "string", 
+                "VPCRegion": "string"
+            }
+        }, 
+        "UpdateHealthCheck": {
+            "AlarmIdentifier": {
+                "Name": "string", 
+                "Region": "string"
+            }, 
+            "ChildHealthChecks": {
+                "_list": "string"
+            }, 
+            "EnableSNI": "boolean", 
+            "FailureThreshold": "integer", 
+            "FullyQualifiedDomainName": "string", 
+            "HealthCheckId": "string", 
+            "HealthCheckVersion": "long", 
+            "HealthThreshold": "integer", 
+            "IPAddress": "string", 
+            "InsufficientDataHealthStatus": "string", 
+            "Inverted": "boolean", 
+            "Port": "integer", 
+            "Regions": {
+                "_list": "string"
+            }, 
+            "ResetElements": {
+                "_list": "string"
+            }, 
+            "ResourcePath": "string", 
+            "SearchString": "string"
+        }, 
+        "UpdateHostedZoneComment": {
+            "Comment": "string", 
+            "Id": "string"
+        }, 
+        "UpdateTrafficPolicyComment": {
+            "Comment": "string", 
+            "Id": "string", 
+            "Version": "integer"
+        }, 
+        "UpdateTrafficPolicyInstance": {
+            "Id": "string", 
+            "TTL": "long", 
+            "TrafficPolicyId": "string", 
+            "TrafficPolicyVersion": "integer"
+        }
+    }
+}

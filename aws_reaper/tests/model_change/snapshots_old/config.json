@@ -1,0 +1,155 @@
+{
+    "IamActions": [
+        "DeleteAggregationAuthorization", 
+        "DeleteConfigRule", 
+        "DeleteConfigurationAggregator", 
+        "DeleteConfigurationRecorder", 
+        "DeleteDeliveryChannel", 
+        "DeleteEvaluationResults", 
+        "DeletePendingAggregationRequest", 
+        "PutAggregationAuthorization", 
+        "PutConfigRule", 
+        "PutConfigurationAggregator", 
+        "PutConfigurationRecorder", 
+        "PutDeliveryChannel", 
+        "PutEvaluations", 
+        "StartConfigRulesEvaluation", 
+        "StartConfigurationRecorder", 
+        "StopConfigurationRecorder"
+    ], 
+    "OperationInputs": {
+        "DeleteAggregationAuthorization": {
+            "AuthorizedAccountId": "string", 
+            "AuthorizedAwsRegion": "string"
+        }, 
+        "DeleteConfigRule": {
+            "ConfigRuleName": "string"
+        }, 
+        "DeleteConfigurationAggregator": {
+            "ConfigurationAggregatorName": "string"
+        }, 
+        "DeleteConfigurationRecorder": {
+            "ConfigurationRecorderName": "string"
+        }, 
+        "DeleteDeliveryChannel": {
+            "DeliveryChannelName": "string"
+        }, 
+        "DeleteEvaluationResults": {
+            "ConfigRuleName": "string"
+        }, 
+        "DeletePendingAggregationRequest": {
+            "RequesterAccountId": "string", 
+            "RequesterAwsRegion": "string"
+        }, 
+        "DeleteRetentionConfiguration": {
+            "RetentionConfigurationName": "string"
+        }, 
+        "PutAggregationAuthorization": {
+            "AuthorizedAccountId": "string", 
+            "AuthorizedAwsRegion": "string"
+        }, 
+        "PutConfigRule": {
+            "ConfigRule": {
+                "ConfigRuleArn": "string", 
+                "ConfigRuleId": "string", 
+                "ConfigRuleName": "string", 
+                "ConfigRuleState": "string", 
+                "CreatedBy": "string", 
+                "Description": "string", 
+                "InputParameters": "string", 
+                "MaximumExecutionFrequency": "string", 
+                "Scope": {
+                    "ComplianceResourceId": "string", 
+                    "ComplianceResourceTypes": {
+                        "_list": "string"
+                    }, 
+                    "TagKey": "string", 
+                    "TagValue": "string"
+                }, 
+                "Source": {
+                    "Owner": "string", 
+                    "SourceDetails": {
+                        "_list": {
+                            "EventSource": "string", 
+                            "MaximumExecutionFrequency": "string", 
+                            "MessageType": "string"
+                        }
+                    }, 
+                    "SourceIdentifier": "string"
+                }
+            }
+        }, 
+        "PutConfigurationAggregator": {
+            "AccountAggregationSources": {
+                "_list": {
+                    "AccountIds": {
+                        "_list": "string"
+                    }, 
+                    "AllAwsRegions": "boolean", 
+                    "AwsRegions": {
+                        "_list": "string"
+                    }
+                }
+            }, 
+            "ConfigurationAggregatorName": "string", 
+            "OrganizationAggregationSource": {
+                "AllAwsRegions": "boolean", 
+                "AwsRegions": {
+                    "_list": "string"
+                }, 
+                "RoleArn": "string"
+            }
+        }, 
+        "PutConfigurationRecorder": {
+            "ConfigurationRecorder": {
+                "name": "string", 
+                "recordingGroup": {
+                    "allSupported": "boolean", 
+                    "includeGlobalResourceTypes": "boolean", 
+                    "resourceTypes": {
+                        "_list": "string"
+                    }
+                }, 
+                "roleARN": "string"
+            }
+        }, 
+        "PutDeliveryChannel": {
+            "DeliveryChannel": {
+                "configSnapshotDeliveryProperties": {
+                    "deliveryFrequency": "string"
+                }, 
+                "name": "string", 
+                "s3BucketName": "string", 
+                "s3KeyPrefix": "string", 
+                "snsTopicARN": "string"
+            }
+        }, 
+        "PutEvaluations": {
+            "Evaluations": {
+                "_list": {
+                    "Annotation": "string", 
+                    "ComplianceResourceId": "string", 
+                    "ComplianceResourceType": "string", 
+                    "ComplianceType": "string", 
+                    "OrderingTimestamp": "timestamp"
+                }
+            }, 
+            "ResultToken": "string", 
+            "TestMode": "boolean"
+        }, 
+        "PutRetentionConfiguration": {
+            "RetentionPeriodInDays": "integer"
+        }, 
+        "StartConfigRulesEvaluation": {
+            "ConfigRuleNames": {
+                "_list": "string"
+            }
+        }, 
+        "StartConfigurationRecorder": {
+            "ConfigurationRecorderName": "string"
+        }, 
+        "StopConfigurationRecorder": {
+            "ConfigurationRecorderName": "string"
+        }
+    }
+}

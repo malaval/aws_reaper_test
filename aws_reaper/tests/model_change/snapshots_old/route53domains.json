@@ -1,0 +1,285 @@
+{
+    "IamActions": [
+        "DisableDomainAutoRenew", 
+        "DisableDomainTransferLock", 
+        "EnableDomainAutoRenew", 
+        "EnableDomainTransferLock", 
+        "RegisterDomain", 
+        "RenewDomain", 
+        "ResendContactReachabilityEmail", 
+        "RetrieveDomainAuthCode", 
+        "TransferDomain", 
+        "UpdateDomainContact", 
+        "UpdateDomainContactPrivacy", 
+        "UpdateDomainNameservers", 
+        "ViewBilling"
+    ], 
+    "OperationInputs": {
+        "DisableDomainAutoRenew": {
+            "DomainName": "string"
+        }, 
+        "DisableDomainTransferLock": {
+            "DomainName": "string"
+        }, 
+        "EnableDomainAutoRenew": {
+            "DomainName": "string"
+        }, 
+        "EnableDomainTransferLock": {
+            "DomainName": "string"
+        }, 
+        "RegisterDomain": {
+            "AdminContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }, 
+            "AutoRenew": "boolean", 
+            "DomainName": "string", 
+            "DurationInYears": "integer", 
+            "IdnLangCode": "string", 
+            "PrivacyProtectAdminContact": "boolean", 
+            "PrivacyProtectRegistrantContact": "boolean", 
+            "PrivacyProtectTechContact": "boolean", 
+            "RegistrantContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }, 
+            "TechContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }
+        }, 
+        "RenewDomain": {
+            "CurrentExpiryYear": "integer", 
+            "DomainName": "string", 
+            "DurationInYears": "integer"
+        }, 
+        "ResendContactReachabilityEmail": {
+            "domainName": "string"
+        }, 
+        "RetrieveDomainAuthCode": {
+            "DomainName": "string"
+        }, 
+        "TransferDomain": {
+            "AdminContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }, 
+            "AuthCode": "string", 
+            "AutoRenew": "boolean", 
+            "DomainName": "string", 
+            "DurationInYears": "integer", 
+            "IdnLangCode": "string", 
+            "Nameservers": {
+                "_list": {
+                    "GlueIps": {
+                        "_list": "string"
+                    }, 
+                    "Name": "string"
+                }
+            }, 
+            "PrivacyProtectAdminContact": "boolean", 
+            "PrivacyProtectRegistrantContact": "boolean", 
+            "PrivacyProtectTechContact": "boolean", 
+            "RegistrantContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }, 
+            "TechContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }
+        }, 
+        "UpdateDomainContact": {
+            "AdminContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }, 
+            "DomainName": "string", 
+            "RegistrantContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }, 
+            "TechContact": {
+                "AddressLine1": "string", 
+                "AddressLine2": "string", 
+                "City": "string", 
+                "ContactType": "string", 
+                "CountryCode": "string", 
+                "Email": "string", 
+                "ExtraParams": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "Fax": "string", 
+                "FirstName": "string", 
+                "LastName": "string", 
+                "OrganizationName": "string", 
+                "PhoneNumber": "string", 
+                "State": "string", 
+                "ZipCode": "string"
+            }
+        }, 
+        "UpdateDomainContactPrivacy": {
+            "AdminPrivacy": "boolean", 
+            "DomainName": "string", 
+            "RegistrantPrivacy": "boolean", 
+            "TechPrivacy": "boolean"
+        }, 
+        "UpdateDomainNameservers": {
+            "DomainName": "string", 
+            "FIAuthKey": "string", 
+            "Nameservers": {
+                "_list": {
+                    "GlueIps": {
+                        "_list": "string"
+                    }, 
+                    "Name": "string"
+                }
+            }
+        }, 
+        "ViewBilling": {
+            "End": "timestamp", 
+            "Marker": "string", 
+            "MaxItems": "integer", 
+            "Start": "timestamp"
+        }
+    }
+}

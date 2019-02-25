@@ -1,0 +1,349 @@
+{
+    "IamActions": [
+        "CreateByteMatchSet", 
+        "CreateGeoMatchSet", 
+        "CreateIPSet", 
+        "CreateRateBasedRule", 
+        "CreateRegexMatchSet", 
+        "CreateRegexPatternSet", 
+        "CreateRule", 
+        "CreateRuleGroup", 
+        "CreateSizeConstraintSet", 
+        "CreateSqlInjectionMatchSet", 
+        "CreateWebACL", 
+        "CreateXssMatchSet", 
+        "DeleteByteMatchSet", 
+        "DeleteGeoMatchSet", 
+        "DeleteIPSet", 
+        "DeletePermissionPolicy", 
+        "DeleteRateBasedRule", 
+        "DeleteRegexMatchSet", 
+        "DeleteRegexPatternSet", 
+        "DeleteRule", 
+        "DeleteRuleGroup", 
+        "DeleteSizeConstraintSet", 
+        "DeleteSqlInjectionMatchSet", 
+        "DeleteWebACL", 
+        "DeleteXssMatchSet", 
+        "PutPermissionPolicy", 
+        "UpdateByteMatchSet", 
+        "UpdateGeoMatchSet", 
+        "UpdateIPSet", 
+        "UpdateRateBasedRule", 
+        "UpdateRegexMatchSet", 
+        "UpdateRegexPatternSet", 
+        "UpdateRule", 
+        "UpdateRuleGroup", 
+        "UpdateSizeConstraintSet", 
+        "UpdateSqlInjectionMatchSet", 
+        "UpdateWebACL", 
+        "UpdateXssMatchSet"
+    ], 
+    "OperationInputs": {
+        "CreateByteMatchSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateGeoMatchSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateIPSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateRateBasedRule": {
+            "ChangeToken": "string", 
+            "MetricName": "string", 
+            "Name": "string", 
+            "RateKey": "string", 
+            "RateLimit": "long"
+        }, 
+        "CreateRegexMatchSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateRegexPatternSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateRule": {
+            "ChangeToken": "string", 
+            "MetricName": "string", 
+            "Name": "string"
+        }, 
+        "CreateRuleGroup": {
+            "ChangeToken": "string", 
+            "MetricName": "string", 
+            "Name": "string"
+        }, 
+        "CreateSizeConstraintSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateSqlInjectionMatchSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "CreateWebACL": {
+            "ChangeToken": "string", 
+            "DefaultAction": {
+                "Type": "string"
+            }, 
+            "MetricName": "string", 
+            "Name": "string"
+        }, 
+        "CreateXssMatchSet": {
+            "ChangeToken": "string", 
+            "Name": "string"
+        }, 
+        "DeleteByteMatchSet": {
+            "ByteMatchSetId": "string", 
+            "ChangeToken": "string"
+        }, 
+        "DeleteGeoMatchSet": {
+            "ChangeToken": "string", 
+            "GeoMatchSetId": "string"
+        }, 
+        "DeleteIPSet": {
+            "ChangeToken": "string", 
+            "IPSetId": "string"
+        }, 
+        "DeletePermissionPolicy": {
+            "ResourceArn": "string"
+        }, 
+        "DeleteRateBasedRule": {
+            "ChangeToken": "string", 
+            "RuleId": "string"
+        }, 
+        "DeleteRegexMatchSet": {
+            "ChangeToken": "string", 
+            "RegexMatchSetId": "string"
+        }, 
+        "DeleteRegexPatternSet": {
+            "ChangeToken": "string", 
+            "RegexPatternSetId": "string"
+        }, 
+        "DeleteRule": {
+            "ChangeToken": "string", 
+            "RuleId": "string"
+        }, 
+        "DeleteRuleGroup": {
+            "ChangeToken": "string", 
+            "RuleGroupId": "string"
+        }, 
+        "DeleteSizeConstraintSet": {
+            "ChangeToken": "string", 
+            "SizeConstraintSetId": "string"
+        }, 
+        "DeleteSqlInjectionMatchSet": {
+            "ChangeToken": "string", 
+            "SqlInjectionMatchSetId": "string"
+        }, 
+        "DeleteWebACL": {
+            "ChangeToken": "string", 
+            "WebACLId": "string"
+        }, 
+        "DeleteXssMatchSet": {
+            "ChangeToken": "string", 
+            "XssMatchSetId": "string"
+        }, 
+        "PutPermissionPolicy": {
+            "Policy": "string", 
+            "ResourceArn": "string"
+        }, 
+        "UpdateByteMatchSet": {
+            "ByteMatchSetId": "string", 
+            "ChangeToken": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "ByteMatchTuple": {
+                        "FieldToMatch": {
+                            "Data": "string", 
+                            "Type": "string"
+                        }, 
+                        "PositionalConstraint": "string", 
+                        "TargetString": "blob", 
+                        "TextTransformation": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateGeoMatchSet": {
+            "ChangeToken": "string", 
+            "GeoMatchSetId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "GeoMatchConstraint": {
+                        "Type": "string", 
+                        "Value": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateIPSet": {
+            "ChangeToken": "string", 
+            "IPSetId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "IPSetDescriptor": {
+                        "Type": "string", 
+                        "Value": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateRateBasedRule": {
+            "ChangeToken": "string", 
+            "RateLimit": "long", 
+            "RuleId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "Predicate": {
+                        "DataId": "string", 
+                        "Negated": "boolean", 
+                        "Type": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateRegexMatchSet": {
+            "ChangeToken": "string", 
+            "RegexMatchSetId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "RegexMatchTuple": {
+                        "FieldToMatch": {
+                            "Data": "string", 
+                            "Type": "string"
+                        }, 
+                        "RegexPatternSetId": "string", 
+                        "TextTransformation": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateRegexPatternSet": {
+            "ChangeToken": "string", 
+            "RegexPatternSetId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "RegexPatternString": "string"
+                }
+            }
+        }, 
+        "UpdateRule": {
+            "ChangeToken": "string", 
+            "RuleId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "Predicate": {
+                        "DataId": "string", 
+                        "Negated": "boolean", 
+                        "Type": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateRuleGroup": {
+            "ChangeToken": "string", 
+            "RuleGroupId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "ActivatedRule": {
+                        "Action": {
+                            "Type": "string"
+                        }, 
+                        "OverrideAction": {
+                            "Type": "string"
+                        }, 
+                        "Priority": "integer", 
+                        "RuleId": "string", 
+                        "Type": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateSizeConstraintSet": {
+            "ChangeToken": "string", 
+            "SizeConstraintSetId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "SizeConstraint": {
+                        "ComparisonOperator": "string", 
+                        "FieldToMatch": {
+                            "Data": "string", 
+                            "Type": "string"
+                        }, 
+                        "Size": "long", 
+                        "TextTransformation": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateSqlInjectionMatchSet": {
+            "ChangeToken": "string", 
+            "SqlInjectionMatchSetId": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "SqlInjectionMatchTuple": {
+                        "FieldToMatch": {
+                            "Data": "string", 
+                            "Type": "string"
+                        }, 
+                        "TextTransformation": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateWebACL": {
+            "ChangeToken": "string", 
+            "DefaultAction": {
+                "Type": "string"
+            }, 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "ActivatedRule": {
+                        "Action": {
+                            "Type": "string"
+                        }, 
+                        "OverrideAction": {
+                            "Type": "string"
+                        }, 
+                        "Priority": "integer", 
+                        "RuleId": "string", 
+                        "Type": "string"
+                    }
+                }
+            }, 
+            "WebACLId": "string"
+        }, 
+        "UpdateXssMatchSet": {
+            "ChangeToken": "string", 
+            "Updates": {
+                "_list": {
+                    "Action": "string", 
+                    "XssMatchTuple": {
+                        "FieldToMatch": {
+                            "Data": "string", 
+                            "Type": "string"
+                        }, 
+                        "TextTransformation": "string"
+                    }
+                }
+            }, 
+            "XssMatchSetId": "string"
+        }
+    }
+}

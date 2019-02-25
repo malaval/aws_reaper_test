@@ -1,0 +1,116 @@
+{
+    "IamActions": [
+        "BatchWriteItem", 
+        "CreateCluster", 
+        "CreateParameterGroup", 
+        "CreateSubnetGroup", 
+        "DecreaseReplicationFactor", 
+        "DeleteCluster", 
+        "DeleteItem", 
+        "DeleteParameterGroup", 
+        "DeleteSubnetGroup", 
+        "IncreaseReplicationFactor", 
+        "PutItem", 
+        "RebootNode", 
+        "UpdateCluster", 
+        "UpdateItem", 
+        "UpdateParameterGroup", 
+        "UpdateSubnetGroup"
+    ], 
+    "OperationInputs": {
+        "CreateCluster": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "ClusterName": "string", 
+            "Description": "string", 
+            "IamRoleArn": "string", 
+            "NodeType": "string", 
+            "NotificationTopicArn": "string", 
+            "ParameterGroupName": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ReplicationFactor": "integer", 
+            "SSESpecification": {
+                "Enabled": "boolean"
+            }, 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "SubnetGroupName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateParameterGroup": {
+            "Description": "string", 
+            "ParameterGroupName": "string"
+        }, 
+        "CreateSubnetGroup": {
+            "Description": "string", 
+            "SubnetGroupName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "DecreaseReplicationFactor": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "ClusterName": "string", 
+            "NewReplicationFactor": "integer", 
+            "NodeIdsToRemove": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteCluster": {
+            "ClusterName": "string"
+        }, 
+        "DeleteParameterGroup": {
+            "ParameterGroupName": "string"
+        }, 
+        "DeleteSubnetGroup": {
+            "SubnetGroupName": "string"
+        }, 
+        "IncreaseReplicationFactor": {
+            "AvailabilityZones": {
+                "_list": "string"
+            }, 
+            "ClusterName": "string", 
+            "NewReplicationFactor": "integer"
+        }, 
+        "RebootNode": {
+            "ClusterName": "string", 
+            "NodeId": "string"
+        }, 
+        "UpdateCluster": {
+            "ClusterName": "string", 
+            "Description": "string", 
+            "NotificationTopicArn": "string", 
+            "NotificationTopicStatus": "string", 
+            "ParameterGroupName": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateParameterGroup": {
+            "ParameterGroupName": "string", 
+            "ParameterNameValues": {
+                "_list": {
+                    "ParameterName": "string", 
+                    "ParameterValue": "string"
+                }
+            }
+        }, 
+        "UpdateSubnetGroup": {
+            "Description": "string", 
+            "SubnetGroupName": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }
+    }
+}

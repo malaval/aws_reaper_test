@@ -1,0 +1,50 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "CreateHapg": {
+            "Label": "string"
+        }, 
+        "CreateHsm": {
+            "ClientToken": "string", 
+            "EniIp": "string", 
+            "ExternalId": "string", 
+            "IamRoleArn": "string", 
+            "SshKey": "string", 
+            "SubnetId": "string", 
+            "SubscriptionType": "string", 
+            "SyslogIp": "string"
+        }, 
+        "CreateLunaClient": {
+            "Certificate": "string", 
+            "Label": "string"
+        }, 
+        "DeleteHapg": {
+            "HapgArn": "string"
+        }, 
+        "DeleteHsm": {
+            "HsmArn": "string"
+        }, 
+        "DeleteLunaClient": {
+            "ClientArn": "string"
+        }, 
+        "ModifyHapg": {
+            "HapgArn": "string", 
+            "Label": "string", 
+            "PartitionSerialList": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyHsm": {
+            "EniIp": "string", 
+            "ExternalId": "string", 
+            "HsmArn": "string", 
+            "IamRoleArn": "string", 
+            "SubnetId": "string", 
+            "SyslogIp": "string"
+        }, 
+        "ModifyLunaClient": {
+            "Certificate": "string", 
+            "ClientArn": "string"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "Search": {
+            "cursor": "string", 
+            "expr": "string", 
+            "facet": "string", 
+            "filterQuery": "string", 
+            "highlight": "string", 
+            "partial": "boolean", 
+            "query": "string", 
+            "queryOptions": "string", 
+            "queryParser": "string", 
+            "return": "string", 
+            "size": "long", 
+            "sort": "string", 
+            "start": "long", 
+            "stats": "string"
+        }, 
+        "Suggest": {
+            "query": "string", 
+            "size": "long", 
+            "suggester": "string"
+        }, 
+        "UploadDocuments": {
+            "contentType": "string", 
+            "documents": "blob"
+        }
+    }
+}

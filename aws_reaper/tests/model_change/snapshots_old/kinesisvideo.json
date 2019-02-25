@@ -1,0 +1,42 @@
+{
+    "IamActions": [
+        "AddApplicationInput", 
+        "AddApplicationOutput", 
+        "AddApplicationReferenceDataSource", 
+        "CreateApplication", 
+        "DeleteApplication", 
+        "DeleteApplicationOutput", 
+        "DeleteApplicationReferenceDataSource", 
+        "DiscoverInputSchema", 
+        "StartApplication", 
+        "StopApplication", 
+        "UpdateApplication"
+    ], 
+    "OperationInputs": {
+        "CreateStream": {
+            "DataRetentionInHours": "integer", 
+            "DeviceName": "string", 
+            "KmsKeyId": "string", 
+            "MediaType": "string", 
+            "StreamName": "string"
+        }, 
+        "DeleteStream": {
+            "CurrentVersion": "string", 
+            "StreamARN": "string"
+        }, 
+        "UpdateDataRetention": {
+            "CurrentVersion": "string", 
+            "DataRetentionChangeInHours": "integer", 
+            "Operation": "string", 
+            "StreamARN": "string", 
+            "StreamName": "string"
+        }, 
+        "UpdateStream": {
+            "CurrentVersion": "string", 
+            "DeviceName": "string", 
+            "MediaType": "string", 
+            "StreamARN": "string", 
+            "StreamName": "string"
+        }
+    }
+}

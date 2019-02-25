@@ -1,0 +1,171 @@
+{
+    "IamActions": [
+        "CreateCollection", 
+        "CreateStreamProcessor", 
+        "DeleteCollection", 
+        "DeleteFaces", 
+        "DeleteStreamProcessor", 
+        "IndexFaces", 
+        "StartCelebrityRecognition", 
+        "StartContentModeration", 
+        "StartFaceDetection", 
+        "StartFaceSearch", 
+        "StartLabelDetection", 
+        "StartPersonTracking", 
+        "StartStreamProcessor", 
+        "StopStreamProcessor"
+    ], 
+    "OperationInputs": {
+        "CreateCollection": {
+            "CollectionId": "string"
+        }, 
+        "CreateStreamProcessor": {
+            "Input": {
+                "KinesisVideoStream": {
+                    "Arn": "string"
+                }
+            }, 
+            "Name": "string", 
+            "Output": {
+                "KinesisDataStream": {
+                    "Arn": "string"
+                }
+            }, 
+            "RoleArn": "string", 
+            "Settings": {
+                "FaceSearch": {
+                    "CollectionId": "string", 
+                    "FaceMatchThreshold": "float"
+                }
+            }
+        }, 
+        "DeleteCollection": {
+            "CollectionId": "string"
+        }, 
+        "DeleteFaces": {
+            "CollectionId": "string", 
+            "FaceIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteStreamProcessor": {
+            "Name": "string"
+        }, 
+        "IndexFaces": {
+            "CollectionId": "string", 
+            "DetectionAttributes": {
+                "_list": "string"
+            }, 
+            "ExternalImageId": "string", 
+            "Image": {
+                "Bytes": "blob", 
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartCelebrityRecognition": {
+            "ClientRequestToken": "string", 
+            "JobTag": "string", 
+            "NotificationChannel": {
+                "RoleArn": "string", 
+                "SNSTopicArn": "string"
+            }, 
+            "Video": {
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartContentModeration": {
+            "ClientRequestToken": "string", 
+            "JobTag": "string", 
+            "MinConfidence": "float", 
+            "NotificationChannel": {
+                "RoleArn": "string", 
+                "SNSTopicArn": "string"
+            }, 
+            "Video": {
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartFaceDetection": {
+            "ClientRequestToken": "string", 
+            "FaceAttributes": "string", 
+            "JobTag": "string", 
+            "NotificationChannel": {
+                "RoleArn": "string", 
+                "SNSTopicArn": "string"
+            }, 
+            "Video": {
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartFaceSearch": {
+            "ClientRequestToken": "string", 
+            "CollectionId": "string", 
+            "FaceMatchThreshold": "float", 
+            "JobTag": "string", 
+            "NotificationChannel": {
+                "RoleArn": "string", 
+                "SNSTopicArn": "string"
+            }, 
+            "Video": {
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartLabelDetection": {
+            "ClientRequestToken": "string", 
+            "JobTag": "string", 
+            "MinConfidence": "float", 
+            "NotificationChannel": {
+                "RoleArn": "string", 
+                "SNSTopicArn": "string"
+            }, 
+            "Video": {
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartPersonTracking": {
+            "ClientRequestToken": "string", 
+            "JobTag": "string", 
+            "NotificationChannel": {
+                "RoleArn": "string", 
+                "SNSTopicArn": "string"
+            }, 
+            "Video": {
+                "S3Object": {
+                    "Bucket": "string", 
+                    "Name": "string", 
+                    "Version": "string"
+                }
+            }
+        }, 
+        "StartStreamProcessor": {
+            "Name": "string"
+        }, 
+        "StopStreamProcessor": {
+            "Name": "string"
+        }
+    }
+}

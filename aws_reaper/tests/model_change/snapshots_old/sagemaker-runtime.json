@@ -1,0 +1,12 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "InvokeEndpoint": {
+            "Accept": "string", 
+            "Body": "blob", 
+            "ContentType": "string", 
+            "CustomAttributes": "string", 
+            "EndpointName": "string"
+        }
+    }
+}

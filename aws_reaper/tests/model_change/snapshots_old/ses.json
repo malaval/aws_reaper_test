@@ -1,0 +1,533 @@
+{
+    "IamActions": [
+        "CloneReceiptRuleSet", 
+        "CreateConfigurationSet", 
+        "CreateConfigurationSetEventDestination", 
+        "CreateConfigurationSetTrackingOptions", 
+        "CreateCustomVerificationEmailTemplate", 
+        "CreateReceiptFilter", 
+        "CreateReceiptRule", 
+        "CreateReceiptRuleSet", 
+        "CreateTemplate", 
+        "DeleteConfigurationSet", 
+        "DeleteConfigurationSetEventDestination", 
+        "DeleteConfigurationSetTrackingOptions", 
+        "DeleteCustomVerificationEmailTemplate", 
+        "DeleteIdentity", 
+        "DeleteIdentityPolicy", 
+        "DeleteReceiptFilter", 
+        "DeleteReceiptRule", 
+        "DeleteReceiptRuleSet", 
+        "DeleteTemplate", 
+        "DeleteVerifiedEmailAddress", 
+        "PutIdentityPolicy", 
+        "ReorderReceiptRuleSet", 
+        "SendBounce", 
+        "SendBulkTemplatedEmail", 
+        "SendCustomVerificationEmail", 
+        "SendEmail", 
+        "SendRawEmail", 
+        "SendTemplatedEmail", 
+        "SetActiveReceiptRuleSet", 
+        "SetIdentityDkimEnabled", 
+        "SetIdentityFeedbackForwardingEnabled", 
+        "SetIdentityHeadersInNotificationsEnabled", 
+        "SetIdentityMailFromDomain", 
+        "SetIdentityNotificationTopic", 
+        "SetReceiptRulePosition", 
+        "TestRenderTemplate", 
+        "UpdateAccountSendingEnabled", 
+        "UpdateConfigurationSetEventDestination", 
+        "UpdateConfigurationSetReputationMetricsEnabled", 
+        "UpdateConfigurationSetSendingEnabled", 
+        "UpdateConfigurationSetTrackingOptions", 
+        "UpdateCustomVerificationEmailTemplate", 
+        "UpdateReceiptRule", 
+        "UpdateTemplate"
+    ], 
+    "OperationInputs": {
+        "CloneReceiptRuleSet": {
+            "OriginalRuleSetName": "string", 
+            "RuleSetName": "string"
+        }, 
+        "CreateConfigurationSet": {
+            "ConfigurationSet": {
+                "Name": "string"
+            }
+        }, 
+        "CreateConfigurationSetEventDestination": {
+            "ConfigurationSetName": "string", 
+            "EventDestination": {
+                "CloudWatchDestination": {
+                    "DimensionConfigurations": {
+                        "_list": {
+                            "DefaultDimensionValue": "string", 
+                            "DimensionName": "string", 
+                            "DimensionValueSource": "string"
+                        }
+                    }
+                }, 
+                "Enabled": "boolean", 
+                "KinesisFirehoseDestination": {
+                    "DeliveryStreamARN": "string", 
+                    "IAMRoleARN": "string"
+                }, 
+                "MatchingEventTypes": {
+                    "_list": "string"
+                }, 
+                "Name": "string", 
+                "SNSDestination": {
+                    "TopicARN": "string"
+                }
+            }
+        }, 
+        "CreateConfigurationSetTrackingOptions": {
+            "ConfigurationSetName": "string", 
+            "TrackingOptions": {
+                "CustomRedirectDomain": "string"
+            }
+        }, 
+        "CreateCustomVerificationEmailTemplate": {
+            "FailureRedirectionURL": "string", 
+            "FromEmailAddress": "string", 
+            "SuccessRedirectionURL": "string", 
+            "TemplateContent": "string", 
+            "TemplateName": "string", 
+            "TemplateSubject": "string"
+        }, 
+        "CreateReceiptFilter": {
+            "Filter": {
+                "IpFilter": {
+                    "Cidr": "string", 
+                    "Policy": "string"
+                }, 
+                "Name": "string"
+            }
+        }, 
+        "CreateReceiptRule": {
+            "After": "string", 
+            "Rule": {
+                "Actions": {
+                    "_list": {
+                        "AddHeaderAction": {
+                            "HeaderName": "string", 
+                            "HeaderValue": "string"
+                        }, 
+                        "BounceAction": {
+                            "Message": "string", 
+                            "Sender": "string", 
+                            "SmtpReplyCode": "string", 
+                            "StatusCode": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "LambdaAction": {
+                            "FunctionArn": "string", 
+                            "InvocationType": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "S3Action": {
+                            "BucketName": "string", 
+                            "KmsKeyArn": "string", 
+                            "ObjectKeyPrefix": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "SNSAction": {
+                            "Encoding": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "StopAction": {
+                            "Scope": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "WorkmailAction": {
+                            "OrganizationArn": "string", 
+                            "TopicArn": "string"
+                        }
+                    }
+                }, 
+                "Enabled": "boolean", 
+                "Name": "string", 
+                "Recipients": {
+                    "_list": "string"
+                }, 
+                "ScanEnabled": "boolean", 
+                "TlsPolicy": "string"
+            }, 
+            "RuleSetName": "string"
+        }, 
+        "CreateReceiptRuleSet": {
+            "RuleSetName": "string"
+        }, 
+        "CreateTemplate": {
+            "Template": {
+                "HtmlPart": "string", 
+                "SubjectPart": "string", 
+                "TemplateName": "string", 
+                "TextPart": "string"
+            }
+        }, 
+        "DeleteConfigurationSet": {
+            "ConfigurationSetName": "string"
+        }, 
+        "DeleteConfigurationSetEventDestination": {
+            "ConfigurationSetName": "string", 
+            "EventDestinationName": "string"
+        }, 
+        "DeleteConfigurationSetTrackingOptions": {
+            "ConfigurationSetName": "string"
+        }, 
+        "DeleteCustomVerificationEmailTemplate": {
+            "TemplateName": "string"
+        }, 
+        "DeleteIdentity": {
+            "Identity": "string"
+        }, 
+        "DeleteIdentityPolicy": {
+            "Identity": "string", 
+            "PolicyName": "string"
+        }, 
+        "DeleteReceiptFilter": {
+            "FilterName": "string"
+        }, 
+        "DeleteReceiptRule": {
+            "RuleName": "string", 
+            "RuleSetName": "string"
+        }, 
+        "DeleteReceiptRuleSet": {
+            "RuleSetName": "string"
+        }, 
+        "DeleteTemplate": {
+            "TemplateName": "string"
+        }, 
+        "DeleteVerifiedEmailAddress": {
+            "EmailAddress": "string"
+        }, 
+        "PutIdentityPolicy": {
+            "Identity": "string", 
+            "Policy": "string", 
+            "PolicyName": "string"
+        }, 
+        "ReorderReceiptRuleSet": {
+            "RuleNames": {
+                "_list": "string"
+            }, 
+            "RuleSetName": "string"
+        }, 
+        "SendBounce": {
+            "BounceSender": "string", 
+            "BounceSenderArn": "string", 
+            "BouncedRecipientInfoList": {
+                "_list": {
+                    "BounceType": "string", 
+                    "Recipient": "string", 
+                    "RecipientArn": "string", 
+                    "RecipientDsnFields": {
+                        "Action": "string", 
+                        "DiagnosticCode": "string", 
+                        "ExtensionFields": {
+                            "_list": "structure"
+                        }, 
+                        "FinalRecipient": "string", 
+                        "LastAttemptDate": "timestamp", 
+                        "RemoteMta": "string", 
+                        "Status": "string"
+                    }
+                }
+            }, 
+            "Explanation": "string", 
+            "MessageDsn": {
+                "ArrivalDate": "timestamp", 
+                "ExtensionFields": {
+                    "_list": {
+                        "Name": "string", 
+                        "Value": "string"
+                    }
+                }, 
+                "ReportingMta": "string"
+            }, 
+            "OriginalMessageId": "string"
+        }, 
+        "SendBulkTemplatedEmail": {
+            "ConfigurationSetName": "string", 
+            "DefaultTags": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "DefaultTemplateData": "string", 
+            "Destinations": {
+                "_list": {
+                    "Destination": {
+                        "BccAddresses": {
+                            "_list": "string"
+                        }, 
+                        "CcAddresses": {
+                            "_list": "string"
+                        }, 
+                        "ToAddresses": {
+                            "_list": "string"
+                        }
+                    }, 
+                    "ReplacementTags": {
+                        "_list": {
+                            "Name": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "ReplacementTemplateData": "string"
+                }
+            }, 
+            "ReplyToAddresses": {
+                "_list": "string"
+            }, 
+            "ReturnPath": "string", 
+            "ReturnPathArn": "string", 
+            "Source": "string", 
+            "SourceArn": "string", 
+            "Template": "string", 
+            "TemplateArn": "string"
+        }, 
+        "SendCustomVerificationEmail": {
+            "ConfigurationSetName": "string", 
+            "EmailAddress": "string", 
+            "TemplateName": "string"
+        }, 
+        "SendEmail": {
+            "ConfigurationSetName": "string", 
+            "Destination": {
+                "BccAddresses": {
+                    "_list": "string"
+                }, 
+                "CcAddresses": {
+                    "_list": "string"
+                }, 
+                "ToAddresses": {
+                    "_list": "string"
+                }
+            }, 
+            "Message": {
+                "Body": {
+                    "Html": {
+                        "Charset": "string", 
+                        "Data": "string"
+                    }, 
+                    "Text": {
+                        "Charset": "string", 
+                        "Data": "string"
+                    }
+                }, 
+                "Subject": {
+                    "Charset": "string", 
+                    "Data": "string"
+                }
+            }, 
+            "ReplyToAddresses": {
+                "_list": "string"
+            }, 
+            "ReturnPath": "string", 
+            "ReturnPathArn": "string", 
+            "Source": "string", 
+            "SourceArn": "string", 
+            "Tags": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "SendRawEmail": {
+            "ConfigurationSetName": "string", 
+            "Destinations": {
+                "_list": "string"
+            }, 
+            "FromArn": "string", 
+            "RawMessage": {
+                "Data": "blob"
+            }, 
+            "ReturnPathArn": "string", 
+            "Source": "string", 
+            "SourceArn": "string", 
+            "Tags": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "SendTemplatedEmail": {
+            "ConfigurationSetName": "string", 
+            "Destination": {
+                "BccAddresses": {
+                    "_list": "string"
+                }, 
+                "CcAddresses": {
+                    "_list": "string"
+                }, 
+                "ToAddresses": {
+                    "_list": "string"
+                }
+            }, 
+            "ReplyToAddresses": {
+                "_list": "string"
+            }, 
+            "ReturnPath": "string", 
+            "ReturnPathArn": "string", 
+            "Source": "string", 
+            "SourceArn": "string", 
+            "Tags": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "Template": "string", 
+            "TemplateArn": "string", 
+            "TemplateData": "string"
+        }, 
+        "SetActiveReceiptRuleSet": {
+            "RuleSetName": "string"
+        }, 
+        "SetIdentityDkimEnabled": {
+            "DkimEnabled": "boolean", 
+            "Identity": "string"
+        }, 
+        "SetIdentityFeedbackForwardingEnabled": {
+            "ForwardingEnabled": "boolean", 
+            "Identity": "string"
+        }, 
+        "SetIdentityHeadersInNotificationsEnabled": {
+            "Enabled": "boolean", 
+            "Identity": "string", 
+            "NotificationType": "string"
+        }, 
+        "SetIdentityMailFromDomain": {
+            "BehaviorOnMXFailure": "string", 
+            "Identity": "string", 
+            "MailFromDomain": "string"
+        }, 
+        "SetIdentityNotificationTopic": {
+            "Identity": "string", 
+            "NotificationType": "string", 
+            "SnsTopic": "string"
+        }, 
+        "SetReceiptRulePosition": {
+            "After": "string", 
+            "RuleName": "string", 
+            "RuleSetName": "string"
+        }, 
+        "TestRenderTemplate": {
+            "TemplateData": "string", 
+            "TemplateName": "string"
+        }, 
+        "UpdateAccountSendingEnabled": {
+            "Enabled": "boolean"
+        }, 
+        "UpdateConfigurationSetEventDestination": {
+            "ConfigurationSetName": "string", 
+            "EventDestination": {
+                "CloudWatchDestination": {
+                    "DimensionConfigurations": {
+                        "_list": {
+                            "DefaultDimensionValue": "string", 
+                            "DimensionName": "string", 
+                            "DimensionValueSource": "string"
+                        }
+                    }
+                }, 
+                "Enabled": "boolean", 
+                "KinesisFirehoseDestination": {
+                    "DeliveryStreamARN": "string", 
+                    "IAMRoleARN": "string"
+                }, 
+                "MatchingEventTypes": {
+                    "_list": "string"
+                }, 
+                "Name": "string", 
+                "SNSDestination": {
+                    "TopicARN": "string"
+                }
+            }
+        }, 
+        "UpdateConfigurationSetReputationMetricsEnabled": {
+            "ConfigurationSetName": "string", 
+            "Enabled": "boolean"
+        }, 
+        "UpdateConfigurationSetSendingEnabled": {
+            "ConfigurationSetName": "string", 
+            "Enabled": "boolean"
+        }, 
+        "UpdateConfigurationSetTrackingOptions": {
+            "ConfigurationSetName": "string", 
+            "TrackingOptions": {
+                "CustomRedirectDomain": "string"
+            }
+        }, 
+        "UpdateCustomVerificationEmailTemplate": {
+            "FailureRedirectionURL": "string", 
+            "FromEmailAddress": "string", 
+            "SuccessRedirectionURL": "string", 
+            "TemplateContent": "string", 
+            "TemplateName": "string", 
+            "TemplateSubject": "string"
+        }, 
+        "UpdateReceiptRule": {
+            "Rule": {
+                "Actions": {
+                    "_list": {
+                        "AddHeaderAction": {
+                            "HeaderName": "string", 
+                            "HeaderValue": "string"
+                        }, 
+                        "BounceAction": {
+                            "Message": "string", 
+                            "Sender": "string", 
+                            "SmtpReplyCode": "string", 
+                            "StatusCode": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "LambdaAction": {
+                            "FunctionArn": "string", 
+                            "InvocationType": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "S3Action": {
+                            "BucketName": "string", 
+                            "KmsKeyArn": "string", 
+                            "ObjectKeyPrefix": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "SNSAction": {
+                            "Encoding": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "StopAction": {
+                            "Scope": "string", 
+                            "TopicArn": "string"
+                        }, 
+                        "WorkmailAction": {
+                            "OrganizationArn": "string", 
+                            "TopicArn": "string"
+                        }
+                    }
+                }, 
+                "Enabled": "boolean", 
+                "Name": "string", 
+                "Recipients": {
+                    "_list": "string"
+                }, 
+                "ScanEnabled": "boolean", 
+                "TlsPolicy": "string"
+            }, 
+            "RuleSetName": "string"
+        }, 
+        "UpdateTemplate": {
+            "Template": {
+                "HtmlPart": "string", 
+                "SubjectPart": "string", 
+                "TemplateName": "string", 
+                "TextPart": "string"
+            }
+        }
+    }
+}

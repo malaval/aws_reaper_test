@@ -1,0 +1,1135 @@
+{
+    "IamActions": [
+        "CreateCampaign", 
+        "CreateImportJob", 
+        "CreateSegment", 
+        "DeleteApnsChannel", 
+        "DeleteCampaign", 
+        "DeleteGcmChannel", 
+        "DeleteSegment", 
+        "permission", 
+        "UpdateApnsChannel", 
+        "UpdateApplicationSettings", 
+        "UpdateCampaign", 
+        "UpdateEndpoint", 
+        "UpdateEndpointsBatch", 
+        "UpdateGcmChannel", 
+        "UpdateSegment"
+    ], 
+    "OperationInputs": {
+        "CreateApp": {
+            "CreateApplicationRequest": {
+                "Name": "string"
+            }
+        }, 
+        "CreateCampaign": {
+            "ApplicationId": "string", 
+            "WriteCampaignRequest": {
+                "AdditionalTreatments": {
+                    "_list": {
+                        "MessageConfiguration": {
+                            "ADMMessage": "structure", 
+                            "APNSMessage": "structure", 
+                            "BaiduMessage": "structure", 
+                            "DefaultMessage": "structure", 
+                            "EmailMessage": "structure", 
+                            "GCMMessage": "structure", 
+                            "SMSMessage": "structure"
+                        }, 
+                        "Schedule": {
+                            "EndTime": "string", 
+                            "Frequency": "string", 
+                            "IsLocalTime": "boolean", 
+                            "QuietTime": "structure", 
+                            "StartTime": "string", 
+                            "Timezone": "string"
+                        }, 
+                        "SizePercent": "integer", 
+                        "TreatmentDescription": "string", 
+                        "TreatmentName": "string"
+                    }
+                }, 
+                "Description": "string", 
+                "HoldoutPercent": "integer", 
+                "Hook": {
+                    "LambdaFunctionName": "string", 
+                    "Mode": "string", 
+                    "WebUrl": "string"
+                }, 
+                "IsPaused": "boolean", 
+                "Limits": {
+                    "Daily": "integer", 
+                    "MaximumDuration": "integer", 
+                    "MessagesPerSecond": "integer", 
+                    "Total": "integer"
+                }, 
+                "MessageConfiguration": {
+                    "ADMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "APNSMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "BaiduMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "DefaultMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "EmailMessage": {
+                        "Body": "string", 
+                        "FromAddress": "string", 
+                        "HtmlBody": "string", 
+                        "Title": "string"
+                    }, 
+                    "GCMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "SMSMessage": {
+                        "Body": "string", 
+                        "MessageType": "string", 
+                        "SenderId": "string"
+                    }
+                }, 
+                "Name": "string", 
+                "Schedule": {
+                    "EndTime": "string", 
+                    "Frequency": "string", 
+                    "IsLocalTime": "boolean", 
+                    "QuietTime": {
+                        "End": "string", 
+                        "Start": "string"
+                    }, 
+                    "StartTime": "string", 
+                    "Timezone": "string"
+                }, 
+                "SegmentId": "string", 
+                "SegmentVersion": "integer", 
+                "TreatmentDescription": "string", 
+                "TreatmentName": "string"
+            }
+        }, 
+        "CreateExportJob": {
+            "ApplicationId": "string", 
+            "ExportJobRequest": {
+                "RoleArn": "string", 
+                "S3UrlPrefix": "string", 
+                "SegmentId": "string", 
+                "SegmentVersion": "integer"
+            }
+        }, 
+        "CreateImportJob": {
+            "ApplicationId": "string", 
+            "ImportJobRequest": {
+                "DefineSegment": "boolean", 
+                "ExternalId": "string", 
+                "Format": "string", 
+                "RegisterEndpoints": "boolean", 
+                "RoleArn": "string", 
+                "S3Url": "string", 
+                "SegmentId": "string", 
+                "SegmentName": "string"
+            }
+        }, 
+        "CreateSegment": {
+            "ApplicationId": "string", 
+            "WriteSegmentRequest": {
+                "Dimensions": {
+                    "Attributes": {
+                        "_key": "string", 
+                        "_value": {
+                            "AttributeType": "string", 
+                            "Values": "list"
+                        }
+                    }, 
+                    "Behavior": {
+                        "Recency": {
+                            "Duration": "string", 
+                            "RecencyType": "string"
+                        }
+                    }, 
+                    "Demographic": {
+                        "AppVersion": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Channel": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "DeviceType": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Make": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Model": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Platform": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }
+                    }, 
+                    "Location": {
+                        "Country": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "GPSPoint": {
+                            "Coordinates": "structure", 
+                            "RangeInKilometers": "double"
+                        }
+                    }, 
+                    "Metrics": {
+                        "_key": "string", 
+                        "_value": {
+                            "ComparisonOperator": "string", 
+                            "Value": "double"
+                        }
+                    }, 
+                    "UserAttributes": {
+                        "_key": "string", 
+                        "_value": {
+                            "AttributeType": "string", 
+                            "Values": "list"
+                        }
+                    }
+                }, 
+                "Name": "string", 
+                "SegmentGroups": {
+                    "Groups": {
+                        "_list": {
+                            "Dimensions": "list", 
+                            "SourceSegments": "list", 
+                            "SourceType": "string", 
+                            "Type": "string"
+                        }
+                    }, 
+                    "Include": "string"
+                }
+            }
+        }, 
+        "DeleteAdmChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteApnsChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteApnsSandboxChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteApnsVoipChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteApnsVoipSandboxChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteApp": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteBaiduChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteCampaign": {
+            "ApplicationId": "string", 
+            "CampaignId": "string"
+        }, 
+        "DeleteEmailChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteEndpoint": {
+            "ApplicationId": "string", 
+            "EndpointId": "string"
+        }, 
+        "DeleteEventStream": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteGcmChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteSegment": {
+            "ApplicationId": "string", 
+            "SegmentId": "string"
+        }, 
+        "DeleteSmsChannel": {
+            "ApplicationId": "string"
+        }, 
+        "DeleteUserEndpoints": {
+            "ApplicationId": "string", 
+            "UserId": "string"
+        }, 
+        "PhoneNumberValidate": {
+            "NumberValidateRequest": {
+                "IsoCountryCode": "string", 
+                "PhoneNumber": "string"
+            }
+        }, 
+        "PutEventStream": {
+            "ApplicationId": "string", 
+            "WriteEventStream": {
+                "DestinationStreamArn": "string", 
+                "RoleArn": "string"
+            }
+        }, 
+        "PutEvents": {
+            "ApplicationId": "string", 
+            "EventsRequest": {
+                "BatchItem": {
+                    "_key": "string", 
+                    "_value": {
+                        "Endpoint": {
+                            "Address": "string", 
+                            "Attributes": "map", 
+                            "ChannelType": "string", 
+                            "Demographic": "structure", 
+                            "EffectiveDate": "string", 
+                            "EndpointStatus": "string", 
+                            "Location": "structure", 
+                            "Metrics": "map", 
+                            "OptOut": "string", 
+                            "RequestId": "string", 
+                            "User": "structure"
+                        }, 
+                        "Events": {
+                            "_key": "string", 
+                            "_value": "structure"
+                        }
+                    }
+                }
+            }
+        }, 
+        "RemoveAttributes": {
+            "ApplicationId": "string", 
+            "AttributeType": "string", 
+            "UpdateAttributesRequest": {
+                "Blacklist": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "SendMessages": {
+            "ApplicationId": "string", 
+            "MessageRequest": {
+                "Addresses": {
+                    "_key": "string", 
+                    "_value": {
+                        "BodyOverride": "string", 
+                        "ChannelType": "string", 
+                        "Context": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "RawContent": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TitleOverride": "string"
+                    }
+                }, 
+                "Context": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Endpoints": {
+                    "_key": "string", 
+                    "_value": {
+                        "BodyOverride": "string", 
+                        "Context": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "RawContent": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TitleOverride": "string"
+                    }
+                }, 
+                "MessageConfiguration": {
+                    "ADMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ConsolidationKey": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "ExpiresAfter": "string", 
+                        "IconReference": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "MD5": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "SmallImageIconUrl": "string", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "APNSMessage": {
+                        "Action": "string", 
+                        "Badge": "integer", 
+                        "Body": "string", 
+                        "Category": "string", 
+                        "CollapseId": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "MediaUrl": "string", 
+                        "PreferredAuthenticationMethod": "string", 
+                        "Priority": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "ThreadId": "string", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "BaiduMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "IconReference": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "SmallImageIconUrl": "string", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "DefaultMessage": {
+                        "Body": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }
+                    }, 
+                    "DefaultPushNotificationMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "SilentPush": "boolean", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "GCMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "CollapseKey": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "IconReference": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "Priority": "string", 
+                        "RawContent": "string", 
+                        "RestrictedPackageName": "string", 
+                        "SilentPush": "boolean", 
+                        "SmallImageIconUrl": "string", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "SMSMessage": {
+                        "Body": "string", 
+                        "Keyword": "string", 
+                        "MessageType": "string", 
+                        "OriginationNumber": "string", 
+                        "SenderId": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }
+                    }
+                }, 
+                "TraceId": "string"
+            }
+        }, 
+        "SendUsersMessages": {
+            "ApplicationId": "string", 
+            "SendUsersMessageRequest": {
+                "Context": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "MessageConfiguration": {
+                    "ADMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ConsolidationKey": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "ExpiresAfter": "string", 
+                        "IconReference": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "MD5": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "SmallImageIconUrl": "string", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "APNSMessage": {
+                        "Action": "string", 
+                        "Badge": "integer", 
+                        "Body": "string", 
+                        "Category": "string", 
+                        "CollapseId": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "MediaUrl": "string", 
+                        "PreferredAuthenticationMethod": "string", 
+                        "Priority": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "ThreadId": "string", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "BaiduMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "IconReference": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "SmallImageIconUrl": "string", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "DefaultMessage": {
+                        "Body": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }
+                    }, 
+                    "DefaultPushNotificationMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "SilentPush": "boolean", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "GCMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "CollapseKey": "string", 
+                        "Data": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "IconReference": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "Priority": "string", 
+                        "RawContent": "string", 
+                        "RestrictedPackageName": "string", 
+                        "SilentPush": "boolean", 
+                        "SmallImageIconUrl": "string", 
+                        "Sound": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "SMSMessage": {
+                        "Body": "string", 
+                        "Keyword": "string", 
+                        "MessageType": "string", 
+                        "OriginationNumber": "string", 
+                        "SenderId": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }
+                    }
+                }, 
+                "TraceId": "string", 
+                "Users": {
+                    "_key": "string", 
+                    "_value": {
+                        "BodyOverride": "string", 
+                        "Context": {
+                            "_key": "string", 
+                            "_value": "string"
+                        }, 
+                        "RawContent": "string", 
+                        "Substitutions": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "TitleOverride": "string"
+                    }
+                }
+            }
+        }, 
+        "UpdateAdmChannel": {
+            "ADMChannelRequest": {
+                "ClientId": "string", 
+                "ClientSecret": "string", 
+                "Enabled": "boolean"
+            }, 
+            "ApplicationId": "string"
+        }, 
+        "UpdateApnsChannel": {
+            "APNSChannelRequest": {
+                "BundleId": "string", 
+                "Certificate": "string", 
+                "DefaultAuthenticationMethod": "string", 
+                "Enabled": "boolean", 
+                "PrivateKey": "string", 
+                "TeamId": "string", 
+                "TokenKey": "string", 
+                "TokenKeyId": "string"
+            }, 
+            "ApplicationId": "string"
+        }, 
+        "UpdateApnsSandboxChannel": {
+            "APNSSandboxChannelRequest": {
+                "BundleId": "string", 
+                "Certificate": "string", 
+                "DefaultAuthenticationMethod": "string", 
+                "Enabled": "boolean", 
+                "PrivateKey": "string", 
+                "TeamId": "string", 
+                "TokenKey": "string", 
+                "TokenKeyId": "string"
+            }, 
+            "ApplicationId": "string"
+        }, 
+        "UpdateApnsVoipChannel": {
+            "APNSVoipChannelRequest": {
+                "BundleId": "string", 
+                "Certificate": "string", 
+                "DefaultAuthenticationMethod": "string", 
+                "Enabled": "boolean", 
+                "PrivateKey": "string", 
+                "TeamId": "string", 
+                "TokenKey": "string", 
+                "TokenKeyId": "string"
+            }, 
+            "ApplicationId": "string"
+        }, 
+        "UpdateApnsVoipSandboxChannel": {
+            "APNSVoipSandboxChannelRequest": {
+                "BundleId": "string", 
+                "Certificate": "string", 
+                "DefaultAuthenticationMethod": "string", 
+                "Enabled": "boolean", 
+                "PrivateKey": "string", 
+                "TeamId": "string", 
+                "TokenKey": "string", 
+                "TokenKeyId": "string"
+            }, 
+            "ApplicationId": "string"
+        }, 
+        "UpdateApplicationSettings": {
+            "ApplicationId": "string", 
+            "WriteApplicationSettingsRequest": {
+                "CampaignHook": {
+                    "LambdaFunctionName": "string", 
+                    "Mode": "string", 
+                    "WebUrl": "string"
+                }, 
+                "CloudWatchMetricsEnabled": "boolean", 
+                "Limits": {
+                    "Daily": "integer", 
+                    "MaximumDuration": "integer", 
+                    "MessagesPerSecond": "integer", 
+                    "Total": "integer"
+                }, 
+                "QuietTime": {
+                    "End": "string", 
+                    "Start": "string"
+                }
+            }
+        }, 
+        "UpdateBaiduChannel": {
+            "ApplicationId": "string", 
+            "BaiduChannelRequest": {
+                "ApiKey": "string", 
+                "Enabled": "boolean", 
+                "SecretKey": "string"
+            }
+        }, 
+        "UpdateCampaign": {
+            "ApplicationId": "string", 
+            "CampaignId": "string", 
+            "WriteCampaignRequest": {
+                "AdditionalTreatments": {
+                    "_list": {
+                        "MessageConfiguration": {
+                            "ADMMessage": "structure", 
+                            "APNSMessage": "structure", 
+                            "BaiduMessage": "structure", 
+                            "DefaultMessage": "structure", 
+                            "EmailMessage": "structure", 
+                            "GCMMessage": "structure", 
+                            "SMSMessage": "structure"
+                        }, 
+                        "Schedule": {
+                            "EndTime": "string", 
+                            "Frequency": "string", 
+                            "IsLocalTime": "boolean", 
+                            "QuietTime": "structure", 
+                            "StartTime": "string", 
+                            "Timezone": "string"
+                        }, 
+                        "SizePercent": "integer", 
+                        "TreatmentDescription": "string", 
+                        "TreatmentName": "string"
+                    }
+                }, 
+                "Description": "string", 
+                "HoldoutPercent": "integer", 
+                "Hook": {
+                    "LambdaFunctionName": "string", 
+                    "Mode": "string", 
+                    "WebUrl": "string"
+                }, 
+                "IsPaused": "boolean", 
+                "Limits": {
+                    "Daily": "integer", 
+                    "MaximumDuration": "integer", 
+                    "MessagesPerSecond": "integer", 
+                    "Total": "integer"
+                }, 
+                "MessageConfiguration": {
+                    "ADMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "APNSMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "BaiduMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "DefaultMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "EmailMessage": {
+                        "Body": "string", 
+                        "FromAddress": "string", 
+                        "HtmlBody": "string", 
+                        "Title": "string"
+                    }, 
+                    "GCMMessage": {
+                        "Action": "string", 
+                        "Body": "string", 
+                        "ImageIconUrl": "string", 
+                        "ImageSmallIconUrl": "string", 
+                        "ImageUrl": "string", 
+                        "JsonBody": "string", 
+                        "MediaUrl": "string", 
+                        "RawContent": "string", 
+                        "SilentPush": "boolean", 
+                        "TimeToLive": "integer", 
+                        "Title": "string", 
+                        "Url": "string"
+                    }, 
+                    "SMSMessage": {
+                        "Body": "string", 
+                        "MessageType": "string", 
+                        "SenderId": "string"
+                    }
+                }, 
+                "Name": "string", 
+                "Schedule": {
+                    "EndTime": "string", 
+                    "Frequency": "string", 
+                    "IsLocalTime": "boolean", 
+                    "QuietTime": {
+                        "End": "string", 
+                        "Start": "string"
+                    }, 
+                    "StartTime": "string", 
+                    "Timezone": "string"
+                }, 
+                "SegmentId": "string", 
+                "SegmentVersion": "integer", 
+                "TreatmentDescription": "string", 
+                "TreatmentName": "string"
+            }
+        }, 
+        "UpdateEmailChannel": {
+            "ApplicationId": "string", 
+            "EmailChannelRequest": {
+                "Enabled": "boolean", 
+                "FromAddress": "string", 
+                "Identity": "string", 
+                "RoleArn": "string"
+            }
+        }, 
+        "UpdateEndpoint": {
+            "ApplicationId": "string", 
+            "EndpointId": "string", 
+            "EndpointRequest": {
+                "Address": "string", 
+                "Attributes": {
+                    "_key": "string", 
+                    "_value": {
+                        "_list": "string"
+                    }
+                }, 
+                "ChannelType": "string", 
+                "Demographic": {
+                    "AppVersion": "string", 
+                    "Locale": "string", 
+                    "Make": "string", 
+                    "Model": "string", 
+                    "ModelVersion": "string", 
+                    "Platform": "string", 
+                    "PlatformVersion": "string", 
+                    "Timezone": "string"
+                }, 
+                "EffectiveDate": "string", 
+                "EndpointStatus": "string", 
+                "Location": {
+                    "City": "string", 
+                    "Country": "string", 
+                    "Latitude": "double", 
+                    "Longitude": "double", 
+                    "PostalCode": "string", 
+                    "Region": "string"
+                }, 
+                "Metrics": {
+                    "_key": "string", 
+                    "_value": "double"
+                }, 
+                "OptOut": "string", 
+                "RequestId": "string", 
+                "User": {
+                    "UserAttributes": {
+                        "_key": "string", 
+                        "_value": {
+                            "_list": "string"
+                        }
+                    }, 
+                    "UserId": "string"
+                }
+            }
+        }, 
+        "UpdateEndpointsBatch": {
+            "ApplicationId": "string", 
+            "EndpointBatchRequest": {
+                "Item": {
+                    "_list": {
+                        "Address": "string", 
+                        "Attributes": {
+                            "_key": "string", 
+                            "_value": "list"
+                        }, 
+                        "ChannelType": "string", 
+                        "Demographic": {
+                            "AppVersion": "string", 
+                            "Locale": "string", 
+                            "Make": "string", 
+                            "Model": "string", 
+                            "ModelVersion": "string", 
+                            "Platform": "string", 
+                            "PlatformVersion": "string", 
+                            "Timezone": "string"
+                        }, 
+                        "EffectiveDate": "string", 
+                        "EndpointStatus": "string", 
+                        "Id": "string", 
+                        "Location": {
+                            "City": "string", 
+                            "Country": "string", 
+                            "Latitude": "double", 
+                            "Longitude": "double", 
+                            "PostalCode": "string", 
+                            "Region": "string"
+                        }, 
+                        "Metrics": {
+                            "_key": "string", 
+                            "_value": "double"
+                        }, 
+                        "OptOut": "string", 
+                        "RequestId": "string", 
+                        "User": {
+                            "UserAttributes": "map", 
+                            "UserId": "string"
+                        }
+                    }
+                }
+            }
+        }, 
+        "UpdateGcmChannel": {
+            "ApplicationId": "string", 
+            "GCMChannelRequest": {
+                "ApiKey": "string", 
+                "Enabled": "boolean"
+            }
+        }, 
+        "UpdateSegment": {
+            "ApplicationId": "string", 
+            "SegmentId": "string", 
+            "WriteSegmentRequest": {
+                "Dimensions": {
+                    "Attributes": {
+                        "_key": "string", 
+                        "_value": {
+                            "AttributeType": "string", 
+                            "Values": "list"
+                        }
+                    }, 
+                    "Behavior": {
+                        "Recency": {
+                            "Duration": "string", 
+                            "RecencyType": "string"
+                        }
+                    }, 
+                    "Demographic": {
+                        "AppVersion": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Channel": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "DeviceType": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Make": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Model": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "Platform": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }
+                    }, 
+                    "Location": {
+                        "Country": {
+                            "DimensionType": "string", 
+                            "Values": "list"
+                        }, 
+                        "GPSPoint": {
+                            "Coordinates": "structure", 
+                            "RangeInKilometers": "double"
+                        }
+                    }, 
+                    "Metrics": {
+                        "_key": "string", 
+                        "_value": {
+                            "ComparisonOperator": "string", 
+                            "Value": "double"
+                        }
+                    }, 
+                    "UserAttributes": {
+                        "_key": "string", 
+                        "_value": {
+                            "AttributeType": "string", 
+                            "Values": "list"
+                        }
+                    }
+                }, 
+                "Name": "string", 
+                "SegmentGroups": {
+                    "Groups": {
+                        "_list": {
+                            "Dimensions": "list", 
+                            "SourceSegments": "list", 
+                            "SourceType": "string", 
+                            "Type": "string"
+                        }
+                    }, 
+                    "Include": "string"
+                }
+            }
+        }, 
+        "UpdateSmsChannel": {
+            "ApplicationId": "string", 
+            "SMSChannelRequest": {
+                "Enabled": "boolean", 
+                "SenderId": "string", 
+                "ShortCode": "string"
+            }
+        }
+    }
+}

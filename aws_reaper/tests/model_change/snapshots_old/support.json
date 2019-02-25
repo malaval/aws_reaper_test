@@ -1,0 +1,47 @@
+{
+    "IamActions": [
+        "AddAttachmentsToSet", 
+        "AddCommunicationToCase", 
+        "CreateCase", 
+        "RefreshTrustedAdvisorCheck", 
+        "ResolveCase"
+    ], 
+    "OperationInputs": {
+        "AddAttachmentsToSet": {
+            "attachmentSetId": "string", 
+            "attachments": {
+                "_list": {
+                    "data": "blob", 
+                    "fileName": "string"
+                }
+            }
+        }, 
+        "AddCommunicationToCase": {
+            "attachmentSetId": "string", 
+            "caseId": "string", 
+            "ccEmailAddresses": {
+                "_list": "string"
+            }, 
+            "communicationBody": "string"
+        }, 
+        "CreateCase": {
+            "attachmentSetId": "string", 
+            "categoryCode": "string", 
+            "ccEmailAddresses": {
+                "_list": "string"
+            }, 
+            "communicationBody": "string", 
+            "issueType": "string", 
+            "language": "string", 
+            "serviceCode": "string", 
+            "severityCode": "string", 
+            "subject": "string"
+        }, 
+        "RefreshTrustedAdvisorCheck": {
+            "checkId": "string"
+        }, 
+        "ResolveCase": {
+            "caseId": "string"
+        }
+    }
+}

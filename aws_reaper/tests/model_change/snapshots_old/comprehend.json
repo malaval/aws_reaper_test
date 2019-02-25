@@ -1,0 +1,149 @@
+{
+    "IamActions": [
+        "BatchDetectDominantLanguage", 
+        "BatchDetectEntities", 
+        "BatchDetectKeyPhrases", 
+        "BatchDetectSentiment", 
+        "BatchDetectSyntax", 
+        "DetectDominantLanguage", 
+        "DetectEntities", 
+        "DetectKeyPhrases", 
+        "DetectSentiment", 
+        "DetectSyntax", 
+        "StartDominantLanguageDetectionJob", 
+        "StartEntitiesDetectionJob", 
+        "StartKeyPhrasesDetectionJob", 
+        "StartSentimentDetectionJob", 
+        "StartTopicsDetectionJob", 
+        "StopDominantLanguageDetectionJob", 
+        "StopEntitiesDetectionJob", 
+        "StopKeyPhrasesDetectionJob", 
+        "StopSentimentDetectionJob"
+    ], 
+    "OperationInputs": {
+        "BatchDetectDominantLanguage": {
+            "TextList": {
+                "_list": "string"
+            }
+        }, 
+        "BatchDetectEntities": {
+            "LanguageCode": "string", 
+            "TextList": {
+                "_list": "string"
+            }
+        }, 
+        "BatchDetectKeyPhrases": {
+            "LanguageCode": "string", 
+            "TextList": {
+                "_list": "string"
+            }
+        }, 
+        "BatchDetectSentiment": {
+            "LanguageCode": "string", 
+            "TextList": {
+                "_list": "string"
+            }
+        }, 
+        "BatchDetectSyntax": {
+            "LanguageCode": "string", 
+            "TextList": {
+                "_list": "string"
+            }
+        }, 
+        "DetectDominantLanguage": {
+            "Text": "string"
+        }, 
+        "DetectEntities": {
+            "LanguageCode": "string", 
+            "Text": "string"
+        }, 
+        "DetectKeyPhrases": {
+            "LanguageCode": "string", 
+            "Text": "string"
+        }, 
+        "DetectSentiment": {
+            "LanguageCode": "string", 
+            "Text": "string"
+        }, 
+        "DetectSyntax": {
+            "LanguageCode": "string", 
+            "Text": "string"
+        }, 
+        "StartDominantLanguageDetectionJob": {
+            "ClientRequestToken": "string", 
+            "DataAccessRoleArn": "string", 
+            "InputDataConfig": {
+                "InputFormat": "string", 
+                "S3Uri": "string"
+            }, 
+            "JobName": "string", 
+            "OutputDataConfig": {
+                "S3Uri": "string"
+            }
+        }, 
+        "StartEntitiesDetectionJob": {
+            "ClientRequestToken": "string", 
+            "DataAccessRoleArn": "string", 
+            "InputDataConfig": {
+                "InputFormat": "string", 
+                "S3Uri": "string"
+            }, 
+            "JobName": "string", 
+            "LanguageCode": "string", 
+            "OutputDataConfig": {
+                "S3Uri": "string"
+            }
+        }, 
+        "StartKeyPhrasesDetectionJob": {
+            "ClientRequestToken": "string", 
+            "DataAccessRoleArn": "string", 
+            "InputDataConfig": {
+                "InputFormat": "string", 
+                "S3Uri": "string"
+            }, 
+            "JobName": "string", 
+            "LanguageCode": "string", 
+            "OutputDataConfig": {
+                "S3Uri": "string"
+            }
+        }, 
+        "StartSentimentDetectionJob": {
+            "ClientRequestToken": "string", 
+            "DataAccessRoleArn": "string", 
+            "InputDataConfig": {
+                "InputFormat": "string", 
+                "S3Uri": "string"
+            }, 
+            "JobName": "string", 
+            "LanguageCode": "string", 
+            "OutputDataConfig": {
+                "S3Uri": "string"
+            }
+        }, 
+        "StartTopicsDetectionJob": {
+            "ClientRequestToken": "string", 
+            "DataAccessRoleArn": "string", 
+            "InputDataConfig": {
+                "InputFormat": "string", 
+                "S3Uri": "string"
+            }, 
+            "JobName": "string", 
+            "NumberOfTopics": "integer", 
+            "OutputDataConfig": {
+                "S3Uri": "string"
+            }
+        }, 
+        "StopDominantLanguageDetectionJob": {
+            "JobId": "string"
+        }, 
+        "StopEntitiesDetectionJob": {
+            "JobId": "string"
+        }, 
+        "StopKeyPhrasesDetectionJob": {
+            "JobId": "string"
+        }, 
+        "StopSentimentDetectionJob": {
+            "JobId": "string"
+        }
+    }
+}

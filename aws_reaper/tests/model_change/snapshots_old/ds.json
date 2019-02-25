@@ -1,0 +1,221 @@
+{
+    "IamActions": [
+        "AddIpRoutes", 
+        "CancelSchemaExtension", 
+        "ConnectDirectory", 
+        "CreateAlias", 
+        "CreateComputer", 
+        "CreateConditionalForwarder", 
+        "CreateDirectory", 
+        "CreateMicrosoftAD", 
+        "CreateSnapshot", 
+        "CreateTrust", 
+        "DeleteConditionalForwarder", 
+        "DeleteDirectory", 
+        "DeleteSnapshot", 
+        "DeleteTrust", 
+        "DeregisterEventTopic", 
+        "DisableRadius", 
+        "DisableSso", 
+        "EnableRadius", 
+        "EnableSso", 
+        "RegisterEventTopic", 
+        "RemoveIpRoutes", 
+        "RestoreFromSnapshot", 
+        "StartSchemaExtension", 
+        "UpdateConditionalForwarder", 
+        "UpdateRadius"
+    ], 
+    "OperationInputs": {
+        "AddIpRoutes": {
+            "DirectoryId": "string", 
+            "IpRoutes": {
+                "_list": {
+                    "CidrIp": "string", 
+                    "Description": "string"
+                }
+            }, 
+            "UpdateSecurityGroupForDirectoryControllers": "boolean"
+        }, 
+        "CancelSchemaExtension": {
+            "DirectoryId": "string", 
+            "SchemaExtensionId": "string"
+        }, 
+        "ConnectDirectory": {
+            "ConnectSettings": {
+                "CustomerDnsIps": {
+                    "_list": "string"
+                }, 
+                "CustomerUserName": "string", 
+                "SubnetIds": {
+                    "_list": "string"
+                }, 
+                "VpcId": "string"
+            }, 
+            "Description": "string", 
+            "Name": "string", 
+            "Password": "string", 
+            "ShortName": "string", 
+            "Size": "string"
+        }, 
+        "CreateAlias": {
+            "Alias": "string", 
+            "DirectoryId": "string"
+        }, 
+        "CreateComputer": {
+            "ComputerAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "ComputerName": "string", 
+            "DirectoryId": "string", 
+            "OrganizationalUnitDistinguishedName": "string", 
+            "Password": "string"
+        }, 
+        "CreateConditionalForwarder": {
+            "DirectoryId": "string", 
+            "DnsIpAddrs": {
+                "_list": "string"
+            }, 
+            "RemoteDomainName": "string"
+        }, 
+        "CreateDirectory": {
+            "Description": "string", 
+            "Name": "string", 
+            "Password": "string", 
+            "ShortName": "string", 
+            "Size": "string", 
+            "VpcSettings": {
+                "SubnetIds": {
+                    "_list": "string"
+                }, 
+                "VpcId": "string"
+            }
+        }, 
+        "CreateMicrosoftAD": {
+            "Description": "string", 
+            "Edition": "string", 
+            "Name": "string", 
+            "Password": "string", 
+            "ShortName": "string", 
+            "VpcSettings": {
+                "SubnetIds": {
+                    "_list": "string"
+                }, 
+                "VpcId": "string"
+            }
+        }, 
+        "CreateSnapshot": {
+            "DirectoryId": "string", 
+            "Name": "string"
+        }, 
+        "CreateTrust": {
+            "ConditionalForwarderIpAddrs": {
+                "_list": "string"
+            }, 
+            "DirectoryId": "string", 
+            "RemoteDomainName": "string", 
+            "TrustDirection": "string", 
+            "TrustPassword": "string", 
+            "TrustType": "string"
+        }, 
+        "DeleteConditionalForwarder": {
+            "DirectoryId": "string", 
+            "RemoteDomainName": "string"
+        }, 
+        "DeleteDirectory": {
+            "DirectoryId": "string"
+        }, 
+        "DeleteSnapshot": {
+            "SnapshotId": "string"
+        }, 
+        "DeleteTrust": {
+            "DeleteAssociatedConditionalForwarder": "boolean", 
+            "TrustId": "string"
+        }, 
+        "DeregisterEventTopic": {
+            "DirectoryId": "string", 
+            "TopicName": "string"
+        }, 
+        "DisableRadius": {
+            "DirectoryId": "string"
+        }, 
+        "DisableSso": {
+            "DirectoryId": "string", 
+            "Password": "string", 
+            "UserName": "string"
+        }, 
+        "EnableRadius": {
+            "DirectoryId": "string", 
+            "RadiusSettings": {
+                "AuthenticationProtocol": "string", 
+                "DisplayLabel": "string", 
+                "RadiusPort": "integer", 
+                "RadiusRetries": "integer", 
+                "RadiusServers": {
+                    "_list": "string"
+                }, 
+                "RadiusTimeout": "integer", 
+                "SharedSecret": "string", 
+                "UseSameUsername": "boolean"
+            }
+        }, 
+        "EnableSso": {
+            "DirectoryId": "string", 
+            "Password": "string", 
+            "UserName": "string"
+        }, 
+        "RegisterEventTopic": {
+            "DirectoryId": "string", 
+            "TopicName": "string"
+        }, 
+        "RemoveIpRoutes": {
+            "CidrIps": {
+                "_list": "string"
+            }, 
+            "DirectoryId": "string"
+        }, 
+        "ResetUserPassword": {
+            "DirectoryId": "string", 
+            "NewPassword": "string", 
+            "UserName": "string"
+        }, 
+        "RestoreFromSnapshot": {
+            "SnapshotId": "string"
+        }, 
+        "StartSchemaExtension": {
+            "CreateSnapshotBeforeSchemaExtension": "boolean", 
+            "Description": "string", 
+            "DirectoryId": "string", 
+            "LdifContent": "string"
+        }, 
+        "UpdateConditionalForwarder": {
+            "DirectoryId": "string", 
+            "DnsIpAddrs": {
+                "_list": "string"
+            }, 
+            "RemoteDomainName": "string"
+        }, 
+        "UpdateNumberOfDomainControllers": {
+            "DesiredNumber": "integer", 
+            "DirectoryId": "string"
+        }, 
+        "UpdateRadius": {
+            "DirectoryId": "string", 
+            "RadiusSettings": {
+                "AuthenticationProtocol": "string", 
+                "DisplayLabel": "string", 
+                "RadiusPort": "integer", 
+                "RadiusRetries": "integer", 
+                "RadiusServers": {
+                    "_list": "string"
+                }, 
+                "RadiusTimeout": "integer", 
+                "SharedSecret": "string", 
+                "UseSameUsername": "boolean"
+            }
+        }
+    }
+}

@@ -1,0 +1,418 @@
+{
+    "IamActions": [
+        "AuthorizeClusterSecurityGroupIngress", 
+        "AuthorizeSnapshotAccess", 
+        "CancelQuerySession", 
+        "permission", 
+        "CopyClusterSnapshot", 
+        "CreateCluster", 
+        "CreateClusterParameterGroup", 
+        "CreateClusterSecurityGroup", 
+        "CreateClusterSnapshot", 
+        "CreateClusterSubnetGroup", 
+        "CreateClusterUser", 
+        "CreateEventSubscription", 
+        "CreateHsmClientCertificate", 
+        "CreateHsmConfiguration", 
+        "CreateSnapshotCopyGrant", 
+        "DeleteCluster", 
+        "DeleteClusterParameterGroup", 
+        "DeleteClusterSecurityGroup", 
+        "DeleteClusterSnapshot", 
+        "DeleteClusterSubnetGroup", 
+        "DeleteEventSubscription", 
+        "DeleteHsmClientCertificate", 
+        "DeleteHsmConfiguration", 
+        "DeleteSnapshotCopyGrant", 
+        "DisableLogging", 
+        "DisableSnapshotCopy", 
+        "EnableLogging", 
+        "EnableSnapshotCopy", 
+        "JoinGroup", 
+        "ModifyCluster", 
+        "ModifyClusterIamRoles", 
+        "ModifyClusterParameterGroup", 
+        "ModifyClusterSubnetGroup", 
+        "ModifyEventSubscription", 
+        "ModifySnapshotCopyRetentionPeriod", 
+        "PurchaseReservedNodeOffering", 
+        "RebootCluster", 
+        "ResetClusterParameterGroup", 
+        "RestoreFromClusterSnapshot", 
+        "RestoreTableFromClusterSnapshot", 
+        "RevokeClusterSecurityGroupIngress", 
+        "RevokeSnapshotAccess", 
+        "RotateEncryptionKey", 
+        "permission"
+    ], 
+    "OperationInputs": {
+        "AcceptReservedNodeExchange": {
+            "ReservedNodeId": "string", 
+            "TargetReservedNodeOfferingId": "string"
+        }, 
+        "AuthorizeClusterSecurityGroupIngress": {
+            "CIDRIP": "string", 
+            "ClusterSecurityGroupName": "string", 
+            "EC2SecurityGroupName": "string", 
+            "EC2SecurityGroupOwnerId": "string"
+        }, 
+        "AuthorizeSnapshotAccess": {
+            "AccountWithRestoreAccess": "string", 
+            "SnapshotClusterIdentifier": "string", 
+            "SnapshotIdentifier": "string"
+        }, 
+        "CopyClusterSnapshot": {
+            "SourceSnapshotClusterIdentifier": "string", 
+            "SourceSnapshotIdentifier": "string", 
+            "TargetSnapshotIdentifier": "string"
+        }, 
+        "CreateCluster": {
+            "AdditionalInfo": "string", 
+            "AllowVersionUpgrade": "boolean", 
+            "AutomatedSnapshotRetentionPeriod": "integer", 
+            "AvailabilityZone": "string", 
+            "ClusterIdentifier": "string", 
+            "ClusterParameterGroupName": "string", 
+            "ClusterSecurityGroups": {
+                "_list": "string"
+            }, 
+            "ClusterSubnetGroupName": "string", 
+            "ClusterType": "string", 
+            "ClusterVersion": "string", 
+            "DBName": "string", 
+            "ElasticIp": "string", 
+            "Encrypted": "boolean", 
+            "EnhancedVpcRouting": "boolean", 
+            "HsmClientCertificateIdentifier": "string", 
+            "HsmConfigurationIdentifier": "string", 
+            "IamRoles": {
+                "_list": "string"
+            }, 
+            "KmsKeyId": "string", 
+            "MaintenanceTrackName": "string", 
+            "MasterUserPassword": "string", 
+            "MasterUsername": "string", 
+            "NodeType": "string", 
+            "NumberOfNodes": "integer", 
+            "Port": "integer", 
+            "PreferredMaintenanceWindow": "string", 
+            "PubliclyAccessible": "boolean", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "CreateClusterParameterGroup": {
+            "Description": "string", 
+            "ParameterGroupFamily": "string", 
+            "ParameterGroupName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateClusterSecurityGroup": {
+            "ClusterSecurityGroupName": "string", 
+            "Description": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateClusterSnapshot": {
+            "ClusterIdentifier": "string", 
+            "SnapshotIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateClusterSubnetGroup": {
+            "ClusterSubnetGroupName": "string", 
+            "Description": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }, 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateEventSubscription": {
+            "Enabled": "boolean", 
+            "EventCategories": {
+                "_list": "string"
+            }, 
+            "Severity": "string", 
+            "SnsTopicArn": "string", 
+            "SourceIds": {
+                "_list": "string"
+            }, 
+            "SourceType": "string", 
+            "SubscriptionName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateHsmClientCertificate": {
+            "HsmClientCertificateIdentifier": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateHsmConfiguration": {
+            "Description": "string", 
+            "HsmConfigurationIdentifier": "string", 
+            "HsmIpAddress": "string", 
+            "HsmPartitionName": "string", 
+            "HsmPartitionPassword": "string", 
+            "HsmServerPublicCertificate": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "CreateSnapshotCopyGrant": {
+            "KmsKeyId": "string", 
+            "SnapshotCopyGrantName": "string", 
+            "Tags": {
+                "_list": {
+                    "Key": "string", 
+                    "Value": "string"
+                }
+            }
+        }, 
+        "DeleteCluster": {
+            "ClusterIdentifier": "string", 
+            "FinalClusterSnapshotIdentifier": "string", 
+            "SkipFinalClusterSnapshot": "boolean"
+        }, 
+        "DeleteClusterParameterGroup": {
+            "ParameterGroupName": "string"
+        }, 
+        "DeleteClusterSecurityGroup": {
+            "ClusterSecurityGroupName": "string"
+        }, 
+        "DeleteClusterSnapshot": {
+            "SnapshotClusterIdentifier": "string", 
+            "SnapshotIdentifier": "string"
+        }, 
+        "DeleteClusterSubnetGroup": {
+            "ClusterSubnetGroupName": "string"
+        }, 
+        "DeleteEventSubscription": {
+            "SubscriptionName": "string"
+        }, 
+        "DeleteHsmClientCertificate": {
+            "HsmClientCertificateIdentifier": "string"
+        }, 
+        "DeleteHsmConfiguration": {
+            "HsmConfigurationIdentifier": "string"
+        }, 
+        "DeleteSnapshotCopyGrant": {
+            "SnapshotCopyGrantName": "string"
+        }, 
+        "DisableLogging": {
+            "ClusterIdentifier": "string"
+        }, 
+        "DisableSnapshotCopy": {
+            "ClusterIdentifier": "string"
+        }, 
+        "EnableLogging": {
+            "BucketName": "string", 
+            "ClusterIdentifier": "string", 
+            "S3KeyPrefix": "string"
+        }, 
+        "EnableSnapshotCopy": {
+            "ClusterIdentifier": "string", 
+            "DestinationRegion": "string", 
+            "RetentionPeriod": "integer", 
+            "SnapshotCopyGrantName": "string"
+        }, 
+        "ModifyCluster": {
+            "AllowVersionUpgrade": "boolean", 
+            "AutomatedSnapshotRetentionPeriod": "integer", 
+            "ClusterIdentifier": "string", 
+            "ClusterParameterGroupName": "string", 
+            "ClusterSecurityGroups": {
+                "_list": "string"
+            }, 
+            "ClusterType": "string", 
+            "ClusterVersion": "string", 
+            "ElasticIp": "string", 
+            "EnhancedVpcRouting": "boolean", 
+            "HsmClientCertificateIdentifier": "string", 
+            "HsmConfigurationIdentifier": "string", 
+            "MaintenanceTrackName": "string", 
+            "MasterUserPassword": "string", 
+            "NewClusterIdentifier": "string", 
+            "NodeType": "string", 
+            "NumberOfNodes": "integer", 
+            "PreferredMaintenanceWindow": "string", 
+            "PubliclyAccessible": "boolean", 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyClusterDbRevision": {
+            "ClusterIdentifier": "string", 
+            "RevisionTarget": "string"
+        }, 
+        "ModifyClusterIamRoles": {
+            "AddIamRoles": {
+                "_list": "string"
+            }, 
+            "ClusterIdentifier": "string", 
+            "RemoveIamRoles": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyClusterParameterGroup": {
+            "ParameterGroupName": "string", 
+            "Parameters": {
+                "_list": {
+                    "AllowedValues": "string", 
+                    "ApplyType": "string", 
+                    "DataType": "string", 
+                    "Description": "string", 
+                    "IsModifiable": "boolean", 
+                    "MinimumEngineVersion": "string", 
+                    "ParameterName": "string", 
+                    "ParameterValue": "string", 
+                    "Source": "string"
+                }
+            }
+        }, 
+        "ModifyClusterSubnetGroup": {
+            "ClusterSubnetGroupName": "string", 
+            "Description": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "ModifyEventSubscription": {
+            "Enabled": "boolean", 
+            "EventCategories": {
+                "_list": "string"
+            }, 
+            "Severity": "string", 
+            "SnsTopicArn": "string", 
+            "SourceIds": {
+                "_list": "string"
+            }, 
+            "SourceType": "string", 
+            "SubscriptionName": "string"
+        }, 
+        "ModifySnapshotCopyRetentionPeriod": {
+            "ClusterIdentifier": "string", 
+            "RetentionPeriod": "integer"
+        }, 
+        "PurchaseReservedNodeOffering": {
+            "NodeCount": "integer", 
+            "ReservedNodeOfferingId": "string"
+        }, 
+        "RebootCluster": {
+            "ClusterIdentifier": "string"
+        }, 
+        "ResetClusterParameterGroup": {
+            "ParameterGroupName": "string", 
+            "Parameters": {
+                "_list": {
+                    "AllowedValues": "string", 
+                    "ApplyType": "string", 
+                    "DataType": "string", 
+                    "Description": "string", 
+                    "IsModifiable": "boolean", 
+                    "MinimumEngineVersion": "string", 
+                    "ParameterName": "string", 
+                    "ParameterValue": "string", 
+                    "Source": "string"
+                }
+            }, 
+            "ResetAllParameters": "boolean"
+        }, 
+        "ResizeCluster": {
+            "Classic": "boolean", 
+            "ClusterIdentifier": "string", 
+            "ClusterType": "string", 
+            "NodeType": "string", 
+            "NumberOfNodes": "integer"
+        }, 
+        "RestoreFromClusterSnapshot": {
+            "AdditionalInfo": "string", 
+            "AllowVersionUpgrade": "boolean", 
+            "AutomatedSnapshotRetentionPeriod": "integer", 
+            "AvailabilityZone": "string", 
+            "ClusterIdentifier": "string", 
+            "ClusterParameterGroupName": "string", 
+            "ClusterSecurityGroups": {
+                "_list": "string"
+            }, 
+            "ClusterSubnetGroupName": "string", 
+            "ElasticIp": "string", 
+            "EnhancedVpcRouting": "boolean", 
+            "HsmClientCertificateIdentifier": "string", 
+            "HsmConfigurationIdentifier": "string", 
+            "IamRoles": {
+                "_list": "string"
+            }, 
+            "KmsKeyId": "string", 
+            "MaintenanceTrackName": "string", 
+            "NodeType": "string", 
+            "OwnerAccount": "string", 
+            "Port": "integer", 
+            "PreferredMaintenanceWindow": "string", 
+            "PubliclyAccessible": "boolean", 
+            "SnapshotClusterIdentifier": "string", 
+            "SnapshotIdentifier": "string", 
+            "VpcSecurityGroupIds": {
+                "_list": "string"
+            }
+        }, 
+        "RestoreTableFromClusterSnapshot": {
+            "ClusterIdentifier": "string", 
+            "NewTableName": "string", 
+            "SnapshotIdentifier": "string", 
+            "SourceDatabaseName": "string", 
+            "SourceSchemaName": "string", 
+            "SourceTableName": "string", 
+            "TargetDatabaseName": "string", 
+            "TargetSchemaName": "string"
+        }, 
+        "RevokeClusterSecurityGroupIngress": {
+            "CIDRIP": "string", 
+            "ClusterSecurityGroupName": "string", 
+            "EC2SecurityGroupName": "string", 
+            "EC2SecurityGroupOwnerId": "string"
+        }, 
+        "RevokeSnapshotAccess": {
+            "AccountWithRestoreAccess": "string", 
+            "SnapshotClusterIdentifier": "string", 
+            "SnapshotIdentifier": "string"
+        }, 
+        "RotateEncryptionKey": {
+            "ClusterIdentifier": "string"
+        }
+    }
+}

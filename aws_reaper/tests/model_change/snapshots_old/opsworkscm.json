@@ -1,0 +1,101 @@
+{
+    "IamActions": [
+        "AssociateNode", 
+        "CreateBackup", 
+        "CreateServer", 
+        "DeleteBackup", 
+        "DeleteServer", 
+        "DisassociateNode", 
+        "RestoreServer", 
+        "StartMaintenance", 
+        "UpdateServer", 
+        "UpdateServerEngineAttributes"
+    ], 
+    "OperationInputs": {
+        "AssociateNode": {
+            "EngineAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "NodeName": "string", 
+            "ServerName": "string"
+        }, 
+        "CreateBackup": {
+            "Description": "string", 
+            "ServerName": "string"
+        }, 
+        "CreateServer": {
+            "AssociatePublicIpAddress": "boolean", 
+            "BackupId": "string", 
+            "BackupRetentionCount": "integer", 
+            "DisableAutomatedBackup": "boolean", 
+            "Engine": "string", 
+            "EngineAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "EngineModel": "string", 
+            "EngineVersion": "string", 
+            "InstanceProfileArn": "string", 
+            "InstanceType": "string", 
+            "KeyPair": "string", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "SecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "ServerName": "string", 
+            "ServiceRoleArn": "string", 
+            "SubnetIds": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteBackup": {
+            "BackupId": "string"
+        }, 
+        "DeleteServer": {
+            "ServerName": "string"
+        }, 
+        "DisassociateNode": {
+            "EngineAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "NodeName": "string", 
+            "ServerName": "string"
+        }, 
+        "RestoreServer": {
+            "BackupId": "string", 
+            "InstanceType": "string", 
+            "KeyPair": "string", 
+            "ServerName": "string"
+        }, 
+        "StartMaintenance": {
+            "EngineAttributes": {
+                "_list": {
+                    "Name": "string", 
+                    "Value": "string"
+                }
+            }, 
+            "ServerName": "string"
+        }, 
+        "UpdateServer": {
+            "BackupRetentionCount": "integer", 
+            "DisableAutomatedBackup": "boolean", 
+            "PreferredBackupWindow": "string", 
+            "PreferredMaintenanceWindow": "string", 
+            "ServerName": "string"
+        }, 
+        "UpdateServerEngineAttributes": {
+            "AttributeName": "string", 
+            "AttributeValue": "string", 
+            "ServerName": "string"
+        }
+    }
+}

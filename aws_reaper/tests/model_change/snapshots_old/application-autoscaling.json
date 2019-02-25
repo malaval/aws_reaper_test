@@ -1,0 +1,92 @@
+{
+    "IamActions": [
+        "DeleteScalingPolicy", 
+        "DeleteScheduledAction", 
+        "DeregisterScalableTarget", 
+        "PutScalingPolicy", 
+        "PutScheduledAction", 
+        "RegisterScalableTarget"
+    ], 
+    "OperationInputs": {
+        "DeleteScalingPolicy": {
+            "PolicyName": "string", 
+            "ResourceId": "string", 
+            "ScalableDimension": "string", 
+            "ServiceNamespace": "string"
+        }, 
+        "DeleteScheduledAction": {
+            "ResourceId": "string", 
+            "ScalableDimension": "string", 
+            "ScheduledActionName": "string", 
+            "ServiceNamespace": "string"
+        }, 
+        "DeregisterScalableTarget": {
+            "ResourceId": "string", 
+            "ScalableDimension": "string", 
+            "ServiceNamespace": "string"
+        }, 
+        "PutScalingPolicy": {
+            "PolicyName": "string", 
+            "PolicyType": "string", 
+            "ResourceId": "string", 
+            "ScalableDimension": "string", 
+            "ServiceNamespace": "string", 
+            "StepScalingPolicyConfiguration": {
+                "AdjustmentType": "string", 
+                "Cooldown": "integer", 
+                "MetricAggregationType": "string", 
+                "MinAdjustmentMagnitude": "integer", 
+                "StepAdjustments": {
+                    "_list": {
+                        "MetricIntervalLowerBound": "double", 
+                        "MetricIntervalUpperBound": "double", 
+                        "ScalingAdjustment": "integer"
+                    }
+                }
+            }, 
+            "TargetTrackingScalingPolicyConfiguration": {
+                "CustomizedMetricSpecification": {
+                    "Dimensions": {
+                        "_list": {
+                            "Name": "string", 
+                            "Value": "string"
+                        }
+                    }, 
+                    "MetricName": "string", 
+                    "Namespace": "string", 
+                    "Statistic": "string", 
+                    "Unit": "string"
+                }, 
+                "DisableScaleIn": "boolean", 
+                "PredefinedMetricSpecification": {
+                    "PredefinedMetricType": "string", 
+                    "ResourceLabel": "string"
+                }, 
+                "ScaleInCooldown": "integer", 
+                "ScaleOutCooldown": "integer", 
+                "TargetValue": "double"
+            }
+        }, 
+        "PutScheduledAction": {
+            "EndTime": "timestamp", 
+            "ResourceId": "string", 
+            "ScalableDimension": "string", 
+            "ScalableTargetAction": {
+                "MaxCapacity": "integer", 
+                "MinCapacity": "integer"
+            }, 
+            "Schedule": "string", 
+            "ScheduledActionName": "string", 
+            "ServiceNamespace": "string", 
+            "StartTime": "timestamp"
+        }, 
+        "RegisterScalableTarget": {
+            "MaxCapacity": "integer", 
+            "MinCapacity": "integer", 
+            "ResourceId": "string", 
+            "RoleARN": "string", 
+            "ScalableDimension": "string", 
+            "ServiceNamespace": "string"
+        }
+    }
+}

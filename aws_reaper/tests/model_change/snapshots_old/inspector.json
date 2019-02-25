@@ -1,0 +1,103 @@
+{
+    "IamActions": [
+        "AddAttributesToFindings", 
+        "CreateAssessmentTarget", 
+        "CreateAssessmentTemplate", 
+        "CreateResourceGroup", 
+        "DeleteAssessmentRun", 
+        "DeleteAssessmentTarget", 
+        "DeleteAssessmentTemplate", 
+        "RegisterCrossAccountAccessRole", 
+        "RemoveAttributesFromFindings", 
+        "StartAssessmentRun", 
+        "StopAssessmentRun", 
+        "SubscribeToEvent", 
+        "UnsubscribeFromEvent", 
+        "UpdateAssessmentTarget"
+    ], 
+    "OperationInputs": {
+        "AddAttributesToFindings": {
+            "attributes": {
+                "_list": {
+                    "key": "string", 
+                    "value": "string"
+                }
+            }, 
+            "findingArns": {
+                "_list": "string"
+            }
+        }, 
+        "CreateAssessmentTarget": {
+            "assessmentTargetName": "string", 
+            "resourceGroupArn": "string"
+        }, 
+        "CreateAssessmentTemplate": {
+            "assessmentTargetArn": "string", 
+            "assessmentTemplateName": "string", 
+            "durationInSeconds": "integer", 
+            "rulesPackageArns": {
+                "_list": "string"
+            }, 
+            "userAttributesForFindings": {
+                "_list": {
+                    "key": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "CreateExclusionsPreview": {
+            "assessmentTemplateArn": "string"
+        }, 
+        "CreateResourceGroup": {
+            "resourceGroupTags": {
+                "_list": {
+                    "key": "string", 
+                    "value": "string"
+                }
+            }
+        }, 
+        "DeleteAssessmentRun": {
+            "assessmentRunArn": "string"
+        }, 
+        "DeleteAssessmentTarget": {
+            "assessmentTargetArn": "string"
+        }, 
+        "DeleteAssessmentTemplate": {
+            "assessmentTemplateArn": "string"
+        }, 
+        "RegisterCrossAccountAccessRole": {
+            "roleArn": "string"
+        }, 
+        "RemoveAttributesFromFindings": {
+            "attributeKeys": {
+                "_list": "string"
+            }, 
+            "findingArns": {
+                "_list": "string"
+            }
+        }, 
+        "StartAssessmentRun": {
+            "assessmentRunName": "string", 
+            "assessmentTemplateArn": "string"
+        }, 
+        "StopAssessmentRun": {
+            "assessmentRunArn": "string", 
+            "stopAction": "string"
+        }, 
+        "SubscribeToEvent": {
+            "event": "string", 
+            "resourceArn": "string", 
+            "topicArn": "string"
+        }, 
+        "UnsubscribeFromEvent": {
+            "event": "string", 
+            "resourceArn": "string", 
+            "topicArn": "string"
+        }, 
+        "UpdateAssessmentTarget": {
+            "assessmentTargetArn": "string", 
+            "assessmentTargetName": "string", 
+            "resourceGroupArn": "string"
+        }
+    }
+}

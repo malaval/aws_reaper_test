@@ -1,0 +1,108 @@
+{
+    "IamActions": [
+        "CreateIdentityPool", 
+        "DeleteIdentities", 
+        "DeleteIdentityPool", 
+        "MergeDeveloperIdentities", 
+        "SetIdentityPoolRoles", 
+        "UnlinkDeveloperIdentity", 
+        "UnlinkIdentity", 
+        "UpdateIdentityPool"
+    ], 
+    "OperationInputs": {
+        "CreateIdentityPool": {
+            "AllowUnauthenticatedIdentities": "boolean", 
+            "CognitoIdentityProviders": {
+                "_list": {
+                    "ClientId": "string", 
+                    "ProviderName": "string", 
+                    "ServerSideTokenCheck": "boolean"
+                }
+            }, 
+            "DeveloperProviderName": "string", 
+            "IdentityPoolName": "string", 
+            "OpenIdConnectProviderARNs": {
+                "_list": "string"
+            }, 
+            "SamlProviderARNs": {
+                "_list": "string"
+            }, 
+            "SupportedLoginProviders": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "DeleteIdentities": {
+            "IdentityIdsToDelete": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteIdentityPool": {
+            "IdentityPoolId": "string"
+        }, 
+        "MergeDeveloperIdentities": {
+            "DestinationUserIdentifier": "string", 
+            "DeveloperProviderName": "string", 
+            "IdentityPoolId": "string", 
+            "SourceUserIdentifier": "string"
+        }, 
+        "SetIdentityPoolRoles": {
+            "IdentityPoolId": "string", 
+            "RoleMappings": {
+                "_key": "string", 
+                "_value": {
+                    "AmbiguousRoleResolution": "string", 
+                    "RulesConfiguration": {
+                        "Rules": {
+                            "_list": "structure"
+                        }
+                    }, 
+                    "Type": "string"
+                }
+            }, 
+            "Roles": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }, 
+        "UnlinkDeveloperIdentity": {
+            "DeveloperProviderName": "string", 
+            "DeveloperUserIdentifier": "string", 
+            "IdentityId": "string", 
+            "IdentityPoolId": "string"
+        }, 
+        "UnlinkIdentity": {
+            "IdentityId": "string", 
+            "Logins": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "LoginsToRemove": {
+                "_list": "string"
+            }
+        }, 
+        "UpdateIdentityPool": {
+            "AllowUnauthenticatedIdentities": "boolean", 
+            "CognitoIdentityProviders": {
+                "_list": {
+                    "ClientId": "string", 
+                    "ProviderName": "string", 
+                    "ServerSideTokenCheck": "boolean"
+                }
+            }, 
+            "DeveloperProviderName": "string", 
+            "IdentityPoolId": "string", 
+            "IdentityPoolName": "string", 
+            "OpenIdConnectProviderARNs": {
+                "_list": "string"
+            }, 
+            "SamlProviderARNs": {
+                "_list": "string"
+            }, 
+            "SupportedLoginProviders": {
+                "_key": "string", 
+                "_value": "string"
+            }
+        }
+    }
+}

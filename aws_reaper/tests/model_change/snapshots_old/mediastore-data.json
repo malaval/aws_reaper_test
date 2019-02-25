@@ -1,0 +1,18 @@
+{
+    "IamActions": [], 
+    "OperationInputs": {
+        "DeleteObject": {
+            "Path": "string"
+        }, 
+        "DescribeObject": {
+            "Path": "string"
+        }, 
+        "PutObject": {
+            "Body": "blob", 
+            "CacheControl": "string", 
+            "ContentType": "string", 
+            "Path": "string", 
+            "StorageClass": "string"
+        }
+    }
+}

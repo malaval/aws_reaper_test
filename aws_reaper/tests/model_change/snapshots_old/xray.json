@@ -1,0 +1,39 @@
+{
+    "IamActions": [
+        "PutTelemetryRecords", 
+        "PutTraceSegments"
+    ], 
+    "OperationInputs": {
+        "PutEncryptionConfig": {
+            "KeyId": "string", 
+            "Type": "string"
+        }, 
+        "PutTelemetryRecords": {
+            "EC2InstanceId": "string", 
+            "Hostname": "string", 
+            "ResourceARN": "string", 
+            "TelemetryRecords": {
+                "_list": {
+                    "BackendConnectionErrors": {
+                        "ConnectionRefusedCount": "integer", 
+                        "HTTPCode4XXCount": "integer", 
+                        "HTTPCode5XXCount": "integer", 
+                        "OtherCount": "integer", 
+                        "TimeoutCount": "integer", 
+                        "UnknownHostCount": "integer"
+                    }, 
+                    "SegmentsReceivedCount": "integer", 
+                    "SegmentsRejectedCount": "integer", 
+                    "SegmentsSentCount": "integer", 
+                    "SegmentsSpilloverCount": "integer", 
+                    "Timestamp": "timestamp"
+                }
+            }
+        }, 
+        "PutTraceSegments": {
+            "TraceSegmentDocuments": {
+                "_list": "string"
+            }
+        }
+    }
+}

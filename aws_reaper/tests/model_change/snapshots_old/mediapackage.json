@@ -1,0 +1,264 @@
+{
+    "IamActions": [
+        "CreateChannel", 
+        "CreateOriginEndpoint", 
+        "DeleteChannel", 
+        "DeleteOriginEndpoint", 
+        "UpdateChannel", 
+        "UpdateOriginEndpoint"
+    ], 
+    "OperationInputs": {
+        "CreateChannel": {
+            "Description": "string", 
+            "Id": "string"
+        }, 
+        "CreateOriginEndpoint": {
+            "ChannelId": "string", 
+            "CmafPackage": {
+                "Encryption": {
+                    "KeyRotationIntervalSeconds": "integer", 
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "HlsManifests": {
+                    "_list": {
+                        "AdMarkers": "string", 
+                        "Id": "string", 
+                        "IncludeIframeOnlyStream": "boolean", 
+                        "ManifestName": "string", 
+                        "PlaylistType": "string", 
+                        "PlaylistWindowSeconds": "integer", 
+                        "ProgramDateTimeIntervalSeconds": "integer"
+                    }
+                }, 
+                "SegmentDurationSeconds": "integer", 
+                "SegmentPrefix": "string", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }
+            }, 
+            "DashPackage": {
+                "Encryption": {
+                    "KeyRotationIntervalSeconds": "integer", 
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "ManifestWindowSeconds": "integer", 
+                "MinBufferTimeSeconds": "integer", 
+                "MinUpdatePeriodSeconds": "integer", 
+                "PeriodTriggers": {
+                    "_list": "string"
+                }, 
+                "Profile": "string", 
+                "SegmentDurationSeconds": "integer", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }, 
+                "SuggestedPresentationDelaySeconds": "integer"
+            }, 
+            "Description": "string", 
+            "HlsPackage": {
+                "AdMarkers": "string", 
+                "Encryption": {
+                    "ConstantInitializationVector": "string", 
+                    "EncryptionMethod": "string", 
+                    "KeyRotationIntervalSeconds": "integer", 
+                    "RepeatExtXKey": "boolean", 
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "IncludeIframeOnlyStream": "boolean", 
+                "PlaylistType": "string", 
+                "PlaylistWindowSeconds": "integer", 
+                "ProgramDateTimeIntervalSeconds": "integer", 
+                "SegmentDurationSeconds": "integer", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }, 
+                "UseAudioRenditionGroup": "boolean"
+            }, 
+            "Id": "string", 
+            "ManifestName": "string", 
+            "MssPackage": {
+                "Encryption": {
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "ManifestWindowSeconds": "integer", 
+                "SegmentDurationSeconds": "integer", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }
+            }, 
+            "StartoverWindowSeconds": "integer", 
+            "TimeDelaySeconds": "integer", 
+            "Whitelist": {
+                "_list": "string"
+            }
+        }, 
+        "DeleteChannel": {
+            "Id": "string"
+        }, 
+        "DeleteOriginEndpoint": {
+            "Id": "string"
+        }, 
+        "RotateChannelCredentials": {
+            "Id": "string"
+        }, 
+        "RotateIngestEndpointCredentials": {
+            "Id": "string", 
+            "IngestEndpointId": "string"
+        }, 
+        "UpdateChannel": {
+            "Description": "string", 
+            "Id": "string"
+        }, 
+        "UpdateOriginEndpoint": {
+            "CmafPackage": {
+                "Encryption": {
+                    "KeyRotationIntervalSeconds": "integer", 
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "HlsManifests": {
+                    "_list": {
+                        "AdMarkers": "string", 
+                        "Id": "string", 
+                        "IncludeIframeOnlyStream": "boolean", 
+                        "ManifestName": "string", 
+                        "PlaylistType": "string", 
+                        "PlaylistWindowSeconds": "integer", 
+                        "ProgramDateTimeIntervalSeconds": "integer"
+                    }
+                }, 
+                "SegmentDurationSeconds": "integer", 
+                "SegmentPrefix": "string", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }
+            }, 
+            "DashPackage": {
+                "Encryption": {
+                    "KeyRotationIntervalSeconds": "integer", 
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "ManifestWindowSeconds": "integer", 
+                "MinBufferTimeSeconds": "integer", 
+                "MinUpdatePeriodSeconds": "integer", 
+                "PeriodTriggers": {
+                    "_list": "string"
+                }, 
+                "Profile": "string", 
+                "SegmentDurationSeconds": "integer", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }, 
+                "SuggestedPresentationDelaySeconds": "integer"
+            }, 
+            "Description": "string", 
+            "HlsPackage": {
+                "AdMarkers": "string", 
+                "Encryption": {
+                    "ConstantInitializationVector": "string", 
+                    "EncryptionMethod": "string", 
+                    "KeyRotationIntervalSeconds": "integer", 
+                    "RepeatExtXKey": "boolean", 
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "IncludeIframeOnlyStream": "boolean", 
+                "PlaylistType": "string", 
+                "PlaylistWindowSeconds": "integer", 
+                "ProgramDateTimeIntervalSeconds": "integer", 
+                "SegmentDurationSeconds": "integer", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }, 
+                "UseAudioRenditionGroup": "boolean"
+            }, 
+            "Id": "string", 
+            "ManifestName": "string", 
+            "MssPackage": {
+                "Encryption": {
+                    "SpekeKeyProvider": {
+                        "ResourceId": "string", 
+                        "RoleArn": "string", 
+                        "SystemIds": {
+                            "_list": "string"
+                        }, 
+                        "Url": "string"
+                    }
+                }, 
+                "ManifestWindowSeconds": "integer", 
+                "SegmentDurationSeconds": "integer", 
+                "StreamSelection": {
+                    "MaxVideoBitsPerSecond": "integer", 
+                    "MinVideoBitsPerSecond": "integer", 
+                    "StreamOrder": "string"
+                }
+            }, 
+            "StartoverWindowSeconds": "integer", 
+            "TimeDelaySeconds": "integer", 
+            "Whitelist": {
+                "_list": "string"
+            }
+        }
+    }
+}

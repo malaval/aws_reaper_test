@@ -1,0 +1,79 @@
+{
+    "IamActions": [
+        "BulkPublish", 
+        "DeleteDataset", 
+        "RegisterDevice", 
+        "SetCognitoEvents", 
+        "SetDatasetConfiguration", 
+        "SetIdentityPoolConfiguration", 
+        "SubscribeToDataset", 
+        "UnsubscribeFromDataset", 
+        "UpdateRecords"
+    ], 
+    "OperationInputs": {
+        "BulkPublish": {
+            "IdentityPoolId": "string"
+        }, 
+        "DeleteDataset": {
+            "DatasetName": "string", 
+            "IdentityId": "string", 
+            "IdentityPoolId": "string"
+        }, 
+        "RegisterDevice": {
+            "IdentityId": "string", 
+            "IdentityPoolId": "string", 
+            "Platform": "string", 
+            "Token": "string"
+        }, 
+        "SetCognitoEvents": {
+            "Events": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "IdentityPoolId": "string"
+        }, 
+        "SetIdentityPoolConfiguration": {
+            "CognitoStreams": {
+                "RoleArn": "string", 
+                "StreamName": "string", 
+                "StreamingStatus": "string"
+            }, 
+            "IdentityPoolId": "string", 
+            "PushSync": {
+                "ApplicationArns": {
+                    "_list": "string"
+                }, 
+                "RoleArn": "string"
+            }
+        }, 
+        "SubscribeToDataset": {
+            "DatasetName": "string", 
+            "DeviceId": "string", 
+            "IdentityId": "string", 
+            "IdentityPoolId": "string"
+        }, 
+        "UnsubscribeFromDataset": {
+            "DatasetName": "string", 
+            "DeviceId": "string", 
+            "IdentityId": "string", 
+            "IdentityPoolId": "string"
+        }, 
+        "UpdateRecords": {
+            "ClientContext": "string", 
+            "DatasetName": "string", 
+            "DeviceId": "string", 
+            "IdentityId": "string", 
+            "IdentityPoolId": "string", 
+            "RecordPatches": {
+                "_list": {
+                    "DeviceLastModifiedDate": "timestamp", 
+                    "Key": "string", 
+                    "Op": "string", 
+                    "SyncCount": "long", 
+                    "Value": "string"
+                }
+            }, 
+            "SyncSessionToken": "string"
+        }
+    }
+}

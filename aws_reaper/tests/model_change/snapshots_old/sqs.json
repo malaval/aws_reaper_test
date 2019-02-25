@@ -1,0 +1,123 @@
+{
+    "IamActions": [
+        "AddPermission", 
+        "ChangeMessageVisibility", 
+        "ChangeMessageVisibilityBatch", 
+        "CreateQueue", 
+        "DeleteMessage", 
+        "DeleteMessageBatch", 
+        "DeleteQueue", 
+        "PurgeQueue", 
+        "RemovePermission", 
+        "SendMessage", 
+        "SendMessageBatch", 
+        "SetQueueAttributes"
+    ], 
+    "OperationInputs": {
+        "AddPermission": {
+            "AWSAccountIds": {
+                "_list": "string"
+            }, 
+            "Actions": {
+                "_list": "string"
+            }, 
+            "Label": "string", 
+            "QueueUrl": "string"
+        }, 
+        "ChangeMessageVisibility": {
+            "QueueUrl": "string", 
+            "ReceiptHandle": "string", 
+            "VisibilityTimeout": "integer"
+        }, 
+        "ChangeMessageVisibilityBatch": {
+            "Entries": {
+                "_list": {
+                    "Id": "string", 
+                    "ReceiptHandle": "string", 
+                    "VisibilityTimeout": "integer"
+                }
+            }, 
+            "QueueUrl": "string"
+        }, 
+        "CreateQueue": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "QueueName": "string"
+        }, 
+        "DeleteMessage": {
+            "QueueUrl": "string", 
+            "ReceiptHandle": "string"
+        }, 
+        "DeleteMessageBatch": {
+            "Entries": {
+                "_list": {
+                    "Id": "string", 
+                    "ReceiptHandle": "string"
+                }
+            }, 
+            "QueueUrl": "string"
+        }, 
+        "DeleteQueue": {
+            "QueueUrl": "string"
+        }, 
+        "PurgeQueue": {
+            "QueueUrl": "string"
+        }, 
+        "RemovePermission": {
+            "Label": "string", 
+            "QueueUrl": "string"
+        }, 
+        "SendMessage": {
+            "DelaySeconds": "integer", 
+            "MessageAttributes": {
+                "_key": "string", 
+                "_value": {
+                    "BinaryListValues": {
+                        "_list": "blob"
+                    }, 
+                    "BinaryValue": "blob", 
+                    "DataType": "string", 
+                    "StringListValues": {
+                        "_list": "string"
+                    }, 
+                    "StringValue": "string"
+                }
+            }, 
+            "MessageBody": "string", 
+            "MessageDeduplicationId": "string", 
+            "MessageGroupId": "string", 
+            "QueueUrl": "string"
+        }, 
+        "SendMessageBatch": {
+            "Entries": {
+                "_list": {
+                    "DelaySeconds": "integer", 
+                    "Id": "string", 
+                    "MessageAttributes": {
+                        "_key": "string", 
+                        "_value": {
+                            "BinaryListValues": "list", 
+                            "BinaryValue": "blob", 
+                            "DataType": "string", 
+                            "StringListValues": "list", 
+                            "StringValue": "string"
+                        }
+                    }, 
+                    "MessageBody": "string", 
+                    "MessageDeduplicationId": "string", 
+                    "MessageGroupId": "string"
+                }
+            }, 
+            "QueueUrl": "string"
+        }, 
+        "SetQueueAttributes": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "QueueUrl": "string"
+        }
+    }
+}

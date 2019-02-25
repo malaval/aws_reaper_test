@@ -1,0 +1,198 @@
+{
+    "IamActions": [
+        "AddPermission", 
+        "CreateAlias", 
+        "CreateEventSourceMapping", 
+        "CreateFunction", 
+        "DeleteAlias", 
+        "DeleteEventSourceMapping", 
+        "DeleteFunction", 
+        "DeleteFunctionConcurrency", 
+        "EnableReplication", 
+        "InvokeAsync", 
+        "InvokeFunction", 
+        "PublishVersion", 
+        "PutFunctionConcurrency", 
+        "RemovePermission", 
+        "UpdateAlias", 
+        "UpdateEventSourceMapping", 
+        "UpdateFunctionCode", 
+        "UpdateFunctionConfiguration"
+    ], 
+    "OperationInputs": {
+        "AddPermission": {
+            "Action": "string", 
+            "EventSourceToken": "string", 
+            "FunctionName": "string", 
+            "Principal": "string", 
+            "Qualifier": "string", 
+            "RevisionId": "string", 
+            "SourceAccount": "string", 
+            "SourceArn": "string", 
+            "StatementId": "string"
+        }, 
+        "CreateAlias": {
+            "Description": "string", 
+            "FunctionName": "string", 
+            "FunctionVersion": "string", 
+            "Name": "string", 
+            "RoutingConfig": {
+                "AdditionalVersionWeights": {
+                    "_key": "string", 
+                    "_value": "double"
+                }
+            }
+        }, 
+        "CreateEventSourceMapping": {
+            "BatchSize": "integer", 
+            "Enabled": "boolean", 
+            "EventSourceArn": "string", 
+            "FunctionName": "string", 
+            "StartingPosition": "string", 
+            "StartingPositionTimestamp": "timestamp"
+        }, 
+        "CreateFunction": {
+            "Code": {
+                "S3Bucket": "string", 
+                "S3Key": "string", 
+                "S3ObjectVersion": "string", 
+                "ZipFile": "blob"
+            }, 
+            "DeadLetterConfig": {
+                "TargetArn": "string"
+            }, 
+            "Description": "string", 
+            "Environment": {
+                "Variables": {
+                    "_key": "string", 
+                    "_value": "string"
+                }
+            }, 
+            "FunctionName": "string", 
+            "Handler": "string", 
+            "KMSKeyArn": "string", 
+            "MemorySize": "integer", 
+            "Publish": "boolean", 
+            "Role": "string", 
+            "Runtime": "string", 
+            "Tags": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "Timeout": "integer", 
+            "TracingConfig": {
+                "Mode": "string"
+            }, 
+            "VpcConfig": {
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SubnetIds": {
+                    "_list": "string"
+                }
+            }
+        }, 
+        "DeleteAlias": {
+            "FunctionName": "string", 
+            "Name": "string"
+        }, 
+        "DeleteEventSourceMapping": {
+            "UUID": "string"
+        }, 
+        "DeleteFunction": {
+            "FunctionName": "string", 
+            "Qualifier": "string"
+        }, 
+        "DeleteFunctionConcurrency": {
+            "FunctionName": "string"
+        }, 
+        "Invoke": {
+            "ClientContext": "string", 
+            "FunctionName": "string", 
+            "InvocationType": "string", 
+            "LogType": "string", 
+            "Payload": "blob", 
+            "Qualifier": "string"
+        }, 
+        "InvokeAsync": {
+            "FunctionName": "string", 
+            "InvokeArgs": "blob"
+        }, 
+        "PublishVersion": {
+            "CodeSha256": "string", 
+            "Description": "string", 
+            "FunctionName": "string", 
+            "RevisionId": "string"
+        }, 
+        "PutFunctionConcurrency": {
+            "FunctionName": "string", 
+            "ReservedConcurrentExecutions": "integer"
+        }, 
+        "RemovePermission": {
+            "FunctionName": "string", 
+            "Qualifier": "string", 
+            "RevisionId": "string", 
+            "StatementId": "string"
+        }, 
+        "UpdateAlias": {
+            "Description": "string", 
+            "FunctionName": "string", 
+            "FunctionVersion": "string", 
+            "Name": "string", 
+            "RevisionId": "string", 
+            "RoutingConfig": {
+                "AdditionalVersionWeights": {
+                    "_key": "string", 
+                    "_value": "double"
+                }
+            }
+        }, 
+        "UpdateEventSourceMapping": {
+            "BatchSize": "integer", 
+            "Enabled": "boolean", 
+            "FunctionName": "string", 
+            "UUID": "string"
+        }, 
+        "UpdateFunctionCode": {
+            "DryRun": "boolean", 
+            "FunctionName": "string", 
+            "Publish": "boolean", 
+            "RevisionId": "string", 
+            "S3Bucket": "string", 
+            "S3Key": "string", 
+            "S3ObjectVersion": "string", 
+            "ZipFile": "blob"
+        }, 
+        "UpdateFunctionConfiguration": {
+            "DeadLetterConfig": {
+                "TargetArn": "string"
+            }, 
+            "Description": "string", 
+            "Environment": {
+                "Variables": {
+                    "_key": "string", 
+                    "_value": "string"
+                }
+            }, 
+            "FunctionName": "string", 
+            "Handler": "string", 
+            "KMSKeyArn": "string", 
+            "MemorySize": "integer", 
+            "RevisionId": "string", 
+            "Role": "string", 
+            "Runtime": "string", 
+            "Timeout": "integer", 
+            "TracingConfig": {
+                "Mode": "string"
+            }, 
+            "VpcConfig": {
+                "SecurityGroupIds": {
+                    "_list": "string"
+                }, 
+                "SubnetIds": {
+                    "_list": "string"
+                }
+            }
+        }
+    }
+}

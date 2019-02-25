@@ -1,0 +1,681 @@
+{
+    "IamActions": [
+        "AssignInstance", 
+        "AssignVolume", 
+        "AssociateElasticIp", 
+        "AttachElasticLoadBalancer", 
+        "CloneStack", 
+        "CreateApp", 
+        "CreateDeployment", 
+        "CreateInstance", 
+        "CreateLayer", 
+        "CreateStack", 
+        "CreateUserProfile", 
+        "DeleteApp", 
+        "DeleteInstance", 
+        "DeleteLayer", 
+        "DeleteStack", 
+        "DeleteUserProfile", 
+        "DeregisterEcsCluster", 
+        "DeregisterElasticIp", 
+        "DeregisterInstance", 
+        "DeregisterRdsDbInstance", 
+        "DeregisterVolume", 
+        "DetachElasticLoadBalancer", 
+        "DisassociateElasticIp", 
+        "GrantAccess", 
+        "RebootInstance", 
+        "RegisterEcsCluster", 
+        "RegisterElasticIp", 
+        "RegisterInstance", 
+        "RegisterRdsDbInstance", 
+        "RegisterVolume", 
+        "SetLoadBasedAutoScaling", 
+        "SetPermission", 
+        "SetTimeBasedAutoScaling", 
+        "StartInstance", 
+        "StartStack", 
+        "StopInstance", 
+        "StopStack", 
+        "UnassignInstance", 
+        "UnassignVolume", 
+        "UpdateApp", 
+        "UpdateElasticIp", 
+        "UpdateInstance", 
+        "UpdateLayer", 
+        "UpdateMyUserProfile", 
+        "UpdateRdsDbInstance", 
+        "UpdateStack", 
+        "UpdateUserProfile", 
+        "UpdateVolume"
+    ], 
+    "OperationInputs": {
+        "AssignInstance": {
+            "InstanceId": "string", 
+            "LayerIds": {
+                "_list": "string"
+            }
+        }, 
+        "AssignVolume": {
+            "InstanceId": "string", 
+            "VolumeId": "string"
+        }, 
+        "AssociateElasticIp": {
+            "ElasticIp": "string", 
+            "InstanceId": "string"
+        }, 
+        "AttachElasticLoadBalancer": {
+            "ElasticLoadBalancerName": "string", 
+            "LayerId": "string"
+        }, 
+        "CloneStack": {
+            "AgentVersion": "string", 
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ChefConfiguration": {
+                "BerkshelfVersion": "string", 
+                "ManageBerkshelf": "boolean"
+            }, 
+            "CloneAppIds": {
+                "_list": "string"
+            }, 
+            "ClonePermissions": "boolean", 
+            "ConfigurationManager": {
+                "Name": "string", 
+                "Version": "string"
+            }, 
+            "CustomCookbooksSource": {
+                "Password": "string", 
+                "Revision": "string", 
+                "SshKey": "string", 
+                "Type": "string", 
+                "Url": "string", 
+                "Username": "string"
+            }, 
+            "CustomJson": "string", 
+            "DefaultAvailabilityZone": "string", 
+            "DefaultInstanceProfileArn": "string", 
+            "DefaultOs": "string", 
+            "DefaultRootDeviceType": "string", 
+            "DefaultSshKeyName": "string", 
+            "DefaultSubnetId": "string", 
+            "HostnameTheme": "string", 
+            "Name": "string", 
+            "Region": "string", 
+            "ServiceRoleArn": "string", 
+            "SourceStackId": "string", 
+            "UseCustomCookbooks": "boolean", 
+            "UseOpsworksSecurityGroups": "boolean", 
+            "VpcId": "string"
+        }, 
+        "CreateApp": {
+            "AppSource": {
+                "Password": "string", 
+                "Revision": "string", 
+                "SshKey": "string", 
+                "Type": "string", 
+                "Url": "string", 
+                "Username": "string"
+            }, 
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "DataSources": {
+                "_list": {
+                    "Arn": "string", 
+                    "DatabaseName": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "Description": "string", 
+            "Domains": {
+                "_list": "string"
+            }, 
+            "EnableSsl": "boolean", 
+            "Environment": {
+                "_list": {
+                    "Key": "string", 
+                    "Secure": "boolean", 
+                    "Value": "string"
+                }
+            }, 
+            "Name": "string", 
+            "Shortname": "string", 
+            "SslConfiguration": {
+                "Certificate": "string", 
+                "Chain": "string", 
+                "PrivateKey": "string"
+            }, 
+            "StackId": "string", 
+            "Type": "string"
+        }, 
+        "CreateDeployment": {
+            "AppId": "string", 
+            "Command": {
+                "Args": {
+                    "_key": "string", 
+                    "_value": {
+                        "_list": "string"
+                    }
+                }, 
+                "Name": "string"
+            }, 
+            "Comment": "string", 
+            "CustomJson": "string", 
+            "InstanceIds": {
+                "_list": "string"
+            }, 
+            "LayerIds": {
+                "_list": "string"
+            }, 
+            "StackId": "string"
+        }, 
+        "CreateInstance": {
+            "AgentVersion": "string", 
+            "AmiId": "string", 
+            "Architecture": "string", 
+            "AutoScalingType": "string", 
+            "AvailabilityZone": "string", 
+            "BlockDeviceMappings": {
+                "_list": {
+                    "DeviceName": "string", 
+                    "Ebs": {
+                        "DeleteOnTermination": "boolean", 
+                        "Iops": "integer", 
+                        "SnapshotId": "string", 
+                        "VolumeSize": "integer", 
+                        "VolumeType": "string"
+                    }, 
+                    "NoDevice": "string", 
+                    "VirtualName": "string"
+                }
+            }, 
+            "EbsOptimized": "boolean", 
+            "Hostname": "string", 
+            "InstallUpdatesOnBoot": "boolean", 
+            "InstanceType": "string", 
+            "LayerIds": {
+                "_list": "string"
+            }, 
+            "Os": "string", 
+            "RootDeviceType": "string", 
+            "SshKeyName": "string", 
+            "StackId": "string", 
+            "SubnetId": "string", 
+            "Tenancy": "string", 
+            "VirtualizationType": "string"
+        }, 
+        "CreateLayer": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "AutoAssignElasticIps": "boolean", 
+            "AutoAssignPublicIps": "boolean", 
+            "CloudWatchLogsConfiguration": {
+                "Enabled": "boolean", 
+                "LogStreams": {
+                    "_list": {
+                        "BatchCount": "integer", 
+                        "BatchSize": "integer", 
+                        "BufferDuration": "integer", 
+                        "DatetimeFormat": "string", 
+                        "Encoding": "string", 
+                        "File": "string", 
+                        "FileFingerprintLines": "string", 
+                        "InitialPosition": "string", 
+                        "LogGroupName": "string", 
+                        "MultiLineStartPattern": "string", 
+                        "TimeZone": "string"
+                    }
+                }
+            }, 
+            "CustomInstanceProfileArn": "string", 
+            "CustomJson": "string", 
+            "CustomRecipes": {
+                "Configure": {
+                    "_list": "string"
+                }, 
+                "Deploy": {
+                    "_list": "string"
+                }, 
+                "Setup": {
+                    "_list": "string"
+                }, 
+                "Shutdown": {
+                    "_list": "string"
+                }, 
+                "Undeploy": {
+                    "_list": "string"
+                }
+            }, 
+            "CustomSecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "EnableAutoHealing": "boolean", 
+            "InstallUpdatesOnBoot": "boolean", 
+            "LifecycleEventConfiguration": {
+                "Shutdown": {
+                    "DelayUntilElbConnectionsDrained": "boolean", 
+                    "ExecutionTimeout": "integer"
+                }
+            }, 
+            "Name": "string", 
+            "Packages": {
+                "_list": "string"
+            }, 
+            "Shortname": "string", 
+            "StackId": "string", 
+            "Type": "string", 
+            "UseEbsOptimizedInstances": "boolean", 
+            "VolumeConfigurations": {
+                "_list": {
+                    "Encrypted": "boolean", 
+                    "Iops": "integer", 
+                    "MountPoint": "string", 
+                    "NumberOfDisks": "integer", 
+                    "RaidLevel": "integer", 
+                    "Size": "integer", 
+                    "VolumeType": "string"
+                }
+            }
+        }, 
+        "CreateStack": {
+            "AgentVersion": "string", 
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ChefConfiguration": {
+                "BerkshelfVersion": "string", 
+                "ManageBerkshelf": "boolean"
+            }, 
+            "ConfigurationManager": {
+                "Name": "string", 
+                "Version": "string"
+            }, 
+            "CustomCookbooksSource": {
+                "Password": "string", 
+                "Revision": "string", 
+                "SshKey": "string", 
+                "Type": "string", 
+                "Url": "string", 
+                "Username": "string"
+            }, 
+            "CustomJson": "string", 
+            "DefaultAvailabilityZone": "string", 
+            "DefaultInstanceProfileArn": "string", 
+            "DefaultOs": "string", 
+            "DefaultRootDeviceType": "string", 
+            "DefaultSshKeyName": "string", 
+            "DefaultSubnetId": "string", 
+            "HostnameTheme": "string", 
+            "Name": "string", 
+            "Region": "string", 
+            "ServiceRoleArn": "string", 
+            "UseCustomCookbooks": "boolean", 
+            "UseOpsworksSecurityGroups": "boolean", 
+            "VpcId": "string"
+        }, 
+        "CreateUserProfile": {
+            "AllowSelfManagement": "boolean", 
+            "IamUserArn": "string", 
+            "SshPublicKey": "string", 
+            "SshUsername": "string"
+        }, 
+        "DeleteApp": {
+            "AppId": "string"
+        }, 
+        "DeleteInstance": {
+            "DeleteElasticIp": "boolean", 
+            "DeleteVolumes": "boolean", 
+            "InstanceId": "string"
+        }, 
+        "DeleteLayer": {
+            "LayerId": "string"
+        }, 
+        "DeleteStack": {
+            "StackId": "string"
+        }, 
+        "DeleteUserProfile": {
+            "IamUserArn": "string"
+        }, 
+        "DeregisterEcsCluster": {
+            "EcsClusterArn": "string"
+        }, 
+        "DeregisterElasticIp": {
+            "ElasticIp": "string"
+        }, 
+        "DeregisterInstance": {
+            "InstanceId": "string"
+        }, 
+        "DeregisterRdsDbInstance": {
+            "RdsDbInstanceArn": "string"
+        }, 
+        "DeregisterVolume": {
+            "VolumeId": "string"
+        }, 
+        "DetachElasticLoadBalancer": {
+            "ElasticLoadBalancerName": "string", 
+            "LayerId": "string"
+        }, 
+        "DisassociateElasticIp": {
+            "ElasticIp": "string"
+        }, 
+        "GrantAccess": {
+            "InstanceId": "string", 
+            "ValidForInMinutes": "integer"
+        }, 
+        "RebootInstance": {
+            "InstanceId": "string"
+        }, 
+        "RegisterEcsCluster": {
+            "EcsClusterArn": "string", 
+            "StackId": "string"
+        }, 
+        "RegisterElasticIp": {
+            "ElasticIp": "string", 
+            "StackId": "string"
+        }, 
+        "RegisterInstance": {
+            "Hostname": "string", 
+            "InstanceIdentity": {
+                "Document": "string", 
+                "Signature": "string"
+            }, 
+            "PrivateIp": "string", 
+            "PublicIp": "string", 
+            "RsaPublicKey": "string", 
+            "RsaPublicKeyFingerprint": "string", 
+            "StackId": "string"
+        }, 
+        "RegisterRdsDbInstance": {
+            "DbPassword": "string", 
+            "DbUser": "string", 
+            "RdsDbInstanceArn": "string", 
+            "StackId": "string"
+        }, 
+        "RegisterVolume": {
+            "Ec2VolumeId": "string", 
+            "StackId": "string"
+        }, 
+        "SetLoadBasedAutoScaling": {
+            "DownScaling": {
+                "Alarms": {
+                    "_list": "string"
+                }, 
+                "CpuThreshold": "double", 
+                "IgnoreMetricsTime": "integer", 
+                "InstanceCount": "integer", 
+                "LoadThreshold": "double", 
+                "MemoryThreshold": "double", 
+                "ThresholdsWaitTime": "integer"
+            }, 
+            "Enable": "boolean", 
+            "LayerId": "string", 
+            "UpScaling": {
+                "Alarms": {
+                    "_list": "string"
+                }, 
+                "CpuThreshold": "double", 
+                "IgnoreMetricsTime": "integer", 
+                "InstanceCount": "integer", 
+                "LoadThreshold": "double", 
+                "MemoryThreshold": "double", 
+                "ThresholdsWaitTime": "integer"
+            }
+        }, 
+        "SetPermission": {
+            "AllowSsh": "boolean", 
+            "AllowSudo": "boolean", 
+            "IamUserArn": "string", 
+            "Level": "string", 
+            "StackId": "string"
+        }, 
+        "SetTimeBasedAutoScaling": {
+            "AutoScalingSchedule": {
+                "Friday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Monday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Saturday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Sunday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Thursday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Tuesday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }, 
+                "Wednesday": {
+                    "_key": "string", 
+                    "_value": "string"
+                }
+            }, 
+            "InstanceId": "string"
+        }, 
+        "StartInstance": {
+            "InstanceId": "string"
+        }, 
+        "StartStack": {
+            "StackId": "string"
+        }, 
+        "StopInstance": {
+            "Force": "boolean", 
+            "InstanceId": "string"
+        }, 
+        "StopStack": {
+            "StackId": "string"
+        }, 
+        "UnassignInstance": {
+            "InstanceId": "string"
+        }, 
+        "UnassignVolume": {
+            "VolumeId": "string"
+        }, 
+        "UpdateApp": {
+            "AppId": "string", 
+            "AppSource": {
+                "Password": "string", 
+                "Revision": "string", 
+                "SshKey": "string", 
+                "Type": "string", 
+                "Url": "string", 
+                "Username": "string"
+            }, 
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "DataSources": {
+                "_list": {
+                    "Arn": "string", 
+                    "DatabaseName": "string", 
+                    "Type": "string"
+                }
+            }, 
+            "Description": "string", 
+            "Domains": {
+                "_list": "string"
+            }, 
+            "EnableSsl": "boolean", 
+            "Environment": {
+                "_list": {
+                    "Key": "string", 
+                    "Secure": "boolean", 
+                    "Value": "string"
+                }
+            }, 
+            "Name": "string", 
+            "SslConfiguration": {
+                "Certificate": "string", 
+                "Chain": "string", 
+                "PrivateKey": "string"
+            }, 
+            "Type": "string"
+        }, 
+        "UpdateElasticIp": {
+            "ElasticIp": "string", 
+            "Name": "string"
+        }, 
+        "UpdateInstance": {
+            "AgentVersion": "string", 
+            "AmiId": "string", 
+            "Architecture": "string", 
+            "AutoScalingType": "string", 
+            "EbsOptimized": "boolean", 
+            "Hostname": "string", 
+            "InstallUpdatesOnBoot": "boolean", 
+            "InstanceId": "string", 
+            "InstanceType": "string", 
+            "LayerIds": {
+                "_list": "string"
+            }, 
+            "Os": "string", 
+            "SshKeyName": "string"
+        }, 
+        "UpdateLayer": {
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "AutoAssignElasticIps": "boolean", 
+            "AutoAssignPublicIps": "boolean", 
+            "CloudWatchLogsConfiguration": {
+                "Enabled": "boolean", 
+                "LogStreams": {
+                    "_list": {
+                        "BatchCount": "integer", 
+                        "BatchSize": "integer", 
+                        "BufferDuration": "integer", 
+                        "DatetimeFormat": "string", 
+                        "Encoding": "string", 
+                        "File": "string", 
+                        "FileFingerprintLines": "string", 
+                        "InitialPosition": "string", 
+                        "LogGroupName": "string", 
+                        "MultiLineStartPattern": "string", 
+                        "TimeZone": "string"
+                    }
+                }
+            }, 
+            "CustomInstanceProfileArn": "string", 
+            "CustomJson": "string", 
+            "CustomRecipes": {
+                "Configure": {
+                    "_list": "string"
+                }, 
+                "Deploy": {
+                    "_list": "string"
+                }, 
+                "Setup": {
+                    "_list": "string"
+                }, 
+                "Shutdown": {
+                    "_list": "string"
+                }, 
+                "Undeploy": {
+                    "_list": "string"
+                }
+            }, 
+            "CustomSecurityGroupIds": {
+                "_list": "string"
+            }, 
+            "EnableAutoHealing": "boolean", 
+            "InstallUpdatesOnBoot": "boolean", 
+            "LayerId": "string", 
+            "LifecycleEventConfiguration": {
+                "Shutdown": {
+                    "DelayUntilElbConnectionsDrained": "boolean", 
+                    "ExecutionTimeout": "integer"
+                }
+            }, 
+            "Name": "string", 
+            "Packages": {
+                "_list": "string"
+            }, 
+            "Shortname": "string", 
+            "UseEbsOptimizedInstances": "boolean", 
+            "VolumeConfigurations": {
+                "_list": {
+                    "Encrypted": "boolean", 
+                    "Iops": "integer", 
+                    "MountPoint": "string", 
+                    "NumberOfDisks": "integer", 
+                    "RaidLevel": "integer", 
+                    "Size": "integer", 
+                    "VolumeType": "string"
+                }
+            }
+        }, 
+        "UpdateMyUserProfile": {
+            "SshPublicKey": "string"
+        }, 
+        "UpdateRdsDbInstance": {
+            "DbPassword": "string", 
+            "DbUser": "string", 
+            "RdsDbInstanceArn": "string"
+        }, 
+        "UpdateStack": {
+            "AgentVersion": "string", 
+            "Attributes": {
+                "_key": "string", 
+                "_value": "string"
+            }, 
+            "ChefConfiguration": {
+                "BerkshelfVersion": "string", 
+                "ManageBerkshelf": "boolean"
+            }, 
+            "ConfigurationManager": {
+                "Name": "string", 
+                "Version": "string"
+            }, 
+            "CustomCookbooksSource": {
+                "Password": "string", 
+                "Revision": "string", 
+                "SshKey": "string", 
+                "Type": "string", 
+                "Url": "string", 
+                "Username": "string"
+            }, 
+            "CustomJson": "string", 
+            "DefaultAvailabilityZone": "string", 
+            "DefaultInstanceProfileArn": "string", 
+            "DefaultOs": "string", 
+            "DefaultRootDeviceType": "string", 
+            "DefaultSshKeyName": "string", 
+            "DefaultSubnetId": "string", 
+            "HostnameTheme": "string", 
+            "Name": "string", 
+            "ServiceRoleArn": "string", 
+            "StackId": "string", 
+            "UseCustomCookbooks": "boolean", 
+            "UseOpsworksSecurityGroups": "boolean"
+        }, 
+        "UpdateUserProfile": {
+            "AllowSelfManagement": "boolean", 
+            "IamUserArn": "string", 
+            "SshPublicKey": "string", 
+            "SshUsername": "string"
+        }, 
+        "UpdateVolume": {
+            "MountPoint": "string", 
+            "Name": "string", 
+            "VolumeId": "string"
+        }
+    }
+}

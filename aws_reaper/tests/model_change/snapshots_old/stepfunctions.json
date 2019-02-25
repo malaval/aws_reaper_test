@@ -1,0 +1,57 @@
+{
+    "IamActions": [
+        "CreateActivity", 
+        "CreateStateMachine", 
+        "DeleteActivity", 
+        "DeleteStateMachine", 
+        "SendTaskFailure", 
+        "SendTaskHeartbeat", 
+        "SendTaskSuccess", 
+        "StartExecution", 
+        "StopExecution", 
+        "UpdateStateMachine"
+    ], 
+    "OperationInputs": {
+        "CreateActivity": {
+            "name": "string"
+        }, 
+        "CreateStateMachine": {
+            "definition": "string", 
+            "name": "string", 
+            "roleArn": "string"
+        }, 
+        "DeleteActivity": {
+            "activityArn": "string"
+        }, 
+        "DeleteStateMachine": {
+            "stateMachineArn": "string"
+        }, 
+        "SendTaskFailure": {
+            "cause": "string", 
+            "error": "string", 
+            "taskToken": "string"
+        }, 
+        "SendTaskHeartbeat": {
+            "taskToken": "string"
+        }, 
+        "SendTaskSuccess": {
+            "output": "string", 
+            "taskToken": "string"
+        }, 
+        "StartExecution": {
+            "input": "string", 
+            "name": "string", 
+            "stateMachineArn": "string"
+        }, 
+        "StopExecution": {
+            "cause": "string", 
+            "error": "string", 
+            "executionArn": "string"
+        }, 
+        "UpdateStateMachine": {
+            "definition": "string", 
+            "roleArn": "string", 
+            "stateMachineArn": "string"
+        }
+    }
+}

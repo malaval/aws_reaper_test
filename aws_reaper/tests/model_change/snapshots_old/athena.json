@@ -1,0 +1,39 @@
+{
+    "IamActions": [
+        "CancelQueryExecution", 
+        "CreateNamedQuery", 
+        "DeleteNamedQuery", 
+        "RunQuery", 
+        "StartQueryExecution", 
+        "StopQueryExecution"
+    ], 
+    "OperationInputs": {
+        "CreateNamedQuery": {
+            "ClientRequestToken": "string", 
+            "Database": "string", 
+            "Description": "string", 
+            "Name": "string", 
+            "QueryString": "string"
+        }, 
+        "DeleteNamedQuery": {
+            "NamedQueryId": "string"
+        }, 
+        "StartQueryExecution": {
+            "ClientRequestToken": "string", 
+            "QueryExecutionContext": {
+                "Database": "string"
+            }, 
+            "QueryString": "string", 
+            "ResultConfiguration": {
+                "EncryptionConfiguration": {
+                    "EncryptionOption": "string", 
+                    "KmsKey": "string"
+                }, 
+                "OutputLocation": "string"
+            }
+        }, 
+        "StopQueryExecution": {
+            "QueryExecutionId": "string"
+        }
+    }
+}
