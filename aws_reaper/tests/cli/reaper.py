@@ -159,13 +159,15 @@ def main():
                 aliases = client_iam.list_account_aliases()['AccountAliases']
                 alias = aliases[0] if len(aliases) > 0 else ''
                 caller_identity = client_sts.get_caller_identity()
-                print('###############################################')
-                print('###   WARNING: THIS ACTION IS IRREVOCABLE   ###')
-                print('###############################################')
+                print('')
+                print('##################################################')
+                print('###   WARNING: THIS OPERATION IS IRREVOCABLE   ###')
+                print('##################################################')
                 print('Account ID:  %s' % caller_identity['Account'])
                 print('User Arn:    %s' % caller_identity['Arn'])
                 print('IAM alias:   %s' % alias)
-                print('##############################################')
+                print('##################################################')
+                print('')
             except Exception as e:
                 message = 'Cannot get account information: %s' % str(e)
                 logger.fatal(message)
@@ -176,12 +178,10 @@ def main():
                 expected = '%s %s' % (alias, random.randint(1, 100))
             else:
                 expected = '%s %s' % (caller_identity['Account'], random.randint(1, 100))
-            submitted = input('Enter "%s" to confirm: ' % expected)
+            submitted = input('Check the information above and enter "%s" to confirm: ' % expected)
             if expected != submitted:
                 logger.warning('Incorrect input')
                 return
-            else:
-                print('')
 
             kwargs = {}
             if args.min_passes:
