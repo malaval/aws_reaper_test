@@ -10,12 +10,12 @@ delete, please visit `Supported resource types`_
 
 What is this for?
 -----------------
-It is currently not natively possible to restore an AWS account to its initial state and delete all
-its resources, or to programmatically close an AWS account. This script helps to wipe a lot of AWS
+It is currently not natively possible to restore an AWS account to its initial state, to delete all
+its resources or close an AWS account programmatically. This script helps to wipe a lot of AWS
 resources. The typical use cases include:
 
 * Resetting an AWS account so it can be used as a sandbox environment
-* Cleaning development or personal AWS accounts to avoid unintended costs
+* Cleaning development or personal AWS accounts to avoid unexpected costs
 
 Key characteristics
 -------------------
@@ -33,8 +33,9 @@ First, install the library:
 
     $ pip install aws_reaper
 
-Next, AWS Reaper can be used either via its command line tool ``aws_reaper``, or by integrating
-the package into an existing Python script or application or your choice.
+Installing the livrary also installs the command line tool. Next, AWS Reaper can be used either via
+its command line tool ``aws_reaper``, or by integrating the package into an existing Python
+script or application or your choice.
 
 Example using the command line tool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,8 +74,8 @@ AWS Reaper is a very destructive tool and the actions that it takes on your beha
 Be careful while using it.
 
 When using the command line tool ``aws-reaper`` you will be warned about the operation that you are
-about to execute, and confirm by entering a text that contains the IAM alias, or the AWS account ID
-if the IAM alias is not configured, and a random number between 1 and 100.
+about to execute, and you will be asked to confirm by entering a text that contains the IAM alias,
+or the AWS account ID if the IAM alias is not configured, and a random number between 1 and 100.
 
 .. code-block:: text
 
@@ -85,10 +86,75 @@ if the IAM alias is not configured, and a random number between 1 and 100.
     User Arn:    arn:aws:iam::123456789012:root
     IAM alias:   your-account-alias
     ##################################################
-    Enter "your-account-alias 36" to confirm:
+    Enter "your-account-alias 99" to confirm:
 
 When using the Python package directly, you are responsible for taking the appropriate precautions
 to avoid unintended cleaning operations.
+
+Parameters
+----------
+
+Filtering resources to delete
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can filter the resources to delete by specifying the resource ID patterns that should be
+included or excluded. By default, AWS Reaper deletes all possible resources and exclude no
+resource.
+
+The patterns are of the form ``a:b:c:d`` with ``a`` the identifier of a service or (e.g. ``ec2``)
+``*``, ``b `` the name of an AWS region or ``*``, ``c`` the identifier of a resource type or
+``*``, and ``d`` the identifier or name of the resource and you may use a wildcard character (e.g
+. ``prefix-*``). Some examples:
+
+* ``ec2:us-east-1:instance:*`` corresponds to the EC2 instances in the North Virginia region
+* ``lambda:*:function:prefix*`` corresponds to the Lambda functions in any regions whose name starts with ``prefix-``
+
+You can specify the resource ID patterns to include by passing one or more ``--included``
+arguments to the command line tool (e.g. ``--included "ec2:*:*:*" --included "lambda:*:*:*"``, or
+by passing an ``included`` keyword argument to the  ``Reaper`` init function (e.g.
+``included=["ec2:*:*:*", "lambda:*:*:*"]``). Same approach to specify the resource ID patterns to
+exclude by passing one or more ``--excluded`` arguments to the command line tool, or an
+``excluded`` keyword argument to the ``Reaper`` init function.
+
+Example to delete all EC2 and Lambda resources except in the North Virginia region, using the
+command line tool:
+
+.. code-block:: sh
+
+    $ aws_reaper clean_account --profile_name default --included "ec2:*:*:*" --included
+    "lambda:*:*:*" --excluded "*:us-east-1:*:*" --output clean.json
+
+Using the Python package:
+
+.. code-block:: python
+
+    from aws_reaper import Reaper
+    reaper = Reaper(
+        profile_name='default',
+        included=['ec2:*:*:*', 'lambda:*:*:*'],
+        excluded=['*:us-east-1:*:*]
+    )
+    result_clean = reaper.clean_account()
+
+Credentials
+~~~~~~~~~~~
+You must provide valid AWS credentials that AWS Reaper uses to list and delete resources:
+
+* The name of an AWS CLI profile: ``--profile_name`` command line argument, or ``profile_name`` keyword argument
+* Or an access key and a secret key (and optionally a session token): ``--aws_access_key_id``, ``--aws_secret_access_key`` and ``--aws_session_token`` command line argument, or ``aws_access_key_id``, ``aws_secret_access_key`` and ``aws_session_token`` keyword arguments.
+
+Example for an access key and secret key, using the command line tool:
+
+.. code-block:: sh
+
+    $ aws_reaper clean_account --aws_access_key_id XXXXXXX --aws_secret_access_key XXXXXXX
+
+Using the Python package:
+
+.. code-block:: python
+
+    from aws_reaper import Reaper
+    reaper = Reaper(aws_access_key_id='XXXXXXX', aws_secret_access_key='XXXXXXX')
+    result_clean = reaper.clean_account()
 
 Logging
 -------
@@ -106,36 +172,10 @@ using the ``-d`` or ``--debug`` argument. Example of logs printed:
     INFO [worker9] [acm:eu-west-2:certificate] Deleted arn:aws:acm:eu-west-2:123456789012:certificate/12345678-90ab-cdef-1234-567890abcdef
     INFO [worker11] [acm:eu-west-3:certificate] Deleted arn:aws:acm:eu-west-3:123456789012:certificate/12345678-90ab-cdef-1234-567890abcdef
 
-The detailed results of the execution are returned into a JSON document. Here is an example of the
-JSON document that may be returned:
-
-.. code-block:: json
-
-    {
-        "Completed": true,
-        "Errors": {
-            "Delete": {},
-            "Describe": {}
-        },
-        "ResourceIdsDeleted": {
-            "acm:eu-central-1:certificate": [
-                "arn:aws:acm:eu-central-1:123456789012:certificate/12345678-90ab-cdef-1234-567890abcdef"
-            ],
-            "acm:eu-west-2:certificate": [
-                "arn:aws:acm:eu-west-2:123456789012:certificate/12345678-90ab-cdef-1234-567890abcdef"
-            ],
-            "acm:eu-west-3:certificate": [
-                "arn:aws:acm:eu-west-3:123456789012:certificate/12345678-90ab-cdef-1234-567890abcdef"
-            ]
-        },
-        "ResourceIdsExcluded": {},
-        "WaitForDeletionUntil": 0
-    }
-
 Using the Python package
 ~~~~~~~~~~~~~~~~~~~~~~~~
 AWS Reaper logs messages into the ``aws_reaper`` logger. You should configure at least one handler
-to get the log messages. Example below:
+to get the log messages. Here is an example below:
 
 .. code-block:: python
 
